@@ -82,7 +82,7 @@
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.3em;
   letter-spacing: 0.2em;
 }
 .dropDownIcon {
@@ -122,19 +122,21 @@
 .contactInfo {
   display: flex;
   padding-bottom: 5px;
+  font-size: 13px;
 }
 .address {
   /* background-color: pink; */
   width: 50%;
   text-align: center;
-  font-size: 14px;
 }
 .phoneNumber {
   /* background-color: orange; */
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  color: black;
+  /* padding-top: 5px; */
 }
 .contactBtns {
   background-color: darkgray;
@@ -156,15 +158,16 @@
   align-items: center;
   font-size: 0.9em;
   letter-spacing: 1px;
+  border: 3px solid black;
 }
 .contactBtn:active .contactIcon {
   font-size: 1.6em;
 }
 #directionsBtn {
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 #callBtn {
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 .contactIcon {
   margin-bottom: 5px;
