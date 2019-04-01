@@ -96,14 +96,13 @@
   position: absolute;
   left: 0;
   bottom: 27%;
-  width: 45px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .socialMediaIcon {
   background-color: lightgray;
-  width: 100%;
+  width: 45px;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -125,13 +124,10 @@
   font-size: 13px;
 }
 .address {
-  /* background-color: pink; */
   width: 50%;
   text-align: center;
 }
 .phoneNumber {
-  /* background-color: orange; */
-  font-style: italic;
   width: 50%;
   display: flex;
   align-items: flex-end;
@@ -140,7 +136,7 @@
 }
 .contactBtns {
   background-color: lightgray;
-  height: 90px;
+  height: 84px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -157,13 +153,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.9em;
   letter-spacing: 1px;
-  border: 3px solid black;
+  border: 3px solid gray;
   border-radius: 12px;
 }
 .contactBtn:active .contactIcon {
-  font-size: 1.6em;
+  font-size: 1.8em;
+}
+.contactBtn:active {
+  border: 3px solid #1f93ff;
 }
 #directionsBtn {
   margin-right: 5px;
@@ -173,14 +171,16 @@
 }
 .contactIcon {
   margin-bottom: 5px;
+  font-size: 1.6em;
 }
-.directionsIcon {
+#directionsIcon {
   color: red;
-  font-size: 1.3em;
 }
-.callIcon {
+#callIcon {
   color: green;
-  font-size: 1.3em;
+}
+.contactBtnText {
+  font-size: 1.2em;
 }
 /*************** CONTENT ***************/
 .contentBox2 {
