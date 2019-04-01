@@ -95,7 +95,7 @@
   background-color: orange;
   position: absolute;
   left: 0;
-  bottom: 27%;
+  bottom: 39%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -146,8 +146,6 @@
   background-color: white;
   cursor: pointer;
   font-weight: 500;
-  /* height: 62px;
-  width: 45%; */
   outline: none;
   display: flex;
   flex-direction: column;
