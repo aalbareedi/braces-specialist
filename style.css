@@ -51,6 +51,8 @@
   box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25);
 }
 .sideNavBar {
+  background-color: #48b5f3;
+  height: 80px;
   display: flex;
   justify-content: flex-end;
   padding-right: 24px;
@@ -66,18 +68,22 @@
 .sideNavMenu {
   display: flex;
   flex-direction: column;
-  margin-top: 42px;
+  margin-top: 30px;
 }
-.sideNavOpt {
-  width: 100%;
+.sideNavHeading {
+  background-color: pink;
   padding: 9px 24px;
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
 }
-.sideNavOpt:hover {
+.sideNavHeading:hover {
   cursor: pointer;
   color: #1f93ff;
+}
+.sideNavSubHeading {
+  display: none;
+  background-color: green;
 }
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
@@ -119,20 +125,30 @@
   bottom: 0;
 }
 .contactInfo {
+  /* background-color: green; */
   display: flex;
   padding-bottom: 5px;
   font-size: 13px;
 }
-.address {
-  width: 50%;
-  text-align: center;
-}
-.phoneNumber {
+.addressBox {
   width: 50%;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+}
+.phoneNumberBox {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.addressText {
+  max-width: 180px;
+  text-align: center;
+  /* background-color: orange; */
+}
+.phoneNumberText {
   color: black;
+  /* background-color: pink; */
 }
 .contactBtns {
   background-color: lightgray;
@@ -155,14 +171,14 @@
   border: 3px solid gray;
   border-radius: 12px;
 }
-.contactBtn:hover {
+/* .contactBtn:hover {
   border: 3px solid #1f93ff;
-}
+} */
 .contactBtn:active #directionsIcon {
-  font-size: 1.8em;
+  font-size: 1em;
 }
 .contactBtn:active #callIcon {
-  font-size: 2.1em;
+  font-size: 1.4em;
 }
 .contactBtn:active {
   border: 3px solid #1f93ff;
@@ -175,7 +191,7 @@
   margin-left: 5px;
 }
 .contactIcon {
-  font-size: 1.9em;
+  font-size: 1.2em;
 }
 #directionsIcon {
   color: red;
@@ -184,7 +200,6 @@
   color: green;
 }
 .contactBtnText {
-  font-size: 1.2em;
   margin-left: 5px;
 }
 /*************** CONTENT ***************/
