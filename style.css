@@ -143,16 +143,137 @@
   outline: none;
   /* box-shadow: 3px 5px 12px rgba(50, 50, 50, 0.25); */
 }
-.sideNavBtn:hover {
+/* .sideNavBtn:hover {
+  background-color: #1f93ff;
+  color: white;
+} */
+.sideNavBtn:active {
   background-color: #1f93ff;
   color: white;
 }
-.sideNavBtn:active {
-  background-color: white;
-  color: #1f93ff;
-}
 .messageIcon {
   margin-right: 6px;
+}
+.sideNavContactForm {
+  display: grid;
+  /* display: none; */
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  background-color: whitesmoke;
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  top: 25%;
+  height: 50%;
+  border-radius: 20px;
+  z-index: 10;
+  border: 1px solid #bdc7d8;
+}
+#contactFormOpt1 {
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #bdc7d8;
+}
+.messageMenuTitle {
+  font-size: 1.2em;
+  color: #999;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.messageCancelBtn {
+  background-color: whitesmoke;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0 20px 0 0;
+  outline: none;
+  border: none;
+  border-left: 1px solid #bdc7d8;
+  color: #999;
+}
+.messageCancelIcon {
+  font-size: 1.5em;
+}
+
+#contactFormOpt2 {
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+.firstNameField,
+.emailField {
+  width: 50%;
+  padding-right: 5px;
+}
+.lastNameField,
+.phoneField {
+  width: 50%;
+  padding-left: 5px;
+}
+.contactFormInput {
+  height: 100%;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  padding-left: 8px;
+  width: 100%;
+  outline: none;
+}
+.contactFormInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1; /* Firefox */
+}
+.contactFormInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999;
+}
+.contactFormInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999;
+}
+#contactFormOpt3 {
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+#contactFormOpt4 {
+  padding: 10px 10px 0 10px;
+}
+.messageInput {
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  padding-left: 8px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+#contactFormOpt5 {
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#contactFormSubmitBtn {
+  background-color: #48b5f3;
+  color: white;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  min-height: 32px;
+}
+#contactFormSubmitBtn:active {
+  background-color: white;
+  color: #48b5f3;
+  border: 1px solid #48b5f3;
 }
 .sideNavSocialMedia {
   background-color: orange;
@@ -176,7 +297,7 @@
 .socialMediaIcon:active {
   font-size: 1.8em;
 }
-.sideNavContact {
+.sideNavDock {
   width: 100%;
   position: absolute;
   bottom: 0;

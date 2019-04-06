@@ -34,7 +34,9 @@
 
     <div class="sideNavWindow">
 
-      <div class="sideNavBar"><i class="fas fa-times cancelIcon"></i></div>
+      <div class="sideNavBar">
+        <i class="fas fa-times cancelIcon"></i>
+      </div>
 
       <div class="sideNavMenu">
         <div class="sideNavHeading">
@@ -75,7 +77,30 @@
         </div>
       </div>
       
-      <div class="sideNavBtnBar"><button class="sideNavBtn"><i class="fas fa-comment messageIcon"></i>Message Us</button></div>
+      <div class="sideNavBtnBar">
+        <button class="sideNavBtn"><i class="fas fa-comment messageIcon"></i>Message Us</button>
+      </div>
+
+      <form class="sideNavContactForm">
+          <div id="contactFormOpt1">
+            <div class="messageMenuTitle">Message Us</div>
+            <button class="messageCancelBtn"><i class="fas fa-times messageCancelIcon"></i></button>
+          </div>
+          <div id="contactFormOpt2">
+            <div class="firstNameField"><input required class="contactFormInput" placeholder="First Name"/></div>
+            <div class="lastNameField"><input required class="contactFormInput" placeholder="Last Name"/></div>
+          </div>
+          <div id="contactFormOpt3">
+              <div class="emailField"><input required class="contactFormInput" placeholder="Email"/></div>
+              <div class="phoneField"><input required class="contactFormInput" placeholder="Phone Number"/></div>  
+          </div>
+          <div id="contactFormOpt4">
+            <input required class="messageInput" placeholder="Message"/>
+          </div>
+          <div  id="contactFormOpt5">
+            <button type="submit" id="contactFormSubmitBtn">Submit</button>
+          </div>
+        </form>
 
       <div class="sideNavSocialMedia">
         <div class="socialMediaIcon"><i class="fab fa-instagram"></i></div>
@@ -83,7 +108,7 @@
         <div class="socialMediaIcon"><i class="fab fa-facebook-f"></i></i></div>
       </div>
 
-      <div class="sideNavContact">
+      <div class="sideNavDock">
         <div class="contactInfo">
           <div class="addressBox">
           <div class="addressText">
@@ -105,6 +130,7 @@
           </button>
         </div>
       </div>
+      
     </div>
 
     <div class="landingContent">
