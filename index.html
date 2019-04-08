@@ -78,29 +78,31 @@
       </div>
       
       <div class="sideNavBtnBar">
-        <button class="sideNavBtn"><i class="fas fa-comment messageIcon"></i>Message Us</button>
+        <button class="sideNavBtn">
+          <i class="fas fa-comment messageIcon"></i>Message Us
+        </button>
       </div>
 
       <form class="sideNavContactForm">
           <div id="contactFormOpt1">
+            <!-- <i class="fas fa-comment contactFormIcon"></i> -->
             <div class="messageMenuTitle">Message Us</div>
-            <button class="messageCancelBtn"><i class="fas fa-times messageCancelIcon"></i></button>
+            <button type="button" class="messageCancelBtn"><i class="fas fa-times messageCancelIcon"></i></button>
           </div>
           <div id="contactFormOpt2">
-            <div class="firstNameField"><input required class="contactFormInput" placeholder="First Name"/></div>
-            <div class="lastNameField"><input required class="contactFormInput" placeholder="Last Name"/></div>
+            <div class="firstNameField"><input required type="text" class="contactFormInput" placeholder="First Name"/></div>
+            <div class="lastNameField"><input required type="text" class="contactFormInput" placeholder="Last Name"/></div>
           </div>
           <div id="contactFormOpt3">
-              <div class="emailField"><input required class="contactFormInput" placeholder="Email"/></div>
-              <div class="phoneField"><input required class="contactFormInput" placeholder="Phone Number"/></div>  
+              <div class="emailField"><input required type="email" class="contactFormInput" placeholder="Email"/></div>
           </div>
           <div id="contactFormOpt4">
             <textarea required class="messageInput" placeholder="Message"></textarea>
           </div>
-          <div  id="contactFormOpt5">
-            <button type="submit" id="contactFormSubmitBtn">Submit</button>
+          <div id="contactFormOpt5">
+            <button type="submit" id="contactFormSubmitBtn">Send</button>
           </div>
-        </form>
+      </form>
 
       <div class="sideNavSocialMedia">
         <div class="socialMediaIcon"><i class="fab fa-instagram"></i></div>
