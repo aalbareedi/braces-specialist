@@ -15,30 +15,36 @@
   position: sticky;
   top: 0;
 }
-.navLogo {
+.navBrand {
   display: flex;
   align-items: center;
 }
-.brandLogo {
-  background-color: white;
-  width: 40px;
+.navLogoIcon {
+  /* background-color: white; */
+  width: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
-.brandName {
+.navLogoName {
   /* background-color: pink; */
+  width: 130px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navToggleIcon {
-  width: 70px;
+.navToggleBtn {
+  width: 76px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.navToggleBtn {
-  font-size: 2em;
+.navToggleIcon {
+  font-size: 1.6em;
   color: white;
 }
 
@@ -49,50 +55,57 @@
   background-color: #fff;
   position: fixed;
   width: 100%;
-  height: 100vh;
-  top: 0;
+  height: calc(100vh - 80px);
+  top: 80px;
   right: 0;
-  box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25);
+  /* box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25); */
 }
 
-/* **************** SIDE NAV-BAR **************** */
-
-.sideNavBar {
+/* .sideNavCancelBtn {
   background-color: #48b5f3;
-  height: 80px;
+  width: 74px;
+  position: absolute;
+  right: 0;
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 24px;
-  padding-top: 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
 }
 .cancelIcon {
-  font-size: 2em;
+  font-size: 1.7em;
   cursor: pointer;
+  color: white;
 }
 .cancelIcon:hover {
   opacity: 0.6;
-}
+} */
 
 /* **************** SIDE NAV MENU **************** */
 
 .sideNavMenu {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  margin-top: 7%;
+  /* padding-top: 5px; */
 }
 .sideNavHeading {
-  padding-right: 24px;
-  padding-left: 24px;
+  background-color: whitesmoke;
+  position: relative;
   cursor: pointer;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 40px;
-  padding-bottom: 6px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid gainsboro;
 }
 .sideNavHeading:hover {
   cursor: pointer;
   color: #1f93ff;
+}
+#sideNavHeading1 {
+  border-top: 2px solid gainsboro;
 }
 #sideNavSubHeading1 {
   display: none;
@@ -107,76 +120,54 @@
   display: none;
 }
 .subHeadingOpt {
-  text-align: right;
-  padding: 10px 62px;
+  background-color: white;
   color: #616161;
   cursor: pointer;
-  font-size: 18px;
-  height: 40px;
+  font-size: 16px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .subHeadingOpt:hover {
   color: #1f93ff;
   /* background-color: pink; */
 }
+.bottomOpt {
+  border-bottom: 2px solid gainsboro;
+}
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
-  font-size: 1.3em;
-  letter-spacing: 0.2em;
+  font-size: 16px;
+  letter-spacing: 1px;
+  /* background-color: lightblue; */
 }
-.dropDownIcon {
+.dropDownMarker {
+  /* background-color: yellow; */
+  position: absolute;
+  right: 30px;
+  /* display: none; */
+}
+.dropDownMarkerIcon {
   color: #1f93ff;
-  font-size: 1.4em;
-  margin-left: 14px;
-  margin-bottom: 3px;
-}
-
-/* ************* SIDE NAV MESSAGE BUTTON ************* */
-
-.sideNavBtnBar {
-  margin-top: 5%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.sideNavBtn {
-  background-color: white;
-  color: #1f93ff;
-  border-radius: 50px;
-  width: 43%;
-  max-width: 160px;
-  margin-right: 50px;
-  height: 44px;
-  border: 2px solid #1f93ff;
-  cursor: pointer;
-  outline: none;
-  /* box-shadow: 3px 5px 12px rgba(50, 50, 50, 0.25); */
-}
-/* .sideNavBtn:hover {
-  background-color: #1f93ff;
-  color: white;
-} */
-.sideNavBtn:active {
-  background-color: #1f93ff;
-  color: white;
-}
-.messageIcon {
-  margin-right: 6px;
+  /* font-size: 1.4em; */
+  /* margin-left: 14px;
+  margin-bottom: 3px; */
 }
 
 /* ******************* CONTACT FORM ******************* */
 
 .sideNavContactForm {
   display: grid;
-  /* display: none; */
-  grid-template-rows: 60px 60px 50px 120px 60px;
+  display: none;
+  grid-template-rows: 60px 90px 50px 50px 120px 70px;
   background-color: whitesmoke;
   position: fixed;
-  left: 10px;
-  right: 10px;
-  top: 16%;
-  /* bottom: 110px; */
-  border-radius: 10px;
+  left: 0px;
+  right: 0px;
+  top: 14%;
+  /* border-radius: 10px; */
   z-index: 10;
   border: 1px solid #bdc7d8;
 }
@@ -187,6 +178,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #bdc7d8;
+  background-color: whitesmoke;
 }
 /* .contactFormIcon {
   color: #999;
@@ -220,8 +212,18 @@
   font-size: 1.5em;
 }
 #contactFormOpt2 {
+  padding: 0px 20px 0px 20px;
   display: flex;
-  padding: 10px 10px 0px 10px;
+  align-items: center;
+  /* text-align: center; */
+}
+.contactFormSubHeading {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+#contactFormOpt3 {
+  display: flex;
+  padding: 0px 20px 0px 20px;
 }
 .firstNameField {
   width: 50%;
@@ -245,6 +247,10 @@
   width: 100%;
   outline: none;
 }
+.contactFormInput:focus {
+  border: 1px solid #48b5f3;
+  outline: none;
+}
 .contactFormInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #999;
@@ -257,11 +263,11 @@
   /* Internet Explorer 10-11, Edge */
   color: #999;
 }
-#contactFormOpt3 {
-  padding: 0px 10px 0px 10px;
-}
 #contactFormOpt4 {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 20px 0px 20px;
+}
+#contactFormOpt5 {
+  padding: 0px 20px 0px 20px;
 }
 .messageInput {
   border: 1px solid #bdc7d8;
@@ -269,6 +275,10 @@
   padding: 8px 8px 0 8px;
   width: 100%;
   height: 100%;
+  outline: none;
+}
+.messageInput:focus {
+  border: 1px solid #48b5f3;
   outline: none;
 }
 .messageInput::placeholder {
@@ -284,7 +294,7 @@
   /* Microsoft Edge */
   color: #999;
 }
-#contactFormOpt5 {
+#contactFormOpt6 {
   border-radius: 0 0 20px 20px;
   display: flex;
   justify-content: center;
@@ -296,11 +306,12 @@
   color: white;
   outline: none;
   border: none;
-  width: 30%;
+  width: 33%;
   height: 100%;
   border-radius: 6px;
   letter-spacing: 1px;
   font-size: 0.9em;
+  height: 40px;
 }
 #contactFormSubmitBtn:active {
   background-color: white;
@@ -308,39 +319,9 @@
   border: 1px solid #48b5f3;
 }
 
-/* **************** SOCIAL MEDIA **************** */
-
-.sideNavSocialMedia {
-  background-color: orange;
-  position: absolute;
-  left: 0;
-  bottom: 39%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.socialMediaIcon {
-  background-color: lightgray;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-.socialMediaIcon:active {
-  font-size: 1.8em;
-}
-
 /* **************** BUTTONS DOCK **************** */
 
-.sideNavDock {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-.contactInfo {
+/* .contactInfo {
   background-color: white;
   display: flex;
   padding-bottom: 5px;
@@ -365,16 +346,28 @@
 }
 .phoneNumberText {
   color: black;
-}
-.contactBtns {
+} */
+.sideNavDock {
   background-color: gainsboro;
-  height: 68px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
   padding: 10px;
-  border-top: 3px solid darkgray;
+  border-top: 2px solid gray;
 }
+/* .contactBtns {
+  background-color: gainsboro;
+  border-top: 3px solid darkgray;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  display: flex;
+} */
 .contactBtn {
   background-color: white;
   cursor: pointer;
@@ -383,9 +376,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 1px;
-  border: 3px solid gray;
+  /* letter-spacing: 1px; */
   border-radius: 12px;
+  border: 2px solid gray;
+  /* border: none; */
 }
 /* .contactBtn:hover {
   border: 3px solid #1f93ff;
@@ -397,14 +391,16 @@
   font-size: 1.4em;
 }
 .contactBtn:active {
-  border: 3px solid #1f93ff;
+  border: 2px solid #1f93ff;
   background-color: gainsboro;
 }
 #directionsBtn {
-  margin-right: 5px;
+  grid-row: 1/2;
+  grid-column: 1/4;
 }
 #callBtn {
-  margin-left: 5px;
+  grid-row: 1/2;
+  grid-column: 4/7;
 }
 .contactIcon {
   font-size: 1.2em;
@@ -418,6 +414,68 @@
 .contactBtnText {
   margin-left: 5px;
 }
+/*********** SOCIAL MEDIA  ***********/
+#instagramBtn {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#facebookBtn {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#linkedinBtn {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.socialMediaIcon {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  color: gray;
+  border: 2px solid gray;
+  /* border: none; */
+}
+.socialMediaIcon:active {
+  font-size: 1.8em;
+}
+
+/* ************* SIDE NAV MESSAGE BUTTON ************* */
+.sideNavMessageBtn {
+  background-color: white;
+  color: #1f93ff;
+  border-radius: 12px;
+  grid-row: 2/3;
+  grid-column: 4/7;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  /* border: none; */
+
+  cursor: pointer;
+  outline: none;
+  /* box-shadow: 3px 5px 12px rgba(50, 50, 50, 0.25); */
+}
+/* .sideNavBtn:hover {
+  background-color: #1f93ff;
+  color: white;
+} */
+.sideNavBtn:active {
+  background-color: #1f93ff;
+  color: white;
+}
+.messageIcon {
+  margin-right: 6px;
+}
+.messageBtnText {
+  color: gray;
+}
 
 /* ************************** CONTENT ************************** */
 
@@ -427,23 +485,25 @@
 }
 .landingContent {
   height: calc(100vh - 80px);
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 .landingInfoBox {
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50%;
-  margin-top: 60px;
+  height: 60%;
+  margin: 20px;
+  border-radius: 10px;
 }
 .landingHeading {
   padding: 0 20px;
   text-align: center;
   width: 90%;
-  margin: 0 auto;
-  font-size: 2.3em;
+  margin: 20 auto;
+  font-size: 2em;
 }
 .landingSubHeading {
   padding: 0 20px;
@@ -460,7 +520,7 @@
   height: 48px;
   width: 170px;
   font-size: 1em;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   outline: none;
   box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15);
 }
