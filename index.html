@@ -83,20 +83,20 @@
       </div>
 
       <form class="sideNavContactForm">
-        <div id="contactFormOpt1">
+        <div id="contactFormTitleRow">
           <!-- <i class="fas fa-comment contactFormIcon"></i> -->
           <div class="messageMenuTitle">Message Us</div>
-          <button type="button" class="messageCancelBtn">
+          <!-- <button type="button" class="messageCancelBtn">
             <i class="fas fa-times messageCancelIcon"></i>
-          </button>
+          </button> -->
         </div>
-        <div id="contactFormOpt2">
+        <div id="contactFormDescription">
           <div class="contactFormSubHeading">
             We would love to hear from you! Please feel free to send us a
             message below and we will get back to you shortly.
           </div>
         </div>
-        <div id="contactFormOpt3">
+        <div id="contactFormFullName">
           <div class="firstNameField">
             <input
               required
@@ -114,7 +114,7 @@
             />
           </div>
         </div>
-        <div id="contactFormOpt4">
+        <div id="contactFormEmail">
           <div class="emailField">
             <input
               required
@@ -124,14 +124,24 @@
             />
           </div>
         </div>
-        <div id="contactFormOpt5">
+        <div id="contactFormPhone">
+          <div id="phoneField">
+            <input
+              required
+              type="tel"
+              class="contactFormInput"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+        <div id="contactFormMessage">
           <textarea
             required
             class="messageInput"
             placeholder="Message"
           ></textarea>
         </div>
-        <div id="contactFormOpt6">
+        <div id="contactFormSend">
           <button type="submit" id="contactFormSubmitBtn">Send</button>
         </div>
       </form>
@@ -172,7 +182,7 @@
 
         <button class="sideNavMessageBtn">
           <i class="fas fa-comment messageIcon"></i>
-          <div class="messageBtnText">Message Us</div>
+          <div class="messageBtnText">Message</div>
         </button>
       </div>
     </div>
