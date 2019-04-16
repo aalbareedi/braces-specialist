@@ -141,8 +141,13 @@
             placeholder="Message"
           ></textarea>
         </div>
-        <div id="contactFormSend">
-          <button type="submit" id="contactFormSubmitBtn">Send</button>
+        <div id="contactFormButtons">
+          <button type="submit" id="formSubmitBtn" class="contactFormBtn">
+            Send
+          </button>
+          <button type="button" id="formCancelBtn" class="contactFormBtn">
+            Cancel
+          </button>
         </div>
       </form>
 
@@ -158,18 +163,32 @@
           </div>
         </div> -->
 
-        <button class="contactBtn" id="directionsBtn">
-          <i id="directionsIcon" class="fas fa-map-marker-alt contactIcon"></i>
-          <div class="contactBtnText">Directions</div>
+        <button class="dockContactBtn" id="directionsBtn">
+          <div class="contactBtnContainer">
+            <i
+              id="directionsIcon"
+              class="fas fa-map-marker-alt contactIcon"
+            ></i>
+            <div class="contactBtnText" id="directionsBtnText">Directions</div>
+          </div>
         </button>
 
-        <button class="contactBtn" id="callBtn">
-          <i id="callIcon" class="fas fa-phone contactIcon"></i>
-          <div class="contactBtnText">Call</div>
+        <button class="dockContactBtn" id="callBtn">
+          <div class="contactBtnContainer">
+            <i id="callIcon" class="fas fa-phone contactIcon"></i>
+            <div class="contactBtnText" id="callBtnText">Call</div>
+          </div>
+        </button>
+
+        <button class="sideNavMessageBtn">
+          <div class="contactBtnContainer">
+            <i class="fas fa-comment messageIcon"></i>
+            <div class="messageBtnText">Message</div>
+          </div>
         </button>
 
         <button id="instagramBtn" class="socialMediaIcon">
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram instagramIcon"></i>
         </button>
 
         <button id="linkedinBtn" class="socialMediaIcon">
@@ -178,11 +197,6 @@
 
         <button id="facebookBtn" class="socialMediaIcon">
           <i class="fab fa-facebook-f"></i>
-        </button>
-
-        <button class="sideNavMessageBtn">
-          <i class="fas fa-comment messageIcon"></i>
-          <div class="messageBtnText">Message</div>
         </button>
       </div>
     </div>
