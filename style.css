@@ -9,7 +9,7 @@
 
 .mainSiteNavbar {
   background-color: #48b5f3;
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -38,7 +38,7 @@
   justify-content: center;
 }
 .navToggleBtn {
-  width: 76px;
+  width: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,8 +56,8 @@
   background-color: white;
   position: fixed;
   width: 100%;
-  height: calc(100vh - 122px);
-  top: 70px;
+  height: calc(100vh - 112px);
+  top: 60px;
   right: 0;
 }
 
@@ -125,7 +125,7 @@
 .dropDownMarker {
   /* background-color: yellow; */
   position: absolute;
-  right: 30px;
+  right: 25px;
   /* display: none; */
 }
 .dropDownMarkerIcon {
@@ -145,11 +145,11 @@
   position: fixed;
   left: 0px;
   right: 0px;
-  top: 70px;
+  top: 60px;
   /* bottom: 0; */
   z-index: 10;
   border-top: 1px solid #bdc7d8;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
 }
 #contactFormTitleRow {
   position: relative;
@@ -378,10 +378,10 @@
   /* font-weight: 500; */
 }
 .dockContactBtn:active #directionsIcon {
-  font-size: 16px;
+  font-size: 14px;
 }
 .dockContactBtn:active #callIcon {
-  font-size: 1.4em;
+  font-size: 20px;
 }
 .dockContactBtn:active {
   border: 2px solid #1f93ff;
@@ -402,17 +402,18 @@
   grid-column: 3/5;
 }
 .contactIcon {
-  font-size: 16px;
   margin-right: 4px;
   /* position: absolute; */
 }
 #directionsIcon {
   color: red;
-  left: 8px;
+  font-size: 16px;
+  /* left: 8px; */
 }
 #callIcon {
   color: #2ba52b;
-  left: 12px;
+  font-size: 16px;
+  /* left: 12px; */
 }
 .contactBtnText {
   color: #616161;
@@ -421,10 +422,10 @@
   /* position: absolute; */
 }
 #directionsBtnText {
-  right: 2px;
+  /* right: 2px; */
 }
 #callBtnText {
-  left: 55px;
+  /* left: 55px; */
 }
 #instagramBtn {
   grid-row: 2/3;
@@ -457,7 +458,7 @@
   border: none;
 }
 .socialMediaIcon:active {
-  font-size: 1.8em;
+  font-size: 24px;
 }
 
 /* ************* SIDE NAV MESSAGE BUTTON ************* */
@@ -493,11 +494,11 @@
 /* ************************** CONTENT ************************** */
 
 .contentBox2 {
-  height: 500px;
+  height: 1000px;
   background-color: white;
 }
 .landingContent {
-  height: calc(100vh - 122px);
+  height: calc(100vh - 112px);
   background-color: white;
   /* display: flex;
   flex-direction: column; */
