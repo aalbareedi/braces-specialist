@@ -55,32 +55,10 @@
   background-color: white;
   position: fixed;
   width: 100%;
-  height: calc(100vh - 121px);
+  height: calc(100vh - 122px);
   top: 70px;
   right: 0;
-  /* box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25); */
 }
-
-/* .sideNavCancelBtn {
-  background-color: #48b5f3;
-  width: 74px;
-  position: absolute;
-  right: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none;
-}
-.cancelIcon {
-  font-size: 1.7em;
-  cursor: pointer;
-  color: white;
-}
-.cancelIcon:hover {
-  opacity: 0.6;
-} */
 
 /* **************** SIDE NAV MENU **************** */
 
@@ -98,14 +76,14 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 2px solid #e8e8e8;
 }
 .sideNavHeading:hover {
   cursor: pointer;
   color: #1f93ff;
 }
 #sideNavHeading1 {
-  border-top: 1px solid gainsboro;
+  /* border-top: 2px solid #e8e8e8; */
 }
 #sideNavSubHeading1 {
   display: none;
@@ -134,7 +112,7 @@
   /* background-color: pink; */
 }
 .bottomOpt {
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 2px solid #e8e8e8;
 }
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
@@ -161,7 +139,7 @@
 .contactForm {
   display: grid;
   display: none;
-  grid-template-rows: 60px 80px 50px 50px 50px 4fr 1fr 60px;
+  grid-template-rows: 60px 80px 50px 50px 50px 4fr 1fr 50px;
   background-color: whitesmoke;
   position: fixed;
   left: 0px;
@@ -305,26 +283,28 @@
   /* background-color: pink; */
 }
 #contactFormButtons {
+  /* background-color: pink; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 8px;
 }
 .contactFormBtn {
   outline: none;
   border: none;
   width: 50%;
   border-radius: 8px;
-  height: 40px;
+  height: 100%;
   display: flex;
   justify-content: center;
   color: #616161;
+  border: 2px solid gainsboro;
 }
 #formSubmitBtn {
-  /* background-color: #48b5f3;
-  color: white; */
-  background-color: gainsboro;
-  margin-right: 5px;
+  /* background-color: #48b5f3; */
+  /* color: white; */
+  background-color: #e8e8e8;
+  margin-right: 4px;
 }
 #formSubmitBtn:active {
   background-color: white;
@@ -332,12 +312,12 @@
   border: 1px solid #48b5f3;
 }
 #formCancelBtn {
-  background-color: gainsboro;
-  margin-left: 5px;
+  background-color: #e8e8e8;
+  margin-left: 4px;
 }
 .contactFormBtnText {
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   color: #616161;
   margin-left: 10px;
 }
@@ -381,19 +361,19 @@
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 8px;
   padding: 8px;
-  border-top: 1px solid gainsboro;
+  border-top: 2px solid #e8e8e8;
 }
 .dockContactBtn {
-  background-color: gainsboro;
+  background-color: #e8e8e8;
   cursor: pointer;
   outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  border: none;
+  /* border: none; */
   height: 34px;
-  /* border: 2px solid gray; */
+  border: 2px solid gainsboro;
   /* font-weight: 500; */
 }
 .dockContactBtn:active #directionsIcon {
@@ -436,7 +416,7 @@
 .contactBtnText {
   color: #616161;
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   /* position: absolute; */
 }
 #directionsBtnText {
@@ -472,7 +452,7 @@
   font-size: 20px;
   cursor: pointer;
   border-radius: 8px;
-  /* border: 2px solid gray; */
+  /* border: 2px solid lightgray; */
   border: none;
 }
 .socialMediaIcon:active {
@@ -481,14 +461,14 @@
 
 /* ************* SIDE NAV MESSAGE BUTTON ************* */
 .sideNavMessageBtn {
-  background-color: gainsboro;
+  background-color: #e8e8e8;
   border-radius: 8px;
   grid-column: 5/7;
-  /* border: 2px solid gray; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
+  /* border: none; */
+  border: 2px solid gainsboro;
   cursor: pointer;
   outline: none;
   height: 34px;
@@ -513,10 +493,10 @@
 
 .contentBox2 {
   height: 500px;
-  background-color: lightcoral;
+  background-color: white;
 }
 .landingContent {
-  height: calc(100vh - 121px);
+  height: calc(100vh - 122px);
   background-color: white;
   /* display: flex;
   flex-direction: column; */
