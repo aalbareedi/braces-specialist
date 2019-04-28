@@ -157,19 +157,21 @@
 
 /* ******************* CONTACT FORM ******************* */
 
+.contactWindow {
+  display: none;
+  background-color: pink;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
 .contactForm {
   display: grid;
-  /* display: none; */
-  grid-template-rows: 54px 70px 100px 44px 44px 44px 1fr 50px;
+  grid-template-rows: 54px 70px 100px 44px 44px 44px 100px 50px;
   background-color: whitesmoke;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  top: 60px;
-  /* bottom: 0; */
-  z-index: 10;
   border-top: 1px solid #bdc7d8;
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
 }
 #contactFormTitleRow {
   position: relative;
