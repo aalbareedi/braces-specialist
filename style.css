@@ -16,13 +16,9 @@
   position: -webkit-sticky;
   top: 0;
 }
-.navBrand {
-  display: flex;
-  align-items: center;
-}
 .navLogoIcon {
   /* background-color: white; */
-  width: 50px;
+  width: 70px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -31,13 +27,17 @@
 }
 .navLogoName {
   /* background-color: pink; */
-  width: 130px;
+  width: 230px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .navToggleBtn {
+  /* background-color: pink; */
   width: 64px;
   display: flex;
   justify-content: center;
@@ -373,7 +373,7 @@
   align-items: center;
   border-radius: 8px;
   /* border: none; */
-  height: 34px;
+  height: 38px;
   border: 2px solid gainsboro;
   /* font-weight: 500; */
 }
@@ -473,7 +473,7 @@
   border: 2px solid gainsboro;
   cursor: pointer;
   outline: none;
-  height: 34px;
+  height: 38px;
 }
 .messageIcon {
   color: #1f93ff;
