@@ -308,7 +308,7 @@
   justify-content: center;
   align-items: center;
   color: #616161;
-  border: 2px solid gainsboro;
+  border: 2px solid #c8c8c8;
 }
 #formSubmitBtn {
   background-color: lightgray;
@@ -356,7 +356,7 @@
   border-radius: 8px;
   /* border: none; */
   height: 38px;
-  border: 2px solid silver;
+  border: 2px solid #c8c8c8;
   width: 100%;
   /* font-weight: 500; */
 }
@@ -412,7 +412,37 @@
 #callBtnText {
   /* left: 55px; */
 }
-#instagramBtn {
+.sideNavMessageBtn {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  grid-column: 5/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: none; */
+  border: 2px solid #c8c8c8;
+  cursor: pointer;
+  outline: none;
+  height: 38px;
+}
+.messageIcon {
+  color: #1f93ff;
+  font-size: 16px;
+  /* left: 12px; */
+  margin-right: 5px;
+  /* position: absolute; */
+}
+.messageBtnText {
+  color: #616161;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  /* position: absolute; */
+  /* right: 10px; */
+}
+
+/* ************* SOCIAL MEDIA ************* */
+
+/* #instagramBtn {
   grid-row: 2/3;
   grid-column: 1/2;
 }
@@ -439,42 +469,11 @@
   font-size: 20px;
   cursor: pointer;
   border-radius: 8px;
-  /* border: 2px solid lightgray; */
   border: none;
 }
 .socialMediaIcon:active {
   font-size: 24px;
-}
-
-/* ************* SIDE NAV MESSAGE BUTTON ************* */
-.sideNavMessageBtn {
-  background-color: #e8e8e8;
-  border-radius: 8px;
-  grid-column: 5/7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: none; */
-  border: 2px solid silver;
-  cursor: pointer;
-  outline: none;
-  height: 38px;
-}
-.messageIcon {
-  color: #1f93ff;
-  font-size: 16px;
-  left: 12px;
-  margin-right: 5px;
-  /* position: absolute; */
-}
-.messageBtnText {
-  color: #616161;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  /* position: absolute; */
-  right: 10px;
-  /* font-weight: 500; */
-}
+} */
 
 /* ************************** CONTENT ************************** */
 
@@ -483,7 +482,6 @@
   background-color: white;
   /* display: flex;
   flex-direction: column; */
-  /* padding: 20px; */
 }
 .landingInfoBox {
   background-color: lightblue;
