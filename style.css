@@ -357,6 +357,7 @@
   /* border: none; */
   height: 38px;
   border: 2px solid gainsboro;
+  width: 100%;
   /* font-weight: 500; */
 }
 .dockContactBtn:active #directionsIcon {
@@ -370,7 +371,7 @@
   background-color: gainsboro;
 }
 .contactBtnContainer {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   justify-content: center;
   align-items: center;
