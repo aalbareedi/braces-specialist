@@ -142,6 +142,7 @@
 
     <div class="contactWindow">
       <div id="contactFormTitle">
+        <!-- <i class="fas fa-arrow-left"></i> -->
         <div class="messageMenuTitle">Message Us</div>
       </div>
       <div id="contactFormDescription">
@@ -151,58 +152,61 @@
         </div>
       </div>
       <div id="contactFormFullName">
-        <div class="firstNameField">
-          <input
-            required
-            type="text"
-            class="contactFormInput"
-            placeholder="First Name"
-          />
+        <div class="contactFormText">
+          Full Name<span class="formAsterik">*</span>
         </div>
-        <div class="lastNameField">
+        <div class="fullNameField">
           <input
             required
             type="text"
             class="contactFormInput"
-            placeholder="Last Name"
+            placeholder="Firstname Lastname"
           />
         </div>
       </div>
       <div id="contactFormEmail">
+        <div class="contactFormText">
+          Email Address<span class="formAsterik">*</span>
+        </div>
         <div class="emailField">
           <input
             required
             type="email"
             class="contactFormInput"
-            placeholder="Email"
+            placeholder="email@address.com"
           />
         </div>
       </div>
       <div id="contactFormPhone">
+        <div class="contactFormText">
+          Phone Number<span class="formAsterik">*</span>
+        </div>
         <div id="phoneField">
           <input
             required
             type="tel"
             class="contactFormInput"
-            placeholder="Phone Number"
+            placeholder="(555)123-4567"
           />
         </div>
       </div>
       <div id="contactFormMessage">
+        <div class="contactFormText">
+          Message<span class="formAsterik">*</span>
+        </div>
         <textarea
           required
-          class="messageInput"
-          placeholder="Message"
+          class="contactFormInput"
+          id="messageInput"
+          placeholder="Questions, comments, concerns ..."
         ></textarea>
       </div>
-
       <div id="contactFormButtons">
         <button type="submit" id="formSubmitBtn" class="contactFormBtn">
           <i class="fas fa-check"></i>
           <div class="contactFormBtnText">Send</div>
         </button>
         <button type="button" id="formCancelBtn" class="contactFormBtn">
-          <!-- <i class="fas fa-arrow-left"></i> -->
           <i class="fas fa-times"></i>
           <div class="contactFormBtnText">Cancel</div>
         </button>
