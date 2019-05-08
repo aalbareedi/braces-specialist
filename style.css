@@ -195,11 +195,11 @@
 .backArrow {
   /* background-color: pink; */
   position: absolute;
-  left: 3px;
+  left: 0px;
   font-size: 22px;
   color: darkgray;
   height: 48px;
-  width: 50px;
+  width: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,6 +244,7 @@
   width: 100%;
   outline: none;
   font-size: 14px;
+  border-radius: 0px;
 }
 .contactFormInput:focus {
   border: 1px solid #48b5f3;
