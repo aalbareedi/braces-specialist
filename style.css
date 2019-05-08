@@ -1,8 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  border-radius: 0px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  -webkit-appearance: none;
 }
 /* html {
   font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -198,7 +200,7 @@
   left: 0px;
   font-size: 22px;
   color: darkgray;
-  height: 48px;
+  height: 100%;
   width: 52px;
   display: flex;
   align-items: center;
