@@ -225,28 +225,46 @@
   margin-bottom: 18px;
   padding: 0px 20px;
 }
+.formIcon {
+  /* background-color: pink; */
+  position: absolute;
+  right: 13px;
+  top: 16px;
+  font-size: 13px;
+  color: silver;
+}
+#fullNameIcon {
+  right: 14px;
+}
+#emailIcon {
+  top: 17px;
+}
 #contactFormFullName {
   /* background-color: pink; */
 }
 .contactFormText {
-  height: 22px;
-  font-size: 14px;
+  height: 20px;
+  font-size: 13px;
 }
 .formAsterik {
   color: red;
   margin-left: 3px;
 }
-.fullNameField {
+.fullNameField,
+.emailField,
+.phoneField {
   width: 100%;
+  position: relative;
 }
 .contactFormInput {
-  height: 36px;
-  border: 1px solid #bdc7d8;
+  height: 46px;
+  border: 1px solid gainsboro;
   padding-left: 8px;
   width: 100%;
   outline: none;
   font-size: 14px;
   border-radius: 0px;
+  font-size: 16px;
 }
 .contactFormInput:focus {
   border: 1px solid #48b5f3;
@@ -267,14 +285,8 @@
 #contactFormEmail {
   /* background-color: lightblue; */
 }
-.emailField {
-  width: 100%;
-}
 #contactFormPhone {
   /* background-color: pink; */
-}
-#phoneField {
-  width: 100%;
 }
 #contactFormMessage {
   /* background: pink; */
