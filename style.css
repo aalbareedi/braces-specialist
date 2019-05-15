@@ -14,7 +14,6 @@
 
 .mainSiteNavbar {
   z-index: 10;
-  background-color: #48b5f3;
   background-color: white;
   height: 64px;
   width: 100%;
@@ -102,8 +101,9 @@
   position: fixed;
   width: 100%;
   height: calc(100vh - 112px);
-  top: 60px;
+  top: 64px;
   right: 0;
+  z-index: 100;
 }
 
 /* **************** SIDE NAV MENU **************** */
@@ -115,7 +115,7 @@
   /* padding-top: 5px; */
 }
 .sideNavHeading {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -132,7 +132,7 @@
   /* border-top: 2px solid #e8e8e8; */
 }
 #sideNavSubHeading1 {
-  display: none;
+  /* display: none; */
 }
 #sideNavSubHeading2 {
   display: none;
@@ -144,21 +144,19 @@
   display: none;
 }
 .subHeadingOpt {
-  background-color: white;
+  background-color: whitesmoke;
   color: #616161;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #e8e8e8;
 }
 .subHeadingOpt:hover {
   color: #1f93ff;
   /* background-color: pink; */
-}
-.bottomOpt {
-  border-bottom: 2px solid #e8e8e8;
 }
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
@@ -314,7 +312,7 @@
   color: #999;
 }
 #contactFormButtons {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -333,10 +331,10 @@
   justify-content: center;
   align-items: center;
   color: #616161;
-  border: 2px solid #c8c8c8;
+  border: 2px solid darkgray;
+  background-color: white;
 }
 #formSubmitBtn {
-  background-color: #f0f0f0;
   border: 2px solid gainsboro;
   color: silver;
   opacity: 0.6;
@@ -348,7 +346,6 @@
   border: 1px solid #48b5f3;
 } */
 #formCancelBtn {
-  background-color: #e8e8e8;
   margin-left: 4px;
 }
 .contactFormBtnText {
@@ -496,28 +493,20 @@
   height: calc(100vh - 118px);
   background-color: lightblue;
   position: relative;
-  /* display: flex;
-  flex-direction: column; */
 }
-/* .landingInfoBox {
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50%;
-} */
 .landingHeading {
-  background: orange;
+  /* background: orange; */
   text-align: center;
   width: 90%;
-  font-size: 2em;
-  margin: 0;
+  font-size: 32px;
+  margin: 0 auto;
 }
 .landingSubHeading {
-  background: lightpink;
+  /* background: lightpink; */
   padding: 0 20px;
   text-align: center;
   width: 90%;
+  margin: 0 auto;
 }
 .landingInfoFooter {
   display: grid;
@@ -549,9 +538,9 @@
 }
 .statsContent {
   /* height: calc(100vh - 64px); */
-  height: 520px;
+  height: 580px;
   background-color: white;
-  padding-top: 10px;
+  padding-top: 34px;
 }
 .statBox {
   /* background-color: lightblue; */
@@ -584,7 +573,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .learnMoreStatBtn {
   background-color: #1f93ff;
@@ -604,5 +593,5 @@
 }
 .emptyDockSpace {
   width: 100%;
-  height: 56px;
+  height: 54px;
 }
