@@ -25,7 +25,7 @@
   border-bottom: 2px solid #e8e8e8;
 }
 .navLogoIcon {
-  /* background-color: pink; */
+  background-color: pink;
   width: 60px;
   height: 100%;
   display: flex;
@@ -34,7 +34,7 @@
   font-size: 1.5em;
 }
 .navLogoName {
-  /* background-color: yellow; */
+  background-color: yellow;
   width: 190px;
   height: 100%;
   display: flex;
@@ -60,7 +60,7 @@
   font-weight: initial;
 }
 .navToggleBtn {
-  /* background-color: pink; */
+  background-color: pink;
   width: 64px;
   display: flex;
   justify-content: center;
