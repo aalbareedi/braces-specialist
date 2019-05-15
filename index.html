@@ -43,27 +43,10 @@
     </button>
 
     <div class="sideNavDock">
-      <!-- 4251 N. Milwaukee Ave Chicago, Illinois 60641
-          (773) 282-0013 -->
-
-      <a
-        id="directionsBtn"
-        href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
-      >
-        <button class="dockContactBtn" type="button">
-          <div class="contactBtnContainer">
-            <div id="directionsIcon" class="contactIcon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contactBtnText" id="directionsBtnText">Directions</div>
-          </div>
-        </button>
-      </a>
-
       <a href="tel:773-282-0013" id="callBtn">
         <button class="dockContactBtn" type="button">
           <div class="contactBtnContainer">
-            <div id="callIcon" class="contactIcon">
+            <div class="contactIcon" id="callIcon">
               <i class="fas fa-phone"></i>
             </div>
             <div class="contactBtnText" id="callBtnText">Call</div>
@@ -71,12 +54,26 @@
         </button>
       </a>
 
-      <button class="sideNavMessageBtn" type="button">
+      <a
+        id="directionsBtn"
+        href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+      >
+        <button class="dockContactBtn" type="button">
+          <div class="contactBtnContainer">
+            <div class="contactIcon" id="directionsIcon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contactBtnText" id="directionsBtnText">Directions</div>
+          </div>
+        </button>
+      </a>
+
+      <button class="dockContactBtn" id="messageBtn" type="button">
         <div class="contactBtnContainer">
-          <div class="messageIcon">
+          <div class="contactIcon" id="messageIcon">
             <i class="fas fa-comment"></i>
           </div>
-          <div class="messageBtnText">Message</div>
+          <div class="contactBtnText" id="messageBtnText">Message</div>
         </div>
       </button>
 
@@ -223,14 +220,19 @@
     </form>
 
     <div class="landingContent">
-      <div class="landingInfoBox">
-        <h1 class="landingHeading">Welcome to my mobile site layout</h1>
-        <div class="landingSubHeading">
-          Mobile sites make it easy for people to view your business. Mobile
-          sites should behave in a responsive manner.
-        </div>
-        <!-- <span>→</span> -->
+      <!-- <div class="landingInfoBox"> -->
+      <div class="landingHeading">Smile With A Passion</div>
+      <div class="landingSubHeading">
+        Mobile sites make it easy for people to view your business. Mobile sites
+        should behave in a responsive manner.
       </div>
+      <div class="landingInfoFooter">
+        <div class="landingInfoGrid" id="landingPhone">(773) 282-0013</div>
+        <div class="landingInfoGrid" id="landingAddress">
+          4251 N. Milwaukee Ave Chicago, Illinois 60641
+        </div>
+      </div>
+      <!-- </div> -->
     </div>
     <div class="statsContent">
       <div class="statBox">
@@ -241,7 +243,7 @@
         <div class="statNumber">5000+</div>
         <div class="statDescription">HAPPY SMILES</div>
       </div>
-      <div class="statBox" id="lastStatBox">
+      <div class="statBox">
         <div class="statNumber">100%</div>
         <div class="statDescription">ATTENTION TO DETAIL</div>
       </div>
