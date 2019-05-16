@@ -25,7 +25,7 @@
   border-bottom: 2px solid #e8e8e8;
 }
 .navLogoIcon {
-  background-color: pink;
+  /* background-color: pink; */
   width: 60px;
   height: 100%;
   display: flex;
@@ -34,7 +34,7 @@
   font-size: 1.5em;
 }
 .navLogoName {
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 190px;
   height: 100%;
   display: flex;
@@ -60,7 +60,7 @@
   font-weight: initial;
 }
 .navToggleBtn {
-  background-color: pink;
+  /* background-color: pink; */
   width: 64px;
   display: flex;
   justify-content: center;
@@ -178,7 +178,7 @@
 
 .contactWindow {
   display: none;
-  background-color: whitesmoke;
+  background-color: white;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -227,26 +227,31 @@
   /* background-color: pink; */
   position: absolute;
   right: 13px;
-  top: 16px;
-  font-size: 13px;
-  color: silver;
+  top: 18px;
+  font-size: 16px;
+  color: lightgray;
 }
 #fullNameIcon {
   right: 14px;
 }
-#emailIcon {
+/* #emailIcon {
   top: 17px;
-}
+} */
 #contactFormFullName {
   /* background-color: pink; */
 }
 .contactFormText {
-  height: 20px;
+  /* background-color: pink; */
+  height: 22px;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
 }
 .formAsterik {
   color: red;
   margin-left: 3px;
+  font-size: 14px;
 }
 .fullNameField,
 .emailField,
@@ -255,17 +260,18 @@
   position: relative;
 }
 .contactFormInput {
-  height: 46px;
-  border: 1px solid gainsboro;
+  height: 50px;
+  border: 2px solid #e8e8e8;
   padding-left: 8px;
   width: 100%;
   outline: none;
   font-size: 14px;
   border-radius: 0px;
   font-size: 16px;
+  letter-spacing: 0.4px;
 }
 .contactFormInput:focus {
-  border: 1px solid #48b5f3;
+  border: 2px solid #48b5f3;
   outline: none;
 }
 .contactFormInput::placeholder {
@@ -295,7 +301,7 @@
   height: 140px;
 }
 #messageInput:focus {
-  border: 1px solid #48b5f3;
+  border: 2px solid #48b5f3;
   outline: none;
 }
 #messageInput::placeholder {
@@ -316,26 +322,25 @@
   width: 100%;
   position: fixed;
   bottom: 0px;
-  height: 56px;
   display: flex;
   padding: 8px;
-  border-top: 2px solid #e8e8e8;
+  /* border-top: 2px solid #e8e8e8; */
 }
 .contactFormBtn {
   outline: none;
   border: none;
   width: 50%;
+  height: 40px;
   border-radius: 8px;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #616161;
-  border: 2px solid darkgray;
+  border: 3px solid lightgray;
   background-color: white;
 }
 #formSubmitBtn {
-  border: 2px solid gainsboro;
+  border: 3px solid gainsboro;
   color: silver;
   opacity: 0.6;
   margin-right: 4px;
@@ -356,24 +361,22 @@
 
 /* **************** BUTTONS DOCK **************** */
 
-.sideNavDock {
+.mainDock {
   background-color: #e8e8e8;
   width: 100%;
   position: fixed;
   bottom: 0;
-  /* height: 112px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 8px;
   padding: 8px;
-  /* border-top: 2px solid #e8e8e8; */
 }
 .dockContactBtn {
   /* border: none; */
   /* font-weight: 500; */
   background-color: white;
-  height: 38px;
+  height: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -381,7 +384,7 @@
   border-radius: 8px;
   cursor: pointer;
   outline: none;
-  border: 2px solid darkgray;
+  border: 3px solid lightgray;
 }
 
 .dockContactBtn:active #directionsIcon {
@@ -490,7 +493,7 @@
 /* ************************** CONTENT ************************** */
 
 .landingContent {
-  height: calc(100vh - 118px);
+  height: calc(100vh - 120px);
   background-color: lightblue;
   position: relative;
 }
@@ -593,5 +596,5 @@
 }
 .emptyDockSpace {
   width: 100%;
-  height: 54px;
+  height: 56px;
 }
