@@ -501,7 +501,7 @@
   /* background: orange; */
   text-align: center;
   width: 90%;
-  font-size: 32px;
+  font-size: 30px;
   margin: 0 auto;
 }
 .landingSubHeading {
@@ -587,6 +587,49 @@
   width: 120px;
   height: 40px;
   font-size: 14px;
+}
+/* **************** OFFICE INFO **************** */
+.officeInfoContent {
+  background-color: #383f43;
+  height: 700px;
+  padding-top: 20px;
+  font-family: Open Sans, arial, sans-serif;
+}
+.officeInfoHeading {
+  /* background-color: orange; */
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.officeHoursOpt {
+  /* background-color: yellow; */
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b3b3b3;
+}
+.officeIconRow {
+  position: relative;
+}
+.officeInfoIcon {
+  position: absolute;
+  left: 7%;
+  font-size: 18px;
+}
+#officeInfoOpt {
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#officeAddressIcon {
+  top: 12px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
