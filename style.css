@@ -227,8 +227,8 @@
   /* background-color: pink; */
   position: absolute;
   right: 13px;
-  top: 18px;
-  font-size: 16px;
+  top: 16px;
+  font-size: 17px;
   color: lightgray;
 }
 #fullNameIcon {
@@ -591,51 +591,56 @@
 /* **************** OFFICE INFO **************** */
 .officeInfoContent {
   background-color: #383f43;
-  height: 700px;
+  height: 580px;
   padding-top: 20px;
   font-family: Open Sans, arial, sans-serif;
 }
 .officeInfoHeading {
-  /* background-color: orange; */
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-size: 24px;
   color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
-.officeHoursOpt {
-  /* background-color: yellow; */
-  height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #b3b3b3;
-}
-.officeIconRow {
+.officeInfoHours,
+.officeInfoPhone {
   position: relative;
 }
 .officeInfoIcon {
   position: absolute;
   left: 7%;
+  top: 0px;
   font-size: 18px;
+  color: #b3b3b3;
 }
-#officeInfoOpt {
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.officeIconMargin {
+  margin-left: 3px;
 }
-
-#officeAddressIcon {
-  top: 12px;
+.officeHoursOpt {
+  height: 22px;
+  text-align: center;
+  color: #b3b3b3;
+}
+.hoursOptDay {
+  font-weight: bold;
+  line-height: initial;
+  letter-spacing: 1px;
+}
+.officeInfoAddress {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.officeInfoText {
+  text-align: center;
+  color: #b3b3b3;
+  letter-spacing: 0.2px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
 .footer {
   background-color: green;
-  height: 360px;
+  height: 100px;
 }
 .emptyDockSpace {
   width: 100%;
