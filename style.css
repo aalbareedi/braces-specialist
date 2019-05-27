@@ -100,7 +100,7 @@
   /* background-color: white; */
   position: fixed;
   width: 100%;
-  height: calc(100vh - 112px);
+  height: calc(100vh - 122px);
   top: 64px;
   right: 0;
   z-index: 100;
@@ -128,11 +128,8 @@
   cursor: pointer;
   color: #1f93ff;
 }
-#sideNavHeading1 {
-  /* border-top: 2px solid #e8e8e8; */
-}
 #sideNavSubHeading1 {
-  /* display: none; */
+  display: none;
 }
 #sideNavSubHeading2 {
   display: none;
@@ -220,23 +217,23 @@
   line-height: 18px;
 }
 .formOption {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   padding: 0px 20px;
 }
 .formIcon {
   /* background-color: pink; */
   position: absolute;
   right: 13px;
-  top: 16px;
+  top: 18px;
   font-size: 17px;
   color: lightgray;
 }
 #fullNameIcon {
   right: 14px;
 }
-/* #emailIcon {
-  top: 17px;
-} */
+#emailIcon {
+  top: 19px;
+}
 #contactFormFullName {
   /* background-color: pink; */
 }
@@ -247,6 +244,7 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.2px;
+  margin-bottom: 1px;
 }
 .formAsterik {
   color: red;
@@ -260,13 +258,13 @@
   position: relative;
 }
 .contactFormInput {
-  height: 50px;
+  height: 54px;
   border: 2px solid #e8e8e8;
   padding-left: 8px;
   width: 100%;
   outline: none;
-  border-radius: 0px;
-  font-size: 16px;
+  border-radius: 7px;
+  font-size: 18px;
   letter-spacing: 0.4px;
 }
 .contactFormInput:focus {
@@ -317,7 +315,7 @@
   color: #999;
 }
 #contactFormButtons {
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -336,13 +334,13 @@
   align-items: center;
   color: #616161;
   border: 3px solid silver;
-  background-color: whitesmoke;
 }
 #formSubmitBtn {
   border: 3px solid gainsboro;
   color: silver;
   opacity: 0.6;
   margin-right: 4px;
+  background-color: whitesmoke;
 }
 /* #formSubmitBtn:active {
   background-color: white;
@@ -351,6 +349,7 @@
 } */
 #formCancelBtn {
   margin-left: 4px;
+  background-color: white;
 }
 .contactFormBtnText {
   font-size: 13px;
@@ -361,7 +360,7 @@
 /* **************** BUTTONS DOCK **************** */
 
 .mainDock {
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -375,7 +374,7 @@
 .dockContactBtn {
   /* border: none; */
   /* font-weight: 500; */
-  background-color: whitesmoke;
+  background-color: white;
   height: 40px;
   width: 100%;
   display: flex;
@@ -608,10 +607,13 @@
 }
 .officeInfoIcon {
   position: absolute;
-  left: 7%;
+  left: 6%;
   top: 0px;
   font-size: 18px;
   color: #b3b3b3;
+}
+#officePhoneIcon {
+  top: 2px;
 }
 .officeIconMargin {
   margin-left: 3px;
