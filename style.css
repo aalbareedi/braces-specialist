@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /* html {
   font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -459,7 +460,7 @@
 
 .landingContent {
   height: calc(100vh - 122px);
-  background-color: gainsboro;
+  background-color: lightblue;
 }
 .landingHeading {
   /* background: orange; */
