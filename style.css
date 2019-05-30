@@ -453,47 +453,11 @@
   margin-right: 5px;
   /* left: 12px; */
 }
-
-/* ************* SOCIAL MEDIA ************* */
-
-/* #instagramBtn {
-  grid-row: 2/3;
-  grid-column: 1/2;
-}
-.instagramIcon {
-  font-size: 26px;
-}
-#facebookBtn {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-#linkedinBtn {
-  grid-row: 2/3;
-  grid-column: 3/4;
-}
-.socialMediaIcon {
-  background-color: gainsboro;
-  width: 100%;
-  height: 40px;
-  color: #616161;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
-}
-.socialMediaIcon:active {
-  font-size: 24px;
-} */
-
 /* ************************** CONTENT ************************** */
 
 .landingContent {
-  height: calc(100vh - 120px);
-  background-color: white;
+  height: calc(100vh - 122px);
+  background-color: gainsboro;
 }
 .landingHeading {
   /* background: orange; */
@@ -511,9 +475,9 @@
 }
 .statsContent {
   /* height: calc(100vh - 64px); */
-  height: 580px;
+  height: 550px;
   background-color: white;
-  padding-top: 34px;
+  padding-top: 30px;
 }
 .statBox {
   /* background-color: lightblue; */
@@ -526,7 +490,7 @@
 }
 .statNumber {
   /* background-color: yellow; */
-  height: 40px;
+  height: 30px;
   color: #1f93ff;
   display: flex;
   justify-content: center;
@@ -546,7 +510,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .learnMoreStatBtn {
   background-color: #1f93ff;
@@ -561,7 +525,7 @@
 /* **************** OFFICE INFO **************** */
 .officeInfoContent {
   background-color: #383f43;
-  height: 580px;
+  height: 500px;
   padding-top: 20px;
   font-family: Open Sans, arial, sans-serif;
 }
@@ -571,6 +535,7 @@
   color: white;
   margin-top: 40px;
   margin-bottom: 50px;
+  letter-spacing: 0.5px;
 }
 .officeInfoHours,
 .officeInfoPhone {
@@ -601,13 +566,44 @@
 }
 .officeInfoAddress {
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 .officeInfoText {
   text-align: center;
   color: #b3b3b3;
   letter-spacing: 0.2px;
+}
+/* ************* SOCIAL MEDIA ************* */
+.socialMediaContent {
+  background-color: #383f43;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.socialButtons {
+  /* background: orange; */
+  height: 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: 20px;
+  grid-column-gap: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.socialMediaButton {
+  background-color: #383f43;
+  border-radius: 10px;
+  border: 2px solid #b3b3b3;
+  font-size: 22px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIcon {
+  /* background-color: red; */
+  color: #b3b3b3;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
@@ -617,5 +613,5 @@
 }
 .emptyDockSpace {
   width: 100%;
-  height: 56px;
+  height: 58px;
 }
