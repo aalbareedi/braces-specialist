@@ -215,6 +215,7 @@
 .contactFormSubHeading {
   font-size: 14px;
   line-height: 18px;
+  color: black;
 }
 .formOption {
   margin-bottom: 16px;
@@ -258,6 +259,7 @@
   position: relative;
 }
 .contactFormInput {
+  background-color: white;
   height: 54px;
   border: 2px solid #e8e8e8;
   padding-left: 8px;
@@ -563,6 +565,7 @@
   font-weight: bold;
   line-height: initial;
   letter-spacing: 1px;
+  color: white;
 }
 .officeInfoAddress {
   position: relative;
@@ -572,6 +575,7 @@
   text-align: center;
   color: #b3b3b3;
   letter-spacing: 0.2px;
+  color: white;
 }
 /* ************* SOCIAL MEDIA ************* */
 .socialMediaContent {
@@ -582,17 +586,17 @@
 }
 .socialButtons {
   /* background: orange; */
-  height: 90px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   padding: 20px;
   grid-column-gap: 20px;
-  width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .socialMediaButton {
   background-color: #383f43;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   border: 2px solid #b3b3b3;
   font-size: 22px;
@@ -601,6 +605,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.socialMediaButton:active {
+  background-color: white;
+}
+.socialMediaButton:active .socialBtnIcon {
+  background-color: white;
 }
 .socialBtnIcon {
   background-color: #383f43;
@@ -614,7 +624,7 @@
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
 .footer {
-  background-color: green;
+  background-color: lightblue;
   height: 100px;
 }
 .emptyDockSpace {
