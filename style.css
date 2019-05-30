@@ -602,8 +602,9 @@
   align-items: center;
 }
 .socialIcon {
-  /* background-color: red; */
+  background-color: #383f43;
   color: #b3b3b3;
+  border: none;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
