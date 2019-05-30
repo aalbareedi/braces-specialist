@@ -597,14 +597,18 @@
   border: 2px solid #b3b3b3;
   font-size: 22px;
   outline: none;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.socialIcon {
+.socialBtnIcon {
   background-color: #383f43;
   color: #b3b3b3;
   border: none;
+  outline: none;
+}
+.socialIcon {
   outline: none;
 }
 
