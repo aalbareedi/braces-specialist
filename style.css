@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   -webkit-appearance: none;
+  /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /* html {
@@ -74,7 +75,7 @@
   color: black;
 }
 .navToggleBtn:active {
-  background-color: #e8e8e8;
+  background-color: gainsboro;
 }
 .backToTopBtn {
   display: flex;
@@ -384,8 +385,12 @@
   border: 3px solid silver;
 }
 .dockContactBtn:active {
-  border: 3px solid #1f93ff;
-  background-color: gainsboro;
+  /* border: 3px solid #1f93ff; */
+  background-color: silver;
+  color: white;
+}
+.dockContactBtn:active .contactBtnText {
+  color: white;
 }
 .dockContactBtn:active #directionsIcon {
   font-size: 14px;
@@ -519,10 +524,15 @@
   height: 40px;
   font-size: 14px;
 }
+.learnMoreStatBtn:active {
+  background-color: white;
+  color: black;
+  border: 2px solid #1f93ff;
+}
 /* **************** OFFICE INFO **************** */
 .officeInfoContent {
   background-color: #383f43;
-  height: 500px;
+  /* height: 500px; */
   padding-top: 20px;
   font-family: Open Sans, arial, sans-serif;
 }
@@ -534,9 +544,12 @@
   margin-bottom: 50px;
   letter-spacing: 0.5px;
 }
-.officeInfoHours,
+.officeInfoHours {
+  position: relative;
+}
 .officeInfoPhone {
   position: relative;
+  margin-bottom: 30px;
 }
 .officeInfoIcon {
   position: absolute;
