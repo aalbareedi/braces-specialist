@@ -103,7 +103,7 @@
         </div>
       </div>
       <div id="contactFormFullName" class="formOption">
-        <label class="contactFormText">
+        <label for="nameInput" class="contactFormText">
           Full Name<span class="formAsterik">*</span>
         </label>
         <div class="fullNameField">
@@ -112,6 +112,7 @@
           </div>
           <input
             required
+            id="nameInput"
             type="text"
             class="contactFormInput"
             placeholder="Firstname Lastname"
@@ -119,7 +120,7 @@
         </div>
       </div>
       <div id="contactFormEmail" class="formOption">
-        <label class="contactFormText">
+        <label for="emailInput" class="contactFormText">
           Email Address<span class="formAsterik">*</span>
         </label>
         <div class="emailField">
@@ -128,6 +129,7 @@
           </div>
           <input
             required
+            id="emailInput"
             type="email"
             class="contactFormInput"
             placeholder="email@address.com"
@@ -135,13 +137,14 @@
         </div>
       </div>
       <div id="contactFormPhone" class="formOption">
-        <div class="contactFormText">
+        <label for="phoneInput" class="contactFormText">
           Phone Number<span class="formAsterik">*</span>
-        </div>
+        </label>
         <div class="phoneField">
           <div class="formIcon"><i class="fas fa-phone"></i></div>
           <input
             required
+            id="phoneInput"
             type="tel"
             class="contactFormInput"
             placeholder="(555) 123-4567"
@@ -149,9 +152,9 @@
         </div>
       </div>
       <div id="contactFormMessage">
-        <div class="contactFormText">
+        <label for="messageInput" class="contactFormText">
           Message<span class="formAsterik">*</span>
-        </div>
+        </label>
         <textarea
           required
           class="contactFormInput"
