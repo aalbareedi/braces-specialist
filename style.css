@@ -193,10 +193,11 @@
   font-size: 22px;
   color: darkgray;
   height: 100%;
-  width: 52px;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 6px;
 }
 .backArrow:active {
   color: black;
