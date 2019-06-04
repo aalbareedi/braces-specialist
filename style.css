@@ -352,6 +352,9 @@
   background-color: silver;
   color: white;
 }
+.formCancelIcon {
+  font-size: 16px;
+}
 .contactFormBtnText {
   font-size: 13px;
   letter-spacing: 0.5px;
