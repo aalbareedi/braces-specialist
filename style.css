@@ -16,7 +16,7 @@
 
 .mainSiteNavbar {
   z-index: 10;
-  background-color: whitesmoke;
+  background-color: lightgray;
   height: 64px;
   width: 100%;
   display: flex;
@@ -24,7 +24,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  border-bottom: 2px solid #e8e8e8;
+  /* border-bottom: 2px solid #e8e8e8; */
 }
 .navLogoIcon {
   /* background-color: pink; */
@@ -33,7 +33,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5em;
+  padding-left: 3px;
+}
+#mainLogo {
+  height: 42px;
 }
 .navLogoName {
   /* background-color: yellow; */
@@ -47,10 +50,16 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.businessNameText {
+.logoTextTop {
   /* background-color: lightgreen; */
-  font-size: 14px;
-  margin-bottom: 3px;
+  /* margin-bottom: 3px; */
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.logoTextBottom {
+  /* background-color: lightgreen; */
+  font-size: 12px;
+  /* margin-bottom: 3px; */
 }
 .doctorNameText {
   /* background-color: lightblue; */
@@ -72,7 +81,7 @@
 }
 .navToggleIcon {
   font-size: 24px;
-  color: black;
+  color: white;
 }
 .navToggleBtn:active {
   background-color: gainsboro;
@@ -171,12 +180,11 @@
 /* ******************* CONTACT FORM ******************* */
 
 .contactWindow {
-  /* display: none; */
-  background-color: white;
-  height: 100vh;
-  width: 100%;
-  z-index: 100;
-  position: fixed;
+  display: none;
+  background-color: whitesmoke;
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* z-index: 100; */
 }
 #contactFormTitle {
   /* background: lightblue; */
@@ -210,7 +218,6 @@
 }
 #contactFormDescription {
   padding: 0px 20px;
-  /* margin-bottom: 10px; */
   height: 80px;
 }
 .contactFormSubHeading {
@@ -325,6 +332,7 @@
   display: flex;
   padding: 8px;
   border-top: 2px solid #e8e8e8;
+  z-index: 1000;
 }
 .contactFormBtn {
   outline: none;
