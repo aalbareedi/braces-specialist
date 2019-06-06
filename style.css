@@ -16,7 +16,7 @@
 
 .mainSiteNavbar {
   z-index: 10;
-  background-color: lightgray;
+  background-color: whitesmoke;
   height: 64px;
   width: 100%;
   display: flex;
@@ -36,7 +36,7 @@
   padding-left: 3px;
 }
 #mainLogo {
-  height: 42px;
+  height: 34px;
 }
 .navLogoName {
   /* background-color: yellow; */
@@ -81,7 +81,7 @@
 }
 .navToggleIcon {
   font-size: 24px;
-  color: white;
+  color: black;
 }
 .navToggleBtn:active {
   background-color: gainsboro;
@@ -473,7 +473,7 @@
 
 .landingContent {
   height: calc(100vh - 122px);
-  background-color: lightblue;
+  background-color: silver;
 }
 .landingHeading {
   /* background: orange; */
