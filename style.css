@@ -24,7 +24,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  /* border-bottom: 2px solid #e8e8e8; */
+  border-bottom: 2px solid #e8e8e8;
 }
 .navLogoIcon {
   /* background-color: pink; */
@@ -417,6 +417,9 @@
 .dockContactBtn:active #callIcon {
   font-size: 22px;
 }
+.dockContactBtn:active #messageIcon {
+  font-size: 14px;
+}
 .contactBtnContainer {
   /* background-color: pink; */
   /* position: relative; */
@@ -436,6 +439,9 @@
   grid-row: 1/2;
   text-decoration: none;
 }
+#messageBtn {
+  grid-column: 3/4;
+}
 .contactIcon {
   /* background: yellow; */
   /* position: absolute; */
@@ -448,6 +454,11 @@
 }
 #callIcon {
   color: #2ba52b;
+  /* left: 12px; */
+}
+#messageIcon {
+  color: #1f93ff;
+  margin-right: 5px;
   /* left: 12px; */
 }
 .contactBtnText {
@@ -466,14 +477,7 @@
 /* #messageBtnText {
   right: 10px;
 } */
-#messageBtn {
-  grid-column: 3/4;
-}
-#messageIcon {
-  color: #1f93ff;
-  margin-right: 5px;
-  /* left: 12px; */
-}
+
 /* ************************** CONTENT ************************** */
 
 .landingContent {
