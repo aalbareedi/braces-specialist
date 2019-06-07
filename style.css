@@ -42,28 +42,29 @@
 }
 .navLogoName {
   /* background-color: yellow; */
-  /* width: 190px; */
+  width: 140px;
   height: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: center; */
   position: absolute;
   left: 60px;
-  /* transform: translateX(-50%); */
+  padding-top: 12px;
 }
 .logoTextTop {
   /* background-color: lightgreen; */
   /* margin-bottom: 3px; */
-  font-size: 18px;
+  font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
   /* background-color: lightgreen; */
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Titillium Web", sans-serif;
-  letter-spacing: 0.5px;
+  /* font-family: "Roboto Condensed", sans-serif; */
+  letter-spacing: 0.4px;
   /* margin-bottom: 3px; */
 }
 .doctorNameText {
