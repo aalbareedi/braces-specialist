@@ -28,10 +28,10 @@
 }
 .navLogoIcon {
   /* background-color: pink; */
-  width: 60px;
+  width: 48px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding-left: 3px;
   position: absolute;
@@ -49,8 +49,8 @@
   align-items: flex-start;
   justify-content: center; */
   position: absolute;
-  left: 60px;
-  padding-top: 12px;
+  left: 57px;
+  padding-top: 13px;
 }
 .logoTextTop {
   /* background-color: lightgreen; */
@@ -487,7 +487,7 @@
 .landingContent {
   height: calc(100vh - 122px);
   background-color: silver;
-  padding-top: 80px;
+  padding-top: 140px;
 }
 .landingHeading {
   /* background: orange; */
