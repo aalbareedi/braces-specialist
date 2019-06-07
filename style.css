@@ -55,12 +55,15 @@
 .logoTextTop {
   /* background-color: lightgreen; */
   /* margin-bottom: 3px; */
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.5px;
+  font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
   /* background-color: lightgreen; */
-  font-size: 12px;
+  font-size: 13px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.5px;
   /* margin-bottom: 3px; */
 }
 .doctorNameText {
