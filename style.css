@@ -39,7 +39,7 @@
   /* background-color: yellow; */
   height: 100%;
   position: absolute;
-  left: 56px;
+  left: 53px;
   padding-top: 13px;
 }
 .logoTextTop {
@@ -81,7 +81,7 @@
   color: black;
 }
 .navToggleBtn:active {
-  background-color: gainsboro;
+  background-color: lightgray;
 }
 .backToTopBtn {
   display: flex;
@@ -617,6 +617,7 @@
 }
 .officePhoneText {
   color: #b3b3b3;
+  text-decoration: none;
 }
 /* ************* SOCIAL MEDIA ************* */
 .socialMediaContent {
