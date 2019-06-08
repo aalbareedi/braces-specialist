@@ -8,9 +8,6 @@
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* html {
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-} */
 
 /* ******************** MAIN NAV-BAR ******************** */
 
@@ -563,8 +560,33 @@
   margin-bottom: 50px;
   letter-spacing: 0.5px;
 }
-.officeInfoHours {
+.officeInfoContainer {
+  display: flex;
+  justify-content: center;
   position: relative;
+}
+.officeInfoGrid {
+  /* background-color: lightblue; */
+  /* width: 300px; */
+  /* height: 300px; */
+  display: grid;
+  grid-template-columns: 100px 148px;
+  grid-template-rows: repeat(7, 26px);
+  margin-right: 38px;
+  /* margin: 0 auto; */
+}
+.officeDay {
+  color: white;
+  text-align: right;
+  letter-spacing: 0.3px;
+}
+.officeTime {
+  text-align: right;
+  color: #b3b3b3;
+}
+.officeClosed {
+  text-align: left;
+  margin-left: 10px;
 }
 .officeInfoPhone {
   position: relative;
@@ -577,22 +599,11 @@
   font-size: 18px;
   color: #b3b3b3;
 }
-#officePhoneIcon {
+/* #officePhoneIcon {
   top: 2px;
-}
+} */
 .officeIconMargin {
   margin-left: 3px;
-}
-.officeHoursOpt {
-  height: 22px;
-  text-align: center;
-  color: #b3b3b3;
-}
-.hoursOptDay {
-  font-weight: bold;
-  line-height: initial;
-  letter-spacing: 1px;
-  color: white;
 }
 .officeInfoAddress {
   position: relative;
@@ -600,9 +611,12 @@
 }
 .officeInfoText {
   text-align: center;
-  color: #b3b3b3;
   letter-spacing: 0.2px;
   color: white;
+  line-height: 19px;
+}
+.officePhoneText {
+  color: #b3b3b3;
 }
 /* ************* SOCIAL MEDIA ************* */
 .socialMediaContent {
