@@ -509,7 +509,7 @@
 .statNumber {
   /* background-color: yellow; */
   height: 30px;
-  color: #1f93ff;
+  color: #37d0ce;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +531,8 @@
   margin-top: 10px;
 }
 .learnMoreStatBtn {
-  background-color: #1f93ff;
+  background-color: #37d0ce;
+  /* background-color: #1f93ff; */
   color: white;
   border: none;
   outline: none;
@@ -543,7 +544,7 @@
 .learnMoreStatBtn:active {
   background-color: white;
   color: black;
-  border: 2px solid #1f93ff;
+  border: 2px solid #37d0ce;
 }
 /* **************** OFFICE INFO **************** */
 .officeInfoContent {
@@ -564,6 +565,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  padding-top: 2px;
 }
 .officeInfoGrid {
   /* background-color: lightblue; */
@@ -601,7 +603,7 @@
   left: 6%;
   top: 0px;
   font-size: 18px;
-  color: #b3b3b3;
+  color: #37d0ce;
 }
 /* #officePhoneIcon {
   top: 2px;
