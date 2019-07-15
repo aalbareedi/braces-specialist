@@ -31,13 +31,12 @@
       href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap"
       rel="stylesheet"
     />
-    <script src="mobile.js"></script>
   </head>
 
   <body>
-    <nav class="mainSiteNavbar">
+    <nav id="mainSiteNavbar">
       <div class="navLogoIcon">
-        <img id="mainLogo" src="./logo60.svg" />
+        <img id="mainLogo" src="./logo60blue.svg" />
       </div>
       <div class="navLogoName">
         <div class="logoTextTop">Orthodontic</div>
@@ -46,8 +45,8 @@
           Said Albareedi <span id="certification">DDS, MS</span>
         </div> -->
       </div>
-      <div class="navToggleBtn">
-        <i class="fas fa-bars navToggleIcon"></i>
+      <div class="navToggleBtn" id="navToggleBtn">
+        <i class="fas fa-bars navToggleIcon" id="navToggleIcon"></i>
       </div>
     </nav>
 
@@ -55,54 +54,19 @@
       <i class="fas fa-chevron-up upBtn"></i>
     </button>
 
-    <div class="sideNavWindow">
+    <div class="sideNavWindow displayHidden" id="sideNavWindow">
       <div class="sideNavMenu">
-        <div class="sideNavHeading" id="sideNavHeading1">
-          <div class="sideNavText">ABOUT US</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-
-        <div id="sideNavSubHeading1">
-          <div class="subHeadingOpt">Our Philosophy</div>
-          <div class="subHeadingOpt">Hours & Location</div>
-          <div class="subHeadingOpt">Braces Treatment</div>
-          <div class="subHeadingOpt">Our Team</div>
-          <div class="subHeadingOpt">FAQ</div>
-        </div>
-
-        <div class="sideNavHeading" id="sideNavHeading2">
-          <div class="sideNavText">SOLUTIONS</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-
-        <div id="sideNavSubHeading2">
-          <div class="subHeadingOpt">About</div>
-          <div class="subHeadingOpt">Partners</div>
-          <div class="subHeadingOpt">Careers</div>
-        </div>
-
-        <div class="sideNavHeading" id="sideNavHeading3">
-          <div class="sideNavText">COMPANY</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-
-        <div id="sideNavSubHeading3">
-          <div class="subHeadingOpt">About</div>
-          <div class="subHeadingOpt">Partners</div>
-          <div class="subHeadingOpt">Careers</div>
-        </div>
+        <div class="sideNavMenuOpt">About Us</div>
+        <div class="sideNavMenuOpt">Hours & Location</div>
+        <div class="sideNavMenuOpt">Braces Treatment</div>
+        <div class="sideNavMenuOpt">Our Team</div>
+        <div class="sideNavMenuOpt">FAQ</div>
       </div>
     </div>
 
-    <form class="contactWindow">
+    <form class="contactWindow displayHidden" id="contactWindow">
       <div id="contactFormTitle">
-        <div class="backArrow">
+        <div class="backArrow" id="backArrow">
           <i class="fas fa-arrow-left"></i>
         </div>
         <div class="messageMenuTitle">Message Us</div>
@@ -333,5 +297,6 @@
         <!-- </div> -->
       </button>
     </div>
+    <script src="mobile.js"></script>
   </body>
 </html>

@@ -3,16 +3,24 @@
   padding: 0;
   border-radius: 0px;
   box-sizing: border-box;
-  /* font-family: "Roboto", sans-serif; */
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
   -webkit-appearance: none;
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.overflowHidden {
+  overflow: hidden;
+}
+
+.displayHidden {
+  display: none;
+}
+
 /* ******************** MAIN NAV-BAR ******************** */
 
-.mainSiteNavbar {
+#mainSiteNavbar {
   z-index: 10;
   background-color: whitesmoke;
   height: 64px;
@@ -53,7 +61,7 @@
   /* background-color: lightgreen; */
   font-size: 14px;
   letter-spacing: 0.4px;
-  /* font-family: "Titillium Web", sans-serif; */
+  font-family: "Titillium Web", sans-serif;
 }
 .doctorNameText {
   /* background-color: lightblue; */
@@ -105,49 +113,23 @@
 }
 
 /* *********************** SIDE NAV WINDOW *********************** */
-
 .sideNavWindow {
-  display: none;
-  /* background-color: white; */
+  /* display: none; */
   position: fixed;
   width: 100%;
-  height: calc(100vh - 122px);
+  height: calc(100vh - 64px - 58px);
   top: 64px;
   right: 0;
   z-index: 100;
 }
-
 /* **************** SIDE NAV MENU **************** */
 
 .sideNavMenu {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  /* padding-top: 5px; */
 }
-.sideNavHeading {
-  background-color: white;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border-bottom: 2px solid #e8e8e8;
-}
-#sideNavSubHeading1 {
-  display: none;
-}
-#sideNavSubHeading2 {
-  display: none;
-}
-#sideNavSubHeading3 {
-  display: none;
-}
-#sideNavSubHeading4 {
-  display: none;
-}
-.subHeadingOpt {
+.sideNavMenuOpt {
   background-color: whitesmoke;
   color: #616161;
   cursor: pointer;
@@ -158,30 +140,19 @@
   align-items: center;
   border-bottom: 2px solid #e8e8e8;
 }
-.sideNavText {
-  /* font-family: "Poppins", sans-serif; */
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  /* background-color: lightblue; */
-}
-.dropDownMarker {
-  /* background-color: yellow; */
-  position: absolute;
-  right: 24px;
-}
-.dropDownMarkerIcon {
-  color: #1f93ff;
+.sideNavMenuOpt:active {
+  background-color: #e8e8e8;
+  color: white;
 }
 
 /* ******************* CONTACT FORM ******************* */
 
 .contactWindow {
-  display: none;
   background-color: whitesmoke;
-  /* height: 100vh; */
-  /* position: fixed; */
-  /* z-index: 100; */
+  overflow: scroll;
+  height: calc(100vh - 64px - 58px);
+  position: fixed;
+  z-index: 100;
 }
 #contactFormTitle {
   /* background: lightblue; */
@@ -329,7 +300,7 @@
   display: flex;
   padding: 8px;
   border-top: 2px solid #e8e8e8;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 .contactFormBtn {
   outline: none;
@@ -459,6 +430,8 @@
   /* background: orange; */
   color: #616161;
   font-size: 13px;
+  font-family: "Titillium Web", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 }
 /* #directionsBtnText {
   right: 2px;
@@ -509,7 +482,7 @@
 .statNumber {
   /* background-color: yellow; */
   height: 30px;
-  color: #37d0ce;
+  color: #37d0e1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +504,7 @@
   margin-top: 10px;
 }
 .learnMoreStatBtn {
-  background-color: #37d0ce;
+  background-color: #37d0e1;
   /* background-color: #1f93ff; */
   color: white;
   border: none;
@@ -551,7 +524,11 @@
   background-color: #383f43;
   /* height: 500px; */
   padding-top: 10px;
-  font-family: Open Sans, arial, sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
+}
+.officeInfoContent * {
+  /* font-family: inherit; */
+  font-family: "Titillium Web", sans-serif;
 }
 .officeInfoHeading {
   text-align: center;
@@ -603,7 +580,7 @@
   left: 6%;
   top: 0px;
   font-size: 18px;
-  color: #37d0ce;
+  color: #37d0e1;
 }
 /* #officePhoneIcon {
   top: 2px;
