@@ -27,8 +27,8 @@
   background-color: whitesmoke;
   height: 64px;
   width: 100%;
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
+  /* position: -webkit-sticky; */
   top: 0;
   border-bottom: 2px solid #e8e8e8;
 }
@@ -451,6 +451,7 @@
   height: calc(100vh - 122px);
   background-color: silver;
   padding-top: 140px;
+  margin-top: 64px;
 }
 .landingHeading {
   /* background: orange; */
@@ -458,7 +459,7 @@
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */
