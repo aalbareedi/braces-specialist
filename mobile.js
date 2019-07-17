@@ -10,6 +10,7 @@ let contactForm = document.getElementById("contactWindow");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
 let body = document.getElementsByTagName("body")[0];
+let html = document.getElementsByTagName("html")[0];
 
 mainNavBar.onclick = function() {
   body.scrollTop = 0;
@@ -34,16 +35,19 @@ navToggleBtn.onclick = function(event) {
 };
 
 messageBtn.onclick = function() {
+  html.classList.add("overflowHidden");
   contactForm.classList.remove("displayHidden");
   body.classList.add("overflowHidden");
 };
 
 contactFormCancelBtn.onclick = function() {
+  html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
 };
 
 contactFromBackArrow.onclick = function() {
+  html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
 };
