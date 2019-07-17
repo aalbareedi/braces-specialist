@@ -12,6 +12,8 @@
 
 .overflowHidden {
   overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 .displayHidden {
@@ -456,6 +458,7 @@
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
