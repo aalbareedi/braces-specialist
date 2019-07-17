@@ -155,6 +155,7 @@
   height: calc(100vh - 64px - 58px);
   position: fixed;
   z-index: 100;
+  margin-top: 64px;
 }
 #contactFormTitle {
   /* background: lightblue; */
@@ -459,7 +460,7 @@
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
