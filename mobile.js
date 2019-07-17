@@ -9,7 +9,7 @@ let messageBtn = document.getElementById("messageBtn");
 let contactForm = document.getElementById("contactWindow");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
-let body = document.documentElement;
+let body = document.getElementsByTagName("body")[0];
 
 mainNavBar.onclick = function() {
   body.scrollTop = 0;
