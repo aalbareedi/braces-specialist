@@ -272,7 +272,7 @@
 }
 #contactFormMessage {
   /* background: pink; */
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 120px 20px;
 }
 #messageInput {
   padding: 8px 8px 0 8px;
@@ -460,7 +460,7 @@
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */
