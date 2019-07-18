@@ -152,6 +152,7 @@
 .contactWindow {
   background-color: whitesmoke;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   height: calc(100vh - 64px - 58px);
   position: fixed;
   z-index: 100;
@@ -460,7 +461,7 @@
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */
