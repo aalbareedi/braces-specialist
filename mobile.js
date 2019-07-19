@@ -11,7 +11,13 @@ let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
 let body = document.getElementsByTagName("body")[0];
 let html = document.getElementsByTagName("html")[0];
-let formInputFields = document.querySelectorAll("input", "textarea");
+let formInputFields = document.querySelectorAll("input, textarea");
+
+for (let i = 0; i < formInputFields.length; i++) {
+  formInputFields[i].onfocus = function() {
+    contactForm.scrollTop = this.offsetTop;
+  };
+}
 
 mainNavBar.onclick = function() {
   body.scrollTop = 0;
