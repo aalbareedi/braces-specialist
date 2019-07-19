@@ -9,13 +9,23 @@ let messageBtn = document.getElementById("messageBtn");
 let contactForm = document.getElementById("contactWindow");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
+let contactFormButtonsBar = document.getElementById("contactFormButtons");
 let body = document.getElementsByTagName("body")[0];
 let html = document.getElementsByTagName("html")[0];
 let formInputFields = document.querySelectorAll("input, textarea");
+let mainDock = document.getElementById("mainDock");
 
 for (let i = 0; i < formInputFields.length; i++) {
   formInputFields[i].onfocus = function() {
     contactForm.scrollTop = this.offsetTop;
+
+    contactFormButtonsBar.classList.add("displayHidden");
+    mainDock.classList.add("displayHidden");
+  };
+
+  formInputFields[i].onblur = function() {
+    contactFormButtonsBar.classList.remove("displayHidden");
+    mainDock.classList.remove("displayHidden");
   };
 }
 
