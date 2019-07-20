@@ -18,8 +18,8 @@ let mainDock = document.getElementById("mainDock");
 for (let i = 0; i < formInputFields.length; i++) {
   formInputFields[i].onfocus = function() {
     contactForm.scrollTop =
-      contactForm.getBoundingClientRect().top -
-      this.getBoundingClientRect().top;
+      this.getBoundingClientRect().top -
+      contactForm.getBoundingClientRect().top;
     console.log(this.offsetTop);
 
     contactFormButtonsBar.classList.add("displayHidden");
