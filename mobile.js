@@ -31,7 +31,7 @@ for (let i = 0; i < formInputFields.length; i++) {
 
     setTimeout(function() {
       if (currentInput.tagName == "TEXTAREA") {
-        contactForm.scrollTop += currentInput.getBoundingClientRect().top - 94;
+        contactForm.scrollTop += currentInput.getBoundingClientRect().top - 104;
       } else {
         contactForm.scrollTop += currentInput.getBoundingClientRect().top - 164;
       }
