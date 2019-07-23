@@ -3,11 +3,14 @@
   padding: 0;
   border-radius: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  /* font-family: "Titillium Web", sans-serif; */
   -webkit-appearance: none;
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
 }
 
 .overflowHidden {
@@ -115,7 +118,7 @@
 }
 
 /* *********************** SIDE NAV WINDOW *********************** */
-.sideNavWindow {
+#sideNavWindow {
   /* display: none; */
   position: fixed;
   width: 100%;
@@ -149,7 +152,7 @@
 
 /* ******************* CONTACT FORM ******************* */
 
-.contactWindow {
+#contactWindow {
   background-color: whitesmoke;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
@@ -449,7 +452,7 @@
 
 /* ************************** CONTENT ************************** */
 
-.landingBox {
+#landingBox {
   height: calc(100vh - 122px);
   background-color: silver;
   padding-top: 140px;
@@ -470,7 +473,7 @@
   width: 90%;
   margin: 0 auto;
 }
-.statsContent {
+#statsContent {
   /* height: calc(100vh - 64px); */
   height: 550px;
   background-color: white;
@@ -526,14 +529,10 @@
   border: 2px solid #37d0ce;
 }
 /* **************** OFFICE INFO **************** */
-.officeInfoContent {
+#officeInfoContent {
   background-color: #383f43;
   /* height: 500px; */
   padding-top: 10px;
-  /* font-family: "Titillium Web", sans-serif; */
-}
-.officeInfoContent * {
-  /* font-family: inherit; */
   font-family: "Titillium Web", sans-serif;
 }
 .officeInfoHeading {

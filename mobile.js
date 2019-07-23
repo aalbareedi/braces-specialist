@@ -1,6 +1,9 @@
 // Remove Gray Highlight When Tapping Links in Mobile Safari
 document.addEventListener("touchstart", function() {}, true);
 
+let html = document.getElementsByTagName("html")[0];
+let body = document.getElementsByTagName("body")[0];
+let mainDock = document.getElementById("mainDock");
 let mainNavBar = document.getElementById("mainSiteNavbar");
 let navToggleBtn = document.getElementById("navToggleBtn");
 let navToggleIcon = document.getElementById("navToggleIcon");
@@ -10,17 +13,21 @@ let contactForm = document.getElementById("contactWindow");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
 let contactFormButtonsBar = document.getElementById("contactFormButtons");
-let body = document.getElementsByTagName("body")[0];
-let html = document.getElementsByTagName("html")[0];
 let formInputFields = document.querySelectorAll("input, textarea");
-let mainDock = document.getElementById("mainDock");
 
 for (let i = 0; i < formInputFields.length; i++) {
   formInputFields[i].onfocus = function() {
-    contactForm.scrollTop =
-      this.getBoundingClientRect().top -
-      contactForm.getBoundingClientRect().top;
-    console.log(this.offsetTop);
+    // this.getBoundingClientRect().top -
+    // contactForm.getBoundingClientRect().top;
+
+    console.log("textbox");
+    console.log(this.getBoundingClientRect().top);
+    console.log("form");
+    console.log(contactForm.getBoundingClientRect().top);
+    console.log("this");
+    console.log(this);
+
+    contactForm.scrollTop += this.getBoundingClientRect().top - 164;
 
     contactFormButtonsBar.classList.add("displayHidden");
     mainDock.classList.add("displayHidden");
