@@ -20,17 +20,21 @@ for (let i = 0; i < formInputFields.length; i++) {
     // this.getBoundingClientRect().top -
     // contactForm.getBoundingClientRect().top;
 
-    console.log("textbox");
-    console.log(this.getBoundingClientRect().top);
-    console.log("form");
-    console.log(contactForm.getBoundingClientRect().top);
-    console.log("this");
-    console.log(this);
+    // console.log("textbox");
+    // console.log(this.getBoundingClientRect().top);
+    // console.log("form");
+    // console.log(contactForm.getBoundingClientRect().top);
+    // console.log("this");
+    // console.log(this);
 
     let currentInput = this;
 
     setTimeout(function() {
-      contactForm.scrollTop += currentInput.getBoundingClientRect().top - 164;
+      if (this.tagname == "TEXTAREA") {
+        contactForm.scrollTop += currentInput.getBoundingClientRect().top - 94;
+      } else {
+        contactForm.scrollTop += currentInput.getBoundingClientRect().top - 164;
+      }
     }, 10);
 
     contactFormButtonsBar.classList.add("displayHidden");
