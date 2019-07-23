@@ -31,7 +31,7 @@ for (let i = 0; i < formInputFields.length; i++) {
 
     setTimeout(function() {
       contactForm.scrollTop += currentInput.getBoundingClientRect().top - 164;
-    }, 500);
+    }, 10);
 
     contactFormButtonsBar.classList.add("displayHidden");
     mainDock.classList.add("displayHidden");
