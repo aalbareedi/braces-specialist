@@ -30,7 +30,7 @@ for (let i = 0; i < formInputFields.length; i++) {
     let currentInput = this;
 
     setTimeout(function() {
-      if (this.tagName == "TEXTAREA") {
+      if (currentInput.tagName == "TEXTAREA") {
         contactForm.scrollTop += currentInput.getBoundingClientRect().top - 94;
       } else {
         contactForm.scrollTop += currentInput.getBoundingClientRect().top - 164;
