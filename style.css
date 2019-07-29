@@ -244,12 +244,12 @@ body {
   background-color: white;
   height: 54px;
   border: 2px solid #e8e8e8;
-  padding-left: 8px;
+  padding-left: 10px;
   width: 100%;
   outline: none;
-  /* border-radius: 7px; */
+  border-radius: 7px;
   font-size: 18px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   padding-right: 36px;
 }
 .contactFormInput:focus {
@@ -311,7 +311,6 @@ body {
 }
 .contactFormBtn {
   outline: none;
-  border: none;
   width: 50%;
   height: 40px;
   border-radius: 8px;
@@ -320,6 +319,7 @@ body {
   align-items: center;
   color: #616161;
   border: 3px solid silver;
+  background-color: white;
 }
 #formSubmitBtn {
   border: 3px solid gainsboro;
@@ -328,9 +328,14 @@ body {
   margin-right: 4px;
   background-color: whitesmoke;
 }
+#formSubmitBtnReady {
+  border: none;
+  color: white;
+  margin-right: 4px;
+  background-color: #10b020;
+}
 #formCancelBtn {
   margin-left: 4px;
-  background-color: white;
 }
 #formCancelBtn:active {
   background-color: silver;
@@ -340,7 +345,7 @@ body {
   font-size: 16px;
 }
 .contactFormBtnText {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   margin-left: 10px;
 }
@@ -464,7 +469,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
@@ -649,6 +654,11 @@ body {
 }
 .socialIcon {
   outline: none;
+}
+
+#newBox {
+  background: turquoise;
+  height: 600px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
