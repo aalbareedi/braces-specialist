@@ -206,16 +206,17 @@ body {
 .formIcon {
   /* background-color: pink; */
   position: absolute;
-  right: 13px;
+  right: 15px;
   top: 18px;
-  font-size: 17px;
+  font-size: 20px;
   color: lightgray;
 }
 #fullNameIcon {
-  right: 14px;
+  /* right: 14px; */
+  top: 17px;
 }
 #emailIcon {
-  top: 19px;
+  /* top: 19px; */
 }
 #contactFormFullName {
   /* background-color: pink; */
@@ -244,13 +245,13 @@ body {
   background-color: white;
   height: 54px;
   border: 2px solid #e8e8e8;
-  padding-left: 10px;
+  padding-left: 13px;
   width: 100%;
   outline: none;
   border-radius: 7px;
   font-size: 18px;
   letter-spacing: 0.5px;
-  padding-right: 36px;
+  padding-right: 40px;
 }
 .contactFormInput:focus {
   border: 2px solid #48b5f3;
@@ -469,7 +470,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */
