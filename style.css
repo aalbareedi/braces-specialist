@@ -207,13 +207,13 @@ body {
   /* background-color: pink; */
   position: absolute;
   right: 15px;
-  top: 18px;
+  top: 17px;
   font-size: 20px;
   color: lightgray;
 }
 #fullNameIcon {
   /* right: 14px; */
-  top: 17px;
+  /* top: 17px; */
 }
 #emailIcon {
   /* top: 19px; */
@@ -249,7 +249,7 @@ body {
   width: 100%;
   outline: none;
   border-radius: 7px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   padding-right: 40px;
 }
@@ -470,7 +470,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
