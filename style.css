@@ -252,6 +252,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.5px;
   padding-right: 40px;
+  padding-top: 2px;
 }
 .contactFormInput:focus {
   border: 2px solid #48b5f3;
@@ -470,7 +471,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */
