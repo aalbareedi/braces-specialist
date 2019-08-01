@@ -94,7 +94,7 @@ body {
   color: black;
 }
 .navToggleBtn:active {
-  background-color: silver;
+  background-color: #e8e8e8;
 }
 #backToTopBtn {
   display: flex;
@@ -302,13 +302,13 @@ body {
   color: #999;
 }
 #contactFormButtons {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   width: 100%;
   position: fixed;
   bottom: 0px;
   display: flex;
   padding: 8px;
-  border-top: 2px solid #e8e8e8;
+  border-top: 2px solid gainsboro;
   /* z-index: 1000; */
 }
 .contactFormBtn {
@@ -355,7 +355,7 @@ body {
 /* **************** BUTTONS DOCK **************** */
 
 #mainDock {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -364,7 +364,7 @@ body {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 8px;
   padding: 8px;
-  border-top: 2px solid #e8e8e8;
+  border-top: 2px solid gainsboro;
 }
 .dockContactBtn {
   /* border: none; */
@@ -629,8 +629,8 @@ body {
 }
 .socialMediaButton {
   background-color: #383f43;
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   border: 2px solid #b3b3b3;
   font-size: 22px;
@@ -652,15 +652,25 @@ body {
   color: #b3b3b3;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 .socialIcon {
   outline: none;
 }
 
-#newBox {
+#faqContent {
   background: turquoise;
-  height: 600px;
+  height: 640px;
+  padding-top: 10px;
+  font-family: "Titillium Web", sans-serif;
+}
+.faqHeading {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
