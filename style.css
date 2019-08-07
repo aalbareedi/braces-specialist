@@ -471,7 +471,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
@@ -511,14 +511,14 @@ body {
   align-items: center;
   font-size: 16px;
 }
-.statBtnBar {
-  /* background-color: aqua; */
+/* .statBtnBar {
+  background-color: aqua;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-}
+} */
 .learnMoreStatBtn {
   background-color: #37d0e1;
   /* background-color: #1f93ff; */
@@ -671,6 +671,23 @@ body {
   margin-top: 40px;
   margin-bottom: 50px;
   letter-spacing: 0.5px;
+}
+.faqQuestion {
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.faqAnswer {
+  color: white;
+  margin-left: 50px;
+  padding-right: 20px;
+}
+
+.newContent {
+  background: pink;
+  height: 600px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */

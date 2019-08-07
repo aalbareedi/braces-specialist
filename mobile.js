@@ -20,7 +20,7 @@ function scrollBodyToTop() {
   if (document.documentElement.scrollTop > 0) {
     document.documentElement.scrollTop =
       document.documentElement.scrollTop * 0.7;
-
+    body.scrollTop = body.scrollTop * 0.7;
     setTimeout(function() {
       scrollBodyToTop();
     }, 40);
