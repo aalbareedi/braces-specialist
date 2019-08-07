@@ -53,7 +53,7 @@ for (let i = 0; i < formInputFields.length; i++) {
   };
 }
 
-if (document.documentElement.scrollTop > 0) {
+if (scrollingElement.scrollTop > 0) {
   backToTopBtn.classList.remove("displayHidden");
 }
 
@@ -102,7 +102,7 @@ contactFromBackArrow.onclick = function() {
 };
 
 body.onscroll = function() {
-  if (document.documentElement.scrollTop > 0) {
+  if (scrollingElement.scrollTop > 0) {
     backToTopBtn.classList.remove("displayHidden");
   } else {
     backToTopBtn.classList.add("displayHidden");

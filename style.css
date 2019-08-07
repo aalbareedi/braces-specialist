@@ -471,7 +471,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */
