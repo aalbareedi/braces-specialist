@@ -3,7 +3,8 @@ document.addEventListener("touchstart", function() {}, true);
 
 let html = document.getElementsByTagName("html")[0];
 let body = document.getElementsByTagName("body")[0];
-let scrollingElement = document.scrollingElement || document.documentElement;
+let scrollingElement =
+  document.scrollingElement || document.documentElement || body;
 let mainDock = document.getElementById("mainDock");
 let mainNavBar = document.getElementById("mainSiteNavbar");
 let navToggleBtn = document.getElementById("navToggleBtn");
@@ -18,7 +19,7 @@ let formInputFields = document.querySelectorAll("input, textarea");
 let backToTopBtn = document.getElementById("backToTopBtn");
 
 function scrollBodyToTop() {
-  if (document.documentElement.scrollTop > 0) {
+  if (scrollingElement.scrollTop > 0) {
     scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
     setTimeout(function() {
       scrollBodyToTop();
