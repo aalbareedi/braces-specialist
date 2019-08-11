@@ -15,6 +15,7 @@ let contactForm = document.getElementById("contactWindow");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
 let contactFormButtonsBar = document.getElementById("contactFormButtons");
+let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn");
 let formInputFields = document.querySelectorAll("input, textarea");
 let backToTopBtn = document.getElementById("backToTopBtn");
 
@@ -27,7 +28,25 @@ function scrollBodyToTop() {
   }
 }
 
+function isFormFilled() {
+  for (let i = 0; i < formInputFields.length; i++) {
+    if (formInputFields[i].value == "") {
+      return false;
+    }
+  }
+  return true;
+}
+
 for (let i = 0; i < formInputFields.length; i++) {
+  // oninput: when user types in input field
+  formInputFields[i].oninput = function() {
+    if (isFormFilled() == true) {
+      contactFormSubmitBtn.disabled = false;
+      contactFormSubmitBtn.classList.remove("formSubmitBtn");
+      contactFormSubmitBtn.classList.add("formSubmitBtnReady");
+    }
+  };
+
   // onfocus: when input field is selected
   formInputFields[i].onfocus = function() {
     let currentInput = this;
