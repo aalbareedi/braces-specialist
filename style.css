@@ -198,6 +198,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: black;
+  letter-spacing: 0.3px;
 }
 .formOption {
   margin-bottom: 16px;
@@ -497,19 +498,13 @@ body {
 }
 .statNumber {
   /* background-color: yellow; */
-  height: 30px;
   color: #37d0e1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+  font-size: 27px;
+  margin-bottom: 2px;
 }
 .statDescription {
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 16px;
+  letter-spacing: 0.4px;
 }
 /* .statBtnBar {
   background-color: aqua;
@@ -538,9 +533,8 @@ body {
 /* **************** OFFICE INFO **************** */
 #officeInfoContent {
   background-color: #383f43;
-  /* height: 500px; */
   padding-top: 10px;
-  font-family: "Titillium Web", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
 }
 .officeInfoHeading {
   text-align: center;
@@ -550,7 +544,7 @@ body {
   margin-bottom: 50px;
   letter-spacing: 0.5px;
 }
-.officeInfoContainer {
+.officeInfoSchedule {
   display: flex;
   justify-content: center;
   position: relative;
@@ -558,17 +552,18 @@ body {
 }
 .officeInfoGrid {
   display: grid;
-  grid-template-columns: 100px 148px;
+  grid-template-columns: 100px 157px;
   grid-template-rows: repeat(7, 26px);
 }
 .officeDay {
   color: white;
   text-align: right;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.8px;
 }
 .officeTime {
   text-align: center;
   color: #b3b3b3;
+  letter-spacing: 0.3px;
 }
 .officeClosed {
   text-align: left;
@@ -577,10 +572,12 @@ body {
 .officeInfoAddress {
   position: relative;
   margin: 50px 0;
+  line-height: 20px;
 }
 .officeInfoPhone {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  line-height: 21px;
 }
 .officeInfoIcon {
   position: absolute;
@@ -600,9 +597,8 @@ body {
 }
 .officeInfoText {
   text-align: center;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.8px;
   color: white;
-  line-height: 19px;
 }
 .officePhoneText {
   color: #b3b3b3;
@@ -612,22 +608,25 @@ body {
 .socialMediaContent {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 .socialButtons {
   /* background: orange; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  padding: 20px;
+  /* padding-top: 20px; */
   grid-column-gap: 16px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .socialMediaButton {
-  background-color: #383f43;
+  /* background-color: #383f43; */
+  background-color: gray;
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  border: 2px solid #b3b3b3;
+  border: 2px solid silver;
+  /* border: none; */
   font-size: 22px;
   outline: none;
   cursor: pointer;
@@ -643,8 +642,9 @@ body {
   color: white;
 }
 .socialBtnIcon {
-  background-color: #383f43;
-  color: #b3b3b3;
+  /* background-color: #383f43; */
+  background-color: gray;
+  color: white;
   border: none;
   outline: none;
   font-size: 22px;
@@ -652,12 +652,15 @@ body {
 .socialIcon {
   outline: none;
 }
-
+.socialMediaText {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
 #faqContent {
   background: #0d79a1;
-  height: 920px;
   padding-top: 10px;
-  font-family: "Titillium Web", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
   /* font-family: "Open Sans", sans-serif; */
 }
 .faqHeading {
@@ -669,20 +672,34 @@ body {
   letter-spacing: 0.5px;
 }
 .faqQuestion {
-  text-align: left;
+  position: relative;
   color: white;
-  font-size: 18px;
-  padding-left: 17px;
-  margin-bottom: 20px;
+  font-size: 16px;
   letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 23px;
+}
+.faqQuestionText {
+  padding-left: 46px;
+  padding-right: 15px;
+  /* line-height: 23px; */
+  letter-spacing: 0.6px;
+}
+.faqNumber {
+  position: absolute;
+  left: 17px;
+  /* line-height: 23px; */
+  /* top: 1px; */
 }
 .faqAnswer {
   color: white;
-  margin-left: 50px;
+  margin-left: 46px;
   padding-right: 20px;
-  margin-bottom: 44px;
+  padding-bottom: 44px;
   line-height: 25px;
   letter-spacing: 0.5px;
+  font-size: 16px;
 }
 
 .newContent {
