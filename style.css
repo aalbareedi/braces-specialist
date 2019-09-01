@@ -502,6 +502,9 @@ body {
   font-size: 27px;
   margin-bottom: 2px;
 }
+#statCases::after {
+  content: "+";
+}
 .statDescription {
   font-size: 16px;
   letter-spacing: 0.4px;

@@ -18,13 +18,37 @@ let contactFormButtonsBar = document.getElementById("contactFormButtons");
 let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn");
 let formInputFields = document.querySelectorAll("input, textarea");
 let backToTopBtn = document.getElementById("backToTopBtn");
+let statYear = document.getElementById("statYear");
+let statCases = document.getElementById("statCases");
+let statPercent = document.getElementById("statPercent");
 
 function scrollBodyToTop() {
-  if (scrollingElement.scrollTop > 0) {
+  if (scrollingElement.scrollTop > 0.1) {
     scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
     setTimeout(function() {
       scrollBodyToTop();
     }, 40);
+  }
+}
+
+function scrollYearCounter() {
+  if (statYear.innerHTML < 33) {
+    statYear.innerHTML = parseInt(statYear.innerHTML) + 1;
+
+    setTimeout(function() {
+      scrollYearCounter();
+    }, 45);
+  }
+}
+function scrollCasesCounter() {
+  if (statCases.innerHTML < 5000) {
+    statCases.innerHTML = parseInt(statCases.innerHTML) + 13;
+
+    setTimeout(function() {
+      scrollCasesCounter();
+    }, 5);
+  } else {
+    statCases.innerHTML = 5000;
   }
 }
 
@@ -125,6 +149,20 @@ body.onscroll = function() {
     backToTopBtn.classList.remove("displayHidden");
   } else {
     backToTopBtn.classList.add("displayHidden");
+  }
+
+  if (scrollingElement.scrollTop + screen.height - 65 > statYear.offsetTop) {
+    if (statYear.innerHTML == 1) {
+      scrollYearCounter();
+    }
+  }
+
+  if (scrollingElement.scrollTop + screen.height - 65 > statCases.offsetTop) {
+    // console.log("test");
+    // console.log(screen.height);
+    if (statCases.innerHTML == 1) {
+      scrollCasesCounter();
+    }
   }
 };
 
