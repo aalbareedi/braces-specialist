@@ -43,7 +43,7 @@ function scrollYearCounter() {
 
 function scrollCasesCounter() {
   if (statCases.innerHTML < 5000) {
-    statCases.innerHTML = parseInt(statCases.innerHTML) + 17;
+    statCases.innerHTML = parseInt(statCases.innerHTML) + 19;
 
     setTimeout(function() {
       scrollCasesCounter();
@@ -152,13 +152,13 @@ body.onscroll = function() {
     backToTopBtn.classList.add("displayHidden");
   }
 
-  if (scrollingElement.scrollTop + screen.height - 85 > statYear.offsetTop) {
+  if (scrollingElement.scrollTop + screen.height - 80 > statYear.offsetTop) {
     if (statYear.innerHTML == 1) {
       scrollYearCounter();
     }
   }
 
-  if (scrollingElement.scrollTop + screen.height - 85 > statCases.offsetTop) {
+  if (scrollingElement.scrollTop + screen.height - 80 > statCases.offsetTop) {
     // console.log("test");
     // console.log(screen.height);
     if (statCases.innerHTML == 1) {
