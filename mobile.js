@@ -53,6 +53,16 @@ function scrollCasesCounter() {
   }
 }
 
+function scrollPercentCounter() {
+  if (statPercent.innerHTML < 100) {
+    statPercent.innerHTML = parseInt(statPercent.innerHTML) + 1;
+
+    setTimeout(function() {
+      scrollPercentCounter();
+    }, 12);
+  }
+}
+
 function isFormFilled() {
   for (let i = 0; i < formInputFields.length; i++) {
     if (formInputFields[i].value == "") {
@@ -159,10 +169,14 @@ body.onscroll = function() {
   }
 
   if (scrollingElement.scrollTop + screen.height - 80 > statCases.offsetTop) {
-    // console.log("test");
-    // console.log(screen.height);
     if (statCases.innerHTML == 1) {
       scrollCasesCounter();
+    }
+  }
+
+  if (scrollingElement.scrollTop + screen.height - 80 > statPercent.offsetTop) {
+    if (statPercent.innerHTML == 1) {
+      scrollPercentCounter();
     }
   }
 };

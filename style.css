@@ -87,7 +87,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 0px;
-  /* border-left: 2px solid #e8e8e8; */
+  border-left: 2px solid #e8e8e8;
 }
 .navToggleIcon {
   font-size: 24px;
@@ -482,14 +482,12 @@ body {
   margin: 0 auto;
 }
 #statsContent {
-  /* height: calc(100vh - 64px); */
-  height: 540px;
   background-color: white;
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 .statBox {
   /* background-color: lightblue; */
-  /* margin-bottom: 20px; */
   height: 130px;
   display: flex;
   justify-content: center;
@@ -504,6 +502,9 @@ body {
 }
 #statCases::after {
   content: "+";
+}
+#statPercent::after {
+  content: "%";
 }
 .statDescription {
   font-size: 16px;
@@ -524,9 +525,10 @@ body {
   border: none;
   outline: none;
   border-radius: 20px;
-  width: 200px;
+  width: 230px;
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 .learnMoreStatBtn:active {
   background-color: #1e7f8a;
@@ -541,7 +543,7 @@ body {
 }
 .officeInfoHeading {
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   margin-top: 40px;
   margin-bottom: 50px;
@@ -621,7 +623,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   /* padding-top: 20px; */
-  grid-column-gap: 15px;
+  grid-column-gap: 14px;
   /* margin-bottom: 40px; */
 }
 .socialMediaButton {
@@ -670,7 +672,7 @@ body {
 }
 .faqHeading {
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   margin-top: 40px;
   margin-bottom: 54px;
