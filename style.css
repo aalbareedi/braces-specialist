@@ -472,7 +472,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
@@ -529,9 +529,9 @@ body {
   font-size: 14px;
 }
 .learnMoreStatBtn:active {
-  background-color: white;
-  color: black;
-  border: 2px solid #37d0ce;
+  background-color: #1e7f8a;
+  /* color: black; */
+  /* border: 2px solid #1e7f8a; */
 }
 /* **************** OFFICE INFO **************** */
 #officeInfoContent {
@@ -574,12 +574,14 @@ body {
 }
 .officeInfoAddress {
   position: relative;
-  margin: 50px 0;
+  /* margin: 50px 0; */
+  margin-bottom: 50px;
   line-height: 20px;
 }
 .officeInfoPhone {
   position: relative;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin: 50px 0;
   line-height: 21px;
 }
 .officeInfoIcon {
@@ -619,14 +621,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   /* padding-top: 20px; */
-  grid-column-gap: 16px;
+  grid-column-gap: 15px;
   /* margin-bottom: 40px; */
 }
 .socialMediaButton {
   /* background-color: #383f43; */
   background-color: gray;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 10px;
   border: 2px solid silver;
   /* border: none; */
@@ -691,7 +693,7 @@ body {
 }
 .faqNumber {
   position: absolute;
-  left: 17px;
+  left: 18px;
   /* line-height: 23px; */
   /* top: 1px; */
 }
