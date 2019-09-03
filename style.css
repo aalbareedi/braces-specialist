@@ -77,15 +77,13 @@ body {
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
 }
-.doctorNameText {
-  /* background-color: lightblue; */
-  /* display: none; */
+/* .doctorNameText {
   font-size: 13px;
   font-weight: bold;
 }
 #certification {
   font-weight: initial;
-}
+} */
 .navToggleBtn {
   /* background-color: pink; */
   width: 60px;
@@ -318,7 +316,6 @@ body {
   display: flex;
   padding: 8px;
   border-top: 2px solid gainsboro;
-  /* z-index: 1000; */
 }
 .contactFormBtn {
   outline: none;
@@ -406,15 +403,15 @@ body {
 .dockContactBtn:active #messageIcon {
   font-size: 14px;
 }
-.contactBtnContainer {
-  /* background-color: pink; */
-  /* position: relative; */
+/* .contactBtnContainer {
+  background-color: pink;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 86px;
   height: 30px;
-}
+} */
 #callBtn {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -474,6 +471,14 @@ body {
   padding-top: 140px;
   margin-top: 60px;
 }
+.landingImg {
+  background-image: url("./gradient.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+}
 .landingHeading {
   /* background: orange; */
   text-align: center;
@@ -528,15 +533,16 @@ body {
 }
 .learnMoreStatBtn {
   background-color: #37d0e1;
-  /* background-color: #1f93ff; */
+  background: linear-gradient(to bottom, #37d0e1 0%, #2eb1bf 100%);
   color: white;
   border: none;
   outline: none;
   border-radius: 20px;
-  width: 230px;
+  width: 220px;
   height: 40px;
   font-size: 16px;
   letter-spacing: 0.5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .learnMoreStatBtn:active {
   background-color: #1e7f8a;
@@ -588,13 +594,14 @@ body {
   line-height: 20px;
 }
 .officeMap {
-  padding: 0 20px;
+  padding: 0 28px;
 }
 #googleMap {
   margin: 0 auto;
   display: block;
-  height: 250px;
+  height: 230px;
   width: 100%;
+  border-radius: 8px;
 }
 .officeInfoPhone {
   position: relative;
@@ -677,10 +684,9 @@ body {
 .socialMediaText {
   text-align: center;
   color: white;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin: 40px 0 10px 0;
 }
-#faqContent {
+#faq {
   background: #0d79a1;
   padding-top: 10px;
   /* font-family: "Titillium Web", sans-serif; */
@@ -735,7 +741,7 @@ body {
   background-color: lightblue;
   height: 100px;
 }
-.emptyDockSpace {
+#emptyDockSpace {
   width: 100%;
   height: 58px;
 }
