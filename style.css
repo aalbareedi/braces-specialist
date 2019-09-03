@@ -485,7 +485,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
@@ -600,8 +600,8 @@ body {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
+  /* -webkit-border-radius: 8px;
+  -moz-border-radius: 8px; */
 }
 #googleMap {
   margin: 0 auto;
