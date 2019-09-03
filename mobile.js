@@ -21,6 +21,7 @@ let backToTopBtn = document.getElementById("backToTopBtn");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
+let screenOverlay = document.getElementById("screenOverlay");
 
 function scrollBodyToTop() {
   if (scrollingElement.scrollTop > 0.1) {
@@ -130,6 +131,12 @@ navToggleBtn.onclick = function(event) {
     navToggleIcon.classList.add("fa-bars");
   }
 
+  if (navWindow.classList.contains("displayHidden")) {
+    screenOverlay.classList.add("displayHidden");
+  } else {
+    screenOverlay.classList.remove("displayHidden");
+  }
+
   event.stopPropagation();
 };
 
@@ -179,4 +186,11 @@ body.onscroll = function() {
 
 backToTopBtn.onclick = function() {
   scrollBodyToTop();
+};
+
+screenOverlay.onclick = function() {
+  screenOverlay.classList.add("displayHidden");
+  navWindow.classList.add("displayHidden");
+  navToggleIcon.classList.remove("fa-times");
+  navToggleIcon.classList.add("fa-bars");
 };
