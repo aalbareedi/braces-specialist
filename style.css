@@ -28,7 +28,7 @@ body {
 #mainSiteNavbar {
   z-index: 10;
   background-color: whitesmoke;
-  height: 64px;
+  height: 60px;
   width: 100%;
   position: fixed;
   /* position: -webkit-sticky; */
@@ -54,7 +54,7 @@ body {
   height: 100%;
   position: absolute;
   left: 54px;
-  padding-top: 13px;
+  padding-top: 11px;
 }
 .logoTextTop {
   /* background-color: lightgreen; */
@@ -121,8 +121,8 @@ body {
   /* display: none; */
   position: fixed;
   width: 100%;
-  height: calc(100vh - 64px - 58px);
-  top: 64px;
+  height: calc(100vh - 60px - 58px);
+  top: 60px;
   right: 0;
   z-index: 100;
 }
@@ -155,10 +155,10 @@ body {
   background-color: whitesmoke;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 60px);
   position: fixed;
   z-index: 100;
-  margin-top: 64px;
+  margin-top: 60px;
 }
 #contactFormTitle {
   /* background: lightblue; */
@@ -461,10 +461,10 @@ body {
 /* ************************** CONTENT ************************** */
 
 #landingBox {
-  height: calc(100vh - 122px);
+  height: calc(100vh - 118px);
   background-color: silver;
   padding-top: 140px;
-  margin-top: 64px;
+  margin-top: 60px;
 }
 .landingHeading {
   /* background: orange; */
@@ -543,11 +543,11 @@ body {
 }
 .officeInfoHeading {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
   margin-top: 40px;
   margin-bottom: 50px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 .officeInfoSchedule {
   display: flex;
@@ -672,11 +672,11 @@ body {
 }
 .faqHeading {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
   margin-top: 40px;
   margin-bottom: 54px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
 }
 .faqQuestion {
   position: relative;

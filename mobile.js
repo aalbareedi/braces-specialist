@@ -112,10 +112,6 @@ if (scrollingElement.scrollTop > 0) {
 }
 
 mainNavBar.onclick = function() {
-  // body.scrollTop = 0;
-  // workaround for Chrome scroll to top
-  // document.documentElement.scrollTop = 0;
-
   scrollBodyToTop();
 };
 
