@@ -571,13 +571,13 @@ body {
 }
 .officeInfoGrid {
   display: grid;
-  grid-template-columns: 100px 157px;
+  grid-template-columns: 100px 152px;
   grid-template-rows: repeat(7, 26px);
 }
 .officeDay {
   color: white;
   text-align: right;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.9px;
 }
 .officeTime {
   text-align: center;
@@ -586,12 +586,13 @@ body {
 }
 .officeClosed {
   text-align: left;
-  margin-left: 8px;
+  margin-left: 5px;
 }
 .officeInfoAddress {
   position: relative;
   margin-bottom: 20px;
   line-height: 20px;
+  padding-left: 20px;
 }
 .officeMap {
   padding: 0 26px;
@@ -600,8 +601,6 @@ body {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  /* -webkit-border-radius: 8px;
-  -moz-border-radius: 8px; */
 }
 #googleMap {
   margin: 0 auto;
@@ -614,6 +613,7 @@ body {
   position: relative;
   margin: 50px 0;
   line-height: 21px;
+  padding-left: 20px;
 }
 .officeInfoIcon {
   position: absolute;
@@ -629,7 +629,7 @@ body {
   margin-left: 3px;
 }
 #officeInfoFax {
-  padding-left: 20px;
+  padding-left: 21px;
 }
 .officeInfoText {
   text-align: center;
