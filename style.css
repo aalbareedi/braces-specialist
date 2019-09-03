@@ -594,7 +594,7 @@ body {
   line-height: 20px;
 }
 .officeMap {
-  padding: 0 28px;
+  padding: 0 26px;
 }
 #googleMap {
   margin: 0 auto;
@@ -602,6 +602,8 @@ body {
   height: 230px;
   width: 100%;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
 .officeInfoPhone {
   position: relative;
