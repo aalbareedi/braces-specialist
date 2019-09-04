@@ -133,8 +133,12 @@ navToggleBtn.onclick = function(event) {
 
   if (navWindow.classList.contains("displayHidden")) {
     screenOverlay.classList.add("displayHidden");
+    html.classList.remove("overflowHidden");
+    body.classList.remove("overflowHidden");
   } else {
     screenOverlay.classList.remove("displayHidden");
+    html.classList.add("overflowHidden");
+    body.classList.add("overflowHidden");
   }
 
   event.stopPropagation();
@@ -193,4 +197,6 @@ screenOverlay.onclick = function() {
   navWindow.classList.add("displayHidden");
   navToggleIcon.classList.remove("fa-times");
   navToggleIcon.classList.add("fa-bars");
+  html.classList.remove("overflowHidden");
+  body.classList.remove("overflowHidden");
 };
