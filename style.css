@@ -484,7 +484,7 @@ body {
   width: 90%;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
@@ -636,8 +636,8 @@ body {
   color: white;
 }
 .officePhoneText {
-  color: #b3b3b3 !important;
-  text-decoration: none !important;
+  color: #b3b3b3;
+  text-decoration: none;
 }
 /* ************* SOCIAL MEDIA ************* */
 .socialMediaContent {
