@@ -200,8 +200,3 @@ screenOverlay.onclick = function() {
   html.classList.remove("overflowHidden");
   body.classList.remove("overflowHidden");
 };
-
-screenOverlay.onscroll = function(event) {
-  event.stopPropagation();
-  console.log("test");
-};
