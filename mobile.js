@@ -34,7 +34,7 @@ function scrollBodyToTop() {
 
 function scrollYearCounter() {
   if (statYear.innerHTML < 33) {
-    statYear.innerHTML = parseInt(statYear.innerHTML) + 1;
+    statYear.innerHTML = parseInt(statYear.innerHTML) + 3;
 
     setTimeout(function() {
       scrollYearCounter();
