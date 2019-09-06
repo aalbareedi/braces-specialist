@@ -34,7 +34,7 @@ function scrollBodyToTop() {
 
 function scrollYearCounter() {
   if (statYear.innerHTML < 33) {
-    statYear.innerHTML = parseInt(statYear.innerHTML) + 3;
+    statYear.innerHTML = parseInt(statYear.innerHTML) + 1;
 
     setTimeout(function() {
       scrollYearCounter();
@@ -56,11 +56,11 @@ function scrollCasesCounter() {
 
 function scrollPercentCounter() {
   if (statPercent.innerHTML < 100) {
-    statPercent.innerHTML = parseInt(statPercent.innerHTML) + 1;
+    statPercent.innerHTML = parseInt(statPercent.innerHTML) + 3;
 
     setTimeout(function() {
       scrollPercentCounter();
-    }, 14);
+    }, 42);
   }
 }
 
