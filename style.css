@@ -14,6 +14,7 @@ body {
 .overflowHidden {
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 .displayHidden {
   display: none !important;
@@ -427,7 +428,7 @@ body {
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
