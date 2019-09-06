@@ -6,12 +6,12 @@ let body = document.getElementsByTagName("body")[0];
 let scrollingElement =
   document.scrollingElement || document.documentElement || body;
 let mainDock = document.getElementById("mainDock");
-let mainNavBar = document.getElementById("mainSiteNavbar");
+let navbar = document.getElementById("navbar");
 let navToggleBtn = document.getElementById("navToggleBtn");
 let navToggleIcon = document.getElementById("navToggleIcon");
-let navWindow = document.getElementById("sideNavWindow");
+let navWindow = document.getElementById("navWindow");
 let messageBtn = document.getElementById("messageBtn");
-let contactForm = document.getElementById("contactWindow");
+let contactForm = document.getElementById("contactForm");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
 let contactFormButtonsBar = document.getElementById("contactFormButtons");
@@ -44,11 +44,11 @@ function scrollYearCounter() {
 
 function scrollCasesCounter() {
   if (statCases.innerHTML < 5000) {
-    statCases.innerHTML = parseInt(statCases.innerHTML) + 19;
+    statCases.innerHTML = parseInt(statCases.innerHTML) + 37;
 
     setTimeout(function() {
       scrollCasesCounter();
-    }, 5);
+    }, 10);
   } else {
     statCases.innerHTML = 5000;
   }
@@ -60,7 +60,7 @@ function scrollPercentCounter() {
 
     setTimeout(function() {
       scrollPercentCounter();
-    }, 12);
+    }, 14);
   }
 }
 
@@ -112,7 +112,7 @@ if (scrollingElement.scrollTop > 0) {
   backToTopBtn.classList.remove("displayHidden");
 }
 
-mainNavBar.onclick = function() {
+navbar.onclick = function() {
   scrollBodyToTop();
 };
 

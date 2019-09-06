@@ -6,6 +6,7 @@
     <!--- Allows mobile devices to scale to size -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--- Corrects phone number as text on iOS -->
     <meta name="format-detection" content="telephone=no" />
     <title>Braces Specialist</title>
     <link rel="stylesheet" href="normalize.css" />
@@ -40,23 +41,20 @@
   </head>
 
   <body>
-    <nav id="mainSiteNavbar">
+    <nav id="navbar">
       <div class="navLogoIcon">
         <img id="mainLogo" src="./logo60blue.svg" />
       </div>
       <div class="navLogoName">
         <div class="logoTextTop">Orthodontic</div>
         <div class="logoTextBottom">SPECIALTY CENTER</div>
-        <!-- <div class="doctorNameText">
-          Said Albareedi <span id="certification">DDS, MS</span>
-        </div> -->
       </div>
       <div class="navToggleBtn" id="navToggleBtn">
         <i class="fas fa-bars navToggleIcon" id="navToggleIcon"></i>
       </div>
     </nav>
 
-    <div id="sideNavWindow" class="displayHidden">
+    <div id="navWindow" class="displayHidden">
       <div class="sideNavMenu">
         <div class="sideNavMenuOpt">About Us</div>
         <div class="sideNavMenuOpt">Hours & Location</div>
@@ -66,20 +64,20 @@
       </div>
     </div>
 
-    <form id="contactWindow" class="displayHidden">
-      <div id="contactFormTitle">
+    <form id="contactForm" class="displayHidden">
+      <div id="formTitle">
         <div class="backArrow" id="backArrow">
           <i class="fas fa-arrow-left"></i>
         </div>
         <div class="messageMenuTitle">Message Us</div>
       </div>
-      <div id="contactFormDescription">
+      <div id="formDescription">
         <div class="contactFormSubHeading">
           We would love to hear from you! Please feel free to send us a message
           below and we will get back to you shortly.
         </div>
       </div>
-      <div id="contactFormFullName" class="formOption">
+      <div class="formOption">
         <label for="nameInput" class="contactFormText">
           Full Name<span class="formAsterik">*</span>
         </label>
@@ -96,7 +94,7 @@
           />
         </div>
       </div>
-      <div id="contactFormEmail" class="formOption">
+      <div class="formOption">
         <label for="emailInput" class="contactFormText">
           Email Address<span class="formAsterik">*</span>
         </label>
@@ -113,7 +111,7 @@
           />
         </div>
       </div>
-      <div id="contactFormPhone" class="formOption">
+      <div class="formOption">
         <label for="phoneInput" class="contactFormText">
           Phone Number<span class="formAsterik">*</span>
         </label>
@@ -128,7 +126,7 @@
           />
         </div>
       </div>
-      <div id="contactFormMessage">
+      <div id="formMessage">
         <label for="messageInput" class="contactFormText">
           Message<span class="formAsterik">*</span>
         </label>
@@ -139,7 +137,7 @@
           placeholder="Questions, comments, concerns..."
         ></textarea>
       </div>
-      <div id="contactFormButtons">
+      <div id="formButtons">
         <button
           type="submit"
           id="contactFormSubmitBtn"
@@ -165,7 +163,7 @@
       </div>
     </div>
 
-    <div id="statsContent">
+    <div id="stats">
       <div class="statBox">
         <div class="statNumber" id="statYear">1</div>
         <div class="statDescription">YEARS OF CONSISTENT WORK</div>
@@ -183,7 +181,7 @@
       </div>
     </div>
 
-    <div id="officeInfoContent">
+    <div id="officeInfo">
       <div class="officeInfoHeading">Office Information</div>
       <div class="officeInfoSchedule">
         <div class="officeInfoIcon">
@@ -208,7 +206,7 @@
       </div>
 
       <div class="officeInfoPhone">
-        <div class="officeInfoIcon" id="officePhoneIcon">
+        <div class="officeInfoIcon">
           <i class="fas fa-phone"></i>
         </div>
         <div class="officeInfoText">
@@ -220,7 +218,7 @@
       </div>
 
       <div class="officeInfoAddress">
-        <div class="officeInfoIcon officeIconMargin">
+        <div class="officeInfoIcon" id="officeAddressIcon">
           <i class="fas fa-map-marker-alt"></i>
         </div>
         <div class="officeInfoText">
@@ -317,9 +315,9 @@
       </div>
     </div>
 
-    <div class="newContent"></div>
+    <div id="newContent"></div>
 
-    <div class="footer"></div>
+    <div id="footer"></div>
 
     <div id="emptyDockSpace"></div>
 

@@ -7,21 +7,17 @@
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 body {
   font-family: "Roboto", sans-serif;
   /* font-family: "Titillium Web", sans-serif; */
 }
-
 .overflowHidden {
   overflow: hidden;
   position: relative;
 }
-
 .displayHidden {
   display: none !important;
 }
-
 #screenOverlay {
   background: black;
   opacity: 0.6;
@@ -31,13 +27,11 @@ body {
   left: 0;
   bottom: 0;
 }
-
 /* ******************** MAIN NAV-BAR ******************** */
-
-#mainSiteNavbar {
+#navbar {
   z-index: 10;
   background-color: whitesmoke;
-  height: 60px;
+  height: 58px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -45,24 +39,21 @@ body {
 }
 .navLogoIcon {
   /* background-color: pink; */
-  width: 48px;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 3px;
   position: absolute;
-  left: 0px;
+  left: 12px;
 }
 #mainLogo {
   height: 34px;
 }
 .navLogoName {
   /* background-color: yellow; */
-  height: 100%;
   position: absolute;
-  left: 54px;
-  padding-top: 11px;
+  left: 50px;
+  padding-top: 10px;
 }
 .logoTextTop {
   /* background-color: lightgreen; */
@@ -76,16 +67,9 @@ body {
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
 }
-/* .doctorNameText {
-  font-size: 13px;
-  font-weight: bold;
-}
-#certification {
-  font-weight: initial;
-} */
 .navToggleBtn {
   /* background-color: pink; */
-  width: 60px;
+  width: 58px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -121,18 +105,16 @@ body {
   font-size: 18px;
   margin-bottom: 2px;
 }
-
 /* *********************** SIDE NAV WINDOW *********************** */
-#sideNavWindow {
+#navWindow {
   /* display: none; */
   position: fixed;
   width: 100%;
-  top: 60px;
+  top: 58px;
   right: 0;
   z-index: 100;
 }
 /* **************** SIDE NAV MENU **************** */
-
 .sideNavMenu {
   background-color: whitesmoke;
   display: flex;
@@ -151,21 +133,19 @@ body {
 }
 .sideNavMenuOpt:active {
   background-color: #e8e8e8;
-  color: white;
+  /* color: white; */
 }
-
 /* ******************* CONTACT FORM ******************* */
-
-#contactWindow {
+#contactForm {
   background-color: whitesmoke;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 58px);
   position: fixed;
   z-index: 100;
-  margin-top: 60px;
+  margin-top: 58px;
 }
-#contactFormTitle {
+#formTitle {
   /* background: lightblue; */
   display: flex;
   justify-content: center;
@@ -195,7 +175,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-#contactFormDescription {
+#formDescription {
   padding: 0px 20px;
   height: 80px;
 }
@@ -223,9 +203,6 @@ body {
 }
 #emailIcon {
   /* top: 19px; */
-}
-#contactFormFullName {
-  /* background-color: pink; */
 }
 .contactFormText {
   /* background-color: pink; */
@@ -276,13 +253,7 @@ body {
   /* Internet Explorer 10-11, Edge */
   color: #999;
 }
-#contactFormEmail {
-  /* background-color: lightblue; */
-}
-#contactFormPhone {
-  /* background-color: pink; */
-}
-#contactFormMessage {
+#formMessage {
   /* background: pink; */
   padding: 0px 20px 150px 20px;
 }
@@ -307,7 +278,7 @@ body {
   /* Microsoft Edge */
   color: #999;
 }
-#contactFormButtons {
+#formButtons {
   background-color: #e8e8e8;
   width: 100%;
   position: fixed;
@@ -356,9 +327,7 @@ body {
   letter-spacing: 0.5px;
   margin-left: 10px;
 }
-
 /* **************** BUTTONS DOCK **************** */
-
 #mainDock {
   background-color: #e8e8e8;
   width: 100%;
@@ -445,12 +414,11 @@ body {
 }
 .contactBtnText {
   /* letter-spacing: 0.5px; */
-  /* position: absolute; */
   /* background: orange; */
   color: #616161;
   font-size: 13px;
-  font-family: "Titillium Web", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Titillium Web", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 /* #directionsBtnText {
   right: 2px;
@@ -461,14 +429,12 @@ body {
 /* #messageBtnText {
   right: 10px;
 } */
-
 /* ************************** CONTENT ************************** */
-
 #landingBox {
-  height: calc(100vh - 118px);
+  height: calc(100vh - 116px);
   background-color: silver;
   padding-top: 140px;
-  margin-top: 60px;
+  margin-top: 58px;
 }
 .landingImg {
   background-image: url("./gradient.jpg");
@@ -479,21 +445,19 @@ body {
   width: 100%;
 }
 .landingHeading {
-  /* background: orange; */
+  /* background: pink; */
   text-align: center;
-  width: 90%;
   font-size: 30px;
   margin: 0 auto;
   color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
-  padding: 0 20px;
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
-#statsContent {
+#stats {
   background-color: white;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -545,11 +509,9 @@ body {
 }
 .learnMoreStatBtn:active {
   background: #1e7f8a;
-  /* color: black; */
-  /* border: 2px solid #1e7f8a; */
 }
 /* **************** OFFICE INFO **************** */
-#officeInfoContent {
+#officeInfo {
   background-color: #383f43;
   padding-top: 10px;
   /* font-family: "Titillium Web", sans-serif; */
@@ -558,8 +520,7 @@ body {
   text-align: center;
   font-size: 20px;
   color: white;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: 40px 0 50px 0;
   letter-spacing: 0.8px;
 }
 .officeInfoSchedule {
@@ -570,7 +531,7 @@ body {
 }
 .officeInfoGrid {
   display: grid;
-  grid-template-columns: 100px 152px;
+  grid-template-columns: 100px 150px;
   grid-template-rows: repeat(7, 26px);
 }
 .officeDay {
@@ -591,28 +552,28 @@ body {
   position: relative;
   margin-bottom: 20px;
   line-height: 20px;
-  padding-left: 20px;
+  padding-left: 16px;
 }
 .officeMap {
-  padding: 0 26px;
+  padding: 0 23px;
 }
 .mapWrapper {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 #googleMap {
   margin: 0 auto;
   display: block;
   height: 230px;
   width: 100%;
-  /* border-radius: 8px; */
 }
 .officeInfoPhone {
   position: relative;
   margin: 50px 0;
   line-height: 21px;
-  padding-left: 20px;
+  padding-left: 21px;
 }
 .officeInfoIcon {
   position: absolute;
@@ -621,23 +582,21 @@ body {
   font-size: 18px;
   color: #37d0e1;
 }
-/* #officePhoneIcon {
-  top: 2px;
-} */
-.officeIconMargin {
-  margin-left: 3px;
+#officeAddressIcon {
+  margin-left: 1px;
+  font-size: 20px;
 }
 #officeInfoFax {
-  padding-left: 21px;
+  padding-left: 22px;
+}
+.officePhoneText {
+  color: #b3b3b3;
+  text-decoration: none;
 }
 .officeInfoText {
   text-align: center;
   letter-spacing: 0.8px;
   color: white;
-}
-.officePhoneText {
-  color: #b3b3b3;
-  text-decoration: none;
 }
 /* ************* SOCIAL MEDIA ************* */
 .socialMediaContent {
@@ -650,12 +609,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  /* padding-top: 20px; */
   grid-column-gap: 14px;
-  /* margin-bottom: 40px; */
 }
 .socialMediaButton {
-  /* background-color: #383f43; */
   background-color: gray;
   width: 48px;
   height: 48px;
@@ -692,6 +648,7 @@ body {
   color: white;
   margin: 40px 0 10px 0;
 }
+/* ***************** FAQ ***************** */
 #faq {
   background: #0d79a1;
   padding-top: 10px;
@@ -702,8 +659,7 @@ body {
   text-align: center;
   font-size: 20px;
   color: white;
-  margin-top: 40px;
-  margin-bottom: 54px;
+  margin: 40px 0 50px 0;
   letter-spacing: 0.7px;
 }
 .faqQuestion {
@@ -718,14 +674,11 @@ body {
 .faqQuestionText {
   padding-left: 46px;
   padding-right: 15px;
-  /* line-height: 23px; */
   letter-spacing: 0.6px;
 }
 .faqNumber {
   position: absolute;
   left: 18px;
-  /* line-height: 23px; */
-  /* top: 1px; */
 }
 .faqAnswer {
   color: white;
@@ -737,17 +690,16 @@ body {
   font-size: 16px;
 }
 
-.newContent {
+#newContent {
   background: pink;
   height: 600px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
-.footer {
+#footer {
   background-color: lightblue;
   height: 100px;
 }
 #emptyDockSpace {
-  width: 100%;
   height: 58px;
 }
