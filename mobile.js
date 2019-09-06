@@ -14,7 +14,7 @@ let messageBtn = document.getElementById("messageBtn");
 let contactForm = document.getElementById("contactForm");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFromBackArrow = document.getElementById("backArrow");
-let contactFormButtonsBar = document.getElementById("contactFormButtons");
+let contactFormButtonsBar = document.getElementById("formButtons");
 let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn");
 let formInputFields = document.querySelectorAll("input, textarea");
 let backToTopBtn = document.getElementById("backToTopBtn");
@@ -44,11 +44,11 @@ function scrollYearCounter() {
 
 function scrollCasesCounter() {
   if (statCases.innerHTML < 5000) {
-    statCases.innerHTML = parseInt(statCases.innerHTML) + 37;
+    statCases.innerHTML = parseInt(statCases.innerHTML) + 73;
 
     setTimeout(function() {
       scrollCasesCounter();
-    }, 10);
+    }, 20);
   } else {
     statCases.innerHTML = 5000;
   }
@@ -78,7 +78,7 @@ for (let i = 0; i < formInputFields.length; i++) {
   formInputFields[i].oninput = function() {
     if (isFormFilled() == true) {
       contactFormSubmitBtn.disabled = false;
-      contactFormSubmitBtn.classList.remove("formSubmitBtn");
+      contactFormSubmitBtn.classList.remove("formSubmitBtnDisabled");
       contactFormSubmitBtn.classList.add("formSubmitBtnReady");
     }
   };

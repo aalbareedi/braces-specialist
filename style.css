@@ -299,7 +299,7 @@ body {
   border: 3px solid silver;
   background-color: white;
 }
-.formSubmitBtn {
+.formSubmitBtnDisabled {
   border: 3px solid gainsboro;
   color: silver;
   opacity: 0.6;
@@ -371,15 +371,6 @@ body {
 .dockContactBtn:active #messageIcon {
   font-size: 14px;
 }
-/* .contactBtnContainer {
-  background-color: pink;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 86px;
-  height: 30px;
-} */
 #callBtn {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -395,22 +386,18 @@ body {
 }
 .contactIcon {
   /* background: yellow; */
-  /* position: absolute; */
   margin-right: 4px;
   font-size: 18px;
 }
 #directionsIcon {
   color: red;
-  /* left: 8px; */
 }
 #callIcon {
   color: #2ba52b;
-  /* left: 12px; */
 }
 #messageIcon {
   color: #1f93ff;
   margin-right: 5px;
-  /* left: 12px; */
 }
 .contactBtnText {
   /* letter-spacing: 0.5px; */
@@ -420,15 +407,6 @@ body {
   /* font-family: "Titillium Web", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
-/* #directionsBtnText {
-  right: 2px;
-} */
-/* #callBtnText {
-  left: 55px;
-} */
-/* #messageBtnText {
-  right: 10px;
-} */
 /* ************************** CONTENT ************************** */
 #landingBox {
   height: calc(100vh - 116px);
