@@ -7,6 +7,9 @@
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+#wrapper {
+  height: 100%;
+}
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
@@ -17,7 +20,7 @@ html {
 }
 .overflowHidden {
   overflow: hidden;
-  /* position: relative; */
+  position: relative;
 }
 .displayHidden {
   display: none !important;
@@ -432,7 +435,7 @@ html {
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
-  color: orange;
+  /* color: orange; */
 }
 .landingSubHeading {
   /* background: lightpink; */

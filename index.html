@@ -41,322 +41,323 @@
   </head>
 
   <body>
-    <nav id="navbar">
-      <div class="navLogoIcon">
-        <img id="mainLogo" src="./logo60blue.svg" />
-      </div>
-      <div class="navLogoName">
-        <div class="logoTextTop">Orthodontic</div>
-        <div class="logoTextBottom">SPECIALTY CENTER</div>
-      </div>
-      <div class="navToggleBtn" id="navToggleBtn">
-        <i class="fas fa-bars navToggleIcon" id="navToggleIcon"></i>
-      </div>
-    </nav>
+    <div id="wrapper">
+      <nav id="navbar">
+        <div class="navLogoIcon">
+          <img id="mainLogo" src="./logo60blue.svg" />
+        </div>
+        <div class="navLogoName">
+          <div class="logoTextTop">Orthodontic</div>
+          <div class="logoTextBottom">SPECIALTY CENTER</div>
+        </div>
+        <div class="navToggleBtn" id="navToggleBtn">
+          <i class="fas fa-bars navToggleIcon" id="navToggleIcon"></i>
+        </div>
+      </nav>
 
-    <form id="contactForm" class="displayHidden">
-      <div id="formTitle">
-        <div class="backArrow" id="backArrow">
-          <i class="fas fa-arrow-left"></i>
-        </div>
-        <div class="messageMenuTitle">Message Us</div>
-      </div>
-      <div id="formDescription">
-        <div class="contactFormSubHeading">
-          We would love to hear from you! Please feel free to send us a message
-          below and we will get back to you shortly.
-        </div>
-      </div>
-      <div class="formOption">
-        <label for="nameInput" class="contactFormText">
-          Full Name<span class="formAsterik">*</span>
-        </label>
-        <div class="fullNameField">
-          <div class="formIcon" id="fullNameIcon">
-            <i class="fas fa-user"></i>
+      <form id="contactForm" class="displayHidden">
+        <div id="formTitle">
+          <div class="backArrow" id="backArrow">
+            <i class="fas fa-arrow-left"></i>
           </div>
-          <input
-            required
-            id="nameInput"
-            type="text"
-            class="contactFormInput"
-            placeholder="Firstname Lastname"
-          />
+          <div class="messageMenuTitle">Message Us</div>
         </div>
-      </div>
-      <div class="formOption">
-        <label for="emailInput" class="contactFormText">
-          Email Address<span class="formAsterik">*</span>
-        </label>
-        <div class="emailField">
-          <div class="formIcon" id="emailIcon">
-            <i class="fas fa-envelope"></i>
+        <div id="formDescription">
+          <div class="contactFormSubHeading">
+            We would love to hear from you! Please feel free to send us a
+            message below and we will get back to you shortly.
           </div>
-          <input
+        </div>
+        <div class="formOption">
+          <label for="nameInput" class="contactFormText">
+            Full Name<span class="formAsterik">*</span>
+          </label>
+          <div class="fullNameField">
+            <div class="formIcon" id="fullNameIcon">
+              <i class="fas fa-user"></i>
+            </div>
+            <input
+              required
+              id="nameInput"
+              type="text"
+              class="contactFormInput"
+              placeholder="Firstname Lastname"
+            />
+          </div>
+        </div>
+        <div class="formOption">
+          <label for="emailInput" class="contactFormText">
+            Email Address<span class="formAsterik">*</span>
+          </label>
+          <div class="emailField">
+            <div class="formIcon" id="emailIcon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <input
+              required
+              id="emailInput"
+              type="email"
+              class="contactFormInput"
+              placeholder="email@address.com"
+            />
+          </div>
+        </div>
+        <div class="formOption">
+          <label for="phoneInput" class="contactFormText">
+            Phone Number<span class="formAsterik">*</span>
+          </label>
+          <div class="phoneField">
+            <div class="formIcon"><i class="fas fa-phone"></i></div>
+            <input
+              required
+              id="phoneInput"
+              type="tel"
+              class="contactFormInput"
+              placeholder="(555) 123-4567"
+            />
+          </div>
+        </div>
+        <div id="formMessage">
+          <label for="messageInput" class="contactFormText">
+            Message<span class="formAsterik">*</span>
+          </label>
+          <textarea
             required
-            id="emailInput"
-            type="email"
             class="contactFormInput"
-            placeholder="email@address.com"
-          />
+            id="messageInput"
+            placeholder="Questions, comments, concerns..."
+          ></textarea>
         </div>
-      </div>
-      <div class="formOption">
-        <label for="phoneInput" class="contactFormText">
-          Phone Number<span class="formAsterik">*</span>
-        </label>
-        <div class="phoneField">
-          <div class="formIcon"><i class="fas fa-phone"></i></div>
-          <input
-            required
-            id="phoneInput"
-            type="tel"
-            class="contactFormInput"
-            placeholder="(555) 123-4567"
-          />
-        </div>
-      </div>
-      <div id="formMessage">
-        <label for="messageInput" class="contactFormText">
-          Message<span class="formAsterik">*</span>
-        </label>
-        <textarea
-          required
-          class="contactFormInput"
-          id="messageInput"
-          placeholder="Questions, comments, concerns..."
-        ></textarea>
-      </div>
-      <div id="formButtons">
-        <button
-          type="submit"
-          id="contactFormSubmitBtn"
-          class="contactFormBtn formSubmitBtnDisabled"
-          disabled
-        >
-          <i class="fas fa-check"></i>
-          <div class="contactFormBtnText">Send</div>
-        </button>
-        <button type="button" id="formCancelBtn" class="contactFormBtn">
-          <i class="fas fa-times formCancelIcon"></i>
-          <div class="contactFormBtnText">Cancel</div>
-        </button>
-      </div>
-    </form>
-
-    <div id="landingBox">
-      <div class="landingImg"></div>
-      <div class="landingHeading">Smile With A Passion</div>
-      <div class="landingSubHeading">
-        Mobile sites make it easy for people to view your business. Mobile sites
-        should behave in a responsive manner.
-      </div>
-    </div>
-
-    <div id="stats">
-      <div class="statBox">
-        <div class="statNumber" id="statYear">1</div>
-        <div class="statDescription">YEARS OF CONSISTENT WORK</div>
-      </div>
-      <div class="statBox">
-        <div class="statNumber" id="statCases">1</div>
-        <div class="statDescription">HAPPY SMILES</div>
-      </div>
-      <div class="statBox">
-        <div class="statNumber" id="statPercent">1</div>
-        <div class="statDescription">ATTENTION TO DETAIL</div>
-      </div>
-      <div class="statBtnBar">
-        <button class="learnMoreStatBtn">MEET DR. ALBAREEDI</button>
-      </div>
-    </div>
-
-    <div id="officeInfo">
-      <div class="officeInfoHeading">Office Information</div>
-      <div class="officeInfoSchedule">
-        <div class="officeInfoIcon">
-          <i class="far fa-clock"></i>
-        </div>
-        <div class="officeInfoGrid">
-          <div class="officeDay">Monday:</div>
-          <div class="officeTime">10:00 am - 7:00 pm</div>
-          <div class="officeDay">Tuesday:</div>
-          <div class="officeTime">10:00 am - 7:00 pm</div>
-          <div class="officeDay">Wednesday:</div>
-          <div class="officeTime">10:00 am - 7:00 pm</div>
-          <div class="officeDay">Thursday:</div>
-          <div class="officeTime">10:00 am - 7:00 pm</div>
-          <div class="officeDay">Friday:</div>
-          <div class="officeTime">10:00 am - 7:00 pm</div>
-          <div class="officeDay">Saturday:</div>
-          <div class="officeTime officeClosed">Closed</div>
-          <div class="officeDay">Sunday:</div>
-          <div class="officeTime officeClosed">Closed</div>
-        </div>
-      </div>
-
-      <div class="officeInfoPhone">
-        <div class="officeInfoIcon">
-          <i class="fas fa-phone"></i>
-        </div>
-        <div class="officeInfoText">
-          Phone: <span class="officePhoneText">(773) 282-0013</span>
-        </div>
-        <div class="officeInfoText" id="officeInfoFax">
-          Fax: <span class="officePhoneText">(555) 555-5555</span>
-        </div>
-      </div>
-
-      <div class="officeInfoAddress">
-        <div class="officeInfoIcon" id="officeAddressIcon">
-          <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <div class="officeInfoText">
-          4251 N. Milwaukee Ave <br />Chicago, Illinois 60641
-        </div>
-      </div>
-
-      <div class="officeMap">
-        <div class="mapWrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.9501218951723!2d-87.75451418455636!3d41.95840637921591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc3f47d6f02d%3A0x212ff21d3fb2e5b3!2s4251%20N%20Milwaukee%20Ave%2C%20Chicago%2C%20IL%2060641!5e0!3m2!1sen!2sus!4v1567476963270!5m2!1sen!2sus"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen=""
-            id="googleMap"
-          ></iframe>
-        </div>
-      </div>
-
-      <div class="socialMediaText">Follow us on social media</div>
-
-      <div class="socialMediaContent">
-        <div class="socialButtons">
-          <a
-            class="socialMediaButton"
-            href="https://www.instagram.com/orthodonticspecialty/?hl=en"
+        <div id="formButtons">
+          <button
+            type="submit"
+            id="contactFormSubmitBtn"
+            class="contactFormBtn formSubmitBtnDisabled"
+            disabled
           >
-            <button class="socialBtnIcon">
-              <i class="fab fa-instagram socialIcon"></i>
-            </button>
-          </a>
-          <a
-            class="socialMediaButton"
-            href="https://www.linkedin.com/in/said-albareedi-9396b441"
-          >
-            <button class="socialBtnIcon">
-              <i class="fab fa-linkedin-in socialIcon"></i>
-            </button>
-          </a>
-          <a
-            class="socialMediaButton"
-            href="https://www.facebook.com/OrthodontistChicago/?rf=248326265212850"
-          >
-            <button class="socialBtnIcon">
-              <i class="fab fa-facebook-f socialIcon"></i>
-            </button>
-          </a>
-          <a
-            class="socialMediaButton"
-            href="https://twitter.com/OrthoSpecialtyC"
-          >
-            <button class="socialBtnIcon">
-              <i class="fab fa-twitter socialIcon"></i>
-            </button>
-          </a>
+            <i class="fas fa-check"></i>
+            <div class="contactFormBtnText">Send</div>
+          </button>
+          <button type="button" id="formCancelBtn" class="contactFormBtn">
+            <i class="fas fa-times formCancelIcon"></i>
+            <div class="contactFormBtnText">Cancel</div>
+          </button>
+        </div>
+      </form>
+
+      <div id="landingBox">
+        <div class="landingImg"></div>
+        <div class="landingHeading">Smile With A Passion</div>
+        <div class="landingSubHeading">
+          Mobile sites make it easy for people to view your business. Mobile
+          sites should behave in a responsive manner.
         </div>
       </div>
-    </div>
 
-    <div id="faq">
-      <div class="faqHeading">Frequently Asked Questions</div>
-      <div class="faqQuestion">
-        <div class="faqNumber">1.</div>
-        <div class="faqQuestionText">How do I know if I need braces?</div>
-      </div>
-      <div class="faqAnswer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores
-        labore rem. Quia necessitatibus quod veniam? Rem, corrupti consequatur
-        quibusdam perferendis aliquid praesentium consequuntur, veritatis et
-        pariatur quo quos reprehenderit!
-      </div>
-      <div class="faqQuestion">
-        <div class="faqNumber">2.</div>
-        <div class="faqQuestionText">Will braces make my teeth perfect?</div>
-      </div>
-      <div class="faqAnswer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores
-        labore rem. Quia necessitatibus quod veniam? Rem, corrupti consequatur
-        quibusdam perferendis aliquid praesentium consequuntur, veritatis et
-        pariatur quo quos reprehenderit!
-      </div>
-      <div class="faqQuestion">
-        <div class="faqNumber">3.</div>
-        <div class="faqQuestionText">
-          How do I know if I need braces and is my insurance accepted at your
-          practice?
+      <div id="stats">
+        <div class="statBox">
+          <div class="statNumber" id="statYear">1</div>
+          <div class="statDescription">YEARS OF CONSISTENT WORK</div>
+        </div>
+        <div class="statBox">
+          <div class="statNumber" id="statCases">1</div>
+          <div class="statDescription">HAPPY SMILES</div>
+        </div>
+        <div class="statBox">
+          <div class="statNumber" id="statPercent">1</div>
+          <div class="statDescription">ATTENTION TO DETAIL</div>
+        </div>
+        <div class="statBtnBar">
+          <button class="learnMoreStatBtn">MEET DR. ALBAREEDI</button>
         </div>
       </div>
-      <div class="faqAnswer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores
-        labore rem. Quia necessitatibus quod veniam? Rem, corrupti consequatur
-        quibusdam perferendis aliquid praesentium consequuntur, veritatis et
-        pariatur quo quos reprehenderit!
-      </div>
-    </div>
 
-    <div id="newContent"></div>
+      <div id="officeInfo">
+        <div class="officeInfoHeading">Office Information</div>
+        <div class="officeInfoSchedule">
+          <div class="officeInfoIcon">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="officeInfoGrid">
+            <div class="officeDay">Monday:</div>
+            <div class="officeTime">10:00 am - 7:00 pm</div>
+            <div class="officeDay">Tuesday:</div>
+            <div class="officeTime">10:00 am - 7:00 pm</div>
+            <div class="officeDay">Wednesday:</div>
+            <div class="officeTime">10:00 am - 7:00 pm</div>
+            <div class="officeDay">Thursday:</div>
+            <div class="officeTime">10:00 am - 7:00 pm</div>
+            <div class="officeDay">Friday:</div>
+            <div class="officeTime">10:00 am - 7:00 pm</div>
+            <div class="officeDay">Saturday:</div>
+            <div class="officeTime officeClosed">Closed</div>
+            <div class="officeDay">Sunday:</div>
+            <div class="officeTime officeClosed">Closed</div>
+          </div>
+        </div>
 
-    <div id="footer"></div>
-
-    <div id="emptyDockSpace"></div>
-
-    <div id="mainDock">
-      <a href="tel:773-282-0013" id="callBtn">
-        <button class="dockContactBtn" type="button">
-          <div class="contactIcon" id="callIcon">
+        <div class="officeInfoPhone">
+          <div class="officeInfoIcon">
             <i class="fas fa-phone"></i>
           </div>
-          <div class="contactBtnText">Call</div>
-        </button>
-      </a>
+          <div class="officeInfoText">
+            Phone: <span class="officePhoneText">(773) 282-0013</span>
+          </div>
+          <div class="officeInfoText" id="officeInfoFax">
+            Fax: <span class="officePhoneText">(555) 555-5555</span>
+          </div>
+        </div>
 
-      <a
-        id="directionsBtn"
-        href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
-      >
-        <button class="dockContactBtn" type="button">
-          <div class="contactIcon" id="directionsIcon">
+        <div class="officeInfoAddress">
+          <div class="officeInfoIcon" id="officeAddressIcon">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <div class="contactBtnText">Directions</div>
-        </button>
-      </a>
-
-      <button class="dockContactBtn" id="messageBtn" type="button">
-        <div class="contactIcon" id="messageIcon">
-          <i class="fas fa-comment"></i>
+          <div class="officeInfoText">
+            4251 N. Milwaukee Ave <br />Chicago, Illinois 60641
+          </div>
         </div>
-        <div class="contactBtnText">Message</div>
+
+        <div class="officeMap">
+          <div class="mapWrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.9501218951723!2d-87.75451418455636!3d41.95840637921591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc3f47d6f02d%3A0x212ff21d3fb2e5b3!2s4251%20N%20Milwaukee%20Ave%2C%20Chicago%2C%20IL%2060641!5e0!3m2!1sen!2sus!4v1567476963270!5m2!1sen!2sus"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              id="googleMap"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="socialMediaText">Follow us on social media</div>
+
+        <div class="socialMediaContent">
+          <div class="socialButtons">
+            <a
+              class="socialMediaButton"
+              href="https://www.instagram.com/orthodonticspecialty/?hl=en"
+            >
+              <button class="socialBtnIcon">
+                <i class="fab fa-instagram socialIcon"></i>
+              </button>
+            </a>
+            <a
+              class="socialMediaButton"
+              href="https://www.linkedin.com/in/said-albareedi-9396b441"
+            >
+              <button class="socialBtnIcon">
+                <i class="fab fa-linkedin-in socialIcon"></i>
+              </button>
+            </a>
+            <a
+              class="socialMediaButton"
+              href="https://www.facebook.com/OrthodontistChicago/?rf=248326265212850"
+            >
+              <button class="socialBtnIcon">
+                <i class="fab fa-facebook-f socialIcon"></i>
+              </button>
+            </a>
+            <a
+              class="socialMediaButton"
+              href="https://twitter.com/OrthoSpecialtyC"
+            >
+              <button class="socialBtnIcon">
+                <i class="fab fa-twitter socialIcon"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="faq">
+        <div class="faqHeading">Frequently Asked Questions</div>
+        <div class="faqQuestion">
+          <div class="faqNumber">1.</div>
+          <div class="faqQuestionText">How do I know if I need braces?</div>
+        </div>
+        <div class="faqAnswer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          maiores labore rem. Quia necessitatibus quod veniam? Rem, corrupti
+          consequatur quibusdam perferendis aliquid praesentium consequuntur,
+          veritatis et pariatur quo quos reprehenderit!
+        </div>
+        <div class="faqQuestion">
+          <div class="faqNumber">2.</div>
+          <div class="faqQuestionText">Will braces make my teeth perfect?</div>
+        </div>
+        <div class="faqAnswer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          maiores labore rem. Quia necessitatibus quod veniam? Rem, corrupti
+          consequatur quibusdam perferendis aliquid praesentium consequuntur,
+          veritatis et pariatur quo quos reprehenderit!
+        </div>
+        <div class="faqQuestion">
+          <div class="faqNumber">3.</div>
+          <div class="faqQuestionText">
+            How do I know if I need braces and is my insurance accepted at your
+            practice?
+          </div>
+        </div>
+        <div class="faqAnswer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          maiores labore rem. Quia necessitatibus quod veniam? Rem, corrupti
+          consequatur quibusdam perferendis aliquid praesentium consequuntur,
+          veritatis et pariatur quo quos reprehenderit!
+        </div>
+      </div>
+
+      <div id="newContent"></div>
+
+      <div id="footer"></div>
+
+      <div id="emptyDockSpace"></div>
+
+      <div id="mainDock">
+        <a href="tel:773-282-0013" id="callBtn">
+          <button class="dockContactBtn" type="button">
+            <div class="contactIcon" id="callIcon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contactBtnText">Call</div>
+          </button>
+        </a>
+
+        <a
+          id="directionsBtn"
+          href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+        >
+          <button class="dockContactBtn" type="button">
+            <div class="contactIcon" id="directionsIcon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contactBtnText">Directions</div>
+          </button>
+        </a>
+
+        <button class="dockContactBtn" id="messageBtn" type="button">
+          <div class="contactIcon" id="messageIcon">
+            <i class="fas fa-comment"></i>
+          </div>
+          <div class="contactBtnText">Message</div>
+        </button>
+      </div>
+
+      <button id="backToTopBtn" class="displayHidden" type="button">
+        <i class="fas fa-chevron-up upBtn"></i>
       </button>
-    </div>
 
-    <button id="backToTopBtn" class="displayHidden" type="button">
-      <i class="fas fa-chevron-up upBtn"></i>
-    </button>
+      <div id="screenOverlay" class="displayHidden"></div>
 
-    <div id="screenOverlay" class="displayHidden"></div>
-
-    <div id="navWindow" class="displayHidden">
-      <div class="sideNavMenu">
-        <div class="sideNavMenuOpt">About Us</div>
-        <div class="sideNavMenuOpt">Hours & Location</div>
-        <div class="sideNavMenuOpt">FAQ</div>
-        <div class="sideNavMenuOpt">Braces Treatment</div>
-        <div class="sideNavMenuOpt">Our Team</div>
+      <div id="navWindow" class="displayHidden">
+        <div class="sideNavMenu">
+          <div class="sideNavMenuOpt">About Us</div>
+          <div class="sideNavMenuOpt">Hours & Location</div>
+          <div class="sideNavMenuOpt">FAQ</div>
+          <div class="sideNavMenuOpt">Braces Treatment</div>
+          <div class="sideNavMenuOpt">Our Team</div>
+        </div>
       </div>
     </div>
-
     <script src="mobile.js"></script>
   </body>
 </html>

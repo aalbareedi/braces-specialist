@@ -3,6 +3,7 @@ document.addEventListener("touchstart", function() {}, true);
 
 let html = document.getElementsByTagName("html")[0];
 let body = document.getElementsByTagName("body")[0];
+let wrapper = document.getElementById("wrapper");
 let scrollingElement =
   document.scrollingElement || document.documentElement || body;
 let mainDock = document.getElementById("mainDock");
@@ -117,12 +118,6 @@ navbar.onclick = function() {
 };
 
 navToggleBtn.onclick = function(event) {
-  if (navWindow.classList.contains("displayHidden")) {
-    navWindow.classList.remove("displayHidden");
-  } else {
-    navWindow.classList.add("displayHidden");
-  }
-
   if (navToggleIcon.classList.contains("fa-bars")) {
     navToggleIcon.classList.remove("fa-bars");
     navToggleIcon.classList.add("fa-times");
@@ -132,13 +127,17 @@ navToggleBtn.onclick = function(event) {
   }
 
   if (navWindow.classList.contains("displayHidden")) {
-    screenOverlay.classList.add("displayHidden");
-    html.classList.remove("overflowHidden");
-    body.classList.remove("overflowHidden");
-  } else {
+    navWindow.classList.remove("displayHidden");
     screenOverlay.classList.remove("displayHidden");
-    html.classList.add("overflowHidden");
-    body.classList.add("overflowHidden");
+    // html.classList.add("overflowHidden");
+    // body.classList.add("overflowHidden");
+    wrapper.classList.add("overflowHidden");
+  } else {
+    navWindow.classList.add("displayHidden");
+    screenOverlay.classList.add("displayHidden");
+    // html.classList.remove("overflowHidden");
+    // body.classList.remove("overflowHidden");
+    wrapper.classList.remove("overflowHidden");
   }
 
   event.stopPropagation();
