@@ -24,12 +24,18 @@ let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
 let screenOverlay = document.getElementById("screenOverlay");
 
-function scrollBodyToTop() {
+function scrollBodyToTop(previousScrollTop = -1) {
   if (scrollingElement.scrollTop > 0.1) {
-    scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
-    setTimeout(function() {
-      scrollBodyToTop();
-    }, 40);
+    if (
+      previousScrollTop == scrollingElement.scrollTop ||
+      previousScrollTop == -1
+    ) {
+      scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
+      let scrollTop = scrollingElement.scrollTop;
+      setTimeout(function() {
+        scrollBodyToTop(scrollTop);
+      }, 40);
+    }
   }
 }
 
