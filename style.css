@@ -41,21 +41,21 @@ body {
 }
 .navLogoIcon {
   /* background-color: pink; */
+  position: absolute;
+  left: 11px;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  left: 12px;
+  /* justify-content: flex-end; */
 }
 #mainLogo {
   height: 34px;
 }
 .navLogoName {
-  /* background-color: yellow; */
+  /* background-color: orange; */
   position: absolute;
   left: 50px;
-  padding-top: 10px;
+  top: 10px;
 }
 .logoTextTop {
   /* background-color: lightgreen; */
@@ -429,7 +429,7 @@ body {
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
-  /* color: orange; */
+  color: orange;
 }
 .landingSubHeading {
   /* background: lightpink; */
@@ -532,7 +532,7 @@ body {
   position: relative;
   margin-bottom: 20px;
   line-height: 20px;
-  padding-left: 16px;
+  padding-left: 18px;
 }
 .officeMap {
   padding: 0 23px;
@@ -658,7 +658,7 @@ body {
 }
 .faqNumber {
   position: absolute;
-  left: 18px;
+  left: 19px;
 }
 .faqAnswer {
   color: white;
