@@ -132,17 +132,13 @@ navToggleBtn.onclick = function(event) {
     navToggleIcon.classList.add("fa-bars");
   }
 
-  if (navWindow.classList.contains("displayHidden")) {
-    navWindow.classList.remove("displayHidden");
+  if (navWindow.classList.contains("openMenu") == false) {
+    navWindow.classList.add("openMenu");
     screenOverlay.classList.remove("displayHidden");
-    // html.classList.add("overflowHidden");
-    // body.classList.add("overflowHidden");
     wrapper.classList.add("overflowHidden");
   } else {
-    navWindow.classList.add("displayHidden");
+    navWindow.classList.remove("openMenu");
     screenOverlay.classList.add("displayHidden");
-    // html.classList.remove("overflowHidden");
-    // body.classList.remove("overflowHidden");
     wrapper.classList.remove("overflowHidden");
   }
 

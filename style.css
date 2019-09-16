@@ -25,6 +25,9 @@ html {
 .displayHidden {
   display: none !important;
 }
+.openMenu {
+  top: 58px !important;
+}
 #screenOverlay {
   background: black;
   opacity: 0.6;
@@ -37,7 +40,7 @@ html {
 }
 /* ******************** MAIN NAV-BAR ******************** */
 #navbar {
-  z-index: 200;
+  z-index: 250;
   background-color: whitesmoke;
   height: 58px;
   width: 100%;
@@ -115,18 +118,13 @@ html {
 }
 /* *********************** SIDE NAV WINDOW *********************** */
 #navWindow {
-  /* display: none; */
   position: fixed;
   width: 100%;
-  top: 58px;
+  top: -192px;
   right: 0;
   z-index: 200;
-}
-/* **************** SIDE NAV MENU **************** */
-.sideNavMenu {
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .sideNavMenuOpt {
   background-color: whitesmoke;
@@ -138,7 +136,40 @@ html {
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid #e8e8e8;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  transition: top 0.1s;
 }
+.openMenu .sideNavMenuOpt:nth-child(1) {
+  top: 0px;
+  transition-delay: 0;
+  z-index: 10;
+}
+.openMenu .sideNavMenuOpt:nth-child(2) {
+  top: 50px;
+  transition-delay: 0.06s;
+  z-index: 9;
+}
+.openMenu .sideNavMenuOpt:nth-child(3) {
+  top: 100px;
+  transition-delay: 0.12s;
+  z-index: 8;
+}
+.openMenu .sideNavMenuOpt:nth-child(4) {
+  top: 150px;
+  transition-delay: 0.18s;
+  z-index: 7;
+}
+.openMenu .sideNavMenuOpt:nth-child(5) {
+  top: 200px;
+  transition-delay: 0.24s;
+  z-index: 6;
+}
+/* .openMenu .sideNavMenuOpt {
+  top: -50px;
+} */
 .sideNavMenuOpt:active {
   background-color: #e8e8e8;
   /* color: white; */
@@ -418,17 +449,31 @@ html {
 /* ************************** CONTENT ************************** */
 #landingBox {
   height: calc(100vh - 116px);
-  background-color: silver;
-  padding-top: 140px;
+  /* background-color: silver; */
   margin-top: 58px;
+  position: relative;
 }
 .landingImg {
-  background-image: url("./gradient.jpg");
+  background-image: url("./smile1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100px;
-  width: 100%;
+  height: 70%;
+  /* width: 100%; */
+}
+.gradient {
+  /* background-color: rgb(38, 50, 56); */
+  /* opacity: 0.5; */
+  height: 70%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(250, 170, 169, 0) 2%,
+    rgba(255, 255, 255, 1) 55%
+  );
 }
 .landingHeading {
   /* background: pink; */
