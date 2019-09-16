@@ -149,30 +149,26 @@ html {
 }
 .openMenu .sideNavMenuOpt:nth-child(2) {
   top: 50px;
-  transition-delay: 0.06s;
+  transition-delay: 0.03s;
   z-index: 9;
 }
 .openMenu .sideNavMenuOpt:nth-child(3) {
   top: 100px;
-  transition-delay: 0.12s;
+  transition-delay: 0.06s;
   z-index: 8;
 }
 .openMenu .sideNavMenuOpt:nth-child(4) {
   top: 150px;
-  transition-delay: 0.18s;
+  transition-delay: 0.09s;
   z-index: 7;
 }
 .openMenu .sideNavMenuOpt:nth-child(5) {
   top: 200px;
-  transition-delay: 0.24s;
+  transition-delay: 0.12s;
   z-index: 6;
 }
-/* .openMenu .sideNavMenuOpt {
-  top: -50px;
-} */
 .sideNavMenuOpt:active {
   background-color: #e8e8e8;
-  /* color: white; */
 }
 /* ******************* CONTACT FORM ******************* */
 #contactForm {
