@@ -95,7 +95,8 @@ html {
   color: black;
 }
 .navToggleBtn:active {
-  background-color: #e8e8e8;
+  /* background-color: #e8e8e8; */
+  background-color: gainsboro;
 }
 #backToTopBtn {
   display: flex;
@@ -168,7 +169,8 @@ html {
   z-index: 6;
 }
 .sideNavMenuOpt:active {
-  background-color: #e8e8e8;
+  /* background-color: #e8e8e8; */
+  background-color: gainsboro;
 }
 /* ******************* CONTACT FORM ******************* */
 #contactForm {
@@ -186,20 +188,23 @@ html {
   justify-content: center;
   align-items: center;
   height: 60px;
-  position: relative;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .backArrow {
   /* background-color: pink; */
   position: absolute;
   left: 0px;
+  top: 0;
   font-size: 22px;
   color: darkgray;
-  height: 100%;
+  height: 70px;
   width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 6px;
+  /* padding-right: 6px; */
+  padding-top: 6px;
 }
 .backArrow:active {
   color: black;
