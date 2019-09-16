@@ -120,7 +120,9 @@ if (scrollingElement.scrollTop > 0) {
 }
 
 navbar.onclick = function() {
-  scrollBodyToTop();
+  if (navWindow.classList.contains("openMenu") == false) {
+    scrollBodyToTop();
+  }
 };
 
 navToggleBtn.onclick = function(event) {
@@ -195,7 +197,7 @@ backToTopBtn.onclick = function() {
 
 screenOverlay.onclick = function() {
   screenOverlay.classList.add("displayHidden");
-  navWindow.classList.add("displayHidden");
+  navWindow.classList.remove("openMenu");
   navToggleIcon.classList.remove("fa-times");
   navToggleIcon.classList.add("fa-bars");
   html.classList.remove("overflowHidden");
