@@ -104,7 +104,7 @@ for (let i = 0; i < formInputFields.length; i++) {
       } else {
         contactForm.scrollTop += inputDistanceFromTop - 164;
       }
-    }, 10);
+    }, 1000);
 
     contactFormButtonsBar.classList.add("displayHidden");
     mainDock.classList.add("displayHidden");
