@@ -23,6 +23,7 @@ let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
 let screenOverlay = document.getElementById("screenOverlay");
+let main = document.querySelector("main");
 
 function scrollBodyToTop(previousScrollTop = -1) {
   if (scrollingElement.scrollTop > 0.1) {
@@ -154,18 +155,21 @@ messageBtn.onclick = function() {
   html.classList.add("overflowHidden");
   contactForm.classList.remove("displayHidden");
   body.classList.add("overflowHidden");
+  main.classList.add("displayHidden");
 };
 
 contactFormCancelBtn.onclick = function() {
   html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
+  main.classList.remove("displayHidden");
 };
 
 contactFromBackArrow.onclick = function() {
   html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
+  main.classList.remove("displayHidden");
 };
 
 body.onscroll = function() {
