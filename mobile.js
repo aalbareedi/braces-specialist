@@ -120,7 +120,10 @@ if (scrollingElement.scrollTop > 0) {
 }
 
 navbar.onclick = function() {
-  if (navWindow.classList.contains("openMenu") == false) {
+  if (
+    navWindow.classList.contains("openMenu") == false &&
+    contactForm.classList.contains("displayHidden") == true
+  ) {
     scrollBodyToTop();
   }
 };
