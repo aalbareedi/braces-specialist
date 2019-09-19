@@ -103,7 +103,7 @@ for (let i = 0; i < formInputFields.length; i++) {
         // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
         contactForm.scrollTop += inputDistanceFromTop - 104;
       } else {
-        contactForm.scrollTop += inputDistanceFromTop - 184;
+        contactForm.scrollTop += inputDistanceFromTop - 214;
       }
     }, 100);
 
