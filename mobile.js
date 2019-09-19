@@ -93,7 +93,7 @@ for (let i = 0; i < formInputFields.length; i++) {
 
   // onfocus: when input field is selected
   formInputFields[i].onfocus = function(event) {
-    event.preventDefault();
+    event.currentTarget.style.backgroundColor = "red";
     let currentInput = this;
 
     setTimeout(function() {
