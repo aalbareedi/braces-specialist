@@ -92,19 +92,20 @@ for (let i = 0; i < formInputFields.length; i++) {
   };
 
   // onfocus: when input field is selected
-  formInputFields[i].onfocus = function() {
+  formInputFields[i].onfocus = function(event) {
+    event.preventDefault();
     let currentInput = this;
 
-    setTimeout(function() {
-      // .getBoundingClientRect().top gives distance from element to top of viewport
-      let inputDistanceFromTop = currentInput.getBoundingClientRect().top;
-      if (currentInput.tagName == "TEXTAREA") {
-        // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
-        contactForm.scrollTop += inputDistanceFromTop - 104;
-      } else {
-        contactForm.scrollTop += inputDistanceFromTop - 164;
-      }
-    }, 100);
+    // setTimeout(function() {
+    //   // .getBoundingClientRect().top gives distance from element to top of viewport
+    //   let inputDistanceFromTop = currentInput.getBoundingClientRect().top;
+    //   if (currentInput.tagName == "TEXTAREA") {
+    //     // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
+    //     contactForm.scrollTop += inputDistanceFromTop - 104;
+    //   } else {
+    //     contactForm.scrollTop += inputDistanceFromTop - 164;
+    //   }
+    // }, 100);
 
     contactFormButtonsBar.classList.add("displayHidden");
     mainDock.classList.add("displayHidden");
