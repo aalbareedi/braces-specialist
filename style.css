@@ -15,9 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
   /* font-family: "Titillium Web", sans-serif; */
 }
-html {
-  /* height: 100%; */
-}
 .overflowHidden {
   overflow: hidden;
   position: relative;
@@ -28,7 +25,7 @@ html {
 .openMenu {
   top: 58px !important;
 }
-#screenOverlay {
+#navOverlay {
   background: black;
   opacity: 0.6;
   position: fixed;
@@ -38,6 +35,41 @@ html {
   bottom: 0;
   z-index: 150;
 }
+#formOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 240;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.confirmWindow {
+  /* background-color: pink; */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  width: 66%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.confirmIcon {
+  color: white;
+  font-size: 58px;
+}
+.confirmText {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
 /* ******************** MAIN NAV-BAR ******************** */
 #navbar {
   z-index: 250;
@@ -169,7 +201,6 @@ html {
   z-index: 6;
 }
 .sideNavMenuOpt:active {
-  /* background-color: #e8e8e8; */
   background-color: gainsboro;
 }
 /* ******************* CONTACT FORM ******************* */

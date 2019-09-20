@@ -22,7 +22,7 @@ let backToTopBtn = document.getElementById("backToTopBtn");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
-let screenOverlay = document.getElementById("screenOverlay");
+let navOverlay = document.getElementById("navOverlay");
 let main = document.querySelector("main");
 
 function scrollBodyToTop(previousScrollTop = -1) {
@@ -93,8 +93,8 @@ for (let i = 0; i < formInputFields.length; i++) {
 
   // onfocus: when input field is selected
   formInputFields[i].onfocus = function(event) {
-    event.currentTarget.style.backgroundColor = "red";
-    let currentInput = event.currentTarget;
+    // event.currentTarget.style.backgroundColor = "red";
+    let currentInput = this;
 
     setTimeout(function() {
       // .getBoundingClientRect().top gives distance from element to top of viewport
@@ -141,11 +141,11 @@ navToggleBtn.onclick = function(event) {
 
   if (navWindow.classList.contains("openMenu") == false) {
     navWindow.classList.add("openMenu");
-    screenOverlay.classList.remove("displayHidden");
+    navOverlay.classList.remove("displayHidden");
     wrapper.classList.add("overflowHidden");
   } else {
     navWindow.classList.remove("openMenu");
-    screenOverlay.classList.add("displayHidden");
+    navOverlay.classList.add("displayHidden");
     wrapper.classList.remove("overflowHidden");
   }
 
@@ -203,8 +203,8 @@ backToTopBtn.onclick = function() {
   scrollBodyToTop();
 };
 
-screenOverlay.onclick = function() {
-  screenOverlay.classList.add("displayHidden");
+navOverlay.onclick = function() {
+  navOverlay.classList.add("displayHidden");
   navWindow.classList.remove("openMenu");
   navToggleIcon.classList.remove("fa-times");
   navToggleIcon.classList.add("fa-bars");
