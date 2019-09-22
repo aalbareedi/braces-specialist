@@ -25,21 +25,6 @@ let statPercent = document.getElementById("statPercent");
 let navOverlay = document.getElementById("navOverlay");
 let main = document.querySelector("main");
 
-function scrollBodyToTop(previousScrollTop = -1) {
-  if (scrollingElement.scrollTop > 0.1) {
-    if (
-      previousScrollTop == scrollingElement.scrollTop ||
-      previousScrollTop == -1
-    ) {
-      scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
-      let scrollTop = scrollingElement.scrollTop;
-      setTimeout(function() {
-        scrollBodyToTop(scrollTop);
-      }, 40);
-    }
-  }
-}
-
 function scrollYearCounter() {
   if (statYear.innerHTML < 33) {
     statYear.innerHTML = parseInt(statYear.innerHTML) + 1;
@@ -72,6 +57,21 @@ function scrollPercentCounter() {
   }
 }
 
+function scrollBodyToTop(previousScrollTop = -1) {
+  if (scrollingElement.scrollTop > 0.1) {
+    if (
+      previousScrollTop == scrollingElement.scrollTop ||
+      previousScrollTop == -1
+    ) {
+      scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
+      let scrollTop = scrollingElement.scrollTop;
+      setTimeout(function() {
+        scrollBodyToTop(scrollTop);
+      }, 40);
+    }
+  }
+}
+
 function isFormFilled() {
   for (let i = 0; i < formInputFields.length; i++) {
     if (formInputFields[i].value == "") {
@@ -81,6 +81,7 @@ function isFormFilled() {
   return true;
 }
 
+// contact form
 for (let i = 0; i < formInputFields.length; i++) {
   // oninput: when user types in input field
   formInputFields[i].oninput = function() {
@@ -110,6 +111,7 @@ for (let i = 0; i < formInputFields.length; i++) {
     contactFormButtonsBar.classList.add("displayHidden");
     mainDock.classList.add("displayHidden");
   };
+
   // onblur: when leaving an input field
   formInputFields[i].onblur = function() {
     contactFormButtonsBar.classList.remove("displayHidden");
@@ -131,6 +133,7 @@ navbar.onclick = function() {
 };
 
 navToggleBtn.onclick = function(event) {
+  // changing nav toggle icon
   if (navToggleIcon.classList.contains("fa-bars")) {
     navToggleIcon.classList.remove("fa-bars");
     navToggleIcon.classList.add("fa-times");
@@ -152,10 +155,20 @@ navToggleBtn.onclick = function(event) {
   event.stopPropagation();
 };
 
+navOverlay.onclick = function() {
+  navOverlay.classList.add("displayHidden");
+  navWindow.classList.remove("openMenu");
+  navToggleIcon.classList.remove("fa-times");
+  navToggleIcon.classList.add("fa-bars");
+  html.classList.remove("overflowHidden");
+  body.classList.remove("overflowHidden");
+};
+
 messageBtn.onclick = function() {
   html.classList.add("overflowHidden");
   contactForm.classList.remove("displayHidden");
   body.classList.add("overflowHidden");
+  //
   main.classList.add("displayHidden");
 };
 
@@ -171,6 +184,10 @@ contactFromBackArrow.onclick = function() {
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
   main.classList.remove("displayHidden");
+};
+
+backToTopBtn.onclick = function() {
+  scrollBodyToTop();
 };
 
 body.onscroll = function() {
@@ -197,17 +214,4 @@ body.onscroll = function() {
       scrollPercentCounter();
     }
   }
-};
-
-backToTopBtn.onclick = function() {
-  scrollBodyToTop();
-};
-
-navOverlay.onclick = function() {
-  navOverlay.classList.add("displayHidden");
-  navWindow.classList.remove("openMenu");
-  navToggleIcon.classList.remove("fa-times");
-  navToggleIcon.classList.add("fa-bars");
-  html.classList.remove("overflowHidden");
-  body.classList.remove("overflowHidden");
 };

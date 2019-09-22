@@ -55,6 +55,13 @@
         </div>
       </nav>
 
+      <div id="formOverlay">
+        <div class="confirmWindow">
+          <i class="far fa-check-circle confirmIcon"></i>
+          <div class="confirmText">Message Sent</div>
+        </div>
+      </div>
+
       <form id="contactForm" class="displayHidden">
         <div id="formTitle">
           <div class="backArrow" id="backArrow">
@@ -311,52 +318,45 @@
         </div>
 
         <div id="newContent"></div>
-      </main>
 
-      <footer id="footer"></footer>
+        <footer id="footer"></footer>
 
-      <div id="emptyDockSpace"></div>
+        <div id="emptyDockSpace"></div>
 
-      <div id="mainDock">
-        <a href="tel:773-282-0013" id="callBtn">
-          <button class="dockContactBtn" type="button">
-            <div class="contactIcon" id="callIcon">
-              <i class="fas fa-phone"></i>
+        <div id="mainDock">
+          <a href="tel:773-282-0013" id="callBtn">
+            <button class="dockContactBtn" type="button">
+              <div class="contactIcon" id="callIcon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contactBtnText">Call</div>
+            </button>
+          </a>
+
+          <a
+            id="directionsBtn"
+            href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+          >
+            <button class="dockContactBtn" type="button">
+              <div class="contactIcon" id="directionsIcon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contactBtnText">Directions</div>
+            </button>
+          </a>
+
+          <button class="dockContactBtn" id="messageBtn" type="button">
+            <div class="contactIcon" id="messageIcon">
+              <i class="fas fa-comment"></i>
             </div>
-            <div class="contactBtnText">Call</div>
+            <div class="contactBtnText">Message</div>
           </button>
-        </a>
-
-        <a
-          id="directionsBtn"
-          href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
-        >
-          <button class="dockContactBtn" type="button">
-            <div class="contactIcon" id="directionsIcon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contactBtnText">Directions</div>
-          </button>
-        </a>
-
-        <button class="dockContactBtn" id="messageBtn" type="button">
-          <div class="contactIcon" id="messageIcon">
-            <i class="fas fa-comment"></i>
-          </div>
-          <div class="contactBtnText">Message</div>
-        </button>
-      </div>
-
-      <button id="backToTopBtn" class="displayHidden" type="button">
-        <i class="fas fa-chevron-up upBtn"></i>
-      </button>
-
-      <div id="formOverlay">
-        <div class="confirmWindow">
-          <i class="far fa-check-circle confirmIcon"></i>
-          <div class="confirmText">Message Sent</div>
         </div>
-      </div>
+
+        <button id="backToTopBtn" class="displayHidden" type="button">
+          <i class="fas fa-chevron-up upBtn"></i>
+        </button>
+      </main>
 
       <div id="navOverlay" class="displayHidden"></div>
 
@@ -368,6 +368,7 @@
         <div class="sideNavMenuOpt">Our Team</div>
       </div>
     </div>
+
     <script src="mobile.js"></script>
   </body>
 </html>

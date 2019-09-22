@@ -52,7 +52,7 @@ body {
   /* background-color: pink; */
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
-  width: 66%;
+  width: 67%;
   height: 180px;
   display: flex;
   justify-content: center;
@@ -486,7 +486,7 @@ body {
   position: relative;
 }
 .landingImg {
-  background-image: url("./smile1.png");
+  background-image: url("./smile2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
