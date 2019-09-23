@@ -10,6 +10,9 @@
 #wrapper {
   height: 100%;
 }
+html {
+  height: 100%;
+}
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
@@ -100,7 +103,7 @@ body {
   top: 10px;
 }
 .logoTextTop {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
