@@ -168,7 +168,7 @@ messageBtn.onclick = function() {
   html.classList.add("overflowHidden");
   contactForm.classList.remove("displayHidden");
   body.classList.add("overflowHidden");
-  main.classList.add("overflowHidden");
+  wrapper.classList.add("overflowHidden");
   //
   // main.classList.add("displayHidden");
 };
@@ -177,7 +177,7 @@ contactFormCancelBtn.onclick = function() {
   html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
-  main.classList.remove("overflowHidden");
+  wrapper.classList.remove("overflowHidden");
   // main.classList.remove("displayHidden");
 };
 
@@ -185,7 +185,7 @@ contactFromBackArrow.onclick = function() {
   html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
-  main.classList.remove("overflowHidden");
+  wrapper.classList.remove("overflowHidden");
   // main.classList.remove("displayHidden");
 };
 
