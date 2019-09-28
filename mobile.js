@@ -261,3 +261,4 @@ function disableScrollBehind(overlay) {
 
 disableScrollBehind(contactForm);
 disableScrollBehind(navOverlay);
+disableScrollBehind(navWindow);
