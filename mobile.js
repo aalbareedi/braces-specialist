@@ -219,8 +219,8 @@ body.onscroll = function() {
   }
 };
 
-(function() {
-  var _overlay = contactForm;
+function disableScrollBehind(overlay) {
+  var _overlay = overlay;
   var _clientY = null; // remember Y position on touch start
   _overlay.addEventListener(
     "touchstart",
@@ -257,4 +257,7 @@ body.onscroll = function() {
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#Problems_and_solutions
     return _overlay.scrollHeight - _overlay.scrollTop <= _overlay.clientHeight;
   }
-})();
+}
+
+disableScrollBehind(contactForm);
+disableScrollBehind(navOverlay);
