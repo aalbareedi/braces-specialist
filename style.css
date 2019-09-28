@@ -20,7 +20,7 @@ body {
 }
 .overflowHidden {
   overflow: hidden;
-  position: relative;
+  position: fixed;
   touch-action: none;
 }
 .displayHidden {
@@ -109,7 +109,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: lightgreen; */
+  background-color: lightgreen;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -511,18 +511,31 @@ body {
     rgba(255, 255, 255, 1) 55%
   );
 }
-.landingHeading {
+.landingText {
   /* background: pink; */
+  /* height: 37%; */
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.landingHeading {
+  /* background: lightgreen; */
+  /* font-family: "Russo One", sans-serif; */
+  font-family: "Fredoka One", cursive;
+  /* font-style: italic; */
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   margin: 0 auto;
-  color: orange;
+  padding: 0 40px;
+  letter-spacing: 1px;
 }
 .landingSubHeading {
   /* background: lightpink; */
   text-align: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto 20px auto;
+  font-family: "Titillium Web", sans-serif;
 }
 #stats {
   background-color: white;
@@ -760,6 +773,9 @@ body {
 #newContent {
   background: pink;
   height: 600px;
+}
+.aboutText {
+  background: orange;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
