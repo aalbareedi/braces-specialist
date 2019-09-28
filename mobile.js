@@ -263,6 +263,7 @@ function disableScrollBehind(overlay) {
 disableScrollBehind(contactForm);
 disableScrollBehind(navOverlay);
 disableScrollBehind(navWindow);
+disableScrollBehind(navbar);
 
 for (let i = 0; i < sideNavMenuOpt.length; i++) {
   disableScrollBehind(sideNavMenuOpt[i]);

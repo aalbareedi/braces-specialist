@@ -19,9 +19,9 @@ body {
   /* font-family: "Titillium Web", sans-serif; */
 }
 .overflowHidden {
+  touch-action: none;
   overflow: hidden;
   /* position: fixed; */
-  touch-action: none;
 }
 .displayHidden {
   display: none !important;
@@ -73,7 +73,6 @@ body {
   letter-spacing: 1px;
   margin-top: 12px;
 }
-
 /* ******************** MAIN NAV-BAR ******************** */
 #navbar {
   z-index: 250;
@@ -109,7 +108,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
