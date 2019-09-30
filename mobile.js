@@ -25,6 +25,7 @@ let statPercent = document.getElementById("statPercent");
 let navOverlay = document.getElementById("navOverlay");
 let main = document.querySelector("main");
 let sideNavMenuOpt = document.getElementsByClassName("sideNavMenuOpt");
+let dockContactBtn = document.getElementsByClassName("dockContactBtn");
 
 function scrollYearCounter() {
   if (statYear.innerHTML < 33) {
@@ -264,7 +265,9 @@ disableScrollBehind(contactForm);
 disableScrollBehind(navOverlay);
 disableScrollBehind(navWindow);
 disableScrollBehind(navbar);
+
 disableScrollBehind(mainDock);
+disableScrollBehind(dockContactBtn);
 
 for (let i = 0; i < sideNavMenuOpt.length; i++) {
   disableScrollBehind(sideNavMenuOpt[i]);
