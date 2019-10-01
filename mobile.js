@@ -23,6 +23,8 @@ let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
 let navOverlay = document.getElementById("navOverlay");
+let formOverlay = document.getElementById("formOverlay");
+let confirmWindow = document.getElementById("confirmWindow");
 let main = document.querySelector("main");
 let sideNavMenuOpt = document.getElementsByClassName("sideNavMenuOpt");
 let dockContactBtns = document.getElementsByClassName("dockContactBtn");
@@ -135,23 +137,25 @@ navbar.onclick = function() {
 };
 
 navToggleBtn.onclick = function(event) {
-  // changing nav toggle icon
-  if (navToggleIcon.classList.contains("fa-bars")) {
-    navToggleIcon.classList.remove("fa-bars");
-    navToggleIcon.classList.add("fa-times");
-  } else {
-    navToggleIcon.classList.remove("fa-times");
-    navToggleIcon.classList.add("fa-bars");
-  }
+  if (formOverlay.classList.contains("displayHidden") == true) {
+    // changing nav toggle icon
+    if (navToggleIcon.classList.contains("fa-bars")) {
+      navToggleIcon.classList.remove("fa-bars");
+      navToggleIcon.classList.add("fa-times");
+    } else {
+      navToggleIcon.classList.remove("fa-times");
+      navToggleIcon.classList.add("fa-bars");
+    }
 
-  if (navWindow.classList.contains("openMenu") == false) {
-    navWindow.classList.add("openMenu");
-    navOverlay.classList.remove("displayHidden");
-    wrapper.classList.add("overflowHidden");
-  } else {
-    navWindow.classList.remove("openMenu");
-    navOverlay.classList.add("displayHidden");
-    wrapper.classList.remove("overflowHidden");
+    if (navWindow.classList.contains("openMenu") == false) {
+      navWindow.classList.add("openMenu");
+      navOverlay.classList.remove("displayHidden");
+      wrapper.classList.add("overflowHidden");
+    } else {
+      navWindow.classList.remove("openMenu");
+      navOverlay.classList.add("displayHidden");
+      wrapper.classList.remove("overflowHidden");
+    }
   }
 
   event.stopPropagation();
@@ -173,6 +177,30 @@ messageBtn.onclick = function() {
   wrapper.classList.add("overflowHidden");
   //
   // main.classList.add("displayHidden");
+};
+
+contactForm.onsubmit = function(event) {
+  // preventDefault is a method of the event (action) object, stops form from auto sending
+  event.preventDefault();
+
+  formOverlay.classList.remove("displayHidden");
+  contactFormButtonsBar.classList.add("displayHidden");
+
+  setTimeout(function() {
+    confirmWindow.classList.add("visibleConfirmWindow");
+  }, 10);
+
+  setTimeout(function() {
+    contactForm.scrollTop = 0;
+    confirmWindow.classList.remove("visibleConfirmWindow");
+    formOverlay.classList.add("displayHidden");
+    contactForm.classList.add("displayHidden");
+    contactFormButtonsBar.classList.remove("displayHidden");
+    contactFormSubmitBtn.disabled = true;
+    contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
+    contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+    contactForm.reset();
+  }, 3000);
 };
 
 contactFormCancelBtn.onclick = function() {
@@ -265,8 +293,6 @@ disableScrollBehind(contactForm);
 disableScrollBehind(navOverlay);
 disableScrollBehind(navWindow);
 disableScrollBehind(navbar);
-
-disableScrollBehind(mainDock);
 
 for (let i = 0; i < dockContactBtns.length; i++) {
   disableScrollBehind(dockContactBtns[i]);

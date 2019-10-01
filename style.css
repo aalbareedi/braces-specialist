@@ -50,10 +50,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
-.confirmWindow {
-  /* background-color: pink; */
+#confirmWindow {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   width: 67%;
@@ -62,10 +60,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#confirmWindow.visibleConfirmWindow {
+  opacity: 1;
+}
+#confirmWindow.visibleConfirmWindow .confirmIcon {
+  color: green;
 }
 .confirmIcon {
   color: white;
   font-size: 58px;
+  transition: color 2s;
 }
 .confirmText {
   color: white;
