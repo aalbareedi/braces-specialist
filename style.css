@@ -46,7 +46,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 240;
+  z-index: 260;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +115,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
