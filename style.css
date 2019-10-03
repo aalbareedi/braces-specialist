@@ -80,6 +80,10 @@ body {
   letter-spacing: 1px;
   margin-top: 12px;
 }
+.unselectable {
+  user-select: none;
+  -webkit-user-select: none;
+}
 /* ******************** MAIN NAV-BAR ******************** */
 #navbar {
   z-index: 250;
@@ -115,7 +119,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -438,8 +442,6 @@ body {
   cursor: pointer;
   outline: none;
   border: 3px solid silver;
-  user-select: none;
-  -webkit-user-select: none;
 }
 .dockContactBtn:active {
   /* border: 3px solid #1f93ff; */
