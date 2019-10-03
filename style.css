@@ -126,6 +126,7 @@ body {
 }
 .navToggleBtn {
   /* background-color: pink; */
+  outline: none;
   width: 58px;
   height: 100%;
   display: flex;
