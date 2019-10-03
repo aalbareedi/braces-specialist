@@ -366,13 +366,17 @@
         <button
           type="submit"
           id="contactFormSubmitBtn"
-          class="contactFormBtn formSubmitBtnDisabled"
+          class="contactFormBtn formSubmitBtnDisabled unselectable"
           disabled
         >
           <i class="fas fa-check formCheckIcon"></i>
           <div class="contactFormBtnText">Send</div>
         </button>
-        <button type="button" id="formCancelBtn" class="contactFormBtn">
+        <button
+          type="button"
+          id="formCancelBtn"
+          class="contactFormBtn unselectable"
+        >
           <i class="fas fa-times formCancelIcon"></i>
           <div class="contactFormBtnText">Cancel</div>
         </button>
@@ -382,7 +386,7 @@
     <div id="formOverlay" class="displayHidden">
       <div id="confirmWindow">
         <i class="far fa-check-circle confirmIcon"></i>
-        <div class="confirmText">Message Sent</div>
+        <div class="confirmText unselectable">Message Sent</div>
       </div>
     </div>
 
