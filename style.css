@@ -67,7 +67,7 @@ body {
   opacity: 1;
 }
 #confirmWindow.visibleConfirmWindow .confirmIcon {
-  color: green;
+  color: #2ba52b;
 }
 .confirmIcon {
   color: white;
@@ -392,6 +392,12 @@ body {
   color: white;
   margin-right: 4px;
   background-color: #10b020;
+}
+.formSubmitBtnReady:active {
+  background-color: #0b7a16;
+}
+.formSubmitBtnReady:active .formCheckIcon {
+  font-size: 22px;
 }
 #formCancelBtn {
   margin-left: 4px;
