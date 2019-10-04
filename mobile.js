@@ -106,9 +106,9 @@ for (let i = 0; i < formInputFields.length; i++) {
       let inputDistanceFromTop = currentInput.getBoundingClientRect().top;
       if (currentInput.tagName == "TEXTAREA") {
         // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
-        contactForm.scrollTop += inputDistanceFromTop - 104;
+        // contactForm.scrollTop += inputDistanceFromTop - 104;
       } else {
-        contactForm.scrollTop += inputDistanceFromTop - 214;
+        // contactForm.scrollTop += inputDistanceFromTop - 214;
       }
     }, 100);
 

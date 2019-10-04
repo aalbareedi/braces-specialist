@@ -81,8 +81,10 @@ body {
   margin-top: 12px;
 }
 .unselectable {
+  -webkit-user-select: none; /* Safari / Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
   user-select: none;
-  -webkit-user-select: none;
 }
 /* ******************** MAIN NAV-BAR ******************** */
 #navbar {
@@ -119,7 +121,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
