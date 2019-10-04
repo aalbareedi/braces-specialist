@@ -201,6 +201,8 @@ contactForm.onsubmit = function(event) {
     contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
     contactForm.reset();
   }, 3000);
+
+  scrollingElement.scrollTop = bodyScrollPosition;
 };
 
 contactFormCancelBtn.onclick = function() {
@@ -216,6 +218,7 @@ contactFromBackArrow.onclick = function() {
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
+  scrollingElement.scrollTop = bodyScrollPosition;
 };
 
 backToTopBtn.onclick = function() {
