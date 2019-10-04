@@ -1,6 +1,7 @@
 // Remove Gray Highlight When Tapping Links in Mobile Safari
 document.addEventListener("touchstart", function() {}, true);
 
+let bodyScrollPosition = 0;
 let html = document.getElementsByTagName("html")[0];
 let body = document.getElementsByTagName("body")[0];
 let wrapper = document.getElementById("wrapper");
@@ -106,9 +107,9 @@ for (let i = 0; i < formInputFields.length; i++) {
       let inputDistanceFromTop = currentInput.getBoundingClientRect().top;
       if (currentInput.tagName == "TEXTAREA") {
         // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
-        // contactForm.scrollTop += inputDistanceFromTop - 104;
+        contactForm.scrollTop += inputDistanceFromTop - 104;
       } else {
-        // contactForm.scrollTop += inputDistanceFromTop - 214;
+        contactForm.scrollTop += inputDistanceFromTop - 214;
       }
     }, 100);
 
@@ -175,8 +176,7 @@ messageBtn.onclick = function() {
   contactForm.classList.remove("displayHidden");
   body.classList.add("overflowHidden");
   wrapper.classList.add("overflowHidden");
-  //
-  // main.classList.add("displayHidden");
+  bodyScrollPosition = scrollingElement.scrollTop;
 };
 
 contactForm.onsubmit = function(event) {
@@ -208,7 +208,7 @@ contactFormCancelBtn.onclick = function() {
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
-  // main.classList.remove("displayHidden");
+  scrollingElement.scrollTop = bodyScrollPosition;
 };
 
 contactFromBackArrow.onclick = function() {
@@ -216,7 +216,6 @@ contactFromBackArrow.onclick = function() {
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
-  // main.classList.remove("displayHidden");
 };
 
 backToTopBtn.onclick = function() {
