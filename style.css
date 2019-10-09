@@ -21,7 +21,6 @@ body {
 .overflowHidden {
   touch-action: none;
   overflow: hidden;
-  /* position: fixed; */
 }
 .displayHidden {
   display: none !important;
@@ -29,6 +28,13 @@ body {
 .openMenu {
   top: 58px !important;
 }
+.unselectable {
+  -webkit-user-select: none; /* Safari & Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none;
+}
+/* ************************************ MAIN NAV-BAR ****************************************** */
 #navOverlay {
   background: black;
   opacity: 0.6;
@@ -39,54 +45,6 @@ body {
   bottom: 0;
   z-index: 150;
 }
-#formOverlay {
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 260;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#confirmWindow {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  width: 67%;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-#confirmWindow.visibleConfirmWindow {
-  opacity: 1;
-}
-#confirmWindow.visibleConfirmWindow .confirmIcon {
-  color: #2ba52b;
-}
-.confirmIcon {
-  color: white;
-  font-size: 58px;
-  transition: color 2s;
-}
-.confirmText {
-  color: white;
-  font-size: 22px;
-  letter-spacing: 1px;
-  margin-top: 12px;
-}
-.unselectable {
-  -webkit-user-select: none; /* Safari / Chrome */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none;
-}
-/* ******************** MAIN NAV-BAR ******************** */
 #navbar {
   z-index: 250;
   background-color: whitesmoke;
@@ -112,7 +70,7 @@ body {
   /* background-color: orange; */
   position: absolute;
   left: 50px;
-  top: 10px;
+  top: 9px;
 }
 .logoTextTop {
   /* background-color: lightgreen; */
@@ -121,13 +79,12 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
 }
 .navToggleBtn {
-  /* background-color: pink; */
   outline: none;
   width: 58px;
   height: 100%;
@@ -144,7 +101,6 @@ body {
   color: black;
 }
 .navToggleBtn:active {
-  /* background-color: #e8e8e8; */
   background-color: gainsboro;
 }
 #backToTopBtn {
@@ -166,15 +122,13 @@ body {
   font-size: 18px;
   margin-bottom: 2px;
 }
-/* *********************** SIDE NAV WINDOW *********************** */
+/* ********************************** SIDE NAV WINDOW ************************************** */
 #navWindow {
   position: fixed;
   width: 100%;
   top: -192px;
   right: 0;
   z-index: 200;
-  /* display: flex;
-  flex-direction: column; */
 }
 .sideNavMenuOpt {
   background-color: whitesmoke;
@@ -220,7 +174,7 @@ body {
 .sideNavMenuOpt:active {
   background-color: gainsboro;
 }
-/* ******************* CONTACT FORM ******************* */
+/* *********************************** CONTACT FORM ***************************************** */
 input.contactFormInput:valid {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
   background-size: 20px;
@@ -421,7 +375,48 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
   margin-left: 10px;
 }
-/* **************** BUTTONS DOCK **************** */
+#formOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 260;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#confirmWindow {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  width: 67%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#confirmWindow.visibleConfirmWindow {
+  opacity: 1;
+}
+#confirmWindow.visibleConfirmWindow .confirmIcon {
+  color: #2ba52b;
+}
+.confirmIcon {
+  color: white;
+  font-size: 58px;
+  transition: color 2s;
+}
+.confirmText {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+/* ************************************** BUTTONS DOCK **************************************** */
 #mainDock {
   background-color: #e8e8e8;
   width: 100%;
@@ -499,7 +494,7 @@ input.contactFormInput:valid + .formIcon {
   /* font-family: "Titillium Web", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
-/* ************************** CONTENT ************************** */
+/* *************************************** CONTENT ******************************************* */
 #landingBox {
   height: calc(100vh - 116px);
   /* background-color: silver; */
@@ -517,15 +512,15 @@ input.contactFormInput:valid + .formIcon {
 .gradient {
   /* background-color: rgb(38, 50, 56); */
   /* opacity: 0.5; */
-  height: 70%;
+  height: 68%;
   position: absolute;
   bottom: 0px;
   left: 0;
   right: 0;
   background-image: linear-gradient(
     180deg,
-    rgba(250, 170, 169, 0) 2%,
-    rgba(255, 255, 255, 1) 55%
+    rgba(245, 186, 144, 0) 22%,
+    rgba(245, 186, 144, 1) 55%
   );
 }
 .landingText {
@@ -540,12 +535,13 @@ input.contactFormInput:valid + .formIcon {
   /* background: lightgreen; */
   /* font-family: "Russo One", sans-serif; */
   font-family: "Fredoka One", cursive;
-  /* font-style: italic; */
+  font-style: italic;
   text-align: center;
   font-size: 40px;
   margin: 0 auto;
-  padding: 0 36px;
-  letter-spacing: 1px;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  color: white;
 }
 .landingSubHeading {
   /* background: yellow; */
@@ -553,6 +549,7 @@ input.contactFormInput:valid + .formIcon {
   width: 80%;
   margin: 15px auto 25px auto;
   font-family: "Titillium Web", sans-serif;
+  color: white;
 }
 #stats {
   background-color: white;
@@ -607,7 +604,7 @@ input.contactFormInput:valid + .formIcon {
 .learnMoreStatBtn:active {
   background: #1e7f8a;
 }
-/* **************** OFFICE INFO **************** */
+/* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
   padding-top: 10px;
@@ -695,7 +692,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.8px;
   color: white;
 }
-/* ************* SOCIAL MEDIA ************* */
+/* *************************************** SOCIAL MEDIA ************************************* */
 .socialMediaContent {
   display: flex;
   justify-content: center;
@@ -745,7 +742,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   margin: 40px 0 10px 0;
 }
-/* ***************** FAQ ***************** */
+/* ****************************************** FAQ ******************************************* */
 #faq {
   background: #0d79a1;
   padding-top: 10px;
@@ -793,6 +790,9 @@ input.contactFormInput:valid + .formIcon {
 }
 .aboutText {
   background: orange;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
 }
 
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
@@ -820,12 +820,7 @@ input.contactFormInput:valid + .formIcon {
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-in-left
- * ----------------------------------------
- */
+/* animation slide-in-left */
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -856,12 +851,7 @@ input.contactFormInput:valid + .formIcon {
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-out-right
- * ----------------------------------------
- */
+/* animation slide-out-right */
 @-webkit-keyframes slide-out-right {
   0% {
     -webkit-transform: translateX(0);
