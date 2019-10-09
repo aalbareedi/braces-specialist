@@ -497,7 +497,6 @@ input.contactFormInput:valid + .formIcon {
 /* *************************************** CONTENT ******************************************* */
 #landingBox {
   height: calc(100vh - 116px);
-  /* background-color: silver; */
   margin-top: 58px;
   position: relative;
 }
@@ -506,26 +505,26 @@ input.contactFormInput:valid + .formIcon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70%;
-  /* width: 100%; */
+  height: 100%;
+  /* height: 70%; */
 }
 .gradient {
-  /* background-color: rgb(38, 50, 56); */
-  /* opacity: 0.5; */
-  height: 68%;
+  background-color: rgb(38, 50, 56);
+  opacity: 0.5;
+  height: 100%;
+  /* height: 68%; */
   position: absolute;
   bottom: 0px;
   left: 0;
   right: 0;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
     rgba(245, 186, 144, 0) 22%,
     rgba(245, 186, 144, 1) 55%
-  );
+  ); */
 }
 .landingText {
   /* background: pink; */
-  /* height: 37%; */
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -536,8 +535,9 @@ input.contactFormInput:valid + .formIcon {
   /* font-family: "Russo One", sans-serif; */
   font-family: "Fredoka One", cursive;
   font-style: italic;
-  text-align: center;
-  font-size: 40px;
+  /* text-align: center; */
+  font-size: 60px;
+  /* font-size: 40px; */
   margin: 0 auto;
   padding: 0 20px;
   letter-spacing: 2px;
@@ -550,6 +550,7 @@ input.contactFormInput:valid + .formIcon {
   margin: 15px auto 25px auto;
   font-family: "Titillium Web", sans-serif;
   color: white;
+  line-height: 20px;
 }
 #stats {
   background-color: white;
