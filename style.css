@@ -94,6 +94,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
+  border-top: 2px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;
 }
 .navLogoIcon {
@@ -120,7 +121,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
