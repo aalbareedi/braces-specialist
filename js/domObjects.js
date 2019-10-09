@@ -1,0 +1,27 @@
+let html = document.getElementsByTagName("html")[0];
+let body = document.getElementsByTagName("body")[0];
+let wrapper = document.getElementById("wrapper");
+let scrollingElement =
+  document.scrollingElement || document.documentElement || body;
+let mainDock = document.getElementById("mainDock");
+let navbar = document.getElementById("navbar");
+let navToggleBtn = document.getElementById("navToggleBtn");
+let navToggleIcon = document.getElementById("navToggleIcon");
+let navWindow = document.getElementById("navWindow");
+let messageBtn = document.getElementById("messageBtn");
+let contactForm = document.getElementById("contactForm");
+let contactFormCancelBtn = document.getElementById("formCancelBtn");
+let contactFormBackArrow = document.getElementById("backArrow");
+let contactFormButtonsBar = document.getElementById("formButtons");
+let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn");
+let formInputFields = document.querySelectorAll("input, textarea");
+let backToTopBtn = document.getElementById("backToTopBtn");
+let statYear = document.getElementById("statYear");
+let statCases = document.getElementById("statCases");
+let statPercent = document.getElementById("statPercent");
+let navOverlay = document.getElementById("navOverlay");
+let formOverlay = document.getElementById("formOverlay");
+let confirmWindow = document.getElementById("confirmWindow");
+let main = document.querySelector("main");
+let sideNavMenuOpt = document.getElementsByClassName("sideNavMenuOpt");
+let dockContactBtns = document.getElementsByClassName("dockContactBtn");
