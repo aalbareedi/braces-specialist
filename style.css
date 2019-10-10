@@ -79,7 +79,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -396,19 +396,11 @@ input.contactFormInput:valid + .formIcon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
-#confirmWindow.visibleConfirmWindow {
-  opacity: 1;
-}
-#confirmWindow.visibleConfirmWindow .confirmIcon {
-  color: #2ba52b;
-}
+
 .confirmIcon {
-  color: white;
+  color: #2ba52b;
   font-size: 58px;
-  transition: color 2s;
 }
 .confirmText {
   color: white;

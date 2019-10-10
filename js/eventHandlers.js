@@ -59,11 +59,8 @@ contactForm.onsubmit = function(event) {
   formOverlay.classList.remove("displayHidden");
   contactFormButtonsBar.classList.add("displayHidden");
 
-  // workaround for css ignoring transitions when display:none is involved
-  setTimeout(function() {
-    confirmWindow.classList.add("visibleConfirmWindow");
-    confirmWindow.classList.add("slide-in-left");
-  }, 10);
+  confirmWindow.classList.add("visibleConfirmWindow");
+  confirmWindow.classList.add("slide-in-left");
 
   setTimeout(function() {
     confirmWindow.classList.add("slide-out-right");
