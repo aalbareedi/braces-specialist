@@ -1,7 +1,12 @@
-@media only screen and (min-width: 370px) {
-  /* .landingHeading {
-    font-size: 32px;
-  } */
+/* iPhone 6/7/8 */
+@media only screen and (min-width: 375px) {
+  .landingHeading {
+    font-size: 50px;
+  }
+  .landingSubHeading {
+    margin-right: 50px;
+    font-size: 18px;
+  }
 }
 /* landingscape styling */
 @media only screen and (max-height: 414px) and (min-width: 414px) {
