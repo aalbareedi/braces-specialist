@@ -81,6 +81,8 @@ contactForm.onsubmit = function(event) {
   }, 3000);
 
   scrollingElement.scrollTop = bodyScrollPosition;
+
+  // fetch();
 };
 
 contactFormBackArrow.onclick = function() {
