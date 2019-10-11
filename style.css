@@ -496,7 +496,8 @@ input.contactFormInput:valid + .formIcon {
   background-image: url("images/smile4.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -160px;
+  /* background-position-x: -160px; */
+  background-position-x: -139px;
   height: 100%;
 }
 .gradient {
@@ -528,22 +529,25 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Fredoka One", cursive;
   font-style: italic;
   font-size: 40px;
-  padding: 0 100px 0 16px;
   letter-spacing: 2px;
   color: white;
+  width: 68%;
+  margin-left: 16px;
+  /* padding: 0 100px 0 16px; */
 }
 .landingSubHeading {
   /* background: yellow; */
   /* text-align: center; */
-  margin-top: 15px;
-  margin-bottom: 25px;
-  margin-left: 18px;
   font-family: "Titillium Web", sans-serif;
   color: white;
   line-height: 20px;
   letter-spacing: 0.3px;
   font-size: 16px;
   width: 82%;
+  /* margin-top: 15px; */
+  margin-top: 40px;
+  margin-bottom: 25px;
+  margin-left: 18px;
 }
 #stats {
   background-color: white;
