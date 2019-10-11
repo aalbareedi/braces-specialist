@@ -8,6 +8,16 @@
     font-size: 18px;
   }
 }
+@media only screen and (min-width: 414px) {
+  .landingHeading {
+    font-size: 60px;
+  }
+  .landingSubHeading {
+    /* margin-right: 50px; */
+    /* font-size: 18px; */
+    /* width: 80%; */
+  }
+}
 /* landingscape styling */
 @media only screen and (max-height: 414px) and (min-width: 414px) {
   #backToTopBtn {
