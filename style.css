@@ -528,7 +528,7 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Fredoka One", cursive;
   font-style: italic;
   font-size: 40px;
-  padding: 0 100px 0 20px;
+  padding: 0 100px 0 16px;
   letter-spacing: 2px;
   color: white;
 }
@@ -537,7 +537,7 @@ input.contactFormInput:valid + .formIcon {
   /* text-align: center; */
   margin-top: 15px;
   margin-bottom: 25px;
-  margin-left: 22px;
+  margin-left: 18px;
   font-family: "Titillium Web", sans-serif;
   color: white;
   line-height: 20px;
