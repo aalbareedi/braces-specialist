@@ -496,7 +496,8 @@ input.contactFormInput:valid + .formIcon {
   background-image: url("images/smile5.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position-x: -139px; */
+  background-position: bottom 0px left -38px;
+  /* background-position-x: center; */
   height: 100%;
 }
 .gradient {
@@ -532,7 +533,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 2px;
   color: white;
   width: 68%;
-  margin-left: 16px;
+  margin-left: 14px;
   /* padding: 0 100px 0 16px; */
 }
 .landingSubHeading {
@@ -547,7 +548,7 @@ input.contactFormInput:valid + .formIcon {
   /* margin-top: 15px; */
   margin-top: 50px;
   margin-bottom: 25px;
-  margin-left: 18px;
+  margin-left: 16px;
 }
 #stats {
   background-color: white;
