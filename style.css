@@ -532,10 +532,10 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Titillium Web", sans-serif;
   color: white;
   line-height: 20px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
   font-size: 16px;
-  width: 82%;
-  margin-top: 50px;
+  width: 83%;
+  margin-top: 56px;
   margin-bottom: 25px;
   margin-left: 12px;
 }
@@ -727,6 +727,7 @@ input.contactFormInput:valid + .formIcon {
   text-align: center;
   color: white;
   margin: 40px 0 10px 0;
+  letter-spacing: 0.4px;
 }
 /* ****************************************** FAQ ******************************************* */
 #faq {
@@ -778,16 +779,16 @@ input.contactFormInput:valid + .formIcon {
 .aboutTitle {
   text-align: center;
   font-size: 20px;
-  color: white;
+  /* color: white; */
   margin: 40px 0 50px 0;
   letter-spacing: 0.8px;
 }
 .aboutText {
   /* background: orange; */
   line-height: 25px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   font-size: 16px;
-  margin-left: 30px;
+  margin-left: 26px;
   padding-right: 20px;
 }
 
