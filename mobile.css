@@ -4,12 +4,11 @@
     font-size: 46px;
   }
   .landingSubHeading {
-    /* margin-right: 50px; */
     font-size: 18px;
     line-height: 21px;
   }
   #landingBox {
-    background-position: bottom 0px left -58px;
+    /* background-position: bottom 0px left -58px; */
   }
 }
 
@@ -22,18 +21,18 @@
     font-size: 20px;
   }
   #landingBox {
-    background-position: bottom 0px left -78px;
+    /* background-position: bottom 0px left -78px; */
   }
 }
 
 /* iPhone X */
 @media only screen and (min-height: 800px) and (max-width: 467px) {
   #landingBox {
-    background-position: bottom 0px left -170px;
+    /* background-position: bottom 0px left -170px; */
   }
 }
 
-/* landingscape styling */
+/* landingscape */
 @media only screen and (max-height: 414px) and (min-width: 414px) {
   #backToTopBtn {
     bottom: 21%;
