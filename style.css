@@ -71,7 +71,7 @@ body {
   top: 9px;
 }
 .logoTextTop {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;

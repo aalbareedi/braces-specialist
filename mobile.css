@@ -8,7 +8,7 @@
     font-size: 18px;
     line-height: 21px;
   }
-  .landingImg {
+  #landingBox {
     background-position: bottom 0px left -58px;
   }
 }
@@ -21,14 +21,14 @@
   .landingSubHeading {
     font-size: 20px;
   }
-  .landingImg {
+  #landingBox {
     background-position: bottom 0px left -78px;
   }
 }
 
 /* iPhone X */
 @media only screen and (min-height: 800px) and (max-width: 467px) {
-  .landingImg {
+  #landingBox {
     background-position: bottom 0px left -170px;
   }
 }
