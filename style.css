@@ -71,7 +71,7 @@ body {
   top: 9px;
 }
 .logoTextTop {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
@@ -483,7 +483,7 @@ input.contactFormInput:valid + .formIcon {
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position: bottom 0px left 0px;
+  background-position: bottom 0px left -20px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
