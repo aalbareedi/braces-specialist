@@ -8,7 +8,7 @@
     line-height: 21px;
   }
   #landingBox {
-    background-position: bottom 0px left -30px;
+    background-position: bottom 0px left -33px;
   }
 }
 
@@ -28,7 +28,7 @@
 /* iPhone X */
 @media only screen and (min-height: 800px) and (max-width: 467px) {
   #landingBox {
-    background-position: bottom 0px left -136px;
+    background-position: bottom 0px left -130px;
   }
 }
 
