@@ -82,7 +82,8 @@ contactForm.onsubmit = function(event) {
 
   scrollingElement.scrollTop = bodyScrollPosition;
 
-  // fetch();
+  let message = contactFormMessageInput.value;
+  // fetch("sendEmail.php");
 };
 
 contactFormBackArrow.onclick = function() {

@@ -15,6 +15,7 @@ let contactFormBackArrow = document.getElementById("backArrow");
 let contactFormButtonsBar = document.getElementById("formButtons");
 let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn");
 let formInputFields = document.querySelectorAll("input, textarea");
+let contactFormMessageInput = document.getElementById("messageInput");
 let backToTopBtn = document.getElementById("backToTopBtn");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
