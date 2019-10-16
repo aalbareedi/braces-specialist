@@ -71,7 +71,7 @@ body {
   top: 9px;
 }
 .logoTextTop {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
@@ -201,7 +201,6 @@ input.contactFormInput:valid + .formIcon {
   margin-top: 10px;
 }
 .backArrow {
-  /* background-color: pink; */
   position: absolute;
   left: 0px;
   top: 0;
@@ -428,11 +427,10 @@ input.contactFormInput:valid + .formIcon {
 }
 .dockContactBtn:active {
   background-color: silver;
+}
+.dockContactBtn:active .contactBtnText {
   color: white;
 }
-/* .dockContactBtn:active .contactBtnText {
-  color: white;
-} */
 .dockContactBtn:active #directionsIcon {
   font-size: 14px;
 }
@@ -523,7 +521,7 @@ input.contactFormInput:valid + .formIcon {
 .landingSubHeading {
   font-family: "Titillium Web", sans-serif;
   color: white;
-  line-height: 20px;
+  line-height: 21px;
   letter-spacing: 0.4px;
   font-size: 16px;
   width: 83%;
@@ -772,7 +770,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .aboutText {
   /* background: orange; */
-  line-height: 25px;
+  line-height: 26px;
   letter-spacing: 0.4px;
   font-size: 16px;
   margin-left: 26px;
