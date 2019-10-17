@@ -83,7 +83,9 @@ contactForm.onsubmit = function(event) {
   scrollingElement.scrollTop = bodyScrollPosition;
 
   let message = contactFormMessageInput.value;
-  // fetch("sendEmail.php");
+  // fetch is js function that lets you send http requests to servers,
+  // we are requesting sendEmail.php from server to send the email through
+  // fetch("sendEmail.php?sender=sender@gmail.com");
 };
 
 contactFormBackArrow.onclick = function() {
