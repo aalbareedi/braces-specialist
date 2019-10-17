@@ -77,7 +77,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -485,6 +485,7 @@ input.contactFormInput:valid + .formIcon {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  min-width: 100vw;
 }
 .gradient {
   background-color: black;
