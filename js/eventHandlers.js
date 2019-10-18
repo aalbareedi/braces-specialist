@@ -45,8 +45,8 @@ navOverlay.onclick = function() {
 };
 
 messageBtn.onclick = function() {
-  html.classList.add("overflowHidden");
   contactForm.classList.remove("displayHidden");
+  html.classList.add("overflowHidden");
   body.classList.add("overflowHidden");
   wrapper.classList.add("overflowHidden");
   bodyScrollPosition = scrollingElement.scrollTop;
@@ -81,6 +81,9 @@ contactForm.onsubmit = function(event) {
   }, 3000);
 
   scrollingElement.scrollTop = bodyScrollPosition;
+  html.classList.remove("overflowHidden");
+  body.classList.remove("overflowHidden");
+  wrapper.classList.remove("overflowHidden");
 
   let message = contactFormMessageInput.value;
   // fetch is js function that lets you send http requests to servers,

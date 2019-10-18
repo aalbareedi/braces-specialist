@@ -37,3 +37,9 @@
     bottom: 21%;
   }
 }
+
+@media only screen and (max-height: 568px) and (max-width: 320px) {
+  #landingBox {
+    background-position: bottom 0px left 0px;
+  }
+}
