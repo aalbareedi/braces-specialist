@@ -88,7 +88,7 @@ contactForm.onsubmit = function(event) {
   let message = contactFormMessageInput.value;
   // fetch is js function that lets you send http requests to servers,
   // we are requesting sendEmail.php from server to send the email through
-  // fetch("sendEmail.php?sender=sender@gmail.com");
+  // fetch("sendEmail.php?message=" + message);
 };
 
 contactFormBackArrow.onclick = function() {

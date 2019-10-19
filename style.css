@@ -75,12 +75,14 @@ body {
   font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
+  opacity: 0.8;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
+  opacity: 0.8;
 }
 .navToggleBtn {
   outline: none;
@@ -97,6 +99,7 @@ body {
 .navToggleIcon {
   font-size: 24px;
   color: black;
+  opacity: 0.8;
 }
 .navToggleBtn:active {
   background-color: gainsboro;
@@ -227,7 +230,7 @@ input.contactFormInput:valid + .formIcon {
   height: 80px;
   font-size: 14px;
   line-height: 18px;
-  color: black;
+  color: #444444;
   letter-spacing: 0.3px;
 }
 .formOption {
@@ -248,6 +251,7 @@ input.contactFormInput:valid + .formIcon {
   align-items: center;
   letter-spacing: 0.3px;
   margin-bottom: 2px;
+  color: #444444;
 }
 .formAsterik {
   color: red;
@@ -760,8 +764,8 @@ input.contactFormInput:valid + .formIcon {
 
 #about {
   background: pink;
-  height: 600px;
   padding-top: 10px;
+  padding-bottom: 40px;
 }
 .aboutTitle {
   text-align: center;
