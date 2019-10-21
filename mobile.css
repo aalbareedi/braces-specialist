@@ -9,8 +9,17 @@
   .landingSubHeading {
     font-size: 18px;
   }
+  .contactBtnText {
+    font-size: 14px;
+  }
   .contactFormInput {
     font-size: 17px;
+  }
+  .contactFormBtnText {
+    font-size: 16px;
+  }
+  .formBtnIcon {
+    font-size: 18px;
   }
 }
 
@@ -24,6 +33,9 @@
   }
   .landingSubHeading {
     font-size: 20px;
+  }
+  .contactBtnText {
+    font-size: 15px;
   }
 }
 

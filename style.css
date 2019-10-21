@@ -77,7 +77,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -352,7 +352,7 @@ input.contactFormInput:valid + .formIcon {
 .formSubmitBtnReady:active {
   background-color: #0b7a16;
 }
-.formSubmitBtnReady:active .formCheckIcon {
+.formSubmitBtnReady:active #formCheckIcon {
   font-size: 22px;
 }
 #formCancelBtn {
@@ -362,7 +362,7 @@ input.contactFormInput:valid + .formIcon {
   background-color: silver;
   color: white;
 }
-.formCancelIcon {
+.formBtnIcon {
   font-size: 16px;
 }
 .contactFormBtnText {
@@ -491,8 +491,7 @@ input.contactFormInput:valid + .formIcon {
   min-width: 100vw;
 }
 .gradient {
-  background-color: black;
-  opacity: 0.4;
+  /* background-color: black; */
   height: 100%;
   position: absolute;
   bottom: 0px;
