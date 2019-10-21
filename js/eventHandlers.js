@@ -84,11 +84,23 @@ contactForm.onsubmit = function(event) {
   html.classList.remove("overflowHidden");
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
-
-  let message = contactFormMessageInput.value;
-  // fetch is js function that lets you send http requests to servers,
-  // we are requesting sendEmail.php from server to send the email through
-  // fetch("sendEmail.php?message=" + message);
+  // encodeURIComponent converts forwardslashes (/) to a useable text so it doesnt break the url query string
+  let fullName = encodeURIComponent(contactFormNameInput.value);
+  let emailAddress = encodeURIComponent(contactFormEmailInput.value);
+  let phoneNumber = encodeURIComponent(contactFormPhoneInput.value);
+  let message = encodeURIComponent(contactFormMessageInput.value);
+  // fetch is JS function that lets you send http requests to servers,
+  // we are REQUESTING sendEmail.php FILE from server to send the email through
+  // fetch(
+  //   "sendEmail.php?name=" +
+  //     fullName +
+  //     "&email=" +
+  //     emailAddress +
+  //     "&phone=" +
+  //     phoneNumber +
+  //     "&msg=" +
+  //     message
+  // );
 };
 
 contactFormBackArrow.onclick = function() {
