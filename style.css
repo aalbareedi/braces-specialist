@@ -270,7 +270,7 @@ input.contactFormInput:valid + .formIcon {
   width: 100%;
   outline: none;
   border-radius: 7px;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.6px;
   padding-right: 40px;
   padding-top: 2px;
@@ -482,7 +482,7 @@ input.contactFormInput:valid + .formIcon {
   position: relative;
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
-  background-position: bottom 0px left -4px;
+  background-position: bottom 0px left -5px;
   /* background-size: 100% auto; */
   background-size: cover;
   -webkit-background-size: cover;

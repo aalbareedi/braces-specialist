@@ -1,13 +1,16 @@
 /* iPhone 6/7/8 */
 @media only screen and (min-width: 375px) {
   #landingBox {
-    background-position: bottom 0px left -25px;
+    background-position: bottom 0px left -28px;
   }
   .landingHeading {
     font-size: 46px;
   }
   .landingSubHeading {
     font-size: 18px;
+  }
+  .contactFormInput {
+    font-size: 17px;
   }
 }
 
