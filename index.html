@@ -171,15 +171,15 @@
           <div class="socialMediaContent">
             <div class="socialButtons">
               <a
-                class="socialMediaButton"
+                class="socialMediaBtn"
                 href="https://www.instagram.com/orthodonticspecialty/?hl=en"
               >
                 <button class="socialBtnIcon">
-                  <i class="fab fa-instagram socialIcon"></i>
+                  <i class="fab fa-instagram socialIcon" id="instagramIcon"></i>
                 </button>
               </a>
               <a
-                class="socialMediaButton"
+                class="socialMediaBtn"
                 href="https://www.linkedin.com/in/said-albareedi-9396b441"
               >
                 <button class="socialBtnIcon">
@@ -187,7 +187,7 @@
                 </button>
               </a>
               <a
-                class="socialMediaButton"
+                class="socialMediaBtn"
                 href="https://www.facebook.com/OrthodontistChicago/?rf=248326265212850"
               >
                 <button class="socialBtnIcon">
@@ -195,7 +195,7 @@
                 </button>
               </a>
               <a
-                class="socialMediaButton"
+                class="socialMediaBtn"
                 href="https://twitter.com/OrthoSpecialtyC"
               >
                 <button class="socialBtnIcon">
@@ -290,23 +290,55 @@
 
       <div id="navOverlay" class="displayHidden"></div>
 
-      <div id="navWindow">
-        <div class="sideNavMenuOpt unselectable">About Us</div>
-        <div class="sideNavMenuOpt unselectable">Hours & Location</div>
-        <div class="sideNavMenuOpt unselectable">FAQ</div>
-        <div class="sideNavMenuOpt unselectable">Braces Treatment</div>
-        <div class="sideNavMenuOpt unselectable">Our Team</div>
+      <div id="navMenu">
+        <div class="navMenuOpt unselectable">About Us</div>
+        <div class="navMenuOpt unselectable">Hours & Location</div>
+        <div class="navMenuOpt unselectable">FAQ</div>
+        <div class="navMenuOpt unselectable">Braces Treatment</div>
+        <div class="navMenuOpt unselectable">Our Team</div>
+      </div>
+
+      <div id="navSocial">
+        <a
+          class="navSocialMediaBtn"
+          href="https://www.instagram.com/orthodonticspecialty/?hl=en"
+        >
+          <button class="navSocialBtnIcon" id="navInstagramIcon">
+            <i class="fab fa-instagram socialIcon"></i>
+          </button>
+        </a>
+        <a
+          class="navSocialMediaBtn"
+          href="https://www.linkedin.com/in/said-albareedi-9396b441"
+        >
+          <button class="navSocialBtnIcon">
+            <i class="fab fa-linkedin-in socialIcon"></i>
+          </button>
+        </a>
+        <a
+          class="navSocialMediaBtn"
+          href="https://www.facebook.com/OrthodontistChicago/?rf=248326265212850"
+        >
+          <button class="navSocialBtnIcon">
+            <i class="fab fa-facebook-f socialIcon"></i>
+          </button>
+        </a>
+        <a class="navSocialMediaBtn" href="https://twitter.com/OrthoSpecialtyC">
+          <button class="navSocialBtnIcon">
+            <i class="fab fa-twitter socialIcon"></i>
+          </button>
+        </a>
       </div>
     </div>
 
     <form id="contactForm" class="displayHidden">
-      <div id="formTitle">
+      <div class="formTitle">
         <div class="backArrow" id="backArrow">
           <i class="fas fa-arrow-left"></i>
         </div>
         <div class="messageMenuTitle">Message Us</div>
       </div>
-      <div id="formDescription">
+      <div class="formDescription">
         We would love to hear from you! Please send us a message below and we
         will get back to you as quickly as possible.
       </div>
@@ -359,7 +391,7 @@
           <div class="formIcon"><i class="fas fa-phone"></i></div>
         </div>
       </div>
-      <div id="formMessage">
+      <div class="formMessage">
         <label for="messageInput" class="contactFormText">
           Message<span class="formAsterik">*</span>
         </label>

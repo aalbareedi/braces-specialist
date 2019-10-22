@@ -3,7 +3,7 @@ document.addEventListener("touchstart", function() {}, true);
 
 navbar.onclick = function() {
   if (
-    navWindow.classList.contains("openMenu") == false &&
+    navMenu.classList.contains("openMenu") == false &&
     contactForm.classList.contains("displayHidden") == true
   ) {
     scrollBodyToTop();
@@ -21,12 +21,12 @@ navToggleBtn.onclick = function(event) {
       navToggleIcon.classList.add("fa-bars");
     }
 
-    if (navWindow.classList.contains("openMenu") == false) {
-      navWindow.classList.add("openMenu");
+    if (navMenu.classList.contains("openMenu") == false) {
+      navMenu.classList.add("openMenu");
       navOverlay.classList.remove("displayHidden");
       wrapper.classList.add("overflowHidden");
     } else {
-      navWindow.classList.remove("openMenu");
+      navMenu.classList.remove("openMenu");
       navOverlay.classList.add("displayHidden");
       wrapper.classList.remove("overflowHidden");
     }
@@ -37,7 +37,7 @@ navToggleBtn.onclick = function(event) {
 
 navOverlay.onclick = function() {
   navOverlay.classList.add("displayHidden");
-  navWindow.classList.remove("openMenu");
+  navMenu.classList.remove("openMenu");
   navToggleIcon.classList.remove("fa-times");
   navToggleIcon.classList.add("fa-bars");
   html.classList.remove("overflowHidden");
@@ -100,7 +100,13 @@ contactForm.onsubmit = function(event) {
   //     phoneNumber +
   //     "&msg=" +
   //     message
-  // );
+  // )
+  //   .then(function() {
+  //     console.log("sending complete");
+  //   })
+  //   .catch(function() {
+  //     console.log("error");
+  //   });
 };
 
 contactFormBackArrow.onclick = function() {

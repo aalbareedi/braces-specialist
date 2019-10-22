@@ -42,7 +42,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: 58px;
   z-index: 150;
 }
 #navbar {
@@ -122,14 +122,14 @@ body {
   margin-bottom: 2px;
 }
 /* ********************************** SIDE NAV WINDOW ************************************** */
-#navWindow {
+#navMenu {
   position: fixed;
   width: 100%;
   top: -192px;
   right: 0;
   z-index: 200;
 }
-.sideNavMenuOpt {
+.navMenuOpt {
   background-color: whitesmoke;
   color: #616161;
   cursor: pointer;
@@ -145,32 +145,32 @@ body {
   right: 0;
   transition: top 0.1s;
 }
-.openMenu .sideNavMenuOpt:nth-child(1) {
+.openMenu .navMenuOpt:nth-child(1) {
   top: 0px;
   transition-delay: 0;
   z-index: 10;
 }
-.openMenu .sideNavMenuOpt:nth-child(2) {
+.openMenu .navMenuOpt:nth-child(2) {
   top: 50px;
   transition-delay: 0.03s;
   z-index: 9;
 }
-.openMenu .sideNavMenuOpt:nth-child(3) {
+.openMenu .navMenuOpt:nth-child(3) {
   top: 100px;
   transition-delay: 0.06s;
   z-index: 8;
 }
-.openMenu .sideNavMenuOpt:nth-child(4) {
+.openMenu .navMenuOpt:nth-child(4) {
   top: 150px;
   transition-delay: 0.09s;
   z-index: 7;
 }
-.openMenu .sideNavMenuOpt:nth-child(5) {
+.openMenu .navMenuOpt:nth-child(5) {
   top: 200px;
   transition-delay: 0.12s;
   z-index: 6;
 }
-.sideNavMenuOpt:active {
+.navMenuOpt:active {
   background-color: gainsboro;
 }
 /* *********************************** CONTACT FORM ***************************************** */
@@ -193,7 +193,7 @@ input.contactFormInput:valid + .formIcon {
   z-index: 100;
   top: 58px;
 }
-#formTitle {
+.formTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,7 +223,7 @@ input.contactFormInput:valid + .formIcon {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-#formDescription {
+.formDescription {
   padding: 0px 20px;
   height: 80px;
   font-size: 14px;
@@ -291,7 +291,7 @@ input.contactFormInput:valid + .formIcon {
   /* Internet Explorer 10-11, Edge */
   color: #999;
 }
-#formMessage {
+.formMessage {
   padding: 0px 20px 150px 20px;
 }
 #messageInput {
@@ -684,7 +684,7 @@ input.contactFormInput:valid + .formIcon {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 14px;
 }
-.socialMediaButton {
+.socialMediaBtn {
   background-color: gray;
   width: 48px;
   height: 48px;
@@ -697,10 +697,10 @@ input.contactFormInput:valid + .formIcon {
   justify-content: center;
   align-items: center;
 }
-.socialMediaButton:active {
+.socialMediaBtn:active {
   background-color: #b3b3b3;
 }
-.socialMediaButton:active .socialBtnIcon {
+.socialMediaBtn:active .socialBtnIcon {
   background-color: #b3b3b3;
   color: white;
 }
@@ -714,12 +714,58 @@ input.contactFormInput:valid + .formIcon {
 .socialIcon {
   outline: none;
 }
+#instagramIcon {
+  font-size: 24px;
+}
 .socialMediaText {
   text-align: center;
   color: white;
   margin: 40px 0 10px 0;
   letter-spacing: 0.4px;
 }
+
+#navSocial {
+  background-color: #e8e8e8;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 58px;
+  display: grid;
+  /* display: none; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 8px;
+  padding: 8px;
+}
+.navSocialMediaBtn {
+  background-color: white;
+  border: 3px solid silver;
+  font-size: 22px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.navSocialBtnIcon {
+  background-color: white;
+  color: silver;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+#navInstagramIcon {
+  font-size: 24px;
+}
+.navSocialMediaBtn:active {
+  background-color: silver;
+}
+.navSocialMediaBtn:active .navSocialBtnIcon {
+  background-color: silver;
+  color: white;
+}
+
 /* ****************************************** FAQ ******************************************* */
 #faq {
   background: #0d79a1;
