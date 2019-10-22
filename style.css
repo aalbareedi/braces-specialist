@@ -126,7 +126,6 @@ body {
   position: fixed;
   width: 100%;
   top: -192px;
-  right: 0;
   z-index: 200;
 }
 .navMenuOpt:not(#navSocial) {
@@ -488,7 +487,7 @@ input.contactFormInput:valid + .formIcon {
   position: relative;
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
-  background-position: bottom 0px left -8px;
+  background-position: bottom 0px left -10px;
   /* background-size: 100% auto; */
   background-size: cover;
   -webkit-background-size: cover;
