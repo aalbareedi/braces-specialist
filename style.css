@@ -177,6 +177,7 @@ body {
 }
 #navMenu .navMenuOpt:active {
   background-color: gainsboro;
+  color: white;
 }
 /* *********************************** CONTACT FORM ***************************************** */
 input.contactFormInput:valid {
@@ -741,19 +742,18 @@ input.contactFormInput:valid + .formIcon {
   transition: top 0.1s;
 }
 .navSocialMediaBtn {
-  /* background-color: white; */
   background-color: whitesmoke;
-  /* border: 3px solid silver; */
   border-right: 2px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;
-
   font-size: 22px;
   outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-radius: 8px; */
+}
+.navTwitterBtn {
+  border-right: none;
 }
 .navSocialBtnIcon {
   background-color: whitesmoke;
