@@ -29,3 +29,4 @@ let confirmWindow = document.getElementById("confirmWindow");
 let main = document.querySelector("main");
 let navMenuOpt = document.getElementsByClassName("navMenuOpt");
 let dockContactBtns = document.getElementsByClassName("dockContactBtn");
+let navSocialMediaBtns = document.getElementsByClassName("navSocialMediaBtn");

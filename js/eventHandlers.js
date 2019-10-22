@@ -35,6 +35,18 @@ navToggleBtn.onclick = function(event) {
   event.stopPropagation();
 };
 
+navSocialMediaBtns.onclick = function() {};
+
+for (let i = 0; i < navSocialMediaBtns.length; i++) {
+  navSocialMediaBtns[i].onclick = function() {
+    navToggleIcon.classList.remove("fa-times");
+    navToggleIcon.classList.add("fa-bars");
+    navMenu.classList.remove("openMenu");
+    navOverlay.classList.add("displayHidden");
+    wrapper.classList.remove("overflowHidden");
+  };
+}
+
 navOverlay.onclick = function() {
   navOverlay.classList.add("displayHidden");
   navMenu.classList.remove("openMenu");

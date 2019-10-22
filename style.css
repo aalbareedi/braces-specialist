@@ -129,7 +129,7 @@ body {
   right: 0;
   z-index: 200;
 }
-.navMenuOpt {
+.navMenuOpt:not(#navSocial) {
   background-color: whitesmoke;
   color: #616161;
   cursor: pointer;
@@ -145,32 +145,37 @@ body {
   right: 0;
   transition: top 0.1s;
 }
-.openMenu .navMenuOpt:nth-child(1) {
+.openMenu#navMenu .navMenuOpt:nth-child(1) {
   top: 0px;
   transition-delay: 0;
   z-index: 10;
 }
-.openMenu .navMenuOpt:nth-child(2) {
+.openMenu#navMenu .navMenuOpt:nth-child(2) {
   top: 50px;
   transition-delay: 0.03s;
   z-index: 9;
 }
-.openMenu .navMenuOpt:nth-child(3) {
+.openMenu#navMenu .navMenuOpt:nth-child(3) {
   top: 100px;
   transition-delay: 0.06s;
   z-index: 8;
 }
-.openMenu .navMenuOpt:nth-child(4) {
+.openMenu#navMenu .navMenuOpt:nth-child(4) {
   top: 150px;
   transition-delay: 0.09s;
   z-index: 7;
 }
-.openMenu .navMenuOpt:nth-child(5) {
+.openMenu#navMenu .navMenuOpt:nth-child(5) {
   top: 200px;
   transition-delay: 0.12s;
   z-index: 6;
 }
-.navMenuOpt:active {
+.openMenu#navMenu .navMenuOpt:nth-child(6) {
+  top: 250px;
+  transition-delay: 0.15s;
+  z-index: 5;
+}
+#navMenu .navMenuOpt:active {
   background-color: gainsboro;
 }
 /* *********************************** CONTACT FORM ***************************************** */
@@ -725,18 +730,15 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #navSocial {
-  /* background-color: #e8e8e8; */
   width: 100%;
-  position: fixed;
-  top: 308px;
+  position: absolute;
+  top: -50px;
   height: 50px;
   display: grid;
-  /* display: none; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  /* grid-column-gap: 8px; */
-  /* padding: 8px; */
   z-index: 200;
+  transition: top 0.1s;
 }
 .navSocialMediaBtn {
   /* background-color: white; */
