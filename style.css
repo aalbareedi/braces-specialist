@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -489,7 +489,7 @@ input.contactFormInput:valid + .formIcon {
   position: relative;
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
-  background-position: bottom 0px left -30px;
+  background-position: bottom 0px left -20px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -67,7 +67,6 @@ messageBtn.onclick = function() {
 contactForm.onsubmit = function(event) {
   // preventDefault is a method of the event (action) object, stops form from auto sending
   event.preventDefault();
-  contactFormButtonsBar.classList.add("displayHidden");
 
   scrollingElement.scrollTop = bodyScrollPosition;
   html.classList.remove("overflowHidden");
@@ -80,44 +79,45 @@ contactForm.onsubmit = function(event) {
   let message = encodeURIComponent(contactFormMessageInput.value);
   // fetch is JS function that lets you send http requests to servers,
   // we are REQUESTING sendEmail.php FILE from server to send the email through
-  fetch(
-    "sendEmail.php?name=" +
-      fullName +
-      "&email=" +
-      emailAddress +
-      "&phone=" +
-      phoneNumber +
-      "&msg=" +
-      message
-  )
-    .then(function() {
-      formOverlay.classList.remove("displayHidden");
-      confirmWindow.classList.add("visibleConfirmWindow");
-      confirmWindow.classList.add("slide-in-left");
+  // fetch(
+  //   "sendEmail.php?name=" +
+  //     fullName +
+  //     "&email=" +
+  //     emailAddress +
+  //     "&phone=" +
+  //     phoneNumber +
+  //     "&msg=" +
+  //     message
+  // )
+  //   .then(function() {
+  //     formOverlay.classList.remove("displayHidden");
+  //     confirmWindow.classList.add("visibleConfirmWindow");
+  //     confirmWindow.classList.add("slide-in-left");
+  //     contactFormButtonsBar.classList.add("displayHidden");
 
-      setTimeout(function() {
-        confirmWindow.classList.add("slide-out-right");
-      }, 2500);
+  //     setTimeout(function() {
+  //       confirmWindow.classList.add("slide-out-right");
+  //     }, 2500);
 
-      setTimeout(function() {
-        contactForm.scrollTop = 0;
-        confirmWindow.classList.remove("visibleConfirmWindow");
-        formOverlay.classList.add("displayHidden");
-        contactForm.classList.add("displayHidden");
-        contactFormButtonsBar.classList.remove("displayHidden");
-        contactFormSubmitBtn.disabled = true;
-        contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
-        contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
-        contactForm.reset();
-        confirmWindow.classList.remove("slide-in-left");
-        confirmWindow.classList.remove("slide-out-right");
-      }, 3000);
+  //     setTimeout(function() {
+  //       contactForm.scrollTop = 0;
+  //       confirmWindow.classList.remove("visibleConfirmWindow");
+  //       formOverlay.classList.add("displayHidden");
+  //       contactForm.classList.add("displayHidden");
+  //       contactFormButtonsBar.classList.remove("displayHidden");
+  //       contactFormSubmitBtn.disabled = true;
+  //       contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
+  //       contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+  //       contactForm.reset();
+  //       confirmWindow.classList.remove("slide-in-left");
+  //       confirmWindow.classList.remove("slide-out-right");
+  //     }, 3000);
 
-      console.log("sending complete");
-    })
-    .catch(function() {
-      console.log("error");
-    });
+  //     console.log("sending complete");
+  //   })
+  //   .catch(function() {
+  //     console.log("error");
+  //   });
 };
 
 contactFormBackArrow.onclick = function() {
