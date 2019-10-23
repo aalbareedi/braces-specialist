@@ -16,3 +16,5 @@ for (let i = 0; i < dockContactBtns.length; i++) {
 for (let i = 0; i < navMenuOpt.length; i++) {
   disableScrollBehind(navMenuOpt[i]);
 }
+
+alert(screen.width + ", " + screen.height);
