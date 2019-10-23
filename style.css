@@ -419,6 +419,7 @@ input.contactFormInput:valid + .formIcon {
   grid-column-gap: 8px;
   padding: 8px;
   border-top: 2px solid gainsboro;
+  z-index: 10;
 }
 .dockContactBtn {
   background-color: white;
@@ -546,6 +547,29 @@ input.contactFormInput:valid + .formIcon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+.statIcons {
+  position: absolute;
+  color: gainsboro;
+  font-size: 62px;
+  opacity: 0.5;
+  transform: rotate(-20deg);
+  left: 20px;
+}
+.statCalenderIcon {
+  left: 20px;
+}
+.statSmileIcon {
+  left: 20px;
+}
+#statImg {
+  position: absolute;
+  left: 6px;
+  top: 36px;
+  opacity: 0.5;
+  height: 80px;
+  transform: rotate(-20deg);
 }
 .statNumber {
   color: #37d0e1;
@@ -561,6 +585,7 @@ input.contactFormInput:valid + .formIcon {
 .statDescription {
   font-size: 16px;
   letter-spacing: 0.4px;
+  z-index: 2;
 }
 .statBtnBar {
   height: 60px;
