@@ -55,7 +55,7 @@
   }
 }
 /* fix horizontal space on chrome for iphone 5 size  */
-@media only screen and (max-height: 567px) and (max-width: 319px) {
+@media only screen and (max-height: 567px) and (max-width: 320px) {
   #landingBox {
     background-position: bottom 0px left 0px;
   }
