@@ -488,7 +488,6 @@ input.contactFormInput:valid + .formIcon {
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
   background-position: bottom 0px left -30px;
-  /* background-size: 100% auto; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -496,7 +495,6 @@ input.contactFormInput:valid + .formIcon {
   min-width: 100vw;
 }
 .gradient {
-  /* background-color: black; */
   height: 100%;
   position: absolute;
   bottom: 0px;
