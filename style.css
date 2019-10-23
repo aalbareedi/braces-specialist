@@ -64,6 +64,7 @@ body {
 }
 #mainLogo {
   height: 34px;
+  pointer-events: none;
 }
 .navLogoName {
   position: absolute;
@@ -564,6 +565,7 @@ input.contactFormInput:valid + .formIcon {
   opacity: 0.5;
   height: 68px;
   transform: rotate(-20deg);
+  pointer-events: none;
 }
 .statCalenderIcon {
   left: 27px;
