@@ -77,7 +77,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -555,6 +555,7 @@ input.contactFormInput:valid + .formIcon {
   top: 21px;
   opacity: 0.5;
   height: 78px;
+  pointer-events: none;
 }
 #statToothImg {
   position: absolute;
