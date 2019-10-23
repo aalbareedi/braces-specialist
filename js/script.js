@@ -17,4 +17,4 @@ for (let i = 0; i < navMenuOpt.length; i++) {
   disableScrollBehind(navMenuOpt[i]);
 }
 
-alert(window.innerWidth + ", " + window.innerHeight);
+// alert(window.innerWidth + ", " + window.innerHeight);

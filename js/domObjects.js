@@ -20,6 +20,7 @@ let contactFormEmailInput = document.getElementById("emailInput");
 let contactFormPhoneInput = document.getElementById("phoneInput");
 let contactFormMessageInput = document.getElementById("messageInput");
 let backToTopBtn = document.getElementById("backToTopBtn");
+let stats = document.getElementById("stats");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
