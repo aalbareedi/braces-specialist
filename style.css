@@ -487,7 +487,7 @@ input.contactFormInput:valid + .formIcon {
   position: relative;
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
-  background-position: bottom 0px left -10px;
+  background-position: bottom 0px left -14px;
   /* background-size: 100% auto; */
   background-size: cover;
   -webkit-background-size: cover;
@@ -529,7 +529,7 @@ input.contactFormInput:valid + .formIcon {
 .landingSubHeading {
   font-family: "Titillium Web", sans-serif;
   color: white;
-  line-height: 21px;
+  line-height: 22px;
   letter-spacing: 0.4px;
   font-size: 16px;
   width: 83%;
@@ -835,6 +835,7 @@ input.contactFormInput:valid + .formIcon {
   padding-right: 20px;
 }
 
+/* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
 #footer {
   background-color: lightblue;
