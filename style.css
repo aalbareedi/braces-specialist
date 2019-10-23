@@ -558,14 +558,14 @@ input.contactFormInput:valid + .formIcon {
 }
 #statToothImg {
   position: absolute;
-  left: 9px;
+  left: 14px;
   top: 36px;
   opacity: 0.5;
   height: 68px;
   transform: rotate(-20deg);
 }
 .statCalenderIcon {
-  left: 25px;
+  left: 27px;
   position: absolute;
   color: gainsboro;
   font-size: 62px;
