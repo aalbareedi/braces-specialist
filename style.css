@@ -568,7 +568,7 @@ input.contactFormInput:valid + .formIcon {
   left: 6px;
   top: 36px;
   opacity: 0.5;
-  height: 80px;
+  height: 70px;
   transform: rotate(-20deg);
 }
 .statNumber {
