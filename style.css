@@ -176,7 +176,7 @@ body {
 }
 #navMenu .navMenuOpt:active {
   background-color: gainsboro;
-  color: white;
+  /* color: white; */
 }
 /* *********************************** CONTACT FORM ***************************************** */
 input.contactFormInput:valid {
