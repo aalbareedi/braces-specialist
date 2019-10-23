@@ -549,38 +549,39 @@ input.contactFormInput:valid + .formIcon {
   flex-direction: column;
   position: relative;
 }
-.statIcons {
+#statSmileImg {
+  position: absolute;
+  left: 17px;
+  top: 21px;
+  opacity: 0.5;
+  height: 78px;
+}
+#statToothImg {
+  position: absolute;
+  left: 9px;
+  top: 36px;
+  opacity: 0.5;
+  height: 68px;
+  transform: rotate(-20deg);
+}
+.statCalenderIcon {
+  left: 25px;
   position: absolute;
   color: gainsboro;
   font-size: 62px;
   opacity: 0.5;
   transform: rotate(-20deg);
-  left: 20px;
-}
-.statCalenderIcon {
-  left: 20px;
-}
-.statSmileIcon {
-  left: 20px;
-}
-#statImg {
-  position: absolute;
-  left: 6px;
-  top: 36px;
-  opacity: 0.5;
-  height: 70px;
-  transform: rotate(-20deg);
-}
-.statNumber {
-  color: #37d0e1;
-  font-size: 27px;
-  margin-bottom: 2px;
 }
 #statCases::after {
   content: "+";
 }
 #statPercent::after {
   content: "%";
+}
+.statNumber {
+  color: #37d0e1;
+  font-size: 27px;
+  margin-bottom: 2px;
 }
 .statDescription {
   font-size: 16px;
