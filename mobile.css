@@ -1,7 +1,14 @@
+/* fix horizontal space on chrome for iphone 5 size  */
+@media only screen and (max-height: 567px) and (max-width: 320px) {
+  #landingBox {
+    background-position: bottom 0px left 0px;
+  }
+}
+
 /* iPhone 6/7/8 */
 @media only screen and (min-width: 375px) {
   #landingBox {
-    background-position: bottom 0px left -45px;
+    background-position: bottom 0px left -42px;
   }
   .landingHeading {
     font-size: 46px;
@@ -52,11 +59,5 @@
 @media only screen and (max-height: 414px) and (min-width: 414px) {
   #backToTopBtn {
     bottom: 21%;
-  }
-}
-/* fix horizontal space on chrome for iphone 5 size  */
-@media only screen and (max-height: 567px) and (max-width: 320px) {
-  #landingBox {
-    background-position: bottom 0px left 0px;
   }
 }
