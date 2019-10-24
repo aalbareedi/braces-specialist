@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -465,6 +465,7 @@ input.contactFormInput:valid + .formIcon {
 .contactIcon {
   margin-right: 4px;
   font-size: 18px;
+  opacity: 0.7;
 }
 #directionsIcon {
   color: red;
@@ -782,10 +783,10 @@ input.contactFormInput:valid + .formIcon {
   color: silver;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 #navInstagramIcon {
-  font-size: 22px;
+  font-size: 26px;
 }
 .navSocialMediaBtn:active {
   background-color: gainsboro;
