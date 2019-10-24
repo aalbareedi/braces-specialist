@@ -550,6 +550,16 @@ input.contactFormInput:valid + .formIcon {
   flex-direction: column;
   position: relative;
 }
+.statNumber {
+  color: #37d0e1;
+  font-size: 27px;
+  margin-bottom: 2px;
+}
+.statDescription {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  z-index: 2;
+}
 #statSmileImg {
   position: absolute;
   left: 17px;
@@ -560,11 +570,19 @@ input.contactFormInput:valid + .formIcon {
 }
 #statToothImg {
   position: absolute;
-  left: 14px;
+  left: 13px;
   top: 36px;
   opacity: 0.5;
   height: 68px;
   transform: rotate(-20deg);
+  pointer-events: none;
+}
+#statClockImg {
+  position: absolute;
+  left: 21px;
+  top: 36px;
+  opacity: 0.5;
+  height: 68px;
   pointer-events: none;
 }
 .statCalenderIcon {
@@ -580,16 +598,6 @@ input.contactFormInput:valid + .formIcon {
 }
 #statPercent::after {
   content: "%";
-}
-.statNumber {
-  color: #37d0e1;
-  font-size: 27px;
-  margin-bottom: 2px;
-}
-.statDescription {
-  font-size: 16px;
-  letter-spacing: 0.4px;
-  z-index: 2;
 }
 .statBtnBar {
   height: 60px;
