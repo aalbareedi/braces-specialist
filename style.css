@@ -560,37 +560,25 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
   z-index: 2;
 }
-#statSmileImg {
+.statIcon {
   position: absolute;
-  left: 17px;
-  top: 21px;
-  opacity: 0.5;
-  height: 78px;
+  opacity: 0.6;
   pointer-events: none;
 }
-#statToothImg {
-  position: absolute;
-  left: 13px;
-  top: 36px;
-  opacity: 0.5;
-  height: 68px;
-  transform: rotate(-20deg);
-  pointer-events: none;
+#statSmileImg {
+  height: 80px;
+  left: 19px;
+  top: 21px;
 }
 #statClockImg {
-  position: absolute;
+  height: 71px;
   left: 21px;
   top: 36px;
-  opacity: 0.5;
-  height: 68px;
-  pointer-events: none;
 }
-.statCalenderIcon {
-  left: 27px;
-  position: absolute;
-  color: gainsboro;
-  font-size: 62px;
-  opacity: 0.5;
+#statToothImg {
+  height: 70px;
+  left: 13px;
+  top: 36px;
   transform: rotate(-20deg);
 }
 #statCases::after {
