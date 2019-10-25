@@ -536,8 +536,8 @@ input.contactFormInput:valid + .formIcon {
   width: 83%;
   /* margin-top: 56px;
   margin-bottom: 25px; */
-  margin-top: 14px;
-  margin-bottom: 75px;
+  margin-top: 6px;
+  margin-bottom: 83px;
   margin-left: 12px;
 }
 #stats {
