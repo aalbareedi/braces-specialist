@@ -275,7 +275,7 @@ input.contactFormInput:valid + .formIcon {
   padding-left: 13px;
   width: 100%;
   outline: none;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   font-size: 16px;
   letter-spacing: 0.6px;
   padding-right: 40px;
@@ -539,7 +539,7 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 12px;
 }
 #stats {
-  background-color: white;
+  background-color: whitesmoke;
   padding-top: 20px;
   padding-bottom: 50px;
 }
@@ -773,10 +773,10 @@ input.contactFormInput:valid + .formIcon {
   color: silver;
   border: none;
   outline: none;
-  font-size: 22px;
+  font-size: 21px;
 }
 #navInstagramIcon {
-  font-size: 26px;
+  font-size: 24px;
 }
 .navSocialMediaBtn:active {
   background-color: gainsboro;
@@ -829,7 +829,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #about {
-  background: lightblue;
+  background: gainsboro;
   padding-top: 10px;
   padding-bottom: 40px;
 }

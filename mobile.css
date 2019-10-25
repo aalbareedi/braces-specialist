@@ -80,6 +80,9 @@
   #landingBox {
     background-position: bottom 0px left -130px;
   }
+  .logoTextBottom {
+    color: orange;
+  }
 }
 
 /* landingscape */
