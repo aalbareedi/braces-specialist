@@ -146,30 +146,23 @@ body.onscroll = function() {
   } else {
     backToTopBtn.classList.add("displayHidden");
   }
-  // console.log(statYear.offsetTop);
+
+  console.log(statCases.offsetTop);
+  // + stats.offsetTop
   // position property affects statYear.offsetTop
-  if (
-    scrollingElement.scrollTop + screen.height - 80 >
-    statYear.offsetTop + stats.offsetTop
-  ) {
+  if (scrollingElement.scrollTop + screen.height - 80 > statYear.offsetTop) {
     if (statYear.innerHTML == 1) {
       scrollYearCounter();
     }
   }
 
-  if (
-    scrollingElement.scrollTop + screen.height - 80 >
-    statCases.offsetTop + stats.offsetTop
-  ) {
+  if (scrollingElement.scrollTop + screen.height - 80 > statCases.offsetTop) {
     if (statCases.innerHTML == 1) {
       scrollCasesCounter();
     }
   }
 
-  if (
-    scrollingElement.scrollTop + screen.height - 80 >
-    statPercent.offsetTop + stats.offsetTop
-  ) {
+  if (scrollingElement.scrollTop + screen.height - 80 > statPercent.offsetTop) {
     if (statPercent.innerHTML == 1) {
       scrollPercentCounter();
     }

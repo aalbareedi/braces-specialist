@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -550,7 +550,22 @@ input.contactFormInput:valid + .formIcon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: 80px;
+}
+#statSmileImg {
+  background-image: url("images/smilesIcon.svg");
+  background-position: center left 13px;
+}
+#statClockImg {
+  background-image: url("images/clockIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center left 13px;
+}
+#statToothImg {
+  background-image: url("images/toothIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center left 13px;
 }
 .statNumber {
   color: #37d0e1;
@@ -560,28 +575,6 @@ input.contactFormInput:valid + .formIcon {
 .statDescription {
   font-size: 16px;
   letter-spacing: 0.4px;
-  z-index: 2;
-}
-.statIcon {
-  position: absolute;
-  opacity: 0.6;
-  pointer-events: none;
-}
-#statSmileImg {
-  height: 80px;
-  left: 19px;
-  top: 21px;
-}
-#statClockImg {
-  height: 71px;
-  left: 21px;
-  top: 36px;
-}
-#statToothImg {
-  height: 70px;
-  left: 13px;
-  top: 36px;
-  transform: rotate(-20deg);
 }
 #statCases::after {
   content: "+";
