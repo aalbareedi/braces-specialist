@@ -185,16 +185,16 @@ for (let i = 0; i < formInputFields.length; i++) {
     // event.currentTarget.style.backgroundColor = "red";
     let currentInput = this;
 
-    setTimeout(function() {
-      // .getBoundingClientRect().top gives distance from element to top of viewport
-      let inputDistanceFromTop = currentInput.getBoundingClientRect().top;
-      if (currentInput.tagName == "TEXTAREA") {
-        // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
-        contactForm.scrollTop += inputDistanceFromTop - 104;
-      } else {
-        contactForm.scrollTop += inputDistanceFromTop - 214;
-      }
-    }, 100);
+    // setTimeout(function() {
+    //   // .getBoundingClientRect().top gives distance from element to top of viewport
+    //   let inputDistanceFromTop = currentInput.getBoundingClientRect().top;
+    //   if (currentInput.tagName == "TEXTAREA") {
+    //     // contactForm.scrollTop: how far contactForm is scrolled, 0 initially
+    //     contactForm.scrollTop += inputDistanceFromTop - 104;
+    //   } else {
+    //     contactForm.scrollTop += inputDistanceFromTop - 214;
+    //   }
+    // }, 100);
 
     contactFormButtonsBar.classList.add("displayHidden");
     mainDock.classList.add("displayHidden");
