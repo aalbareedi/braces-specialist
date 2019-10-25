@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -466,7 +466,7 @@ input.contactFormInput:valid + .formIcon {
 .contactIcon {
   margin-right: 4px;
   font-size: 18px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 #directionsIcon {
   color: red;
@@ -491,7 +491,7 @@ input.contactFormInput:valid + .formIcon {
   position: relative;
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
-  background-position: bottom 0px left -15px;
+  /* background-position: bottom 0px left -15px; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -555,17 +555,17 @@ input.contactFormInput:valid + .formIcon {
 }
 #statSmileImg {
   background-image: url("images/smilesIcon.svg");
-  background-position: center left 13px;
+  background-position: center left 15px;
 }
 #statClockImg {
   background-image: url("images/clockIcon.svg");
   background-repeat: no-repeat;
-  background-position: center left 13px;
+  background-position: center left 15px;
 }
 #statToothImg {
   background-image: url("images/toothIcon.svg");
   background-repeat: no-repeat;
-  background-position: center left 13px;
+  background-position: center left 15px;
 }
 .statNumber {
   color: #37d0e1;
