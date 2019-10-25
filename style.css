@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -178,12 +178,11 @@ body {
 }
 #navMenu .navMenuOpt:active {
   background-color: gainsboro;
-  /* color: white; */
 }
 /* *********************************** CONTACT FORM ***************************************** */
 input.contactFormInput:valid {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
-  background-size: 20px;
+  background-image: url("images/icons/validCheckIcon.svg");
+  background-size: 22px;
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-color: white;
@@ -552,20 +551,16 @@ input.contactFormInput:valid + .formIcon {
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: 80px;
+  background-position: center left 15px;
 }
 #statSmileImg {
-  background-image: url("images/smilesIcon.svg");
-  background-position: center left 15px;
+  background-image: url("images/icons/smilesIcon.svg");
 }
 #statClockImg {
-  background-image: url("images/clockIcon.svg");
-  background-repeat: no-repeat;
-  background-position: center left 15px;
+  background-image: url("images/icons/clockIcon.svg");
 }
 #statToothImg {
-  background-image: url("images/toothIcon.svg");
-  background-repeat: no-repeat;
-  background-position: center left 15px;
+  background-image: url("images/icons/toothIcon.svg");
 }
 .statNumber {
   color: #37d0e1;
@@ -606,7 +601,8 @@ input.contactFormInput:valid + .formIcon {
 }
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
-  background-color: #383f43;
+  /* background-color: #383f43; */
+  background-color: #333a3a;
   padding-top: 10px;
   /* font-family: "Titillium Web", sans-serif; */
 }
@@ -833,7 +829,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #about {
-  background: pink;
+  background: lightblue;
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -855,8 +851,8 @@ input.contactFormInput:valid + .formIcon {
 
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
-#footer {
-  background-color: lightblue;
+footer {
+  background-color: pink;
   height: 100px;
 }
 #emptyDockSpace {

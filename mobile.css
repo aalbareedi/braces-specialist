@@ -34,6 +34,8 @@
   }
   .statBox {
     height: 140px;
+    background-size: 86px;
+    background-position: center left 15px;
   }
   .statDescription {
     font-size: 17px;
