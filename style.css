@@ -536,7 +536,7 @@ input.contactFormInput:valid + .formIcon {
   width: 83%;
   /* margin-top: 56px;
   margin-bottom: 25px; */
-  margin-top: 7px;
+  margin-top: 9px;
   margin-bottom: 87px;
   margin-left: 12px;
 }
@@ -603,8 +603,8 @@ input.contactFormInput:valid + .formIcon {
 }
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
-  /* background-color: #383f43; */
-  background-color: #333a3a;
+  background-color: #383f43;
+  /* background-color: #333a3a; */
   padding-top: 10px;
   /* font-family: "Titillium Web", sans-serif; */
 }
