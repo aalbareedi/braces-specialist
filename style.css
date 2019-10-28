@@ -518,9 +518,8 @@ input.contactFormInput:valid + .formIcon {
 }
 .landingHeading {
   font-family: "Russo One", sans-serif;
-  /* text-align: center; */
   /* font-family: "Fredoka One", cursive; */
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 38px;
   letter-spacing: 2px;
   color: white;
@@ -830,10 +829,10 @@ input.contactFormInput:valid + .formIcon {
   font-size: 16px;
 }
 
-#about {
+#aboutUs {
   background: gainsboro;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 .aboutTitle {
   text-align: center;
@@ -847,8 +846,42 @@ input.contactFormInput:valid + .formIcon {
   line-height: 26px;
   letter-spacing: 0.4px;
   font-size: 16px;
-  margin-left: 26px;
-  padding-right: 20px;
+  margin-left: 20px;
+  padding-right: 16px;
+}
+
+#doctor {
+  height: 600px;
+  background-color: #7fbfeb;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.doctorTitle {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 3px;
+  letter-spacing: 0.8px;
+}
+.doctorName {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 50px;
+  letter-spacing: 0.8px;
+  /* font-family: "Source Serif Pro", serif; */
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.doctorImg {
+  height: 200px;
+}
+.doctorInfo {
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  margin-left: 20px;
+  padding-right: 16px;
 }
 
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
