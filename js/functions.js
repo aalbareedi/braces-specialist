@@ -40,7 +40,7 @@ function scrollBodyToTop(previousScrollTop = -1) {
       let scrollTop = scrollingElement.scrollTop;
       setTimeout(function() {
         scrollBodyToTop(scrollTop);
-      }, 40);
+      }, 80);
     } else {
       alert(
         "scrollTop Changed;" +
