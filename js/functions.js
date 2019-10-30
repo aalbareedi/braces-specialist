@@ -43,7 +43,7 @@ function scrollBodyToTop(previousScrollTop = -1) {
   //     }, 80);
   //   }
   // }
-
+  alert("test ");
   $(scrollingElement).animate({ scrollTop: 0 });
 }
 
