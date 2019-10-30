@@ -30,7 +30,7 @@ function scrollPercentCounter() {
   }
 }
 
-function scrollBodyToTop(previousScrollTop = -1) {
+function scrollBodyToTop() {
   // if (scrollingElement.scrollTop > 0.1) {
   //   if (
   //     previousScrollTop == scrollingElement.scrollTop ||
@@ -43,7 +43,6 @@ function scrollBodyToTop(previousScrollTop = -1) {
   //     }, 80);
   //   }
   // }
-  alert("test ");
   $(scrollingElement).animate({ scrollTop: 0 });
 }
 

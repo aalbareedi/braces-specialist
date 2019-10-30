@@ -136,7 +136,9 @@ contactFormCancelBtn.onclick = function() {
   scrollingElement.scrollTop = bodyScrollPosition;
 };
 
-backToTopBtn.onclick = function() {
+backToTopBtn.onclick = function(event) {
+  event.preventDefault();
+  event.stopPropagation();
   scrollBodyToTop();
 };
 
