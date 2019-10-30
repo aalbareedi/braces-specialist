@@ -851,7 +851,6 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #doctor {
-  height: 600px;
   background-color: #7fbfeb;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -866,12 +865,17 @@ input.contactFormInput:valid + .formIcon {
 .doctorName {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   letter-spacing: 0.8px;
   /* font-family: "Source Serif Pro", serif; */
   font-family: "Volkhov", serif;
   font-weight: bold;
   font-style: italic;
+}
+.doctorImgParent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .doctorImg {
   height: 200px;
@@ -882,6 +886,14 @@ input.contactFormInput:valid + .formIcon {
   font-size: 16px;
   margin-left: 20px;
   padding-right: 16px;
+}
+
+#slider {
+  background-color: pink;
+  height: 100px;
+}
+.slick-dots li button:before {
+  font-size: 11px;
 }
 
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */

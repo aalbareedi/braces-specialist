@@ -147,8 +147,7 @@ body.onscroll = function() {
     backToTopBtn.classList.add("displayHidden");
   }
 
-  console.log(statCases.offsetTop);
-  // + stats.offsetTop
+  // console.log(statCases.offsetTop);
   // position property affects statYear.offsetTop
   if (scrollingElement.scrollTop + screen.height - 80 > statYear.offsetTop) {
     if (statYear.innerHTML == 1) {

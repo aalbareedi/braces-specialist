@@ -17,6 +17,8 @@ for (let i = 0; i < navMenuOpt.length; i++) {
   disableScrollBehind(navMenuOpt[i]);
 }
 
+$("#slider").slick({ dots: true });
+
 // setTimeout(function() {
 //   alert(window.innerWidth + "," + window.innerHeight);
 // }, 5000);

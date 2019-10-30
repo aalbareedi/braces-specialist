@@ -31,29 +31,20 @@ function scrollPercentCounter() {
 }
 
 function scrollBodyToTop(previousScrollTop = -1) {
-  if (scrollingElement.scrollTop > 0.1) {
-    if (
-      previousScrollTop == scrollingElement.scrollTop ||
-      previousScrollTop == -1
-    ) {
-      scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
-      let scrollTop = scrollingElement.scrollTop;
-      setTimeout(function() {
-        scrollBodyToTop(scrollTop);
-      }, 80);
-    } else {
-      alert(
-        "scrollTop Changed;" +
-          scrollingElement.scrollTop +
-          ";" +
-          previousScrollTop
-      );
-    }
-  } else {
-    alert(
-      "scrollTop < 0.1;" + scrollingElement.scrollTop + ";" + previousScrollTop
-    );
-  }
+  // if (scrollingElement.scrollTop > 0.1) {
+  //   if (
+  //     previousScrollTop == scrollingElement.scrollTop ||
+  //     previousScrollTop == -1
+  //   ) {
+  //     scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
+  //     let scrollTop = scrollingElement.scrollTop;
+  //     setTimeout(function() {
+  //       scrollBodyToTop(scrollTop);
+  //     }, 80);
+  //   }
+  // }
+
+  $(scrollingElement).animate({ scrollTop: 0 });
 }
 
 function isFormFilled() {
