@@ -10,6 +10,7 @@
 @media only screen and (max-height: 545px) and (max-width: 375px) {
   #landingBox {
     background-position: bottom 0px left 0px;
+    background-size: 100% auto;
   }
   .logoTextBottom {
     color: green;
