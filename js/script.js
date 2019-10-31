@@ -19,6 +19,6 @@ for (let i = 0; i < navMenuOpt.length; i++) {
 
 $("#slider").slick({ dots: true, arrows: false });
 
-// setTimeout(function() {
-//   alert(window.innerWidth + "," + window.innerHeight);
-// }, 5000);
+setTimeout(function() {
+  alert(window.innerWidth + "," + window.innerHeight);
+}, 5000);

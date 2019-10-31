@@ -46,9 +46,13 @@ function scrollBodyToTop() {
   $(scrollingElement).animate({ scrollTop: 0 });
 }
 
-function isFormFilled() {
+function isFormValid() {
   for (let i = 0; i < formInputFields.length; i++) {
-    if (formInputFields[i].value == "") {
+    // check for invalidity, NOT validity
+    if (
+      formInputFields[i].value == "" ||
+      formInputFields[i].checkValidity() == false
+    ) {
       return false;
     }
   }

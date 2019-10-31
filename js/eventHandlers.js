@@ -174,7 +174,7 @@ body.onscroll = function() {
 for (let i = 0; i < formInputFields.length; i++) {
   // oninput: when user types in input field
   formInputFields[i].oninput = function() {
-    if (isFormFilled() == true) {
+    if (isFormValid() == true) {
       contactFormSubmitBtn.disabled = false;
       contactFormSubmitBtn.classList.remove("formSubmitBtnDisabled");
       contactFormSubmitBtn.classList.add("formSubmitBtnReady");
@@ -207,3 +207,5 @@ for (let i = 0; i < formInputFields.length; i++) {
     mainDock.classList.remove("displayHidden");
   };
 }
+
+contactFormPhoneInput.addEventListener("input", function() {});
