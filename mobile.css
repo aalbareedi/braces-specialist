@@ -7,6 +7,14 @@
     color: red;
   }
 }
+@media only screen and (max-height: 545px) and (max-width: 375px) {
+  #landingBox {
+    background-position: bottom 0px left 0px;
+  }
+  .logoTextBottom {
+    color: green;
+  }
+}
 
 /* iPhone 6/7/8 */
 @media only screen and (min-width: 375px) {
