@@ -72,52 +72,8 @@ contactForm.onsubmit = function(event) {
   html.classList.remove("overflowHidden");
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
-  // encodeURIComponent converts forwardslashes (/) to a useable text so it doesnt break the url query string
-  let fullName = encodeURIComponent(contactFormNameInput.value);
-  let emailAddress = encodeURIComponent(contactFormEmailInput.value);
-  let phoneNumber = encodeURIComponent(contactFormPhoneInput.value);
-  let message = encodeURIComponent(contactFormMessageInput.value);
-  // fetch is JS function that lets you send http requests to servers,
-  // we are REQUESTING sendEmail.php FILE from server to send the email through
-  // fetch(
-  //   "sendEmail.php?name=" +
-  //     fullName +
-  //     "&email=" +
-  //     emailAddress +
-  //     "&phone=" +
-  //     phoneNumber +
-  //     "&msg=" +
-  //     message
-  // )
-  //   .then(function() {
-  //     formOverlay.classList.remove("displayHidden");
-  //     confirmWindow.classList.add("visibleConfirmWindow");
-  //     confirmWindow.classList.add("slide-in-left");
-  //     contactFormButtonsBar.classList.add("displayHidden");
 
-  //     setTimeout(function() {
-  //       confirmWindow.classList.add("slide-out-right");
-  //     }, 2500);
-
-  //     setTimeout(function() {
-  //       contactForm.scrollTop = 0;
-  //       confirmWindow.classList.remove("visibleConfirmWindow");
-  //       formOverlay.classList.add("displayHidden");
-  //       contactForm.classList.add("displayHidden");
-  //       contactFormButtonsBar.classList.remove("displayHidden");
-  //       contactFormSubmitBtn.disabled = true;
-  //       contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
-  //       contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
-  //       contactForm.reset();
-  //       confirmWindow.classList.remove("slide-in-left");
-  //       confirmWindow.classList.remove("slide-out-right");
-  //     }, 3000);
-
-  //     console.log("sending complete");
-  //   })
-  //   .catch(function() {
-  //     console.log("error");
-  //   });
+  // sendEmail();
 };
 
 contactFormBackArrow.onclick = function() {
@@ -178,13 +134,16 @@ for (let i = 0; i < formInputFields.length; i++) {
       contactFormSubmitBtn.disabled = false;
       contactFormSubmitBtn.classList.remove("formSubmitBtnDisabled");
       contactFormSubmitBtn.classList.add("formSubmitBtnReady");
+    } else {
+      contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+      contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
     }
   };
 
   // onfocus: when input field is selected
   formInputFields[i].onfocus = function(event) {
     // event.currentTarget.style.backgroundColor = "red";
-    let currentInput = this;
+    // let currentInput = this;
 
     // setTimeout(function() {
     //   // .getBoundingClientRect().top gives distance from element to top of viewport
@@ -207,5 +166,3 @@ for (let i = 0; i < formInputFields.length; i++) {
     mainDock.classList.remove("displayHidden");
   };
 }
-
-contactFormPhoneInput.addEventListener("input", function() {});

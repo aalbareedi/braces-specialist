@@ -85,6 +85,7 @@
   }
 }
 
+/* iphone 6 (firefox)  */
 @media only screen and (max-height: 545px) and (max-width: 375px) {
   #landingBox {
     background-position: bottom 0px left 0px;

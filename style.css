@@ -843,7 +843,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .aboutText {
   /* background: orange; */
-  line-height: 26px;
+  line-height: 28px;
   letter-spacing: 0.4px;
   font-size: 16px;
   margin-left: 20px;
@@ -853,7 +853,7 @@ input.contactFormInput:valid + .formIcon {
 #doctor {
   background-color: #7fbfeb;
   padding-top: 10px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .doctorTitle {
   text-align: center;
@@ -881,16 +881,44 @@ input.contactFormInput:valid + .formIcon {
   height: 200px;
 }
 .doctorInfo {
-  line-height: 26px;
+  line-height: 28px;
   letter-spacing: 0.4px;
   font-size: 16px;
   margin-left: 20px;
   padding-right: 16px;
 }
 
-#slider {
+#reviewSlider {
   background-color: pink;
-  height: 100px;
+  height: 360px;
+  margin-bottom: 0;
+}
+.slick-list {
+  height: 100%;
+}
+.slick-track {
+  height: 100%;
+}
+.slick-initialized .slick-slide {
+  display: flex;
+}
+.slick-dots {
+  bottom: 0;
+  height: 54px;
+}
+.reviewSlide {
+  background-color: orange;
+  height: 100%;
+  /* display: flex; */
+  align-items: center;
+}
+.reviewSlideText {
+  /* background-color: yellow; */
+  font-size: 18px;
+  margin-left: 34px;
+  margin-right: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
 }
 .slick-dots li button:before {
   font-size: 11px;

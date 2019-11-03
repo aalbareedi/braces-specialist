@@ -49,10 +49,7 @@ function scrollBodyToTop() {
 function isFormValid() {
   for (let i = 0; i < formInputFields.length; i++) {
     // check for invalidity, NOT validity
-    if (
-      formInputFields[i].value == "" ||
-      formInputFields[i].checkValidity() == false
-    ) {
+    if (formInputFields[i].checkValidity() == false) {
       return false;
     }
   }
@@ -99,4 +96,65 @@ function disableScrollBehind(overlay) {
   }
 }
 
-function sendEmail() {}
+function sendEmail() {
+  // encodeURIComponent converts forwardslashes (/) to a useable text so it doesnt break the url query string
+  let fullName = encodeURIComponent(contactFormNameInput.value);
+  let emailAddress = encodeURIComponent(contactFormEmailInput.value);
+  let phoneNumber = encodeURIComponent(contactFormPhoneInput.value);
+  let message = encodeURIComponent(contactFormMessageInput.value);
+  // fetch is JS function that lets you send http requests to servers,
+  // we are REQUESTING sendEmail.php FILE from server to send the email through
+  handleTimeout(
+    fetch(
+      "sendEmail.php?name=" +
+        fullName +
+        "&email=" +
+        emailAddress +
+        "&phone=" +
+        phoneNumber +
+        "&msg=" +
+        message
+    )
+      .then(function() {
+        formOverlay.classList.remove("displayHidden");
+        confirmWindow.classList.add("visibleConfirmWindow");
+        confirmWindow.classList.add("slide-in-left");
+        contactFormButtonsBar.classList.add("displayHidden");
+
+        setTimeout(function() {
+          confirmWindow.classList.add("slide-out-right");
+        }, 2500);
+
+        setTimeout(function() {
+          contactForm.scrollTop = 0;
+          confirmWindow.classList.remove("visibleConfirmWindow");
+          formOverlay.classList.add("displayHidden");
+          contactForm.classList.add("displayHidden");
+          contactFormButtonsBar.classList.remove("displayHidden");
+          contactFormSubmitBtn.disabled = true;
+          contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
+          contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+          contactForm.reset();
+          confirmWindow.classList.remove("slide-in-left");
+          confirmWindow.classList.remove("slide-out-right");
+        }, 3000);
+
+        console.log("sending complete");
+      })
+      .catch(function(error) {
+        console.error(error);
+      }),
+    5000
+  );
+}
+
+function handleTimeout(promise, duration) {
+  return Promise.race([
+    promise,
+    new Promise(function(resolve, reject) {
+      return setTimeout(function() {
+        reject(new Error("REQUEST TIMED OUT"));
+      }, duration);
+    })
+  ]);
+}
