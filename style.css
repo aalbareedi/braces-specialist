@@ -519,7 +519,7 @@ input.contactFormInput:valid + .formIcon {
 .landingHeading {
   font-family: "Russo One", sans-serif;
   /* font-family: "Fredoka One", cursive; */
-  /* font-style: italic; */
+  font-style: italic;
   font-size: 38px;
   letter-spacing: 2px;
   color: white;
@@ -910,7 +910,8 @@ input.contactFormInput:valid + .formIcon {
   background-color: orange;
   height: 100%;
   /* display: flex; */
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .reviewSlideText {
   /* background-color: yellow; */
@@ -918,7 +919,10 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 34px;
   margin-right: 18px;
   line-height: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.reviewName {
+  text-align: center;
 }
 .slick-dots li button:before {
   font-size: 11px;
