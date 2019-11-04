@@ -54,6 +54,7 @@ navOverlay.onclick = function() {
   navToggleIcon.classList.add("fa-bars");
   html.classList.remove("overflowHidden");
   body.classList.remove("overflowHidden");
+  wrapper.classList.remove("overflowHidden");
 };
 
 messageBtn.onclick = function() {
