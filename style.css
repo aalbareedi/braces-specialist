@@ -889,8 +889,9 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #reviewSlider {
-  background-color: pink;
-  height: 360px;
+  /* background-color: pink; */
+  /* background-image: url(images/smile.png); */
+  height: 400px;
   margin-bottom: 0;
 }
 .slick-list {
@@ -899,12 +900,15 @@ input.contactFormInput:valid + .formIcon {
 .slick-track {
   height: 100%;
 }
-.slick-initialized .slick-slide {
+/* .slick-initialized .slick-slide {
   display: flex;
-}
+} */
 .slick-dots {
   bottom: 0;
-  height: 54px;
+  height: 64px;
+}
+.slick-dots li {
+  margin: 0 4px;
 }
 .reviewSlide {
   background-color: orange;
@@ -919,10 +923,28 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 34px;
   margin-right: 18px;
   line-height: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  letter-spacing: 0.4px;
+}
+#slideText1 {
+  margin-top: 109px;
+}
+#slideText2 {
+  margin-top: 100px;
+}
+#slideText3 {
+  margin-top: 70px;
+}
+#slideText4 {
+  margin-top: 40px;
+}
+#slideText5 {
+  margin-top: 98px;
+  margin-right: 28px;
 }
 .reviewName {
   text-align: center;
+  font-style: italic;
 }
 .slick-dots li button:before {
   font-size: 11px;
