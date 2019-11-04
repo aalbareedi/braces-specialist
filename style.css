@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -932,6 +932,13 @@ input.contactFormInput:valid + .formIcon {
   flex-direction: column;
   justify-content: center;
 }
+.reviewQuote {
+  /* background-color: green; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .reviewSlideText {
   /* background-color: yellow; */
   font-size: 18px;
@@ -942,19 +949,19 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
 }
 #slideText1 {
-  margin-top: 109px;
+  /* margin-top: 109px; */
 }
 #slideText2 {
-  margin-top: 94px;
+  /* margin-top: 94px; */
 }
 #slideText3 {
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 #slideText4 {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 #slideText5 {
-  margin-top: 98px;
+  /* margin-top: 98px; */
   margin-right: 28px;
 }
 .reviewName {
@@ -986,4 +993,23 @@ footer {
     both;
   animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
   -webkit-animation-fill-mode: forwards;
+}
+
+/**
+ * Slick dots sticky touch hover workaround - CSS portion (also see JS portion)
+ * * https://github.com/kenwheeler/slick/issues/1945#issuecomment-230158398
+ * * http://stackoverflow.com/a/4734092/4747661
+ *
+ * :hover removes dark on Android
+ * :focus removes dark on iOS
+ *
+ * .slick-active adds back dark everywhere
+ */
+.slick-dots.touch-device li button:hover::before,
+.slick-dots.touch-device li button:focus::before {
+  opacity: 0.25;
+}
+
+.slick-dots.touch-device li.slick-active button::before {
+  opacity: 0.75;
 }
