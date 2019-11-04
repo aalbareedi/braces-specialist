@@ -11,7 +11,7 @@ navbar.onclick = function() {
 };
 
 navToggleBtn.onclick = function(event) {
-  if (formOverlay.classList.contains("displayHidden") == true) {
+  if (successFormOverlay.classList.contains("displayHidden") == true) {
     // changing nav toggle icon
     if (navToggleIcon.classList.contains("fa-bars")) {
       navToggleIcon.classList.remove("fa-bars");

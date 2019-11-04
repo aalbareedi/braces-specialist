@@ -116,7 +116,7 @@ function sendEmail() {
         message
     )
       .then(function() {
-        formOverlay.classList.remove("displayHidden");
+        successFormOverlay.classList.remove("displayHidden");
         confirmWindow.classList.add("visibleConfirmWindow");
         confirmWindow.classList.add("slide-in-left");
         contactFormButtonsBar.classList.add("displayHidden");
@@ -128,7 +128,7 @@ function sendEmail() {
         setTimeout(function() {
           contactForm.scrollTop = 0;
           confirmWindow.classList.remove("visibleConfirmWindow");
-          formOverlay.classList.add("displayHidden");
+          successFormOverlay.classList.add("displayHidden");
           contactForm.classList.add("displayHidden");
           contactFormButtonsBar.classList.remove("displayHidden");
           contactFormSubmitBtn.disabled = true;

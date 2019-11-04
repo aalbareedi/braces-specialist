@@ -531,10 +531,25 @@
       </div>
     </form>
 
-    <div id="formOverlay" class="displayHidden">
-      <div id="confirmWindow">
-        <i class="far fa-check-circle confirmIcon"></i>
-        <div class="confirmText unselectable">Message Sent</div>
+    <div class="formOverlay displayHidden" id="successFormOverlay">
+      <div class="formOverlayWindow" id="confirmWindow">
+        <div class="overlayIconWrapper">
+          <i class="far fa-check-circle confirmIcon"></i>
+        </div>
+        <div class="formOverlayMessage unselectable">Message Sent</div>
+        <div class="formOverlayText">Thank You!</div>
+      </div>
+    </div>
+
+    <div class="formOverlay displayHidden" id="errorFormOverlay">
+      <div class="formOverlayWindow" id="errorWindow">
+        <div class="overlayIconWrapper">
+          <i class="fas fa-exclamation-triangle errorIcon"></i>
+        </div>
+        <div class="formOverlayMessage unselectable" id="errorText">
+          Connection Error
+        </div>
+        <div class="formOverlayText">Please try again</div>
       </div>
     </div>
 

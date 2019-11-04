@@ -180,16 +180,6 @@ body {
   background-color: gainsboro;
 }
 /* *********************************** CONTACT FORM ***************************************** */
-input.contactFormInput:valid {
-  background-image: url("images/icons/validCheckIcon.svg");
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-color: white;
-}
-input.contactFormInput:valid + .formIcon {
-  opacity: 0;
-}
 #contactForm {
   background-color: whitesmoke;
   overflow: scroll;
@@ -272,7 +262,7 @@ input.contactFormInput:valid + .formIcon {
   background-color: white;
   height: 54px;
   border: 2px solid #e8e8e8;
-  padding-left: 13px;
+  padding-left: 11px;
   width: 100%;
   outline: none;
   /* border-radius: 7px; */
@@ -284,6 +274,16 @@ input.contactFormInput:valid + .formIcon {
 .contactFormInput:focus {
   border: 2px solid #48b5f3;
   outline: none;
+}
+input.contactFormInput:valid {
+  background-image: url("images/icons/validCheckIcon.svg");
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-color: white;
+}
+input.contactFormInput:valid + .formIcon {
+  opacity: 0;
 }
 .contactFormInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -376,8 +376,8 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
   margin-left: 10px;
 }
-#formOverlay {
-  background: rgba(0, 0, 0, 0.6);
+.formOverlay {
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   right: 0;
@@ -388,25 +388,40 @@ input.contactFormInput:valid + .formIcon {
   justify-content: center;
   align-items: center;
 }
-#confirmWindow {
-  background: rgba(0, 0, 0, 0.7);
+.formOverlayWindow {
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   width: 67%;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  height: 198px;
+  padding-top: 28px;
+}
+.overlayIconWrapper {
+  text-align: center;
 }
 .confirmIcon {
   color: #2ba52b;
-  font-size: 58px;
+  font-size: 56px;
 }
-.confirmText {
-  color: white;
+.errorIcon {
+  color: #962727;
+  font-size: 50px;
+}
+.formOverlayMessage {
+  color: gainsboro;
   font-size: 22px;
   letter-spacing: 1px;
-  margin-top: 12px;
+  margin-top: 8px;
+  text-align: center;
+}
+#errorText {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.formOverlayText {
+  color: #a0a0a0;
+  margin-top: 30px;
+  letter-spacing: 0.7px;
+  text-align: center;
 }
 /* ************************************** BUTTONS DOCK **************************************** */
 #mainDock {
@@ -641,7 +656,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .officeInfoAddress {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 20px;
   padding-left: 18px;
 }
@@ -923,14 +938,14 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 34px;
   margin-right: 18px;
   line-height: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   letter-spacing: 0.4px;
 }
 #slideText1 {
   margin-top: 109px;
 }
 #slideText2 {
-  margin-top: 100px;
+  margin-top: 94px;
 }
 #slideText3 {
   margin-top: 70px;
