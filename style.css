@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -551,7 +551,7 @@ input.contactFormInput:valid + .formIcon {
   /* margin-top: 9px;*/
   /* margin-bottom: 87px; */
   margin-top: 14px;
-  margin-bottom: 174px;
+  margin-bottom: 164px;
   margin-left: 12px;
 }
 #stats {
