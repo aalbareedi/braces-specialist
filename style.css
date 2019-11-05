@@ -548,9 +548,8 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
   font-size: 16px;
   width: 83%;
-  /* margin-top: 56px;
-  margin-bottom: 25px; */
-  margin-top: 79px;
+  /* margin-top: 9px;*/
+  margin-top: 68px;
   margin-bottom: 87px;
   margin-left: 12px;
 }
