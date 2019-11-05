@@ -918,6 +918,9 @@ input.contactFormInput:valid + .formIcon {
   height: 410px;
   margin-bottom: 0;
 }
+.slick-dots.touch-device li.slick-active button::before {
+  opacity: 1 !important ;
+}
 .slick-list {
   height: 100%;
 }
