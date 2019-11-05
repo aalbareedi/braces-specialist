@@ -916,7 +916,7 @@ input.contactFormInput:valid + .formIcon {
 }
 #reviewSlider {
   /* background-color: rgba(40, 40, 40, 0.7); */
-  height: 412px;
+  height: 413px;
   margin-bottom: 0;
 }
 .slick-dots.touch-device li.slick-active button::before {
@@ -974,7 +974,6 @@ input.contactFormInput:valid + .formIcon {
 }
 #slideText5 {
 }
-
 .reviewName {
   text-align: center;
   font-style: italic;
