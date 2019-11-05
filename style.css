@@ -915,8 +915,7 @@ input.contactFormInput:valid + .formIcon {
   -o-background-size: cover;
 }
 #reviewSlider {
-  /* background-color: pink; */
-  background-color: rgba(40, 40, 40, 0.7);
+  /* background-color: rgba(40, 40, 40, 0.7); */
   height: 410px;
   margin-bottom: 0;
 }
@@ -968,7 +967,8 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots li button:before {
   font-size: 11px;
-  color: #181818;
+  opacity: 0.45;
+  /* color: #181818; */
 }
 .slick-dots li.slick-active button:before {
   color: white;
@@ -977,8 +977,7 @@ input.contactFormInput:valid + .formIcon {
   position: absolute;
   font-size: 60px;
   color: white;
-  opacity: 0.2;
-  /* z-index: 1; */
+  opacity: 0.1;
 }
 .leftQuoteIcon {
   left: 10px;
