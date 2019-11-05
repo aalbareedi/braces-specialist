@@ -916,7 +916,7 @@ input.contactFormInput:valid + .formIcon {
 }
 #reviewSlider {
   /* background-color: pink; */
-  background-color: rgba(40, 40, 40, 0.6);
+  background-color: rgba(40, 40, 40, 0.7);
   height: 410px;
   margin-bottom: 0;
 }
@@ -968,6 +968,10 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots li button:before {
   font-size: 11px;
+  /* color: red; */
+}
+.slick-dots li.slick-active button:before {
+  color: white;
 }
 .quoteIcon {
   position: absolute;
