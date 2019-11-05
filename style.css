@@ -903,9 +903,20 @@ input.contactFormInput:valid + .formIcon {
   padding-right: 16px;
 }
 
+.reviews {
+  position: relative;
+  /* background-color: orange; */
+  background-image: url(images/test.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0px right -45px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
 #reviewSlider {
   /* background-color: pink; */
-  /* background-image: url(images/smile.png); */
+  background-color: rgba(40, 40, 40, 0.6);
   height: 410px;
   margin-bottom: 0;
 }
@@ -915,9 +926,6 @@ input.contactFormInput:valid + .formIcon {
 .slick-track {
   height: 100%;
 }
-/* .slick-initialized .slick-slide {
-  display: flex;
-} */
 .slick-dots {
   bottom: 0;
   height: 64px;
@@ -926,21 +934,16 @@ input.contactFormInput:valid + .formIcon {
   margin: 0 4px;
 }
 .reviewSlide {
-  background-color: orange;
   height: 100%;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
 }
 .reviewQuote {
-  /* background-color: green; */
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 .reviewSlideText {
-  /* background-color: yellow; */
   font-size: 18px;
   margin-left: 34px;
   margin-right: 18px;
@@ -949,19 +952,14 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
 }
 #slideText1 {
-  /* margin-top: 109px; */
 }
 #slideText2 {
-  /* margin-top: 94px; */
 }
 #slideText3 {
-  /* margin-top: 70px; */
 }
 #slideText4 {
-  /* margin-top: 40px; */
 }
 #slideText5 {
-  /* margin-top: 98px; */
   margin-right: 28px;
 }
 .reviewName {
@@ -970,6 +968,21 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots li button:before {
   font-size: 11px;
+}
+.quoteIcon {
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  opacity: 0.2;
+  /* z-index: 1; */
+}
+.leftQuoteIcon {
+  left: 10px;
+  top: 40px;
+}
+.rightQuoteIcon {
+  right: 10px;
+  top: 220px;
 }
 
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
