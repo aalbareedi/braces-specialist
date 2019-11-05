@@ -81,11 +81,11 @@
     background-position: bottom 0px left -130px;
   }
   .logoTextBottom {
-    color: orange;
+    color: pink;
   }
 }
 
-/* iphone 6 (firefox)  */
+/* iphone 7 (firefox)  */
 @media only screen and (max-height: 545px) and (max-width: 375px) {
   #landingBox {
     background-position: bottom 0px left 0px;
