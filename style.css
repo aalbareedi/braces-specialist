@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -916,7 +916,7 @@ input.contactFormInput:valid + .formIcon {
 }
 #reviewSlider {
   /* background-color: rgba(40, 40, 40, 0.7); */
-  height: 410px;
+  height: 412px;
   margin-bottom: 0;
 }
 .slick-dots.touch-device li.slick-active button::before {
