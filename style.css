@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -550,7 +550,7 @@ input.contactFormInput:valid + .formIcon {
   width: 83%;
   /* margin-top: 56px;
   margin-bottom: 25px; */
-  margin-top: 9px;
+  margin-top: 79px;
   margin-bottom: 87px;
   margin-left: 12px;
 }
@@ -694,7 +694,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 1px;
 }
 .officeMap {
-  padding: 0 23px;
+  padding: 0 22px;
 }
 .mapWrapper {
   border-radius: 8px;
