@@ -558,6 +558,7 @@ input.contactFormInput:valid + .formIcon {
   background-color: whitesmoke;
   padding-top: 20px;
   padding-bottom: 50px;
+  font-family: "Roboto", sans-serif;
 }
 .statBox {
   height: 130px;
@@ -936,8 +937,8 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots li button:before {
   font-size: 11px;
-  opacity: 0.35;
-  color: #181818;
+  opacity: 0.2;
+  color: #dcdcdc;
 }
 .slick-dots li.slick-active button:before {
   color: white;
@@ -951,9 +952,10 @@ input.contactFormInput:valid + .formIcon {
   flex-direction: column;
   justify-content: center;
   color: white;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .reviewSlideText {
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 34px;
   margin-right: 18px;
   line-height: 28px;
@@ -965,15 +967,18 @@ input.contactFormInput:valid + .formIcon {
 #slideText2 {
 }
 #slideText3 {
+  margin-right: 12px;
 }
 #slideText4 {
+  font-size: 19px;
 }
 #slideText5 {
-  margin-right: 23px;
 }
+
 .reviewName {
   text-align: center;
   font-style: italic;
+  font-size: 18px;
 }
 .quoteIcon {
   position: absolute;
