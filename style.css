@@ -968,7 +968,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots li button:before {
   font-size: 11px;
-  /* color: red; */
+  color: #181818;
 }
 .slick-dots li.slick-active button:before {
   color: white;
