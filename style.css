@@ -125,6 +125,7 @@ body {
 }
 /* ********************************** SIDE NAV WINDOW ************************************** */
 #navMenu {
+  font-family: "Nanum Gothic", sans-serif;
   position: fixed;
   width: 100%;
   top: -192px;
@@ -135,6 +136,7 @@ body {
   color: #616161;
   cursor: pointer;
   font-size: 14px;
+  letter-spacing: 0.4px;
   height: 50px;
   display: flex;
   justify-content: center;
