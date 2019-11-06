@@ -541,6 +541,9 @@ input.contactFormInput:valid + .formIcon {
   width: 68%;
   margin-left: 10px;
 }
+#smileWord {
+  margin-left: 3px;
+}
 .landingSubHeading {
   font-family: "Titillium Web", sans-serif;
   color: white;
@@ -803,6 +806,7 @@ input.contactFormInput:valid + .formIcon {
 
 /* ****************************************** FAQ ******************************************* */
 #faq {
+  /* background: linear-gradient(0deg,#014180 0%,#009cda 100%); */
   background: #0d79a1;
   padding-top: 10px;
   /* font-family: "Titillium Web", sans-serif; */
@@ -844,6 +848,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #aboutUs {
+  font-family: "Nanum Gothic", sans-serif;
   background: gainsboro;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -865,7 +870,8 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #doctor {
-  background-color: #7fbfeb;
+  /* background-color: #7fbfeb; */
+  background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -895,11 +901,13 @@ input.contactFormInput:valid + .formIcon {
   height: 200px;
 }
 .doctorInfo {
+  font-family: "Nanum Gothic", sans-serif;
   line-height: 28px;
   letter-spacing: 0.4px;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 20px;
   padding-right: 16px;
+  color: white;
 }
 
 .reviews {
@@ -917,9 +925,9 @@ input.contactFormInput:valid + .formIcon {
   height: 413px;
   margin-bottom: 0;
 }
-.slick-dots.touch-device li.slick-active button::before {
+/* .slick-dots.touch-device li.slick-active button::before {
   opacity: 1 !important ;
-}
+} */
 .slick-list {
   height: 100%;
 }
@@ -960,22 +968,17 @@ input.contactFormInput:valid + .formIcon {
   margin-bottom: 26px;
   letter-spacing: 0.4px;
 }
-#slideText1 {
-}
-#slideText2 {
-}
 #slideText3 {
   margin-right: 12px;
 }
 #slideText4 {
   font-size: 19px;
 }
-#slideText5 {
-}
 .reviewName {
   text-align: center;
   font-style: italic;
   font-size: 18px;
+  letter-spacing: 0.4px;
 }
 .quoteIcon {
   position: absolute;
@@ -1031,5 +1034,5 @@ footer {
 }
 
 .slick-dots.touch-device li.slick-active button::before {
-  opacity: 0.75;
+  opacity: 1;
 }

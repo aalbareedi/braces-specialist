@@ -8,6 +8,8 @@ disableScrollBehind(contactForm);
 disableScrollBehind(navOverlay);
 disableScrollBehind(navMenu);
 disableScrollBehind(navbar);
+disableScrollBehind(successFormOverlay);
+disableScrollBehind(errorFormOverlay);
 
 for (let i = 0; i < dockContactBtns.length; i++) {
   disableScrollBehind(dockContactBtns[i]);

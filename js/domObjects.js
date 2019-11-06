@@ -26,6 +26,7 @@ let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
 let navOverlay = document.getElementById("navOverlay");
 let successFormOverlay = document.getElementById("successFormOverlay");
+let errorFormOverlay = document.getElementById("errorFormOverlay");
 let confirmWindow = document.getElementById("confirmWindow");
 let main = document.querySelector("main");
 let navMenuOpt = document.getElementsByClassName("navMenuOpt");

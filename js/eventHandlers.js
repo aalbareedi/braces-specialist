@@ -74,7 +74,7 @@ contactForm.onsubmit = function(event) {
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
 
-  // sendEmail();
+  sendEmail();
 };
 
 contactFormBackArrow.onclick = function() {
