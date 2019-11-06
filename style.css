@@ -117,9 +117,14 @@ body {
   width: 35px;
   border: none;
   outline: none;
-  background-color: rgba(224, 224, 224, 0.5);
+  /* background-color: rgba(224, 224, 224, 0.5); */
+  background-color: #333;
+  opacity: 0.3;
 }
-.upBtn {
+/* #backToTopBtn:hover {
+  background-color: red;
+} */
+.upIcon {
   font-size: 18px;
   margin-bottom: 2px;
 }
@@ -590,6 +595,7 @@ input.contactFormInput:valid + .formIcon {
 .statDescription {
   font-size: 16px;
   letter-spacing: 0.4px;
+  opacity: 0.8;
 }
 #statCases::after {
   content: "+";
@@ -849,8 +855,10 @@ input.contactFormInput:valid + .formIcon {
   font-size: 16px;
 }
 
+/* ****************************************** ABOUT ******************************************* */
 #aboutUs {
   font-family: "Nanum Gothic", sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   background: gainsboro;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -863,14 +871,14 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.8px;
 }
 .aboutText {
-  /* background: orange; */
   line-height: 28px;
   letter-spacing: 0.4px;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 20px;
-  padding-right: 16px;
+  padding-right: 10px;
 }
 
+/* ****************************************** DOCTOR ******************************************* */
 #doctor {
   /* background-color: #7fbfeb; */
   background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
@@ -912,6 +920,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
 }
 
+/* ****************************************** REVIEWS ******************************************* */
 .reviews {
   position: relative;
   background-image: url(images/test.png);
@@ -927,9 +936,6 @@ input.contactFormInput:valid + .formIcon {
   height: 413px;
   margin-bottom: 0;
 }
-/* .slick-dots.touch-device li.slick-active button::before {
-  opacity: 1 !important ;
-} */
 .slick-list {
   height: 100%;
 }
@@ -950,6 +956,13 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots li.slick-active button:before {
   color: white;
+}
+.slick-dots.touch-device li button:hover::before,
+.slick-dots.touch-device li button:focus::before {
+  opacity: 0.25;
+}
+.slick-dots.touch-device li.slick-active button::before {
+  opacity: 1;
 }
 .reviewSlide {
   height: 100%;
@@ -1000,7 +1013,7 @@ input.contactFormInput:valid + .formIcon {
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
 footer {
-  background-color: pink;
+  background-color: darkgray;
   height: 100px;
 }
 #emptyDockSpace {
@@ -1018,23 +1031,4 @@ footer {
     both;
   animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
   -webkit-animation-fill-mode: forwards;
-}
-
-/**
- * Slick dots sticky touch hover workaround - CSS portion (also see JS portion)
- * * https://github.com/kenwheeler/slick/issues/1945#issuecomment-230158398
- * * http://stackoverflow.com/a/4734092/4747661
- *
- * :hover removes dark on Android
- * :focus removes dark on iOS
- *
- * .slick-active adds back dark everywhere
- */
-.slick-dots.touch-device li button:hover::before,
-.slick-dots.touch-device li button:focus::before {
-  opacity: 0.25;
-}
-
-.slick-dots.touch-device li.slick-active button::before {
-  opacity: 1;
 }
