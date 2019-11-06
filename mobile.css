@@ -1,5 +1,5 @@
 /* ipod touch (smaller than iphone5)  */
-@media only screen and (max-height: 452px) and (max-width: 320px) {
+@media only screen and (max-width: 320px) and (max-height: 452px) {
   #landingBox {
     background-position: bottom 0px left 0px;
   }
@@ -76,17 +76,17 @@
 }
 
 /* iPhone X */
-@media only screen and (min-height: 800px) and (max-width: 467px) {
+@media only screen and (max-width: 467px) and (min-height: 800px) {
   #landingBox {
     background-position: bottom 0px left -130px;
   }
   .logoTextBottom {
-    color: pink;
+    /* color: pink; */
   }
 }
 
 /* iphone 7 (firefox)  */
-@media only screen and (max-height: 545px) and (max-width: 375px) {
+@media only screen and (max-width: 375px) and (max-height: 545px) {
   #landingBox {
     background-position: bottom 0px left 0px;
   }
@@ -96,8 +96,18 @@
 }
 
 /* landingscape */
-@media only screen and (max-height: 414px) and (min-width: 414px) {
+@media only screen and (min-width: 414px) and (max-height: 414px) {
   #backToTopBtn {
     bottom: 21%;
+  }
+  #landingBox {
+    background-position: top -288px left 0;
+  }
+  .landingSubHeading {
+    margin-top: 9px;
+    margin-bottom: 17px;
+  }
+  .reviews {
+    background-position: bottom 0px right 0px;
   }
 }
