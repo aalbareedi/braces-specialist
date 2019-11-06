@@ -10,6 +10,25 @@
 
 /* iPhone 6/7/8 */
 @media only screen and (min-width: 375px) {
+  .navMenuOpt:not(#navSocial) {
+    height: 58px;
+    font-size: 15px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(2) {
+    top: 58px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(3) {
+    top: 116px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(4) {
+    top: 174px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(5) {
+    top: 232px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(6) {
+    top: 290px;
+  }
   #landingBox {
     background-position: bottom 0px left -38px;
   }
@@ -43,19 +62,6 @@
   .statNumber {
     font-size: 29px;
   }
-  /* #statSmileImg {
-    height: 99px;
-    left: 21px;
-  }
-  #statClockImg {
-    height: 91px;
-    left: 23px;
-    top: 29px;
-  }
-  #statToothImg {
-    height: 84px;
-    top: 38px;
-  } */
 }
 
 /* iPhone 6/7/8 PLUS */
@@ -75,13 +81,13 @@
   }
 }
 
-/* iPhone X */
-@media only screen and (max-width: 467px) and (min-height: 800px) {
+/* iPhone X * (max-width: 467px) */
+@media only screen and (min-width: 375px) and (min-height: 800px) {
   #landingBox {
     background-position: bottom 0px left -130px;
   }
   .logoTextBottom {
-    /* color: pink; */
+    background-color: blue;
   }
 }
 
@@ -95,8 +101,8 @@
   }
 }
 
-/* landingscape */
-@media only screen and (min-width: 414px) and (max-height: 414px) {
+/* landingscape (max-height: 414px)*/
+@media only screen and (min-width: 480px) and (min-height: 310px) {
   #backToTopBtn {
     bottom: 21%;
   }
