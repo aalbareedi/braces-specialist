@@ -78,7 +78,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -968,7 +968,7 @@ input.contactFormInput:valid + .formIcon {
   margin: 0 4px;
 }
 .slick-dots li button:before {
-  font-size: 11px;
+  font-size: 12px;
   opacity: 0.2;
   color: #dcdcdc;
 }
