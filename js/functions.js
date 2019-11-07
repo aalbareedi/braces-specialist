@@ -102,9 +102,12 @@ function sendEmail() {
   let emailAddress = encodeURIComponent(contactFormEmailInput.value);
   let phoneNumber = encodeURIComponent(contactFormPhoneInput.value);
   let message = encodeURIComponent(contactFormMessageInput.value);
-
+  let isLoading = true;
+  // stopping overlay from appearing for a split second in case emails sends right away
   setTimeout(function() {
-    loadingFormOverlay.classList.remove("displayHidden");
+    if (isLoading == true) {
+      loadingFormOverlay.classList.remove("displayHidden");
+    }
   }, 500);
 
   // fetch is JS function that lets you send http requests to servers,
@@ -123,37 +126,42 @@ function sendEmail() {
   )
     // handles servers succesful response
     .then(function() {
-      loadingFormOverlay.classList.add("displayHidden");
-      successFormOverlay.classList.remove("displayHidden");
-      confirmWindow.classList.add("visibleConfirmWindow");
-      confirmWindow.classList.add("slide-in-left");
-      contactFormButtonsBar.classList.add("displayHidden");
-
+      // alert(isLoading);
       setTimeout(function() {
-        confirmWindow.classList.add("slide-out-right");
-      }, 2500);
+        isLoading = false;
+        loadingFormOverlay.classList.add("displayHidden");
+        successFormOverlay.classList.remove("displayHidden");
+        confirmWindow.classList.add("visibleConfirmWindow");
+        confirmWindow.classList.add("slide-in-left");
+        contactFormButtonsBar.classList.add("displayHidden");
 
-      setTimeout(function() {
-        contactForm.scrollTop = 0;
-        confirmWindow.classList.remove("visibleConfirmWindow");
-        successFormOverlay.classList.add("displayHidden");
-        contactForm.classList.add("displayHidden");
-        contactFormButtonsBar.classList.remove("displayHidden");
-        contactFormSubmitBtn.disabled = true;
-        contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
-        contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
-        contactForm.reset();
-        confirmWindow.classList.remove("slide-in-left");
-        confirmWindow.classList.remove("slide-out-right");
-      }, 3000);
+        setTimeout(function() {
+          confirmWindow.classList.add("slide-out-right");
+        }, 2500);
 
-      console.log("sending complete");
+        setTimeout(function() {
+          contactForm.scrollTop = 0;
+          confirmWindow.classList.remove("visibleConfirmWindow");
+          successFormOverlay.classList.add("displayHidden");
+          contactForm.classList.add("displayHidden");
+          contactFormButtonsBar.classList.remove("displayHidden");
+          contactFormSubmitBtn.disabled = true;
+          contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
+          contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+          contactForm.reset();
+          confirmWindow.classList.remove("slide-in-left");
+          confirmWindow.classList.remove("slide-out-right");
+        }, 3000);
+
+        console.log("sending complete");
+      }, 600);
     })
     // handling errors (server connection)
     // handles server if it doesnt respond OR if it responds with an error
     .catch(function(error) {
+      isLoading = false;
       loadingFormOverlay.classList.add("displayHidden");
-
+      console.log(error);
       if (error.message == "REQUEST_TIMED_OUT") {
         errorFormOverlay.classList.remove("displayHidden");
         contactFormButtonsBar.classList.add("displayHidden");

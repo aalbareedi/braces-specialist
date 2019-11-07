@@ -16,7 +16,6 @@ html {
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
-  /* font-family: "Titillium Web", sans-serif; */
 }
 .overflowHidden {
   touch-action: none;
@@ -33,6 +32,27 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none;
+}
+#backToTopBtn {
+  display: flex;
+  color: gainsboro;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 14%;
+  right: 24px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  border: none;
+  outline: none;
+  /* background-color: rgba(224, 224, 224, 0.5); */
+  background-color: #333;
+  opacity: 0.3;
+}
+.upIcon {
+  font-size: 20px;
+  margin-bottom: 2px;
 }
 /* ************************************ NAVBAR ****************************************** */
 #navOverlay {
@@ -103,27 +123,6 @@ body {
   font-size: 24px;
   color: black;
   opacity: 0.8;
-}
-#backToTopBtn {
-  display: flex;
-  color: gainsboro;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 14%;
-  right: 24px;
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  border: none;
-  outline: none;
-  /* background-color: rgba(224, 224, 224, 0.5); */
-  background-color: #333;
-  opacity: 0.3;
-}
-.upIcon {
-  font-size: 18px;
-  margin-bottom: 2px;
 }
 /* ********************************** NAV MENU WINDOW ************************************** */
 #navMenu {
@@ -312,7 +311,6 @@ body {
   padding-left: 11px;
   width: 100%;
   outline: none;
-  /* border-radius: 7px; */
   font-size: 16px;
   letter-spacing: 0.6px;
   padding-right: 40px;
@@ -608,7 +606,6 @@ input.contactFormInput:valid + .formIcon {
 .contactBtnText {
   color: #616161;
   font-size: 13px;
-  /* font-family: "Titillium Web", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
 /* ************************************** LANDING BOX ****************************************** */
@@ -646,7 +643,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .landingHeading {
   font-family: "Russo One", sans-serif;
-  /* font-family: "Fredoka One", cursive; */
   font-style: italic;
   font-size: 38px;
   letter-spacing: 2px;
@@ -737,7 +733,6 @@ input.contactFormInput:valid + .formIcon {
   background-color: #383f43;
   /* background-color: #333a3a; */
   padding-top: 10px;
-  /* font-family: "Titillium Web", sans-serif; */
 }
 .officeInfoHeading {
   text-align: center;
@@ -878,7 +873,6 @@ input.contactFormInput:valid + .formIcon {
 /* ****************************************** ABOUT ******************************************* */
 #aboutUs {
   font-family: "Nanum Gothic", sans-serif;
-  /* font-family: 'Raleway', sans-serif; */
   background: gainsboro;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -912,12 +906,11 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.8px;
 }
 .doctorName {
+  font-family: "Volkhov", serif;
   text-align: center;
   font-size: 24px;
   margin-bottom: 30px;
   letter-spacing: 0.8px;
-  /* font-family: "Source Serif Pro", serif; */
-  font-family: "Volkhov", serif;
   font-weight: bold;
   font-style: italic;
 }
@@ -950,14 +943,12 @@ input.contactFormInput:valid + .formIcon {
   -o-background-size: cover;
 }
 #reviewSlider {
-  /* background-color: rgba(40, 40, 40, 0.7); */
-  height: 413px;
+  height: 420px;
   margin-bottom: 0;
 }
-.slick-list {
-  height: 100%;
-}
-.slick-track {
+.slick-list,
+.slick-track,
+.reviewSlide {
   height: 100%;
 }
 .slick-dots {
@@ -981,9 +972,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .slick-dots.touch-device li.slick-active button::before {
   opacity: 1;
-}
-.reviewSlide {
-  height: 100%;
 }
 .reviewQuote {
   height: 90%;
@@ -1029,11 +1017,8 @@ input.contactFormInput:valid + .formIcon {
 }
 /* ****************************************** FAQ ******************************************* */
 #faq {
-  /* background: linear-gradient(0deg,#014180 0%,#009cda 100%); */
   background: #0d79a1;
   padding-top: 10px;
-  /* font-family: "Titillium Web", sans-serif; */
-  /* font-family: "Open Sans", sans-serif; */
 }
 .faqHeading {
   text-align: center;
@@ -1070,8 +1055,6 @@ input.contactFormInput:valid + .formIcon {
   font-size: 16px;
 }
 
-/* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
-/* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
 footer {
   background-color: darkgray;
   height: 100px;
@@ -1092,3 +1075,13 @@ footer {
   animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
   -webkit-animation-fill-mode: forwards;
 }
+
+/* FONTS */
+/* font-family: "Titillium Web", sans-serif; */
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: "Source Serif Pro", serif; */
+/* font-family: "Fredoka One", cursive; */
+
+/* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
+/* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */

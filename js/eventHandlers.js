@@ -167,3 +167,9 @@ for (let i = 0; i < formInputFields.length; i++) {
     mainDock.classList.remove("displayHidden");
   };
 }
+
+$("#reviewSlider").on("swipe", function(event, slick, direction) {
+  slick.slickPause();
+  // console.log(slick);
+  // console.log(direction);
+});

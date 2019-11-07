@@ -19,10 +19,11 @@ for (let i = 0; i < navMenuOpt.length; i++) {
   disableScrollBehind(navMenuOpt[i]);
 }
 
-// autoplay: true, pauseOnDotsHover: true
 $("#reviewSlider").slick({
   dots: true,
-  arrows: false
+  arrows: false,
+  autoplay: true,
+  pauseOnDotsHover: true
 });
 
 /* Slick dots sticky touch hover workaround - JS portion (also see CSS portion)
@@ -34,6 +35,6 @@ $("#reviewSlider").slick({
 this.$(".slick-dots").addClass("touch-device");
 // }
 
-// setTimeout(function() {
-//   alert(window.innerWidth + "," + window.innerHeight);
-// }, 5000);
+setTimeout(function() {
+  alert(window.innerWidth + "," + window.innerHeight);
+}, 5000);
