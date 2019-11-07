@@ -102,6 +102,11 @@ function sendEmail() {
   let emailAddress = encodeURIComponent(contactFormEmailInput.value);
   let phoneNumber = encodeURIComponent(contactFormPhoneInput.value);
   let message = encodeURIComponent(contactFormMessageInput.value);
+
+  setTimeout(function() {
+    loadingFormOverlay.classList.remove("displayHidden");
+  }, 500);
+
   // fetch is JS function that lets you send http requests to servers,
   // we are REQUESTING sendEmail.php FILE from server to send the email through
   fetchWithTimeout(
@@ -116,7 +121,9 @@ function sendEmail() {
     {},
     5000
   )
+    // handles servers succesful response
     .then(function() {
+      loadingFormOverlay.classList.add("displayHidden");
       successFormOverlay.classList.remove("displayHidden");
       confirmWindow.classList.add("visibleConfirmWindow");
       confirmWindow.classList.add("slide-in-left");
@@ -143,7 +150,10 @@ function sendEmail() {
       console.log("sending complete");
     })
     // handling errors (server connection)
+    // handles server if it doesnt respond OR if it responds with an error
     .catch(function(error) {
+      loadingFormOverlay.classList.add("displayHidden");
+
       if (error.message == "REQUEST_TIMED_OUT") {
         errorFormOverlay.classList.remove("displayHidden");
         contactFormButtonsBar.classList.add("displayHidden");
