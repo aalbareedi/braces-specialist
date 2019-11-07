@@ -14,6 +14,9 @@
     height: 58px;
     font-size: 15px;
   }
+  #navSocial {
+    height: 58px;
+  }
   .openMenu#navMenu .navMenuOpt:nth-child(2) {
     top: 58px;
   }
@@ -28,6 +31,12 @@
   }
   .openMenu#navMenu .navMenuOpt:nth-child(6) {
     top: 290px;
+  }
+  .navSocialBtnIcon {
+    font-size: 23px;
+  }
+  #navInstagramIcon {
+    font-size: 26px;
   }
   #landingBox {
     background-position: bottom 0px left -38px;
