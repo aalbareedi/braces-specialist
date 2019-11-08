@@ -10,6 +10,7 @@ disableScrollBehind(navMenu);
 disableScrollBehind(navbar);
 disableScrollBehind(successFormOverlay);
 disableScrollBehind(errorFormOverlay);
+disableScrollBehind(loadingFormOverlay);
 
 for (let i = 0; i < dockContactBtns.length; i++) {
   disableScrollBehind(dockContactBtns[i]);
@@ -35,6 +36,6 @@ $("#reviewSlider").slick({
 this.$(".slick-dots").addClass("touch-device");
 // }
 
-setTimeout(function() {
-  alert(window.innerWidth + "," + window.innerHeight);
-}, 5000);
+// setTimeout(function() {
+//   alert(window.innerWidth + "," + window.innerHeight);
+// }, 5000);
