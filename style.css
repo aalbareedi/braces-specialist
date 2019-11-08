@@ -595,13 +595,13 @@ input.contactFormInput:valid + .formIcon {
   opacity: 0.9;
 }
 #directionsIcon {
-  color: red;
+  color: #dd1414;
 }
 #callIcon {
   color: #2ba52b;
 }
 #messageIcon {
-  color: #1f93ff;
+  color: #1883e6;
   margin-right: 5px;
 }
 .contactBtnText {
@@ -692,13 +692,14 @@ input.contactFormInput:valid + .formIcon {
   background-image: url("images/icons/toothIcon.svg");
 }
 .statNumber {
+  font-family: "Poppins", sans-serif;
   color: #37d0e1;
   font-size: 27px;
   margin-bottom: 2px;
 }
 .statDescription {
   font-size: 16px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   opacity: 0.8;
 }
 #statCases::after {
