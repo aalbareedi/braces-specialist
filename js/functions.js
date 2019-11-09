@@ -108,7 +108,7 @@ function sendEmail() {
     if (isLoading == true) {
       loadingFormOverlay.classList.remove("displayHidden");
     }
-  }, 2000);
+  }, 500);
 
   // fetch is JS function that lets you send http requests to servers,
   // we are REQUESTING sendEmail.php FILE from server to send the email through
@@ -127,34 +127,34 @@ function sendEmail() {
     // handles servers succesful response
     .then(function() {
       // alert(isLoading);
+      // setTimeout(function() {
+      isLoading = false;
+      loadingFormOverlay.classList.add("displayHidden");
+      successFormOverlay.classList.remove("displayHidden");
+      confirmWindow.classList.add("visibleConfirmWindow");
+      confirmWindow.classList.add("slide-in-left");
+      contactFormButtonsBar.classList.add("displayHidden");
+
       setTimeout(function() {
-        isLoading = false;
-        loadingFormOverlay.classList.add("displayHidden");
-        successFormOverlay.classList.remove("displayHidden");
-        confirmWindow.classList.add("visibleConfirmWindow");
-        confirmWindow.classList.add("slide-in-left");
-        contactFormButtonsBar.classList.add("displayHidden");
+        confirmWindow.classList.add("slide-out-right");
+      }, 2500);
 
-        setTimeout(function() {
-          confirmWindow.classList.add("slide-out-right");
-        }, 2500);
+      setTimeout(function() {
+        contactForm.scrollTop = 0;
+        confirmWindow.classList.remove("visibleConfirmWindow");
+        successFormOverlay.classList.add("displayHidden");
+        contactForm.classList.add("displayHidden");
+        contactFormButtonsBar.classList.remove("displayHidden");
+        contactFormSubmitBtn.disabled = true;
+        contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
+        contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+        contactForm.reset();
+        confirmWindow.classList.remove("slide-in-left");
+        confirmWindow.classList.remove("slide-out-right");
+      }, 3000);
 
-        setTimeout(function() {
-          contactForm.scrollTop = 0;
-          confirmWindow.classList.remove("visibleConfirmWindow");
-          successFormOverlay.classList.add("displayHidden");
-          contactForm.classList.add("displayHidden");
-          contactFormButtonsBar.classList.remove("displayHidden");
-          contactFormSubmitBtn.disabled = true;
-          contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
-          contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
-          contactForm.reset();
-          confirmWindow.classList.remove("slide-in-left");
-          confirmWindow.classList.remove("slide-out-right");
-        }, 3000);
-
-        console.log("sending complete");
-      }, 600);
+      console.log("sending complete");
+      // }, 600);
     })
     // handling errors (server connection)
     // handles server if it doesnt respond OR if it responds with an error
