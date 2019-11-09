@@ -98,7 +98,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -120,9 +120,16 @@ body {
   background-color: gainsboro;
 }
 #navToggleIcon {
-  font-size: 24px;
+  outline: none;
+
+  /* font-size: 24px;
   color: black;
-  opacity: 0.8;
+  opacity: 0.8; */
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: red;
 }
 /* ********************************** NAV MENU WINDOW ************************************** */
 #navMenu {
@@ -693,7 +700,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .statNumber {
   font-family: "Poppins", sans-serif;
-  color: #37d0e1;
+  color: #00c2d7;
   font-size: 27px;
   margin-bottom: 2px;
 }
@@ -716,7 +723,7 @@ input.contactFormInput:valid + .formIcon {
   margin-top: 10px;
 }
 .learnMoreStatBtn {
-  background: linear-gradient(to bottom, #37d0e1 0%, #2eb1bf 100%);
+  background: linear-gradient(to bottom, #00c2d7 0%, #0c8795 100%);
   color: white;
   border: none;
   outline: none;
@@ -917,12 +924,16 @@ input.contactFormInput:valid + .formIcon {
   font-style: italic;
 }
 .doctorImgParent {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background-color: pink;
+  overflow: hidden;
+  margin: 0px auto 20px;
 }
 .doctorImg {
-  height: 200px;
+  height: auto;
+  width: 200px;
 }
 .doctorInfo {
   font-family: "Nanum Gothic", sans-serif;
@@ -952,6 +963,7 @@ input.contactFormInput:valid + .formIcon {
 .slick-track,
 .reviewSlide {
   height: 100%;
+  outline: none;
 }
 .slick-dots {
   bottom: 0;
@@ -1084,6 +1096,7 @@ footer {
 /* font-family: 'Raleway', sans-serif; */
 /* font-family: "Source Serif Pro", serif; */
 /* font-family: "Fredoka One", cursive; */
+/* font-family: "Poppins", sans-serif; */
 
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */

@@ -108,7 +108,7 @@ function sendEmail() {
     if (isLoading == true) {
       loadingFormOverlay.classList.remove("displayHidden");
     }
-  }, 500);
+  }, 2000);
 
   // fetch is JS function that lets you send http requests to servers,
   // we are REQUESTING sendEmail.php FILE from server to send the email through

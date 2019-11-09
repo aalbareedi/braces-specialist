@@ -13,12 +13,10 @@ navbar.onclick = function() {
 navToggleBtn.onclick = function(event) {
   if (successFormOverlay.classList.contains("displayHidden") == true) {
     // changing nav toggle icon
-    if (navToggleIcon.classList.contains("fa-bars")) {
-      navToggleIcon.classList.remove("fa-bars");
-      navToggleIcon.classList.add("fa-times");
+    if (navToggleIcon.classList.contains("is-active")) {
+      navToggleIcon.classList.remove("is-active");
     } else {
-      navToggleIcon.classList.remove("fa-times");
-      navToggleIcon.classList.add("fa-bars");
+      navToggleIcon.classList.add("is-active");
     }
 
     if (navMenu.classList.contains("openMenu") == false) {
@@ -39,8 +37,7 @@ navSocialMediaBtns.onclick = function() {};
 
 for (let i = 0; i < navSocialMediaBtns.length; i++) {
   navSocialMediaBtns[i].onclick = function() {
-    navToggleIcon.classList.remove("fa-times");
-    navToggleIcon.classList.add("fa-bars");
+    navToggleIcon.classList.remove("is-active");
     navMenu.classList.remove("openMenu");
     navOverlay.classList.add("displayHidden");
     wrapper.classList.remove("overflowHidden");
@@ -50,8 +47,7 @@ for (let i = 0; i < navSocialMediaBtns.length; i++) {
 navOverlay.onclick = function() {
   navOverlay.classList.add("displayHidden");
   navMenu.classList.remove("openMenu");
-  navToggleIcon.classList.remove("fa-times");
-  navToggleIcon.classList.add("fa-bars");
+  navToggleIcon.classList.remove("is-active");
   html.classList.remove("overflowHidden");
   body.classList.remove("overflowHidden");
   wrapper.classList.remove("overflowHidden");
