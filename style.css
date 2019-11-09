@@ -98,7 +98,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  /* background-color: orange; */
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -599,6 +599,7 @@ input.contactFormInput:valid + .formIcon {
   grid-column: 3/4;
 }
 .contactIcon {
+  /* background-color: pink; */
   margin-right: 4px;
   font-size: 18px;
   opacity: 0.9;
@@ -703,7 +704,7 @@ input.contactFormInput:valid + .formIcon {
 .statNumber {
   font-family: "Poppins", sans-serif;
   color: #00c2d7;
-  font-size: 27px;
+  font-size: 28px;
   margin-bottom: 2px;
 }
 .statDescription {
@@ -926,6 +927,7 @@ input.contactFormInput:valid + .formIcon {
   font-style: italic;
 }
 .doctorImgParent {
+  position: relative;
   width: 180px;
   height: 180px;
   border-radius: 90px;
@@ -934,6 +936,7 @@ input.contactFormInput:valid + .formIcon {
   margin: 0px auto 20px;
 }
 .doctorImg {
+  position: absolute;
   height: auto;
   width: 200px;
 }
