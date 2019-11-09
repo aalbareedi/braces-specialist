@@ -169,6 +169,13 @@ function sendEmail() {
           errorFormOverlay.classList.add("displayHidden");
           contactFormButtonsBar.classList.remove("displayHidden");
         }, 4000);
+      } else {
+        errorFormOverlay.classList.remove("displayHidden");
+        contactFormButtonsBar.classList.add("displayHidden");
+        setTimeout(function() {
+          errorFormOverlay.classList.add("displayHidden");
+          contactFormButtonsBar.classList.remove("displayHidden");
+        }, 4000);
       }
     });
 }
