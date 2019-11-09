@@ -108,6 +108,7 @@ body {
   outline: none;
   width: 58px;
   height: 100%;
+  padding-top: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,21 +116,22 @@ body {
   position: absolute;
   right: 0px;
   border-left: 2px solid #e8e8e8;
+  opacity: 0.8;
 }
 #navToggleBtn:active {
   background-color: gainsboro;
 }
 #navToggleIcon {
   outline: none;
-
-  /* font-size: 24px;
-  color: black;
-  opacity: 0.8; */
+}
+.hamburger-box {
+  width: 26px;
 }
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  background-color: red;
+  /* background-color: red; */
+  width: 26px;
 }
 /* ********************************** NAV MENU WINDOW ************************************** */
 #navMenu {
