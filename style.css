@@ -77,7 +77,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -900,7 +900,7 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Volkhov", serif;
   text-align: center;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   letter-spacing: 0.8px;
   font-weight: bold;
   font-style: italic;
