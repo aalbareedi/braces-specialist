@@ -163,7 +163,7 @@ function sendEmail() {
       loadingFormOverlay.classList.add("displayHidden");
       console.log(error);
       console.log(typeof error);
-      console.log(Object.keys(error));
+      console.log(Object.getOwnPropertyNames(error));
 
       if (error.message == "REQUEST_TIMED_OUT") {
         errorFormOverlay.classList.remove("displayHidden");
