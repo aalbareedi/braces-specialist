@@ -164,6 +164,7 @@ function sendEmail() {
       console.log(error);
       console.log(typeof error);
       console.log(Object.getOwnPropertyNames(error));
+      console.log(error.message);
 
       if (error.message == "REQUEST_TIMED_OUT") {
         errorFormOverlay.classList.remove("displayHidden");
