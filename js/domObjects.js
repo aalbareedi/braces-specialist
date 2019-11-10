@@ -28,6 +28,9 @@ let navOverlay = document.getElementById("navOverlay");
 let loadingFormOverlay = document.getElementById("loadingFormOverlay");
 let successFormOverlay = document.getElementById("successFormOverlay");
 let errorFormOverlay = document.getElementById("errorFormOverlay");
+let connectionErrorFormOverlay = document.getElementById(
+  "connectionErrorFormOverlay"
+);
 let confirmWindow = document.getElementById("confirmWindow");
 let main = document.querySelector("main");
 let navMenuOpt = document.getElementsByClassName("navMenuOpt");
