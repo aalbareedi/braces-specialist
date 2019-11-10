@@ -162,6 +162,9 @@ function sendEmail() {
       isLoading = false;
       loadingFormOverlay.classList.add("displayHidden");
       console.log(error);
+      console.log(typeof error);
+      console.log(Object.keys(error));
+
       if (error.message == "REQUEST_TIMED_OUT") {
         errorFormOverlay.classList.remove("displayHidden");
         contactFormButtonsBar.classList.add("displayHidden");
