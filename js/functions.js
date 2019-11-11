@@ -125,7 +125,8 @@ function sendEmail() {
     5000
   )
     // handles servers succesful response
-    .then(function() {
+    .then(function(response) {
+      console.log(response);
       // alert(isLoading);
       // setTimeout(function() {
       isLoading = false;
