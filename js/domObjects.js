@@ -1,14 +1,27 @@
 let html = document.getElementsByTagName("html")[0];
 let body = document.getElementsByTagName("body")[0];
-let wrapper = document.getElementById("wrapper");
 let scrollingElement =
   document.scrollingElement || document.documentElement || body;
+
+let wrapper = document.getElementById("wrapper");
+let main = document.querySelector("main");
 let mainDock = document.getElementById("mainDock");
+let dockContactBtns = document.getElementsByClassName("dockContactBtn");
+let messageBtn = document.getElementById("messageBtn");
+let backToTopBtn = document.getElementById("backToTopBtn");
+let stats = document.getElementById("stats");
+let statYear = document.getElementById("statYear");
+let statCases = document.getElementById("statCases");
+let statPercent = document.getElementById("statPercent");
+// nav
 let navbar = document.getElementById("navbar");
 let navToggleBtn = document.getElementById("navToggleBtn");
 let navToggleIcon = document.getElementById("navToggleIcon");
 let navMenu = document.getElementById("navMenu");
-let messageBtn = document.getElementById("messageBtn");
+let navOverlay = document.getElementById("navOverlay");
+let navMenuOpt = document.getElementsByClassName("navMenuOpt");
+let navSocialMediaBtns = document.getElementsByClassName("navSocialMediaBtn");
+// contact form
 let contactForm = document.getElementById("contactForm");
 let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFormBackArrow = document.getElementById("backArrow");
@@ -19,20 +32,8 @@ let contactFormNameInput = document.getElementById("nameInput");
 let contactFormEmailInput = document.getElementById("emailInput");
 let contactFormPhoneInput = document.getElementById("phoneInput");
 let contactFormMessageInput = document.getElementById("messageInput");
-let backToTopBtn = document.getElementById("backToTopBtn");
-let stats = document.getElementById("stats");
-let statYear = document.getElementById("statYear");
-let statCases = document.getElementById("statCases");
-let statPercent = document.getElementById("statPercent");
-let navOverlay = document.getElementById("navOverlay");
-let loadingFormOverlay = document.getElementById("loadingFormOverlay");
-let successFormOverlay = document.getElementById("successFormOverlay");
-let errorFormOverlay = document.getElementById("errorFormOverlay");
-let connectionErrorFormOverlay = document.getElementById(
-  "connectionErrorFormOverlay"
-);
+let loadingOverlay = document.getElementById("loadingOverlay");
+let successOverlay = document.getElementById("successOverlay");
+let errorOverlay = document.getElementById("errorOverlay");
+let connectionErrorOverlay = document.getElementById("connectionErrorOverlay");
 let confirmWindow = document.getElementById("confirmWindow");
-let main = document.querySelector("main");
-let navMenuOpt = document.getElementsByClassName("navMenuOpt");
-let dockContactBtns = document.getElementsByClassName("dockContactBtn");
-let navSocialMediaBtns = document.getElementsByClassName("navSocialMediaBtn");

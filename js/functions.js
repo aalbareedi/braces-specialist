@@ -106,7 +106,7 @@ function sendEmail() {
   // stopping overlay from appearing for a split second in case emails sends right away
   setTimeout(function() {
     if (isLoading == true) {
-      loadingFormOverlay.classList.remove("displayHidden");
+      loadingOverlay.classList.remove("displayHidden");
     }
   }, 500);
 
@@ -130,8 +130,8 @@ function sendEmail() {
       // alert(isLoading);
       // setTimeout(function() {
       isLoading = false;
-      loadingFormOverlay.classList.add("displayHidden");
-      successFormOverlay.classList.remove("displayHidden");
+      loadingOverlay.classList.add("displayHidden");
+      successOverlay.classList.remove("displayHidden");
       confirmWindow.classList.add("visibleConfirmWindow");
       confirmWindow.classList.add("slide-in-left");
       contactFormButtonsBar.classList.add("displayHidden");
@@ -143,7 +143,7 @@ function sendEmail() {
       setTimeout(function() {
         contactForm.scrollTop = 0;
         confirmWindow.classList.remove("visibleConfirmWindow");
-        successFormOverlay.classList.add("displayHidden");
+        successOverlay.classList.add("displayHidden");
         contactForm.classList.add("displayHidden");
         contactFormButtonsBar.classList.remove("displayHidden");
         contactFormSubmitBtn.disabled = true;
@@ -161,31 +161,31 @@ function sendEmail() {
     // handles server if it doesnt respond OR if it responds with an error
     .catch(function(error) {
       isLoading = false;
-      loadingFormOverlay.classList.add("displayHidden");
+      loadingOverlay.classList.add("displayHidden");
       console.log(error);
       console.log(typeof error);
       console.log(Object.getOwnPropertyNames(error));
       console.log(error.message);
 
       if (error.message == "REQUEST_TIMED_OUT") {
-        errorFormOverlay.classList.remove("displayHidden");
+        errorOverlay.classList.remove("displayHidden");
         contactFormButtonsBar.classList.add("displayHidden");
         setTimeout(function() {
-          errorFormOverlay.classList.add("displayHidden");
+          errorOverlay.classList.add("displayHidden");
           contactFormButtonsBar.classList.remove("displayHidden");
         }, 4000);
       } else if (navigator.onLine == false) {
-        connectionErrorFormOverlay.classList.remove("displayHidden");
+        connectionErrorOverlay.classList.remove("displayHidden");
         contactFormButtonsBar.classList.add("displayHidden");
         setTimeout(function() {
-          connectionErrorFormOverlay.classList.add("displayHidden");
+          connectionErrorOverlay.classList.add("displayHidden");
           contactFormButtonsBar.classList.remove("displayHidden");
         }, 4000);
       } else {
-        errorFormOverlay.classList.remove("displayHidden");
+        errorOverlay.classList.remove("displayHidden");
         contactFormButtonsBar.classList.add("displayHidden");
         setTimeout(function() {
-          errorFormOverlay.classList.add("displayHidden");
+          errorOverlay.classList.add("displayHidden");
           contactFormButtonsBar.classList.remove("displayHidden");
         }, 4000);
       }

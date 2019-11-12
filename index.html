@@ -398,9 +398,7 @@
         <div id="mainDock" class="unselectable">
           <a href="tel:773-282-0013" id="callBtn">
             <button class="dockContactBtn unselectable" type="button">
-              <!-- <div class="contactIcon" id="callIcon"> -->
               <i class="fas fa-phone contactIcon" id="callIcon"></i>
-              <!-- </div> -->
               <div class="contactBtnText">Call</div>
             </button>
           </a>
@@ -411,12 +409,10 @@
             href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
           >
             <button class="dockContactBtn unselectable" type="button">
-              <!-- <div class="contactIcon" id="directionsIcon"> -->
               <i
                 class="fas fa-map-marker-alt contactIcon"
                 id="directionsIcon"
               ></i>
-              <!-- </div> -->
               <div class="contactBtnText">Directions</div>
             </button>
           </a>
@@ -426,9 +422,7 @@
             id="messageBtn"
             type="button"
           >
-            <!-- <div class="contactIcon" id="messageIcon"> -->
             <i class="fas fa-comment contactIcon" id="messageIcon"></i>
-            <!-- </div> -->
             <div class="contactBtnText">Message</div>
           </button>
         </div>
@@ -581,7 +575,7 @@
       </div>
     </form>
 
-    <div class="formOverlay displayHidden" id="loadingFormOverlay">
+    <div id="loadingOverlay" class="formOverlay displayHidden">
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>
         <div class="sk-chase-dot"></div>
@@ -592,7 +586,7 @@
       </div>
     </div>
 
-    <div class="formOverlay displayHidden" id="successFormOverlay">
+    <div id="successOverlay" class="formOverlay displayHidden">
       <div class="formOverlayWindow" id="confirmWindow">
         <div class="overlayIconWrapper">
           <i class="far fa-check-circle confirmIcon"></i>
@@ -602,8 +596,8 @@
       </div>
     </div>
 
-    <div class="formOverlay displayHidden" id="errorFormOverlay">
-      <div class="formOverlayWindow" id="errorWindow">
+    <div id="errorOverlay" class="formOverlay displayHidden">
+      <div class="formOverlayWindow">
         <div class="overlayIconWrapper">
           <i class="fas fa-exclamation-triangle errorIcon"></i>
         </div>
@@ -614,15 +608,17 @@
       </div>
     </div>
 
-    <div class="formOverlay displayHidden" id="connectionErrorFormOverlay">
-      <div class="formOverlayWindow" id="errorWindow">
+    <div id="connectionErrorOverlay" class="formOverlay displayHidden">
+      <div class="formOverlayWindow">
         <div class="overlayIconWrapper">
-          <i class="fas fa-exclamation-triangle errorIcon"></i>
+          <i class="fas fa-wifi errorIcon"></i>
         </div>
-        <div class="formOverlayMessage unselectable" id="errorText">
+        <div class="formOverlayMessage unselectable">
           Connection Error
         </div>
-        <div class="formOverlayText">Check Your Connection</div>
+        <div class="formOverlayText" id="connectionErrorText">
+          Check your connection
+        </div>
       </div>
     </div>
 

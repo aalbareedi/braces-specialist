@@ -11,7 +11,7 @@ navbar.onclick = function() {
 };
 
 navToggleBtn.onclick = function(event) {
-  if (successFormOverlay.classList.contains("displayHidden") == true) {
+  if (successOverlay.classList.contains("displayHidden") == true) {
     // changing nav toggle icon
     if (navToggleIcon.classList.contains("is-active")) {
       navToggleIcon.classList.remove("is-active");
@@ -123,7 +123,6 @@ body.onscroll = function() {
   }
 };
 
-// contact form
 for (let i = 0; i < formInputFields.length; i++) {
   // oninput: when user types in input field
   formInputFields[i].oninput = function() {
@@ -166,6 +165,4 @@ for (let i = 0; i < formInputFields.length; i++) {
 
 $("#reviewSlider").on("swipe", function(event, slick, direction) {
   slick.slickPause();
-  // console.log(slick);
-  // console.log(direction);
 });

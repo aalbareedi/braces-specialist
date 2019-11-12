@@ -380,9 +380,10 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   margin-right: 4px;
   background-color: #10b020;
+  background: linear-gradient(to bottom, #30c930 0%, #079515 100%);
 }
 .formSubmitBtnReady:active {
-  background-color: #0b7a16;
+  background: #0b7a16;
 }
 .formSubmitBtnReady:active #formCheckIcon {
   font-size: 22px;
@@ -402,6 +403,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
   margin-left: 10px;
 }
+/* ********************************** FORM OVERLAYS ************************************ */
 .formOverlay {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -432,16 +434,16 @@ input.contactFormInput:valid + .formIcon {
   color: #962727;
   font-size: 50px;
 }
+/* .connectionErrorIcon {
+  color: #c7ab17;
+  font-size: 50px;
+} */
 .formOverlayMessage {
   color: gainsboro;
   font-size: 22px;
   letter-spacing: 1px;
   margin-top: 8px;
   text-align: center;
-}
-#errorText {
-  font-size: 20px;
-  margin-top: 10px;
 }
 .formOverlayText {
   color: #a0a0a0;
@@ -450,7 +452,14 @@ input.contactFormInput:valid + .formIcon {
   text-align: center;
   font-size: 18px;
 }
-
+#errorText {
+  font-size: 20px;
+  margin-top: 10px;
+}
+#connectionErrorText {
+  font-size: 16px;
+}
+/* loading spinner */
 .sk-chase {
   width: 60px;
   height: 60px;
@@ -692,7 +701,7 @@ input.contactFormInput:valid + .formIcon {
   margin-top: 10px;
 }
 .learnMoreStatBtn {
-  background: linear-gradient(to bottom, #00c2d7 0%, #0c8795 100%);
+  background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   color: white;
   border: none;
   outline: none;
@@ -704,7 +713,7 @@ input.contactFormInput:valid + .formIcon {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .learnMoreStatBtn:active {
-  background: #1e7f8a;
+  background: #1e748a;
 }
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
