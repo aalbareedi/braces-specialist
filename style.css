@@ -226,7 +226,7 @@ body {
   position: fixed;
   z-index: 100;
   top: 58px;
-  transition: top 0.2s;
+  transition: top 0.3s;
 }
 #contactForm.displayHidden {
   display: initial !important;
@@ -374,7 +374,7 @@ input.contactFormInput:valid + .formIcon {
   display: flex;
   padding: 8px;
   border-top: 2px solid gainsboro;
-  transition: bottom 0.2s;
+  transition: bottom 0.3s;
 }
 .contactFormBtn {
   outline: none;
@@ -628,7 +628,7 @@ input.contactFormInput:valid + .formIcon {
   -moz-background-size: cover;
   -o-background-size: cover;
   min-width: 100vw;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 .gradient {
   height: 100%;
@@ -1144,8 +1144,8 @@ footer {
   height: 58px;
 }
 #backToTopBtn {
-  display: flex;
   color: gainsboro;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
