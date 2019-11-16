@@ -97,9 +97,9 @@ backToTopBtn.onclick = function(event) {
 
 body.onscroll = function() {
   if (scrollingElement.scrollTop > 0) {
-    backToTopBtn.classList.remove("displayHidden");
+    backToTopBtn.classList.remove("opacityZero");
   } else {
-    backToTopBtn.classList.add("displayHidden");
+    backToTopBtn.classList.add("opacityZero");
   }
 
   // console.log(statCases.offsetTop);
