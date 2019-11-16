@@ -17,9 +17,11 @@
   .navMenuOpt:not(#navSocial) {
     height: 58px;
     font-size: 15px;
+    top: -58px;
   }
   #navSocial {
     height: 58px;
+    top: -58px;
   }
   .openMenu#navMenu .navMenuOpt:nth-child(2) {
     top: 58px;

@@ -34,6 +34,14 @@ body {
   user-select: none;
 }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 27px 0;
+  border-color: transparent whitesmoke transparent transparent;
+}
+
 /* ************************************ NAVBAR ****************************************** */
 #navOverlay {
   background: black;
@@ -82,7 +90,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
-  color: cyan;
+  color: purple;
 }
 #navToggleBtn {
   outline: none;
@@ -110,7 +118,7 @@ body {
   background-color: whitesmoke;
   position: fixed;
   width: 100%;
-  top: -192px;
+  top: 58px;
   z-index: 200;
 }
 .navMenuOpt:not(#navSocial) {
@@ -458,6 +466,7 @@ input.contactFormInput:valid + .formIcon {
 }
 #connectionErrorText {
   font-size: 16px;
+  margin-top: 10px;
 }
 /* loading spinner */
 .sk-chase {
@@ -861,7 +870,7 @@ input.contactFormInput:valid + .formIcon {
 #aboutUs {
   font-family: "Nanum Gothic", sans-serif;
   background: gainsboro;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-bottom: 50px;
 }
 .aboutTitle {
@@ -908,17 +917,72 @@ input.contactFormInput:valid + .formIcon {
   border-radius: 90px;
   background-color: white;
   overflow: hidden;
-  margin: 0px auto 20px;
+  /* margin: 0px auto 0px; */
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 120px;
   border: 4px solid gainsboro;
   background-image: linear-gradient(-35deg, darkgray 14%, #ffffff 100%);
 }
 .doctorImg {
   position: absolute;
   height: auto;
-  width: 210px;
-  top: 7px;
-  left: -13px;
+  width: 170px;
+  top: 12px;
+  left: 3px;
   pointer-events: none;
+}
+.docProfile {
+  /* background-color: pink; */
+  position: relative;
+  margin-bottom: 60px;
+}
+.docStat {
+  position: absolute;
+  border-radius: 80px;
+}
+.nwStat {
+  width: 200px;
+  height: 46px;
+  top: 10px;
+  left: 28px;
+  background-color: #4e2a84;
+}
+.northWesternIcon {
+  position: absolute;
+  height: 34px;
+  left: 10px;
+  top: 7px;
+}
+.northwesternText {
+  font-family: "Nanum Gothic", sans-serif;
+  color: whitesmoke;
+  display: inline;
+  position: absolute;
+  top: 50px;
+  left: 14px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.docStat2 {
+  /* background-color: #0da7a2; */
+  width: 140px;
+  height: 140px;
+  top: -6px;
+  right: 0px;
+}
+.awardImg {
+  position: absolute;
+  height: 110px;
+  left: 2px;
+  top: 19px;
+}
+.docStat3 {
+  width: 200px;
+  height: 46px;
+  top: 130px;
+  left: 30px;
+  background-color: #4e2a84;
 }
 .doctorInfo {
   font-family: "Nanum Gothic", sans-serif;
@@ -1014,7 +1078,12 @@ input.contactFormInput:valid + .formIcon {
   right: 10px;
   top: 220px;
 }
-/* ****************************************** FAQ ******************************************* */
+/* ******************************* ABOUT BRACES TREATMENT ******************************** */
+.aboutBraces {
+  height: 700px;
+  background: purple;
+}
+/* **************************************** FAQ ***************************************** */
 #faq {
   background: #0d79a1;
   padding-top: 10px;

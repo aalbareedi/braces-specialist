@@ -131,28 +131,39 @@ function sendEmail() {
       // setTimeout(function() {
       isLoading = false;
       loadingOverlay.classList.add("displayHidden");
-      successOverlay.classList.remove("displayHidden");
-      confirmWindow.classList.add("visibleConfirmWindow");
-      confirmWindow.classList.add("slide-in-left");
       contactFormButtonsBar.classList.add("displayHidden");
 
-      setTimeout(function() {
-        confirmWindow.classList.add("slide-out-right");
-      }, 2500);
+      if (response.status != 200) {
+        errorText.innerHTML = "Error " + response.status;
+        errorOverlay.classList.remove("displayHidden");
+        setTimeout(function() {
+          errorOverlay.classList.add("displayHidden");
+          contactFormButtonsBar.classList.remove("displayHidden");
+          errorText.innerHTML = "Error";
+        }, 4000);
+      } else {
+        successOverlay.classList.remove("displayHidden");
+        confirmWindow.classList.add("visibleConfirmWindow");
+        confirmWindow.classList.add("slide-in-left");
+        setTimeout(function() {
+          confirmWindow.classList.add("slide-out-right");
+        }, 2500);
 
-      setTimeout(function() {
-        contactForm.scrollTop = 0;
-        confirmWindow.classList.remove("visibleConfirmWindow");
-        successOverlay.classList.add("displayHidden");
-        contactForm.classList.add("displayHidden");
-        contactFormButtonsBar.classList.remove("displayHidden");
-        contactFormSubmitBtn.disabled = true;
-        contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
-        contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
-        contactForm.reset();
-        confirmWindow.classList.remove("slide-in-left");
-        confirmWindow.classList.remove("slide-out-right");
-      }, 3000);
+        // close/reset contact form & overlays
+        setTimeout(function() {
+          contactForm.scrollTop = 0;
+          confirmWindow.classList.remove("visibleConfirmWindow");
+          successOverlay.classList.add("displayHidden");
+          contactForm.classList.add("displayHidden");
+          contactFormButtonsBar.classList.remove("displayHidden");
+          contactFormSubmitBtn.disabled = true;
+          contactFormSubmitBtn.classList.add("formSubmitBtnDisabled");
+          contactFormSubmitBtn.classList.remove("formSubmitBtnReady");
+          contactForm.reset();
+          confirmWindow.classList.remove("slide-in-left");
+          confirmWindow.classList.remove("slide-out-right");
+        }, 3000);
+      }
 
       console.log("sending complete");
       // }, 600);

@@ -37,3 +37,4 @@ let successOverlay = document.getElementById("successOverlay");
 let errorOverlay = document.getElementById("errorOverlay");
 let connectionErrorOverlay = document.getElementById("connectionErrorOverlay");
 let confirmWindow = document.getElementById("confirmWindow");
+let errorText = document.getElementById("errorText");
