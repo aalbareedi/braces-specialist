@@ -5,14 +5,14 @@
     background-position: bottom 0px left 0px;
   }
   .logoTextBottom {
-    color: red;
+    /* color: red; */
   }
 }
 
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
   .logoTextBottom {
-    color: pink;
+    /* color: pink; */
   }
   .navMenuOpt:not(#navSocial) {
     height: 58px;
@@ -86,7 +86,7 @@
     background-position: bottom 0px left 0px;
   }
   .logoTextBottom {
-    color: green;
+    /* color: green; */
   }
 }
 
