@@ -12,6 +12,7 @@
 }
 html {
   height: auto;
+  /* scroll-behavior: smooth; */
 }
 body {
   height: 100%;
@@ -240,7 +241,7 @@ body {
   position: fixed;
   z-index: 100;
   top: 58px;
-  transition: top 0.3s;
+  transition: top 0.3s ease-in-out;
 }
 #contactForm.displayHidden {
   display: initial !important;

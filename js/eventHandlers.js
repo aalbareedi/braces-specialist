@@ -95,6 +95,10 @@ backToTopBtn.onclick = function(event) {
   scrollBodyToTop();
 };
 
+navMenuOpt[0].onclick = function() {
+  history.replaceState({}, "", "/about");
+};
+
 body.onscroll = function() {
   if (scrollingElement.scrollTop > 0) {
     backToTopBtn.classList.remove("opacityZero");
