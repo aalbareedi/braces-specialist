@@ -104,7 +104,7 @@ body {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  /* background-color: orange; */
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -715,7 +715,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .statNumber {
   font-family: "Poppins", sans-serif;
-  color: #00c2d7;
+  color: #0094f0;
   font-size: 28px;
   margin-bottom: 2px;
 }
