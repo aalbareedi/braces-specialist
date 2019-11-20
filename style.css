@@ -1107,7 +1107,7 @@ input.contactFormInput:valid + .formIcon {
   top: 220px;
 }
 /* ******************************* ABOUT BRACES TREATMENT ******************************** */
-.aboutBraces {
+#aboutBraces {
   height: 700px;
   background: purple;
 }

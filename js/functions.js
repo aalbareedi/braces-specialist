@@ -46,6 +46,20 @@ function scrollBodyToTop() {
   $(scrollingElement).animate({ scrollTop: 0 });
 }
 
+function closeNavMenu() {
+  navToggleIcon.classList.remove("is-active");
+  navMenu.classList.remove("openMenu");
+  navOverlay.classList.add("displayHidden");
+  wrapper.classList.remove("overflowHidden");
+}
+
+function closeContactForm() {
+  html.classList.remove("overflowHidden");
+  contactForm.classList.add("displayHidden");
+  body.classList.remove("overflowHidden");
+  wrapper.classList.remove("overflowHidden");
+}
+
 function isFormValid() {
   for (let i = 0; i < formInputFields.length; i++) {
     // check for invalidity, NOT validity

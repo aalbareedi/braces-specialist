@@ -37,10 +37,7 @@ navSocialMediaBtns.onclick = function() {};
 
 for (let i = 0; i < navSocialMediaBtns.length; i++) {
   navSocialMediaBtns[i].onclick = function() {
-    navToggleIcon.classList.remove("is-active");
-    navMenu.classList.remove("openMenu");
-    navOverlay.classList.add("displayHidden");
-    wrapper.classList.remove("overflowHidden");
+    closeNavMenu();
   };
 }
 
@@ -74,18 +71,12 @@ contactForm.onsubmit = function(event) {
 };
 
 contactFormBackArrow.onclick = function() {
-  html.classList.remove("overflowHidden");
-  contactForm.classList.add("displayHidden");
-  body.classList.remove("overflowHidden");
-  wrapper.classList.remove("overflowHidden");
+  closeContactForm();
   scrollingElement.scrollTop = bodyScrollPosition;
 };
 
 contactFormCancelBtn.onclick = function() {
-  html.classList.remove("overflowHidden");
-  contactForm.classList.add("displayHidden");
-  body.classList.remove("overflowHidden");
-  wrapper.classList.remove("overflowHidden");
+  closeContactForm();
   scrollingElement.scrollTop = bodyScrollPosition;
 };
 
@@ -95,9 +86,21 @@ backToTopBtn.onclick = function(event) {
   scrollBodyToTop();
 };
 
-navMenuOpt[0].onclick = function() {
-  history.replaceState({}, "", "/about");
-};
+let sections = [
+  aboutUsSection,
+  doctorSection,
+  aboutBracesSection,
+  faqSection,
+  officeInfoSection
+];
+
+for (let i = 0; i < sections.length; i++) {
+  navMenuOpt[i].onclick = function() {
+    $(scrollingElement).animate({ scrollTop: sections[i].offsetTop - 30 });
+    closeNavMenu();
+    closeContactForm();
+  };
+}
 
 body.onscroll = function() {
   if (scrollingElement.scrollTop > 0) {
