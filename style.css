@@ -129,6 +129,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -1556,8 +1557,8 @@ footer {
   bottom: 14%;
   right: 24px;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   border: none;
   outline: none;
   /* background-color: rgba(224, 224, 224, 0.5); */
@@ -1569,7 +1570,6 @@ footer {
 
 .upIcon {
   font-size: 20px;
-  margin-bottom: 2px;
 }
 
 .fas::before {
