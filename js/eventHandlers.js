@@ -96,7 +96,7 @@ let sections = [
 
 for (let i = 0; i < sections.length; i++) {
   navMenuOpt[i].onclick = function() {
-    $(scrollingElement).animate({ scrollTop: sections[i].offsetTop - 30 });
+    $(scrollingElement).animate({ scrollTop: sections[i].offsetTop - 40 });
     closeNavMenu();
     closeContactForm();
   };
