@@ -170,6 +170,31 @@ for (let i = 0; i < formInputFields.length; i++) {
   };
 }
 
+contactFormPhoneInput.addEventListener("input", function() {
+  let phoneValue = contactFormPhoneInput.value;
+  let numbersString = phoneValue.match(/\d+/g).join("");
+
+  if (numbersString.length == 10) {
+    numbersString =
+      "(" +
+      numbersString[0] +
+      numbersString[1] +
+      numbersString[2] +
+      ") " +
+      numbersString[3] +
+      numbersString[4] +
+      numbersString[5] +
+      " " +
+      numbersString[6] +
+      numbersString[7] +
+      numbersString[8] +
+      numbersString[9];
+
+    contactFormPhoneInput.value = numbersString;
+  } else {
+  }
+});
+
 $("#reviewSlider").on("swipe", function(event, slick, direction) {
   slick.slickPause();
 });
