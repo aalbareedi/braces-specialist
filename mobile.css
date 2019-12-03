@@ -4,14 +4,14 @@
     background-position: bottom 0px left 0px;
   }
   .logoTextBottom {
-    /* color: red; */
+    color: red;
   }
 }
 
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
   .logoTextBottom {
-    /* color: pink; */
+    color: blue;
   }
   .navMenuOpt:not(#navSocial) {
     height: 58px;
@@ -90,14 +90,14 @@
     background-position: bottom 0px left 0px;
   }
   .logoTextBottom {
-    /* color: green; */
+    color: green;
   }
 }
 
 /* iPhone 6/7/8 PLUS */
 @media only screen and (min-width: 414px) {
   .logoTextBottom {
-    color: orange;
+    color: #39ff14;
   }
   .landingHeading {
     font-size: 52px;
