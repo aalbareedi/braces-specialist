@@ -129,6 +129,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -886,6 +887,12 @@ input.contactFormInput:valid + .formIcon {
   height: calc(100vh - 116px);
   margin-top: 58px;
   position: relative;
+  min-width: 100vw;
+  /* background-attachment: fixed; */
+}
+
+.bgImg {
+  height: 100%;
   background-image: url("images/smile.png");
   background-repeat: no-repeat;
   background-position: bottom 0px left -15px;
@@ -894,7 +901,8 @@ input.contactFormInput:valid + .formIcon {
   -moz-background-size: cover;
   -o-background-size: cover;
   min-width: 100vw;
-  /* background-attachment: fixed; */
+  position: fixed;
+  z-index: -1;
 }
 
 .gradient {

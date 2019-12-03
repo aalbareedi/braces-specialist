@@ -175,7 +175,7 @@ contactFormPhoneInput.addEventListener("input", function() {
   let numbersString = phoneValue.match(/\d+/g).join("");
 
   if (numbersString.length == 10) {
-    numbersString =
+    let formattedNumber =
       "(" +
       numbersString[0] +
       numbersString[1] +
@@ -190,8 +190,9 @@ contactFormPhoneInput.addEventListener("input", function() {
       numbersString[8] +
       numbersString[9];
 
-    contactFormPhoneInput.value = numbersString;
+    contactFormPhoneInput.value = formattedNumber;
   } else {
+    contactFormPhoneInput.value = numbersString;
   }
 });
 
