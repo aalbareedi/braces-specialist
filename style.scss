@@ -103,7 +103,7 @@ img {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  // background-color: orange;
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -638,8 +638,8 @@ input.contactFormInput:valid + .formIcon {
   -moz-background-size: cover;
   -o-background-size: cover;
   min-width: 100vw;
-  position: fixed;
-  z-index: -1;
+  // position: fixed;
+  // z-index: -1;
 }
 .gradient {
   height: 100%;

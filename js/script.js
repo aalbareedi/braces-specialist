@@ -37,6 +37,6 @@ $("#reviewSlider").slick({
 this.$(".slick-dots").addClass("touch-device");
 // }
 
-setTimeout(function() {
-  alert(window.innerWidth + "," + window.innerHeight);
-}, 3000);
+// setTimeout(function() {
+//   alert(window.innerWidth + "," + window.innerHeight);
+// }, 3000);
