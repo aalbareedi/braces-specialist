@@ -129,6 +129,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -998,7 +999,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .statDescription {
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0.5px;
   opacity: 0.8;
 }
