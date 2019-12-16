@@ -172,6 +172,7 @@ for (let i = 0; i < formInputFields.length; i++) {
 
 contactFormPhoneInput.addEventListener("input", function() {
   let phoneValue = contactFormPhoneInput.value;
+  // removing non-digit characters from phone input value
   let numbersString = phoneValue.match(/\d+/g).join("");
 
   if (numbersString.length == 10) {
