@@ -1,22 +1,22 @@
-function scrollYearCounter() {
-  if (statYear.innerHTML < 33) {
-    statYear.innerHTML = parseInt(statYear.innerHTML) + 1;
-
-    setTimeout(function() {
-      scrollYearCounter();
-    }, 45);
-  }
-}
-
 function scrollCasesCounter() {
-  if (statCases.innerHTML < 5000) {
-    statCases.innerHTML = parseInt(statCases.innerHTML) + 73;
+  if (statCases.innerHTML < 9000) {
+    statCases.innerHTML = parseInt(statCases.innerHTML) + 119;
 
     setTimeout(function() {
       scrollCasesCounter();
     }, 20);
   } else {
-    statCases.innerHTML = 5000;
+    statCases.innerHTML = 9000;
+  }
+}
+
+function scrollYearCounter() {
+  if (statYear.innerHTML < 34) {
+    statYear.innerHTML = parseInt(statYear.innerHTML) + 1;
+
+    setTimeout(function() {
+      scrollYearCounter();
+    }, 45);
   }
 }
 

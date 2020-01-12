@@ -170,10 +170,20 @@ for (let i = 0; i < formInputFields.length; i++) {
   };
 }
 
+let previousPhoneValue = "";
+
 contactFormPhoneInput.addEventListener("input", function() {
+  // selectionStart is the index # value of where the cursor is after a keystroke (even delete)
+  let selectionStart = contactFormPhoneInput.selectionStart;
+
   let phoneValue = contactFormPhoneInput.value;
-  // removing non-digit characters from phone input value
-  let numbersString = phoneValue.match(/\d+/g).join("");
+  // numbers is an array of the 'phoneValue' numbers, without any spaces/parenthesis
+  let numbers = phoneValue.match(/\d+/g);
+  let numbersString = "";
+  if (numbers != null) {
+    // joining the numbers array values to 1 string
+    numbersString = numbers.join("");
+  }
 
   if (numbersString.length == 10) {
     let formattedNumber =
@@ -192,9 +202,43 @@ contactFormPhoneInput.addEventListener("input", function() {
       numbersString[9];
 
     contactFormPhoneInput.value = formattedNumber;
+
+    // If special characters were actually added this keypress
+    if (phoneValue.length > previousPhoneValue.length) {
+      // correcting selectionStart (cursor position) after we ADD spaces/parenthesis
+      if (selectionStart > 5) {
+        selectionStart += 4;
+      } else if (selectionStart > 3) {
+        selectionStart += 3;
+      } else {
+        selectionStart += 1;
+      }
+    }
   } else {
     contactFormPhoneInput.value = numbersString;
+    // checking to see if we removed special characters on this keypress (from 10 to 9 or 10 to 11 numbers)
+    if (numbersString != phoneValue) {
+      let specialOffset = 0;
+      // If REMOVING a digit (11 to 10)
+      if (previousPhoneValue.length > phoneValue.length) {
+        specialOffset = 1;
+      }
+
+      // correcting selectionStart (cursor position) after we REMOVE spaces/parenthesis
+      if (selectionStart > 10 - specialOffset) {
+        selectionStart -= 4;
+      } else if (selectionStart > 6 - specialOffset) {
+        selectionStart -= 3;
+      } else if (selectionStart > 1 - specialOffset) {
+        selectionStart -= 1;
+      }
+    }
   }
+
+  contactFormPhoneInput.selectionStart = selectionStart;
+  contactFormPhoneInput.selectionEnd = selectionStart;
+
+  previousPhoneValue = contactFormPhoneInput.value;
 });
 
 $("#reviewSlider").on("swipe", function(event, slick, direction) {

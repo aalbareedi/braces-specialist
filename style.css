@@ -190,10 +190,10 @@ img {
   cursor: pointer;
   font-size: 14px;
   letter-spacing: 0.4px;
-  height: 50px;
+  height: 58px;
   border-bottom: 2px solid #e8e8e8;
   position: absolute;
-  top: -50px;
+  top: -58px;
   left: 0;
   right: 0;
   -webkit-transition: top 0.1s;
@@ -208,35 +208,35 @@ img {
 }
 
 .openMenu#navMenu .navMenuOpt:nth-child(2) {
-  top: 50px;
+  top: 58px;
   -webkit-transition-delay: 0.03s;
           transition-delay: 0.03s;
   z-index: 9;
 }
 
 .openMenu#navMenu .navMenuOpt:nth-child(3) {
-  top: 100px;
+  top: 116px;
   -webkit-transition-delay: 0.06s;
           transition-delay: 0.06s;
   z-index: 8;
 }
 
 .openMenu#navMenu .navMenuOpt:nth-child(4) {
-  top: 150px;
+  top: 174px;
   -webkit-transition-delay: 0.09s;
           transition-delay: 0.09s;
   z-index: 7;
 }
 
 .openMenu#navMenu .navMenuOpt:nth-child(5) {
-  top: 200px;
+  top: 232px;
   -webkit-transition-delay: 0.12s;
           transition-delay: 0.12s;
   z-index: 6;
 }
 
 .openMenu#navMenu .navMenuOpt:nth-child(6) {
-  top: 250px;
+  top: 290px;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
   z-index: 5;
@@ -250,8 +250,8 @@ img {
 #navSocial {
   width: 100%;
   position: absolute;
-  top: -50px;
-  height: 50px;
+  top: -58px;
+  height: 58px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -276,7 +276,6 @@ img {
   background-color: whitesmoke;
   border-right: 2px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;
-  font-size: 22px;
   outline: none;
   cursor: pointer;
 }
@@ -290,11 +289,11 @@ img {
   color: #b8b8b8;
   border: none;
   outline: none;
-  font-size: 21px;
+  font-size: 22px;
 }
 
 #navInstagramIcon {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .navSocialMediaBtn:active {
@@ -954,6 +953,7 @@ input.contactFormInput:valid + .formIcon {
 #stats {
   background-color: whitesmoke;
   padding-top: 20px;
+  padding-bottom: 40px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1004,6 +1004,7 @@ input.contactFormInput:valid + .formIcon {
 
 #statCases::after {
   content: "+";
+  margin-left: 1px;
 }
 
 #statPercent::after {
@@ -1022,7 +1023,6 @@ input.contactFormInput:valid + .formIcon {
           align-items: center;
   height: 60px;
   margin-top: 10px;
-  margin-bottom: 40px;
 }
 
 .learnMoreStatBtn {
@@ -1258,6 +1258,33 @@ input.contactFormInput:valid + .formIcon {
   padding-right: 10px;
 }
 
+.whyTitle {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.whyReason {
+  position: relative;
+}
+
+.whyBulletPoint {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  font-size: 23px;
+}
+
+.whyText {
+  padding-left: 36px;
+  padding-right: 13px;
+  margin-bottom: 28px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
 /* ****************************************** DOCTOR ******************************************* */
 #doctor {
   /* background-color: #7fbfeb; */
@@ -1379,6 +1406,10 @@ input.contactFormInput:valid + .formIcon {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.reviewTitle {
+  background-color: pink;
 }
 
 #reviewSlider {
@@ -1541,7 +1572,7 @@ input.contactFormInput:valid + .formIcon {
 
 footer {
   background-color: darkgray;
-  height: 100px;
+  height: 120px;
 }
 
 #emptyDockSpace {
