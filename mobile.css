@@ -70,17 +70,14 @@
     background-size: 86px;
     background-position: center left 15px;
   }
-  .statDescription {
-    font-size: 17px;
-  }
-  .statNumber {
-    font-size: 29px;
-  }
   .doctorImgParent {
     margin-left: 172px;
   }
   .docStat {
     left: 54px;
+  }
+  #reviewSlider {
+    height: 540px;
   }
 }
 
@@ -108,6 +105,23 @@
   }
   .contactBtnText {
     font-size: 15px;
+  }
+  #stats {
+    padding-bottom: 50px;
+  }
+  .statBox {
+    height: 162px;
+    background-size: 98px;
+  }
+  .statDescription {
+    font-size: 19px;
+  }
+  .statNumber {
+    margin-bottom: 4px;
+    font-size: 32px;
+  }
+  #reviewSlider {
+    height: 580px;
   }
 }
 

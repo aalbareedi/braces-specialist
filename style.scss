@@ -103,7 +103,7 @@ img {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  // background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -1066,19 +1066,14 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Source Sans Pro", sans-serif;
 }
 .reviewSlideText {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 34px;
   margin-right: 18px;
   line-height: 28px;
   letter-spacing: 0.4px;
   margin-top: 30px;
   margin-bottom: 26px;
-}
-#slideText3 {
-  margin-right: 12px;
-}
-#slideText4 {
-  font-size: 19px;
+  font-style: italic;
 }
 .reviewName {
   text-align: center;
@@ -1094,12 +1089,11 @@ input.contactFormInput:valid + .formIcon {
 }
 .leftQuoteIcon {
   left: 10px;
-  top: 90px;
-  // top: 40px;
+  top: 100px;
 }
 .rightQuoteIcon {
   right: 10px;
-  top: 290px;
+  top: 310px;
 }
 .slick-list,
 .slick-track,
