@@ -28,6 +28,8 @@ $("#reviewSlider").slick({
   pauseOnDotsHover: true
 });
 
+let nav = new SlideNav();
+
 /* Slick dots sticky touch hover workaround - JS portion (also see CSS portion)
  * https://github.com/kenwheeler/slick/issues/1945#issuecomment-230158398
  * http://stackoverflow.com/a/4734092/4747661

@@ -103,7 +103,7 @@ img {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  // background-color: orange;
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -1044,13 +1044,14 @@ input.contactFormInput:valid + .formIcon {
   -o-background-size: cover;
 }
 .reviewTitle {
-  background-color: pink;
+  // background-color: pink;
   position: absolute;
   top: 56px;
-  left: 43px;
   font-size: 20px;
   letter-spacing: 0.7px;
   color: white;
+  width: 100%;
+  text-align: center;
 }
 #reviewSlider {
   height: 480px;

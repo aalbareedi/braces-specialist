@@ -129,6 +129,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -1413,13 +1414,13 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .reviewTitle {
-  background-color: pink;
   position: absolute;
   top: 56px;
-  left: 43px;
   font-size: 20px;
   letter-spacing: 0.7px;
   color: white;
+  width: 100%;
+  text-align: center;
 }
 
 #reviewSlider {

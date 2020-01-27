@@ -199,6 +199,8 @@ contactFormPhoneInput.addEventListener("input", function() {
     numbersString = numbers.join("");
   }
 
+  let difference = phoneValue.length - numbersString.length;
+
   if (numbersString.length == 10) {
     let formattedNumber =
       "(" +
@@ -218,7 +220,11 @@ contactFormPhoneInput.addEventListener("input", function() {
     contactFormPhoneInput.value = formattedNumber;
 
     // If special characters were actually added this keypress
-    if (contactFormPhoneInput.value.length > phoneValue.length) {
+    if (
+      (contactFormPhoneInput.value.length > phoneValue.length &&
+        difference == 0) ||
+      difference >= 4
+    ) {
       // correcting selectionStart (cursor position) after we ADD spaces/parenthesis
       if (selectionStart > 5) {
         selectionStart += 4;
@@ -232,18 +238,23 @@ contactFormPhoneInput.addEventListener("input", function() {
     contactFormPhoneInput.value = numbersString;
     // checking to see if we removed SPECIAL CHARACTERS on this keypress (from 10 to 9 or 10 to 11 numbers)
     if (numbersString != phoneValue) {
-      let specialOffset = 0;
+      let offset = 0;
       // If removing a DIGIT on this keypress (from 10 to 9 numbers)
       if (previousPhoneValue.length > phoneValue.length) {
-        specialOffset = 1;
+        offset = 1;
       }
 
       // correcting selectionStart (cursor position) after we REMOVE spaces/parenthesis
-      if (selectionStart > 10 - specialOffset) {
+      if (selectionStart > 10 - offset) {
         selectionStart -= 4;
-      } else if (selectionStart > 6 - specialOffset) {
+      } else if (selectionStart > 6 - offset) {
         selectionStart -= 3;
-      } else if (selectionStart > 1 - specialOffset) {
+      } else if (
+        selectionStart == 6 &&
+        previousPhoneValue.length < phoneValue.length
+      ) {
+        selectionStart -= 2;
+      } else if (selectionStart > 1 - offset) {
         selectionStart -= 1;
       }
     }
