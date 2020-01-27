@@ -215,7 +215,9 @@
     font-size: 18px;
   }
   #yearDescription {
-    padding: 0 23px;
+    position: initial;
+    width: 200px;
+    margin: 236px auto 0 auto;
   }
 }
 
