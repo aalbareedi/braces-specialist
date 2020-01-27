@@ -127,7 +127,7 @@
   }
 }
 
-/* iPhone X * (max-width: 467px) */
+/* iPhone X */
 @media only screen and (max-width: 375px) and (min-height: 800px) {
   .bgImg {
     background-position: bottom 0px left -130px;
@@ -150,6 +150,16 @@
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
+  #backToTopBtn {
+    bottom: 12%;
+    right: 30px;
+    height: 44px;
+    width: 44px;
+  }
+  .upIcon {
+    font-size: 22px;
+  }
+
   #navToggleBtn {
     display: none;
   }
@@ -171,12 +181,47 @@
     border-top: none;
     // border-bottom: none;
   }
+
+  .backArrow {
+    font-size: 28px;
+  }
   .messageMenuTitle {
     font-size: 24px;
   }
   .formTitle {
     margin-top: 30px;
   }
+  .contactFormText {
+    font-size: 18px;
+    margin-bottom: 6px;
+    width: 210px;
+  }
+  .contactFormInput {
+    font-size: 21px;
+    padding-left: 14px;
+    height: 60px;
+  }
+  .formDescription {
+    font-size: 16px;
+  }
+  .formIcon {
+    font-size: 26px;
+  }
+  .formAsterik {
+    font-size: 16px;
+  }
+  .formOption {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .formMessage {
+    display: flex;
+  }
+  #messageInput {
+    padding: 8px 8px 0 15px;
+  }
+
   #stats {
     display: flex;
     background-color: gainsboro;
@@ -197,9 +242,6 @@
   .statBtnBar {
     display: none;
   }
-  #aboutUs {
-    background-color: whitesmoke;
-  }
   .statNumber {
     position: absolute;
     top: 194px;
@@ -214,11 +256,23 @@
     font-size: 18px;
   }
   #yearDescription {
-    // background-color: pink;
     position: initial;
     width: 200px;
     margin: 236px auto 0 auto;
   }
+
+  #aboutUs {
+    background-color: whitesmoke;
+  }
+  .aboutTitle {
+    margin: 60px 0 70px 0;
+  }
+
+  .whyTitle {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
   // #lastNavOpt {
   //   padding-right: 2px 14px 0 12px;
   // }
@@ -230,6 +284,6 @@
     color: red;
   }
   .navMenuOpt:not(#navSocial) {
-    padding: 2px 14px 0 14px;
+    padding: 2px 16px 0 16px;
   }
 }
