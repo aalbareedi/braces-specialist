@@ -4,7 +4,8 @@ document.addEventListener("touchstart", function() {}, true);
 navbar.onclick = function() {
   if (
     navMenu.classList.contains("openMenu") == false &&
-    contactForm.classList.contains("displayHidden") == true
+    contactForm.classList.contains("displayHidden") == true &&
+    window.innerWidth < 1024
   ) {
     scrollBodyToTop();
   }
@@ -91,12 +92,25 @@ let sections = [
   doctorSection,
   aboutBracesSection,
   faqSection,
+  officeInfoSection,
+  // mobile sections
+  aboutUsSection,
+  doctorSection,
+  aboutBracesSection,
+  faqSection,
   officeInfoSection
 ];
 
 for (let i = 0; i < sections.length; i++) {
   navMenuOpt[i].onclick = function() {
-    $(scrollingElement).animate({ scrollTop: sections[i].offsetTop - 40 });
+    $(scrollingElement).animate(
+      { scrollTop: sections[i].offsetTop - 40 },
+      {
+        complete: function() {
+          console.log(scrollingElement.scrollTop);
+        }
+      }
+    );
     closeNavMenu();
     closeContactForm();
   };
@@ -204,7 +218,7 @@ contactFormPhoneInput.addEventListener("input", function() {
     contactFormPhoneInput.value = formattedNumber;
 
     // If special characters were actually added this keypress
-    if (phoneValue.length > previousPhoneValue.length) {
+    if (contactFormPhoneInput.value.length > phoneValue.length) {
       // correcting selectionStart (cursor position) after we ADD spaces/parenthesis
       if (selectionStart > 5) {
         selectionStart += 4;
@@ -216,10 +230,10 @@ contactFormPhoneInput.addEventListener("input", function() {
     }
   } else {
     contactFormPhoneInput.value = numbersString;
-    // checking to see if we removed special characters on this keypress (from 10 to 9 or 10 to 11 numbers)
+    // checking to see if we removed SPECIAL CHARACTERS on this keypress (from 10 to 9 or 10 to 11 numbers)
     if (numbersString != phoneValue) {
       let specialOffset = 0;
-      // If REMOVING a digit (11 to 10)
+      // If removing a DIGIT on this keypress (from 10 to 9 numbers)
       if (previousPhoneValue.length > phoneValue.length) {
         specialOffset = 1;
       }
