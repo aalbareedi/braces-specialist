@@ -219,35 +219,14 @@
     width: 200px;
     margin: 236px auto 0 auto;
   }
+  // #lastNavOpt {
+  //   padding-right: 2px 14px 0 12px;
+  // }
 }
 
 /* iPad pro*/
 @media only screen and (min-width: 834px) {
-  // #navToggleBtn {
-  //   display: none;
-  // }
-  // .navMenuOpt:not(#navSocial) {
-  //   top: initial;
-  //   position: initial;
-  //   // border-bottom: none;
-  //   padding: 2px 16px 0 16px;
-  // }
-  // #navMenu {
-  //   display: none;
-  // }
-  // #desktopNavMenu {
-  //   display: flex;
-  //   position: absolute;
-  //   right: 0;
-  // }
-  // #navbar {
-  //   border-top: none;
-  //   // border-bottom: none;
-  // }
-  // .messageMenuTitle {
-  //   font-size: 24px;
-  // }
-  // .formTitle {
-  //   margin-top: 30px;
-  // }
+  .navMenuOpt:not(#navSocial) {
+    padding: 2px 14px 0 14px;
+  }
 }
