@@ -150,8 +150,32 @@
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
+  #navToggleBtn {
+    display: none;
+  }
   .navMenuOpt:not(#navSocial) {
+    top: initial;
+    position: initial;
+    padding: 2px 12px 0 12px;
     text-decoration: none;
+  }
+  #navMenu {
+    display: none;
+  }
+  #desktopNavMenu {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+  #navbar {
+    border-top: none;
+    // border-bottom: none;
+  }
+  .messageMenuTitle {
+    font-size: 24px;
+  }
+  .formTitle {
+    margin-top: 30px;
   }
   #stats {
     display: flex;
@@ -181,7 +205,6 @@
     top: 194px;
     width: 100%;
     text-align: center;
-    // font-size: 34px;
   }
   .statDescription {
     position: absolute;
@@ -192,37 +215,37 @@
   }
   #yearDescription {
     // background-color: pink;
-    padding: 0 7px;
+    padding: 0 23px;
   }
 }
 
 /* iPad pro*/
-@media only screen and (min-width: 1024px) {
-  #navToggleBtn {
-    display: none;
-  }
-  .navMenuOpt:not(#navSocial) {
-    top: initial;
-    position: initial;
-    // border-bottom: none;
-    padding: 2px 16px 0 16px;
-  }
-  #navMenu {
-    display: none;
-  }
-  #desktopNavMenu {
-    display: flex;
-    position: absolute;
-    right: 0;
-  }
-  #navbar {
-    border-top: none;
-    // border-bottom: none;
-  }
-  .messageMenuTitle {
-    font-size: 24px;
-  }
-  .formTitle {
-    margin-top: 30px;
-  }
+@media only screen and (min-width: 834px) {
+  // #navToggleBtn {
+  //   display: none;
+  // }
+  // .navMenuOpt:not(#navSocial) {
+  //   top: initial;
+  //   position: initial;
+  //   // border-bottom: none;
+  //   padding: 2px 16px 0 16px;
+  // }
+  // #navMenu {
+  //   display: none;
+  // }
+  // #desktopNavMenu {
+  //   display: flex;
+  //   position: absolute;
+  //   right: 0;
+  // }
+  // #navbar {
+  //   border-top: none;
+  //   // border-bottom: none;
+  // }
+  // .messageMenuTitle {
+  //   font-size: 24px;
+  // }
+  // .formTitle {
+  //   margin-top: 30px;
+  // }
 }

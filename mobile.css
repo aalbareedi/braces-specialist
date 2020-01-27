@@ -148,8 +148,33 @@
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
+  #navToggleBtn {
+    display: none;
+  }
   .navMenuOpt:not(#navSocial) {
+    top: initial;
+    position: initial;
+    padding: 2px 12px 0 12px;
     text-decoration: none;
+  }
+  #navMenu {
+    display: none;
+  }
+  #desktopNavMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+  #navbar {
+    border-top: none;
+  }
+  .messageMenuTitle {
+    font-size: 24px;
+  }
+  .formTitle {
+    margin-top: 30px;
   }
   #stats {
     display: -webkit-box;
@@ -190,38 +215,9 @@
     font-size: 18px;
   }
   #yearDescription {
-    padding: 0 7px;
+    padding: 0 23px;
   }
 }
 
 /* iPad pro*/
-@media only screen and (min-width: 1024px) {
-  #navToggleBtn {
-    display: none;
-  }
-  .navMenuOpt:not(#navSocial) {
-    top: initial;
-    position: initial;
-    padding: 2px 16px 0 16px;
-  }
-  #navMenu {
-    display: none;
-  }
-  #desktopNavMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    right: 0;
-  }
-  #navbar {
-    border-top: none;
-  }
-  .messageMenuTitle {
-    font-size: 24px;
-  }
-  .formTitle {
-    margin-top: 30px;
-  }
-}
 /*# sourceMappingURL=mobile.css.map */
