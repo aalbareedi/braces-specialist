@@ -80,7 +80,8 @@ class SlideNav {
     for (let anchor of this.navAnchors) {
       const linkHash = this.getHash(anchor.href),
         section = this.getSection(linkHash),
-        offset = this.scrollDoc.scrollTop,
+        // 58 is the height of the navbar to offset the nav scroll-to effect
+        offset = this.scrollDoc.scrollTop + 58,
         scrollHeight = this.scrollDoc.scrollHeight;
 
       if (

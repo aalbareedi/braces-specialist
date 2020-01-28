@@ -5,7 +5,8 @@ navbar.onclick = function() {
   if (
     navMenu.classList.contains("openMenu") == false &&
     contactForm.classList.contains("displayHidden") == true &&
-    window.innerWidth < 1024
+    // 768 is the width when the nav menu expands to navbar
+    window.innerWidth < 768
   ) {
     scrollBodyToTop();
   }

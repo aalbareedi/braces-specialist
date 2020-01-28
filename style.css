@@ -246,8 +246,8 @@ img {
   background-color: gainsboro;
 }
 
-#desktopNavMenu .navMenuOpt:active {
-  background-color: gainsboro;
+#desktopNavMenu a.navMenuOpt.active {
+  background-color: #e8e8e8;
 }
 
 /* ********************************* NAV MENU SOCIAL MEDIA ************************************ */
@@ -1441,12 +1441,9 @@ input.contactFormInput:valid + .formIcon {
 
 .reviewSlideText {
   font-size: 16px;
-  margin-left: 34px;
-  margin-right: 18px;
+  margin: 30px 18px 26px 34px;
   line-height: 28px;
   letter-spacing: 0.4px;
-  margin-top: 30px;
-  margin-bottom: 26px;
   font-style: italic;
   font-family: "Nanum Gothic", sans-serif;
 }
@@ -1538,6 +1535,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   margin: 40px 0 50px 0;
   letter-spacing: 0.7px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .faqQuestion {
@@ -1562,6 +1560,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .faqAnswer {
+  font-family: "Nanum Gothic", sans-serif;
   color: white;
   margin-left: 46px;
   padding-right: 20px;
