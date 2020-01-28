@@ -77,12 +77,6 @@
   .whyTitle {
     font-size: 22px;
   }
-  .doctorImgParent {
-    margin-left: 172px;
-  }
-  .docStat {
-    left: 54px;
-  }
   #reviewSlider {
     height: 540px;
   }
@@ -189,20 +183,25 @@
 
   /*** FORM ***/
   .backArrow {
-    font-size: 28px;
+    font-size: 38px;
+    height: 90px;
+    width: 90px;
+    padding-top: 10px;
   }
   .messageMenuTitle {
     font-size: 24px;
   }
   .formTitle {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .contactFormText {
     // background: pink;
     font-size: 18px;
     width: 210px;
     margin-bottom: 0;
+    padding-right: 12px;
+    text-align: right;
   }
   .contactFormInput {
     font-size: 21px;
@@ -229,15 +228,15 @@
     margin-bottom: 26px;
     display: flex;
     align-items: center;
-    padding: 0px 60px;
+    padding: 0px 70px 0px 60px;
   }
   .formMessage {
     display: flex;
-    padding: 0px 60px 150px 60px;
+    padding: 0px 70px 150px 60px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
-    height: 280px;
+    height: 360px;
   }
 
   /*** STATS ***/
@@ -290,7 +289,7 @@
   }
   .aboutText {
     padding-right: 30px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     line-height: 32px;
     font-size: 20px;
   }
@@ -313,7 +312,7 @@
 
   /*** REVIEWS ***/
   .reviews {
-    background-position: bottom 0px right -50px;
+    background-position: bottom 0px right;
   }
   .reviewTitle {
     font-size: 28px;
@@ -359,7 +358,12 @@
     font-size: 20px;
   }
   .faqQuestionText {
-    letter-spacing: 1.3px;
+    letter-spacing: 1.2px;
+  }
+
+  /*** HOURS & LOCATION ***/
+  .officeInfoHeading {
+    font-size: 22px;
   }
 
   // #desktopNavMenu .navMenuOpt:active {
