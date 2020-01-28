@@ -1046,7 +1046,6 @@ input.contactFormInput:valid + .formIcon {
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
-  /* background-color: #333a3a; */
   padding-top: 10px;
 }
 
@@ -1056,6 +1055,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   margin: 50px 0 50px 0;
   letter-spacing: 0.8px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .officeInfoSchedule {

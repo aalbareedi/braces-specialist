@@ -360,8 +360,52 @@
     letter-spacing: 1.2px;
   }
   /*** HOURS & LOCATION ***/
+  #officeInfo {
+    position: relative;
+  }
   .officeInfoHeading {
+    font-size: 24px;
+    margin: 60px 0 60px 0;
+  }
+  .officeInfoSchedule {
+    display: block;
+    position: absolute;
+    right: 48px;
+  }
+  .officeInfoIcon {
+    left: 0;
     font-size: 22px;
+  }
+  #officeScheduleIcon {
+    left: -20px;
+  }
+  #officePhoneIcon {
+    left: -46px;
+  }
+  #officeAddressIcon {
+    margin: 0;
+    left: -44px;
+    font-size: 26px;
+  }
+  .officeInfoPhone {
+    position: absolute;
+    right: 73px;
+    top: 335px;
+  }
+  .officeInfoAddress {
+    position: absolute;
+    right: 69px;
+    top: 454px;
+  }
+  .officeMap {
+    padding: 0;
+    margin-left: 40px;
+  }
+  .mapWrapper {
+    width: 50%;
+  }
+  #googleMap {
+    height: 350px;
   }
 }
 
