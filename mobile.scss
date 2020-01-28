@@ -183,7 +183,7 @@
 
   /*** FORM ***/
   .backArrow {
-    font-size: 38px;
+    font-size: 36px;
     height: 90px;
     width: 90px;
     padding-top: 10px;
@@ -192,8 +192,8 @@
     font-size: 24px;
   }
   .formTitle {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
   .contactFormText {
     // background: pink;
@@ -217,6 +217,7 @@
     margin: 0 auto;
     font-size: 18px;
     line-height: 22px;
+    height: 80px;
   }
   .formIcon {
     font-size: 26px;
@@ -236,7 +237,7 @@
   }
   #messageInput {
     padding: 8px 8px 0 15px;
-    height: 360px;
+    height: 390px;
   }
 
   /*** STATS ***/
@@ -329,7 +330,7 @@
     font-size: 28px;
   }
   .quoteIcon {
-    font-size: 120px;
+    font-size: 110px;
   }
   .leftQuoteIcon {
     left: 40px;
@@ -340,7 +341,7 @@
     top: 370px;
   }
   .slick-dots li button:before {
-    font-size: 20px;
+    font-size: 18px;
   }
   .slick-dots li {
     margin: 0 8px;
@@ -402,5 +403,34 @@
   }
 }
 
-// @media only screen and (max-height: 408px) {
-// }
+/* iPhone 5-8 LANDSCAPE */
+@media only screen and (max-height: 408px) {
+  .navMenuOpt:not(#navSocial) {
+    height: 43px;
+    font-size: 13px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(2) {
+    top: 43px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(3) {
+    top: 86px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(4) {
+    top: 129px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(5) {
+    top: 172px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(6) {
+    top: 215px;
+  }
+  #navSocial {
+    height: 43px;
+  }
+  .navSocialBtnIcon {
+    font-size: 18px;
+  }
+  #navInstagramIcon {
+    font-size: 22px;
+  }
+}
