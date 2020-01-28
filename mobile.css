@@ -70,6 +70,12 @@
     background-size: 86px;
     background-position: center left 15px;
   }
+  .aboutTitle {
+    font-size: 22px;
+  }
+  .whyTitle {
+    font-size: 22px;
+  }
   .doctorImgParent {
     margin-left: 172px;
   }
@@ -78,6 +84,12 @@
   }
   #reviewSlider {
     height: 540px;
+  }
+  .reviewSlideText {
+    font-size: 18px;
+  }
+  .reviewTitle {
+    font-size: 22px;
   }
 }
 
@@ -105,6 +117,12 @@
   }
   .contactBtnText {
     font-size: 15px;
+  }
+  .formDescription {
+    font-size: 16px;
+  }
+  .contactFormText {
+    font-size: 16px;
   }
   #stats {
     padding-bottom: 50px;
@@ -157,6 +175,7 @@
   .upIcon {
     font-size: 22px;
   }
+  /*** NAV ****/
   #navToggleBtn {
     display: none;
   }
@@ -179,6 +198,7 @@
   #navbar {
     border-top: none;
   }
+  /*** FORM ***/
   .backArrow {
     font-size: 28px;
   }
@@ -187,20 +207,25 @@
   }
   .formTitle {
     margin-top: 30px;
+    margin-bottom: 60px;
   }
   .contactFormText {
     font-size: 18px;
-    margin-bottom: 6px;
     width: 210px;
+    margin-bottom: 0;
   }
   .contactFormInput {
     font-size: 21px;
     padding-left: 14px;
     height: 60px;
   }
+  #messageInputLabel {
+    padding-top: 11px;
+  }
   .formDescription {
+    width: 600px;
+    margin: 0 auto;
     font-size: 18px;
-    padding: 0px 50px 0px 200px;
     line-height: 22px;
   }
   .formIcon {
@@ -210,22 +235,26 @@
     font-size: 16px;
   }
   .formOption {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0px 60px;
   }
   .formMessage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0px 60px 150px 60px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
+    height: 280px;
   }
+  /*** STATS ***/
   #stats {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -270,11 +299,36 @@
     background-color: whitesmoke;
   }
   .aboutTitle {
-    margin: 60px 0 70px 0;
+    margin: 70px 0 60px 0;
+    font-size: 22px;
+  }
+  .aboutText {
+    padding-right: 30px;
+    letter-spacing: 0.6px;
+    line-height: 32px;
+    font-size: 20px;
   }
   .whyTitle {
-    margin-top: 70px;
+    margin-top: 80px;
     margin-bottom: 70px;
+    font-size: 22px;
+  }
+  .whyText {
+    font-size: 20px;
+    margin-bottom: 48px;
+    padding-left: 46px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+  }
+  .whyBulletPoint {
+    font-size: 32px;
+    top: -8px;
+  }
+  .reviews {
+    background-position: bottom 0px right -50px;
+  }
+  .reviewTitle {
+    font-size: 22px;
   }
 }
 

@@ -372,7 +372,7 @@ img {
 }
 
 .messageMenuTitle {
-  font-size: 18px;
+  font-size: 20px;
   color: gray;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -380,7 +380,7 @@ img {
 
 .formDescription {
   padding: 0px 20px;
-  height: 80px;
+  height: 90px;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -401,16 +401,10 @@ img {
 }
 
 .contactFormText {
-  height: 24px;
+  margin-bottom: 6px;
   font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
   letter-spacing: 0.3px;
-  margin-bottom: 2px;
   color: #444444;
 }
 
@@ -1411,6 +1405,7 @@ input.contactFormInput:valid + .formIcon {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .reviewTitle {
@@ -1445,7 +1440,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .reviewSlideText {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 34px;
   margin-right: 18px;
   line-height: 28px;
@@ -1453,6 +1448,7 @@ input.contactFormInput:valid + .formIcon {
   margin-top: 30px;
   margin-bottom: 26px;
   font-style: italic;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .reviewName {
