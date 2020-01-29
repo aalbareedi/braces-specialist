@@ -1,0 +1,542 @@
+/* ipod touch (smaller than iphone5) - firefox/edge/chrome */
+@media only screen and (max-width: 320px) and (max-height: 453px), (height: 460px) {
+  .bgImg {
+    background-position: bottom 0px left 0px;
+  }
+  .logoTextBottom {
+    color: red;
+  }
+}
+
+/* iPhone 6/7/8 (safari) */
+@media only screen and (min-width: 375px) and (min-height: 545px) {
+  .logoTextBottom {
+    color: blue;
+  }
+  .navMenuOpt:not(#navSocial) {
+    height: 58px;
+    font-size: 15px;
+    top: -58px;
+  }
+  #navSocial {
+    height: 58px;
+    top: -58px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(2) {
+    top: 58px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(3) {
+    top: 116px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(4) {
+    top: 174px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(5) {
+    top: 232px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(6) {
+    top: 290px;
+  }
+  .navSocialBtnIcon {
+    font-size: 23px;
+  }
+  #navInstagramIcon {
+    font-size: 26px;
+  }
+  .bgImg {
+    background-position: bottom 0px left -38px;
+  }
+  .landingHeading {
+    font-size: 44px;
+  }
+  .landingSubHeading {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contactBtnText {
+    font-size: 14px;
+  }
+  .contactFormInput {
+    font-size: 17px;
+  }
+  .contactFormBtnText {
+    font-size: 16px;
+  }
+  .formBtnIcon {
+    font-size: 18px;
+  }
+  .statBox {
+    height: 140px;
+    background-size: 86px;
+  }
+  .aboutTitle {
+    font-size: 22px;
+  }
+  .whyTitle {
+    font-size: 22px;
+  }
+  #reviewSlider {
+    height: 540px;
+  }
+  .reviewSlideText {
+    font-size: 18px;
+  }
+  .reviewTitle {
+    font-size: 22px;
+  }
+  .faqHeading {
+    font-size: 22px;
+    margin: 50px 0 50px 0;
+  }
+}
+
+/* iphone 7 (firefox/edge/chrome)  */
+@media only screen and (min-width: 375px) and (max-height: 552px), only screen and (min-width: 375px) and (height: 559px) {
+  .bgImg {
+    background-position: bottom 0px left 0px;
+  }
+  .logoTextBottom {
+    color: green;
+  }
+}
+
+/* iPhone 6/7/8 PLUS */
+@media only screen and (min-width: 414px) {
+  .logoTextBottom {
+    color: #39ff14;
+  }
+  .landingHeading {
+    font-size: 52px;
+  }
+  .landingSubHeading {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .contactBtnText {
+    font-size: 15px;
+  }
+  .formDescription {
+    font-size: 16px;
+  }
+  .contactFormText {
+    font-size: 16px;
+  }
+  #stats {
+    padding-bottom: 50px;
+  }
+  .statBox {
+    height: 170px;
+    background-size: 108px;
+  }
+  .statDescription {
+    font-size: 19px;
+  }
+  .statNumber {
+    margin-bottom: 4px;
+    font-size: 32px;
+  }
+  #reviewSlider {
+    height: 580px;
+  }
+}
+
+/* iPad mini/air */
+@media only screen and (min-width: 768px) {
+  #backToTopBtn {
+    bottom: 12%;
+    right: 30px;
+    height: 44px;
+    width: 44px;
+  }
+  .upIcon {
+    font-size: 22px;
+  }
+  #mainDock {
+    grid-column-gap: 10px;
+    padding: 10px;
+    border-top: 3px solid gainsboro;
+  }
+  .dockContactBtn {
+    height: 48px;
+    border: 4px solid silver;
+  }
+  .contactBtnText {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+  .contactIcon {
+    font-size: 22px;
+    margin-right: 6px;
+  }
+  #messageIcon {
+    margin-right: 8px;
+  }
+  .contactFormBtn {
+    height: 48px;
+    border: 4px solid silver;
+  }
+  .formSubmitBtnReady {
+    border: none;
+  }
+  #contactForm.displayHidden #formButtons {
+    bottom: -71px;
+  }
+  #formButtons {
+    padding: 10px;
+    border-top: 3px solid gainsboro;
+  }
+  .contactFormBtnText {
+    font-size: 20px;
+  }
+  .formBtnIcon {
+    font-size: 24px;
+  }
+  #landingBox {
+    height: calc(100vh - 129px);
+  }
+  /*** NAV ****/
+  #navToggleBtn {
+    display: none;
+  }
+  .navMenuOpt:not(#navSocial) {
+    top: initial;
+    position: initial;
+    padding: 4px 12px 0 12px;
+    text-decoration: none;
+  }
+  #navMenu {
+    display: none;
+  }
+  #desktopNavMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+  #navbar {
+    border-top: none;
+  }
+  a.navMenuOpt#lastNavOpt {
+    padding-right: 14px;
+  }
+  /*** FORM ***/
+  .backArrow {
+    font-size: 36px;
+    height: 90px;
+    width: 90px;
+    padding-top: 10px;
+  }
+  .messageMenuTitle {
+    font-size: 24px;
+  }
+  .formTitle {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .contactFormText {
+    font-size: 18px;
+    width: 210px;
+    margin-bottom: 0;
+    padding-right: 12px;
+    text-align: right;
+  }
+  .contactFormInput {
+    font-size: 21px;
+    padding-left: 14px;
+    height: 60px;
+  }
+  #messageInputLabel {
+    padding-top: 11px;
+  }
+  .formDescription {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 22px;
+    height: 80px;
+  }
+  .formIcon {
+    font-size: 26px;
+  }
+  .formAsterik {
+    font-size: 16px;
+  }
+  .formOption {
+    margin-bottom: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 70px 0px 60px;
+  }
+  .formMessage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 70px 150px 60px;
+  }
+  #messageInput {
+    padding: 8px 8px 0 15px;
+    height: 400px;
+  }
+  /*** STATS ***/
+  #stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: gainsboro;
+    padding: 10px 0;
+  }
+  .statBox {
+    width: 33%;
+    height: 310px;
+    background-size: 128px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    /* border: 2px solid #0094f0; */
+    margin: 20px;
+    background-position: top 32px center;
+    display: initial;
+    position: relative;
+  }
+  .statBtnBar {
+    display: none;
+  }
+  .statNumber {
+    position: absolute;
+    top: 194px;
+    width: 100%;
+    text-align: center;
+  }
+  .statDescription {
+    position: absolute;
+    top: 236px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  #yearDescription {
+    position: initial;
+    width: 200px;
+    margin: 236px auto 0 auto;
+  }
+  /*** ABOUT ***/
+  #aboutUs {
+    background-color: whitesmoke;
+  }
+  .aboutTitle {
+    margin: 70px 0 60px 0;
+    font-size: 22px;
+  }
+  .aboutText {
+    padding-right: 50px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+    font-size: 18px;
+    margin-left: 46px;
+  }
+  .whyTitle {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-size: 22px;
+  }
+  .whyText {
+    font-size: 18px;
+    margin-bottom: 48px;
+    padding-left: 46px;
+    padding-right: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+  }
+  .whyBulletPoint {
+    font-size: 30px;
+    top: -5px;
+  }
+  /*** REVIEWS ***/
+  .reviews {
+    background-position: bottom 0px right;
+  }
+  .reviewTitle {
+    font-size: 28px;
+    top: 60px;
+  }
+  .reviewSlideText {
+    font-size: 22px;
+    margin: 30px auto 26px auto;
+    width: 530px;
+    line-height: 38px;
+  }
+  .reviewName {
+    font-size: 22px;
+  }
+  .quoteIcon {
+    font-size: 100px;
+  }
+  .leftQuoteIcon {
+    left: 40px;
+    top: 60px;
+  }
+  .rightQuoteIcon {
+    right: 40px;
+    top: 370px;
+  }
+  .slick-dots li button:before {
+    font-size: 18px;
+  }
+  .slick-dots li {
+    margin: 0 8px;
+  }
+  /*** FAQ ***/
+  #faq {
+    padding-bottom: 20px;
+  }
+  .faqHeading {
+    font-size: 24px;
+    margin: 60px 0 80px 0;
+  }
+  .faqQuestion {
+    font-size: 18px;
+  }
+  .faqQuestionText {
+    letter-spacing: 1.2px;
+  }
+  /*** HOURS & LOCATION ***/
+  .officeInfoHeading {
+    font-size: 24px;
+    margin: 60px 0 60px 0;
+  }
+  .officeWrapper {
+    width: 50%;
+  }
+  .officeInfoSchedule {
+    position: relative;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+  .officeInfoPhone {
+    padding-left: 31px;
+  }
+  .officeInfoIcon {
+    font-size: 22px;
+    left: 8%;
+  }
+  #officeAddressIcon {
+    margin: 0;
+    font-size: 26px;
+  }
+  .officeInfoGrid {
+    font-size: 18px;
+    -ms-grid-columns: 112px 170px;
+        grid-template-columns: 112px 170px;
+    -ms-grid-rows: (29px)[7];
+        grid-template-rows: repeat(7, 29px);
+  }
+  .officeInfoText {
+    font-size: 18px;
+  }
+  .officeClosed {
+    margin-left: 6px;
+  }
+  .officeInfoAddress {
+    line-height: 22px;
+    padding-left: 28px;
+    margin-bottom: 0;
+  }
+  .officeMap {
+    padding: 0 40px 0 0;
+    padding-right: 40px;
+    width: 50%;
+  }
+  #googleMap {
+    height: 364px;
+  }
+  .officeContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .socialMediaBtn {
+    width: 70px;
+    height: 60px;
+  }
+  .socialBtnIcon {
+    font-size: 26px;
+  }
+  #instagramIcon {
+    font-size: 30px;
+  }
+  .socialMediaText {
+    margin: 60px 0 14px 0;
+    font-size: 18px;
+  }
+  .socialButtons {
+    grid-column-gap: 16px;
+  }
+}
+
+/* iPad pro*/
+@media only screen and (min-width: 834px) {
+  .logoTextTop {
+    color: red;
+  }
+  .navMenuOpt:not(#navSocial) {
+    padding: 2px 16px 0 16px;
+  }
+}
+
+/* iPhone X */
+@media only screen and (max-width: 375px) and (min-height: 800px) {
+  .bgImg {
+    background-position: bottom 0px left -130px;
+  }
+  .logoTextBottom {
+    background-color: yellow;
+  }
+  #stats {
+    padding-bottom: 50px;
+  }
+  .statBox {
+    height: 180px;
+    background-size: 108px;
+  }
+  .statNumber {
+    margin-bottom: 4px;
+    font-size: 32px;
+  }
+}
+
+/* iPhone 5-8 LANDSCAPE */
+@media only screen and (max-height: 408px) {
+  .navMenuOpt:not(#navSocial) {
+    height: 43px;
+    font-size: 13px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(2) {
+    top: 43px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(3) {
+    top: 86px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(4) {
+    top: 129px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(5) {
+    top: 172px;
+  }
+  .openMenu#navMenu .navMenuOpt:nth-child(6) {
+    top: 215px;
+  }
+  #navSocial {
+    height: 43px;
+  }
+  .navSocialBtnIcon {
+    font-size: 18px;
+  }
+  #navInstagramIcon {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

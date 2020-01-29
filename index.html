@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Specifies the language you will be using for your page -->
+    <meta charset="utf-8" />
+    <!--- Allows mobile devices to scale to size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--- Corrects phone number as text on iOS -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>Braces Specialist</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="hamburgers.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Volkhov:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- used fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav id="navbar" href="#landingBox">
+        <div id="navLogo">
+          <img id="mainLogo" class="unselectable" src="./images/logo2.svg" />
+        </div>
+        <div class="navLogoName">
+          <div class="logoTextTop">Orthodontic</div>
+          <div class="logoTextBottom">SPECIALTY CENTER</div>
+        </div>
+        <div id="navToggleBtn">
+          <button
+            id="navToggleIcon"
+            class="hamburger hamburger--squeeze"
+            type="button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div id="desktopNavMenu">
+          <a href="#aboutUs" class="navMenuOpt unselectable">About</a>
+          <a href="#doctor" class="navMenuOpt unselectable">Meet The Doctor</a>
+          <a href="#aboutBraces" class="navMenuOpt unselectable"
+            >Braces Treatment</a
+          >
+          <a href="#faq" class="navMenuOpt unselectable">FAQ</a>
+          <a href="#officeInfo" class="navMenuOpt unselectable" id="lastNavOpt"
+            >Hours & Location</a
+          >
+        </div>
+      </nav>
+
+      <main>
+        <div id="landingBox">
+          <div class="bgImg"></div>
+          <!-- <div class="gradient"></div> -->
+          <div class="landingText">
+            <div class="landingHeading unselectable">
+              <span id="smileWord">SMILE</span> WITH A PASSION
+            </div>
+            <div class="landingSubHeading">
+              We provide the most affordable Orthodontic Treatment in Chicago
+            </div>
+          </div>
+        </div>
+
+        <div id="stats" class="unselectable">
+          <div class="statBox" id="statSmileImg">
+            <div class="statNumber" id="statCases">1</div>
+            <div class="statDescription">HAPPY SMILES</div>
+          </div>
+          <div class="statBox" id="statClockImg">
+            <div class="statNumber" id="statYear">1</div>
+            <div class="statDescription" id="yearDescription">
+              YEARS OF CONSISTENT WORK
+            </div>
+          </div>
+          <div class="statBox" id="statToothImg">
+            <div class="statNumber" id="statPercent">1</div>
+            <div class="statDescription">ATTENTION TO DETAIL</div>
+          </div>
+          <div class="statBtnBar">
+            <button class="learnMoreStatBtn">
+              MEET DR. ALBAREEDI
+            </button>
+          </div>
+          <!-- <div class="triangle"></div> -->
+        </div>
+
+        <div id="aboutUs">
+          <div class="aboutTitle">Our Mission</div>
+          <div class="aboutText">
+            We are committed to rendering the highest standard of care to all of
+            our patients. Everyone will be treated as if they were our own
+            family. Most of our patients are referred to us by their friends and
+            family who were treated by our office and were very happy with the
+            results, or were referred by their dentists who were confident of
+            the quality orthodontic care we will provide to their patients. We
+            offer a FREE first consultation visit - you will meet our staff, we
+            will explain to you if orthodontic treatment is needed, address any
+            and all the details concerning your treatment (including the cost of
+            treatment) and do our best to give you a payment plan to fit your
+            budget.
+          </div>
+
+          <div class="whyTitle">Why Choose Us?</div>
+          <div class="whyReason">
+            <div class="whyBulletPoint">•</div>
+            <div class="whyText">
+              We provide the highest quality of care for the most affordable
+              prices.
+            </div>
+          </div>
+          <div class="whyReason">
+            <div class="whyBulletPoint">•</div>
+            <div class="whyText">
+              Dr. Albareedi himself treats all the patients, our staff solely
+              chair side assist.
+            </div>
+          </div>
+          <div class="whyReason">
+            <div class="whyBulletPoint">•</div>
+            <div class="whyText">
+              90% of the time you will be seen within just a few minutes of your
+              arrival at the office.
+            </div>
+          </div>
+          <div class="whyReason">
+            <div class="whyBulletPoint">•</div>
+            <div class="whyText">
+              Dr. Albareedi is very accessible at any time.
+            </div>
+          </div>
+          <div class="whyReason">
+            <div class="whyBulletPoint">•</div>
+            <div class="whyText">
+              We speak many languages including Spanish, Polish, Arabic, and
+              Russian.
+            </div>
+          </div>
+          <div class="whyReason">
+            <div class="whyBulletPoint">•</div>
+            <div class="whyText">
+              Our pledge to our patients is that we will treat them as if they
+              were our own family members.
+            </div>
+          </div>
+
+          <img
+            src="https://cdn.expertise.com/awards/il_chicago_orthodontists_2019_transparent.svg"
+            alt="Best Orthodontists in Chicago"
+            class="awardImg"
+          />
+        </div>
+
+        <div id="doctor">
+          <div class="doctorTitle">Meet</div>
+          <div class="doctorName">Dr. Said Albareedi</div>
+
+          <div class="docCenter">
+            <div class="docProfile">
+              <div class="docStat nwStat">
+                <img src="./images/nwVert.svg" class="northWesternIcon" />
+                <div class="docStatText">Class of '83</div>
+              </div>
+
+              <div class="docStat orthoStat">
+                <img src="./images/newOrtho.svg" class="orthoIcon" />
+                <div class="docStatText">Member</div>
+              </div>
+
+              <div class="doctorImgParent">
+                <img
+                  src="./images/docClear.png"
+                  alt="Dr. Said Albareedi"
+                  class="doctorImg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="doctorInfo">
+            Dr. Albareedi is a graduate of one of the best Orthodontic Specialty
+            training programs in the country, Northwestern University, and has
+            about 35 years of experience.
+          </div>
+        </div>
+
+        <div class="reviews">
+          <div class="reviewTitle">What Our Patients Think</div>
+          <i class="fas fa-quote-left quoteIcon leftQuoteIcon"></i>
+          <i class="fas fa-quote-right quoteIcon rightQuoteIcon"></i>
+          <div id="reviewSlider">
+            <div class="reviewSlide">
+              <div class="reviewQuote">
+                <div class="reviewSlideText" id="slideText1">
+                  Dr. Albareedi is one of the best orthodontists in Chicago. He
+                  really cares about his patients and brings amazing results!
+                </div>
+                <div class="reviewName">
+                  - Jack L.
+                </div>
+              </div>
+            </div>
+            <div class="reviewSlide">
+              <div class="reviewQuote">
+                <div class="reviewSlideText" id="slideText2">
+                  I love my smile! I cannot stop smiling! Thank you Doctor for
+                  what you made my smile become. You have a gift for being an
+                  orthodontist!
+                </div>
+                <div class="reviewName">
+                  - Agustin P.
+                </div>
+              </div>
+            </div>
+            <div class="reviewSlide">
+              <div class="reviewQuote">
+                <div class="reviewSlideText" id="slideText3">
+                  Dr. Albareedi is the best. Amazing bedside manner. Can’t be
+                  any happier with my orthodontic progress. The girls in the
+                  front are very friendly.
+                </div>
+                <div class="reviewName">
+                  - Karen C.
+                </div>
+              </div>
+            </div>
+            <div class="reviewSlide">
+              <div class="reviewQuote">
+                <div class="reviewSlideText" id="slideText4">
+                  We have been pleased with the kindness and professionalism
+                  that we received from Dr. Albareedi. The staff has always
+                  treated us with respect and priority. We're grateful for their
+                  attention to detail in helping us achieve a great smile!
+                </div>
+                <div class="reviewName">
+                  - Iryna I.
+                </div>
+              </div>
+            </div>
+            <div class="reviewSlide">
+              <div class="reviewQuote">
+                <div class="reviewSlideText" id="slideText5">
+                  Was there for a braces consultation. Dr. Albareedi answered
+                  all my questions and was able to start the process right then.
+                  He worked miracles for my son's mouth!
+                </div>
+                <div class="reviewName">
+                  - Jae P.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="aboutBraces">
+          <div class="bracesTitle">How Braces Work</div>
+
+          <div>
+            By the use of braces, or aligners, we apply different forces to your
+            teeth to make them move in the direction we wish. As we apply the
+            pressure, the bone around the teeth gets remodeled and reformed to
+            the different position we would like the teeth to move to.
+          </div>
+        </div>
+
+        <div id="faq">
+          <div class="faqHeading">Frequently Asked Questions</div>
+          <div class="faqQuestion">
+            <div class="faqNumber">1.</div>
+            <div class="faqQuestionText">How do I know if I need braces?</div>
+          </div>
+          <div class="faqAnswer">
+            Usually your general dentist can tell you if you need braces due to
+            a problem in your bite, or due to the malalignment of your teeth,
+            and very often you yourself can tell if you need braces or not if
+            you are unhappy with your smile or the crowding of your teeth or any
+            other reason which might make you feel uncomfortable to smile or
+            show your teeth.
+          </div>
+          <div class="faqQuestion">
+            <div class="faqNumber">2.</div>
+            <div class="faqQuestionText">
+              Will braces make my teeth perfect?
+            </div>
+          </div>
+          <div class="faqAnswer">
+            With braces we definitely can make your teeth straight and your
+            smile beautiful. We always try our best and strive to achieve
+            perfection, however that is not always attainable due to different
+            causes, such as gum disease or getting treatment at a late age, or
+            some other unforseen reasons.
+          </div>
+          <div class="faqQuestion">
+            <div class="faqNumber">3.</div>
+            <div class="faqQuestionText">
+              Can you gaurantee the outcome of my treatment?
+            </div>
+          </div>
+          <div class="faqAnswer">
+            Orthodontic treatment is just like any other medical treatment. You
+            can never gaurantee that a medical treatment would achieve 100%
+            success, however we always achieve significant improvement on the
+            overwhelming majority of the cases we treat, although we always aim
+            at achieving the best results possible.
+          </div>
+          <div class="faqQuestion">
+            <div class="faqNumber">4.</div>
+            <div class="faqQuestionText">
+              What kind of food can I eat when I have braces?
+            </div>
+          </div>
+          <div class="faqAnswer">
+            During orthodontic treatment, you should avoid eating anything hard,
+            sticky, or crispy, such as chewing gum, hard or sticky candy,
+            popcorn, corn on the cob, nuts of any kind, or chewing on ice.
+          </div>
+          <div class="faqQuestion">
+            <div class="faqNumber">5.</div>
+            <div class="faqQuestionText">
+              Is orthodontic treatment painful?
+            </div>
+          </div>
+          <div class="faqAnswer">
+            We move teeth by applying pressure on them. When we first put your
+            braces on, you will not feel except little pressure, however a few
+            hours after you will start feeling some ache which can be resolved
+            by taking some Tylenol or any other over the counter pain medicine.
+            That discomfort should only last for a few days, however you will be
+            back to normal shortly. Usually kids get used to their braces much
+            faster than adults.
+          </div>
+          <div class="faqQuestion">
+            <div class="faqNumber">6.</div>
+            <div class="faqQuestionText">
+              Will you accept my insurance?
+            </div>
+          </div>
+          <div class="faqAnswer">
+            At our office, we usually accept most insurance coverage, which
+            usually pay a percentage of the fee and you will have to pay the
+            remainder, and of course we will give you a payment plan to fit your
+            budget.
+          </div>
+          <div class="faqQuestion">
+            <div class="faqNumber">7.</div>
+            <div class="faqQuestionText">
+              Do I need to wear retainers at the end of treatment?
+            </div>
+          </div>
+          <div class="faqAnswer">
+            Yes. Every patient who undergoes orthodontic treatment has to wear
+            retainers to make sure that their teeth do not move back. At our
+            office, retainers are given to the patient at the end of treatment
+            which are included in the price of your treatment.
+          </div>
+        </div>
+
+        <div id="officeInfo">
+          <div class="officeInfoHeading">Office Information</div>
+
+          <div class="officeContainer">
+            <div class="officeWrapper">
+              <div class="officeInfoSchedule">
+                <i
+                  class="far fa-clock officeInfoIcon"
+                  id="officeScheduleIcon"
+                ></i>
+                <div class="officeInfoGrid">
+                  <div class="officeDay">Monday:</div>
+                  <div class="officeTime">10:00 am - 6:00 pm</div>
+                  <div class="officeDay">Tuesday:</div>
+                  <div class="officeTime">10:00 am - 6:00 pm</div>
+                  <div class="officeDay">Wednesday:</div>
+                  <div class="officeTime">10:00 am - 6:00 pm</div>
+                  <div class="officeDay">Thursday:</div>
+                  <div class="officeTime">10:00 am - 6:00 pm</div>
+                  <div class="officeDay">Friday:</div>
+                  <div class="officeTime">10:00 am - 6:00 pm</div>
+                  <div class="officeDay">Saturday:</div>
+                  <div class="officeTime officeClosed">Closed</div>
+                  <div class="officeDay">Sunday:</div>
+                  <div class="officeTime officeClosed">Closed</div>
+                </div>
+              </div>
+              <div class="officeInfoPhone">
+                <i class="fas fa-phone officeInfoIcon" id="officePhoneIcon"></i>
+                <div class="officeInfoText">
+                  Phone: <span class="officePhoneText">(773) 282-0013</span>
+                </div>
+              </div>
+              <div class="officeInfoAddress">
+                <i
+                  id="officeAddressIcon"
+                  class="fas fa-map-marker-alt officeInfoIcon"
+                ></i>
+                <div class="officeInfoText" id="addressText">
+                  4251 N. Milwaukee Ave <br />Chicago, Illinois 60641
+                </div>
+              </div>
+            </div>
+
+            <div class="officeMap">
+              <div class="mapWrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.9501218951723!2d-87.75451418455636!3d41.95840637921591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc3f47d6f02d%3A0x212ff21d3fb2e5b3!2s4251%20N%20Milwaukee%20Ave%2C%20Chicago%2C%20IL%2060641!5e0!3m2!1sen!2sus!4v1567476963270!5m2!1sen!2sus"
+                  frameborder="0"
+                  style="border:0;"
+                  allowfullscreen=""
+                  id="googleMap"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="socialMediaText unselectable">
+            Follow us on social media
+          </div>
+          <div class="socialMediaContent">
+            <div class="socialButtons">
+              <a
+                class="socialMediaBtn"
+                target="_blank"
+                href="https://www.instagram.com/orthodonticspecialty/?hl=en"
+              >
+                <button class="socialBtnIcon">
+                  <i class="fab fa-instagram socialIcon" id="instagramIcon"></i>
+                </button>
+              </a>
+              <a
+                class="socialMediaBtn"
+                target="_blank"
+                href="https://www.linkedin.com/in/said-albareedi-9396b441"
+              >
+                <button class="socialBtnIcon">
+                  <i class="fab fa-linkedin-in socialIcon"></i>
+                </button>
+              </a>
+              <a
+                class="socialMediaBtn"
+                target="_blank"
+                href="https://www.facebook.com/OrthodontistChicago/?rf=248326265212850"
+              >
+                <button class="socialBtnIcon">
+                  <i class="fab fa-facebook-f socialIcon"></i>
+                </button>
+              </a>
+              <a
+                class="socialMediaBtn"
+                target="_blank"
+                href="https://twitter.com/OrthoSpecialtyC"
+              >
+                <button class="socialBtnIcon">
+                  <i class="fab fa-twitter socialIcon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="siteMapGrid">
+            <div>Home</div>
+            <div>About</div>
+            <div>Meet The Doctor</div>
+            <div>Braces Treatment</div>
+            <div>FAQ</div>
+            <div>Hours & Location</div>
+          </div>
+        </footer>
+
+        <div id="emptyDockSpace"></div>
+
+        <div id="mainDock" class="unselectable">
+          <a href="tel:773-282-0013" id="callBtn">
+            <button class="dockContactBtn unselectable" type="button">
+              <i class="fas fa-phone contactIcon" id="callIcon"></i>
+              <div class="contactBtnText">Call</div>
+            </button>
+          </a>
+
+          <a
+            id="directionsBtn"
+            target="_blank"
+            href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+          >
+            <button class="dockContactBtn unselectable" type="button">
+              <i
+                class="fas fa-map-marker-alt contactIcon"
+                id="directionsIcon"
+              ></i>
+              <div class="contactBtnText">Directions</div>
+            </button>
+          </a>
+
+          <button
+            class="dockContactBtn unselectable"
+            id="messageBtn"
+            type="button"
+          >
+            <i class="fas fa-comment contactIcon" id="messageIcon"></i>
+            <div class="contactBtnText">Contact</div>
+          </button>
+        </div>
+
+        <button id="backToTopBtn" class="opacityZero" type="button">
+          <i class="fas fa-chevron-up upIcon"></i>
+        </button>
+      </main>
+
+      <div id="navOverlay" class="displayHidden"></div>
+
+      <div id="navMenu">
+        <div class="navMenuOpt unselectable">About</div>
+        <div class="navMenuOpt unselectable">Meet The Doctor</div>
+        <div class="navMenuOpt unselectable">Braces Treatment</div>
+        <div class="navMenuOpt unselectable">FAQ</div>
+        <div class="navMenuOpt unselectable">Hours & Location</div>
+
+        <div id="navSocial" class="navMenuOpt">
+          <a
+            target="_blank"
+            class="navSocialMediaBtn"
+            href="https://www.instagram.com/orthodonticspecialty/?hl=en"
+          >
+            <button class="navSocialBtnIcon" id="navInstagramIcon">
+              <i class="fab fa-instagram socialIcon"></i>
+            </button>
+          </a>
+          <a
+            target="_blank"
+            class="navSocialMediaBtn"
+            href="https://www.linkedin.com/in/said-albareedi-9396b441"
+          >
+            <button class="navSocialBtnIcon">
+              <i class="fab fa-linkedin-in socialIcon"></i>
+            </button>
+          </a>
+          <a
+            target="_blank"
+            class="navSocialMediaBtn"
+            href="https://www.facebook.com/OrthodontistChicago/?rf=248326265212850"
+          >
+            <button class="navSocialBtnIcon">
+              <i class="fab fa-facebook-f socialIcon"></i>
+            </button>
+          </a>
+          <a
+            target="_blank"
+            class="navSocialMediaBtn navTwitterBtn"
+            href="https://twitter.com/OrthoSpecialtyC"
+          >
+            <button class="navSocialBtnIcon">
+              <i class="fab fa-twitter socialIcon"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <form id="contactForm" class="displayHidden">
+      <div class="formTitle">
+        <div class="backArrow" id="backArrow">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="messageMenuTitle">Contact Us</div>
+      </div>
+      <div class="formDescription">
+        We would love to hear from you! Please send us a message below and we
+        will get back to you as quickly as possible.
+      </div>
+      <div class="formOption">
+        <label for="nameInput" class="contactFormText">
+          Full Name<span class="formAsterik">*</span>
+        </label>
+        <div class="fullNameField">
+          <input
+            required
+            id="nameInput"
+            type="text"
+            class="contactFormInput"
+            placeholder="Firstname Lastname"
+          />
+          <div class="formIcon" id="fullNameIcon">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+      <div class="formOption">
+        <label for="emailInput" class="contactFormText">
+          Email Address<span class="formAsterik">*</span>
+        </label>
+        <div class="emailField">
+          <input
+            required
+            id="emailInput"
+            type="email"
+            class="contactFormInput"
+            placeholder="email@address.com"
+          />
+          <div class="formIcon" id="emailIcon">
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+      </div>
+      <div class="formOption">
+        <label for="phoneInput" class="contactFormText">
+          Phone Number<span class="formAsterik">*</span>
+        </label>
+        <div class="phoneField">
+          <input
+            required
+            id="phoneInput"
+            type="tel"
+            class="contactFormInput"
+            placeholder="(555) 123-4567"
+            pattern="^([^A-Za-z]*\d){7,}$"
+          />
+          <div class="formIcon"><i class="fas fa-phone"></i></div>
+        </div>
+      </div>
+      <div class="formMessage">
+        <label
+          for="messageInput"
+          class="contactFormText"
+          id="messageInputLabel"
+        >
+          Message<span class="formAsterik">*</span>
+        </label>
+        <textarea
+          required
+          class="contactFormInput"
+          id="messageInput"
+          placeholder="Questions, comments, concerns..."
+        ></textarea>
+      </div>
+      <div id="formButtons">
+        <button
+          type="submit"
+          id="contactFormSubmitBtn"
+          class="contactFormBtn formSubmitBtnDisabled unselectable"
+          disabled
+        >
+          <i class="fas fa-check formBtnIcon" id="formCheckIcon"></i>
+          <div class="contactFormBtnText">Send</div>
+        </button>
+        <button
+          type="button"
+          id="formCancelBtn"
+          class="contactFormBtn unselectable"
+        >
+          <i class="fas fa-times formBtnIcon"></i>
+          <div class="contactFormBtnText">Cancel</div>
+        </button>
+      </div>
+    </form>
+
+    <div id="loadingOverlay" class="formOverlay displayHidden">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+
+    <div id="successOverlay" class="formOverlay displayHidden">
+      <div class="formOverlayWindow" id="confirmWindow">
+        <div class="overlayIconWrapper">
+          <i class="far fa-check-circle confirmIcon"></i>
+        </div>
+        <div class="formOverlayMessage unselectable">Message Sent</div>
+        <div class="formOverlayText">Thank You!</div>
+      </div>
+    </div>
+
+    <div id="errorOverlay" class="formOverlay displayHidden">
+      <div class="formOverlayWindow">
+        <div class="overlayIconWrapper">
+          <i class="fas fa-exclamation-triangle errorIcon"></i>
+        </div>
+        <div class="formOverlayMessage unselectable" id="errorText">
+          Error
+        </div>
+        <div class="formOverlayText">Please try again</div>
+      </div>
+    </div>
+
+    <div id="connectionErrorOverlay" class="formOverlay displayHidden">
+      <div class="formOverlayWindow">
+        <div class="overlayIconWrapper">
+          <i class="fas fa-wifi errorIcon"></i>
+        </div>
+        <div class="formOverlayMessage unselectable">
+          Connection Error
+        </div>
+        <div class="formOverlayText" id="connectionErrorText">
+          Check your internet connection
+        </div>
+      </div>
+    </div>
+
+    <script src="js/slideNav.es6.js"></script>
+    <script src="js/domObjects.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/eventHandlers.js"></script>
+  </body>
+</html>
