@@ -68,7 +68,6 @@
   .statBox {
     height: 140px;
     background-size: 86px;
-    background-position: center left 15px;
   }
   .aboutTitle {
     font-size: 22px;
@@ -370,6 +369,10 @@
   .officeInfoSchedule {
     position: relative;
     padding-top: 0;
+    padding-left: 10px;
+  }
+  .officeInfoPhone {
+    padding-left: 31px;
   }
   .officeInfoIcon {
     font-size: 22px;
@@ -392,6 +395,8 @@
   }
   .officeInfoAddress {
     line-height: 22px;
+    padding-left: 28px;
+    margin-bottom: 0;
   }
   .officeMap {
     padding: 0 40px 0 0;
