@@ -4,11 +4,12 @@ document.addEventListener("touchstart", function() {}, true);
 navbar.onclick = function() {
   if (
     navMenu.classList.contains("openMenu") == false &&
-    contactForm.classList.contains("displayHidden") == true &&
+    contactForm.classList.contains("displayHidden") == true
+    // &&
     // 768 is the width when the nav menu expands to navbar
-    window.innerWidth < 768
+    // window.innerWidth < 768
   ) {
-    scrollBodyToTop();
+    // scrollBodyToTop();
   }
 };
 

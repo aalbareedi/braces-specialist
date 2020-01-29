@@ -38,7 +38,10 @@ class SlideNav {
       this.opened = false;
     }
     this.toggleBoxes = document.querySelectorAll(this.toggleBoxSelector);
-    this.navAnchors = document.querySelectorAll('a:not([target="_blank"])');
+    this.navAnchors = document.querySelectorAll(
+      '[href]:not([target="_blank"]):not(link)'
+    );
+    console.log(this.navAnchors);
   }
 
   observe() {
@@ -60,12 +63,12 @@ class SlideNav {
         });
       });
     }
-
     // anchors
     for (let anchor of this.navAnchors) {
       anchor.addEventListener("click", e => {
         e.preventDefault();
-        let linkHash = this.getHash(e.currentTarget.href);
+        e.stopPropagation();
+        let linkHash = this.getHash(e.currentTarget.getAttribute("href"));
         if (!this.goToSection(linkHash) && e.currentTarget.href)
           this.goToUrl(e.currentTarget.href);
       });
@@ -78,7 +81,7 @@ class SlideNav {
 
   setActiveAnchor() {
     for (let anchor of this.navAnchors) {
-      const linkHash = this.getHash(anchor.href),
+      const linkHash = this.getHash(anchor.getAttribute("href")),
         section = this.getSection(linkHash),
         // 58 is the height of the navbar to offset the nav scroll-to effect
         offset = this.scrollDoc.scrollTop + 58,
@@ -91,7 +94,8 @@ class SlideNav {
           offset + window.innerHeight == scrollHeight)
       ) {
         for (let link of this.navAnchors) {
-          if (link.href != anchor.href) link.classList.remove("active");
+          if (link.getAttribute("href") != anchor.getAttribute("href"))
+            link.classList.remove("active");
         }
         anchor.classList.add("active");
       }

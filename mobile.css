@@ -386,6 +386,8 @@
     font-size: 18px;
     -ms-grid-columns: 112px 170px;
         grid-template-columns: 112px 170px;
+    -ms-grid-rows: (29px)[7];
+        grid-template-rows: repeat(7, 29px);
   }
   .officeInfoText {
     font-size: 18px;
@@ -404,7 +406,7 @@
     width: 50%;
   }
   #googleMap {
-    height: 350px;
+    height: 364px;
   }
   .officeContainer {
     display: -webkit-box;
@@ -427,6 +429,9 @@
   }
   .socialButtons {
     grid-column-gap: 16px;
+  }
+  footer {
+    height: 200px;
   }
 }
 

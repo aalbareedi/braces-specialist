@@ -774,7 +774,7 @@ input.contactFormInput:valid + .formIcon {
 .officeInfoGrid {
   display: grid;
   grid-template-columns: 100px 150px;
-  grid-template-rows: repeat(7, 26px);
+  grid-template-rows: repeat(7, 27px);
 }
 .officeDay {
   color: white;
@@ -897,7 +897,7 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Nanum Gothic", sans-serif;
   background: gainsboro;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .aboutTitle {
   text-align: center;
@@ -1007,10 +1007,9 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
 }
 .awardImg {
-  position: absolute;
-  height: 110px;
-  left: 2px;
-  top: 19px;
+  height: 230px;
+  display: block;
+  margin: 0 auto;
 }
 .orthoStat {
   top: 92px;
