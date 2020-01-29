@@ -138,6 +138,9 @@
   #reviewSlider {
     height: 580px;
   }
+  #aboutUs {
+    border-radius: 0px 0px 200px 200px;
+  }
 }
 
 /* iPad mini/air */
