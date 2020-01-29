@@ -1239,6 +1239,7 @@ input.contactFormInput:valid + .formIcon {
   background: gainsboro;
   padding-top: 10px;
   padding-bottom: 40px;
+  border-radius: 0px 0px 190px 190px;
 }
 
 .aboutTitle {
