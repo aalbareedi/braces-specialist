@@ -151,6 +151,49 @@
   .upIcon {
     font-size: 22px;
   }
+  #mainDock {
+    grid-column-gap: 10px;
+    padding: 10px;
+    border-top: 3px solid gainsboro;
+  }
+  .dockContactBtn {
+    height: 48px;
+    border: 4px solid silver;
+  }
+  .contactBtnText {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+  .contactIcon {
+    font-size: 22px;
+    margin-right: 6px;
+  }
+  #messageIcon {
+    margin-right: 8px;
+  }
+  .contactFormBtn {
+    height: 48px;
+    border: 4px solid silver;
+  }
+  #contactFormSubmitBtn {
+    border: none;
+  }
+  #contactForm.displayHidden #formButtons {
+    bottom: -71px;
+  }
+  #formButtons {
+    padding: 10px;
+    border-top: 3px solid gainsboro;
+  }
+  .contactFormBtnText {
+    font-size: 20px;
+  }
+  .formBtnIcon {
+    font-size: 24px;
+  }
+  #landingBox {
+    height: calc(100vh - 129px);
+  }
   /*** NAV ****/
   #navToggleBtn {
     display: none;

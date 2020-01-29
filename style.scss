@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+$mobileNav: 58px;
+$mobileDock: 58px;
+$tabletDock: 71px;
+
 * {
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -35,7 +39,7 @@ body {
   opacity: 0 !important;
 }
 .openMenu {
-  top: 58px !important;
+  top: $mobileNav !important;
 }
 .unselectable {
   user-select: none;
@@ -60,7 +64,7 @@ img {
   background: black;
   opacity: 0.7;
   position: fixed;
-  top: 58px;
+  top: $mobileNav;
   right: 0;
   left: 0;
   bottom: 0;
@@ -103,7 +107,7 @@ img {
   font-family: "Russo One", sans-serif;
 }
 .logoTextBottom {
-  background-color: orange;
+  // background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -133,7 +137,7 @@ img {
   background-color: whitesmoke;
   position: fixed;
   width: 100%;
-  top: 58px;
+  top: $mobileNav;
   z-index: 200;
 }
 .navMenuOpt:not(#navSocial) {
@@ -240,7 +244,7 @@ img {
   height: calc(100vh - 58px);
   position: fixed;
   z-index: 100;
-  top: 58px;
+  top: $mobileNav;
   transition: top 0.3s ease-in-out;
   width: 100%;
 }
@@ -249,7 +253,7 @@ img {
   top: 100vh;
 }
 #contactForm.displayHidden #formButtons {
-  bottom: -58px;
+  bottom: -$tabletDock;
 }
 .formTitle {
   @include flexCenterXY();
@@ -622,7 +626,7 @@ input.contactFormInput:valid + .formIcon {
 /* ************************************** LANDING BOX ****************************************** */
 #landingBox {
   height: calc(100vh - 116px);
-  margin-top: 58px;
+  margin-top: $mobileNav;
   position: relative;
   // background-image: url("images/smile.png");
   // background-repeat: no-repeat;
@@ -1187,7 +1191,7 @@ footer {
   height: 120px;
 }
 #emptyDockSpace {
-  height: 58px;
+  height: $mobileDock;
 }
 #backToTopBtn {
   @include flexCenterXY();
