@@ -237,7 +237,7 @@ $tabletDock: 71px;
 
   /*** FORM ***/
   .backArrow {
-    font-size: 36px;
+    font-size: 34px;
     height: 90px;
     width: 90px;
     padding-top: 10px;
@@ -292,6 +292,9 @@ $tabletDock: 71px;
   #messageInput {
     padding: 8px 8px 0 15px;
     height: 400px;
+  }
+  input.contactFormInput:valid {
+    background-size: 32px;
   }
 
   /*** STATS ***/

@@ -18,6 +18,7 @@ class SlideNav {
     this.hideAfterSelect = options.hideBoxAfterSelect || true;
     this.changeHash = options.changeHash || false;
     this.navBoxToggleClass = options.navBoxToggleClass || false;
+    this.isAnimating = false;
 
     //initialize
     this.init();
@@ -75,7 +76,9 @@ class SlideNav {
     }
     // scroll
     window.addEventListener("scroll", () => {
-      this.setActiveAnchor();
+      if (this.isAnimating == false) {
+        this.setActiveAnchor();
+      }
     });
   }
 
@@ -106,6 +109,7 @@ class SlideNav {
     const section = this.getSection(linkHash);
     if (section) {
       const offsetTop = section.offsetTop;
+      this.isAnimating = true;
       this.scrollTo(offsetTop, this.speed);
       if (this.hideAfterSelect) this.hideNavBox();
       if (this.changeHash) {
@@ -121,10 +125,18 @@ class SlideNav {
     const diffOffset = destOffset - this.scrollDoc.scrollTop,
       partDist = (diffOffset / duration) * 1;
 
-    if (duration <= 0) return;
+    if (duration <= 0) {
+      // this.setActiveAnchor();
+      // this.isAnimating = false;
+      return;
+    }
     setTimeout(() => {
       this.scrollDoc.scrollTop = this.scrollDoc.scrollTop + partDist;
-      if (this.scrollDoc.scrollTop == destOffset) return;
+      if (this.scrollDoc.scrollTop == destOffset) {
+        this.setActiveAnchor();
+        this.isAnimating = false;
+        return;
+      }
       this.scrollTo(destOffset, duration - 1);
     }, 1);
   }
