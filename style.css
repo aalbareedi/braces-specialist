@@ -23,6 +23,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding-top: 58px;
+}
+
 .overflowHidden {
   -ms-touch-action: none;
       touch-action: none;
@@ -882,7 +886,6 @@ input.contactFormInput:valid + .formIcon {
 /* ************************************** LANDING BOX ****************************************** */
 #landingBox {
   height: calc(100vh - 116px);
-  margin-top: 58px;
   position: relative;
   min-width: 100vw;
   /* background-attachment: fixed; */
@@ -1242,7 +1245,7 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Nanum Gothic", sans-serif;
   background: gainsboro;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   border-radius: 0px 0px 190px 190px;
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
@@ -1303,20 +1306,44 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .doctorTitle {
-  text-align: center;
-  font-size: 20px;
+  background: gainsboro;
+  font-size: 14px;
   margin-bottom: 3px;
   letter-spacing: 0.8px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
 }
 
 .doctorName {
+  background-color: silver;
   font-family: "Volkhov", serif;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 22px;
   letter-spacing: 0.8px;
-  /* font-weight: bold; */
-  /* font-style: italic; */
+  margin: 0 auto 22px auto;
+  width: 270px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .doctorImgParent {
@@ -1374,7 +1401,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .awardImg {
-  height: 230px;
+  height: 220px;
   display: block;
   margin: 0 auto;
 }
