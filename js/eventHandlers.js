@@ -57,6 +57,7 @@ messageBtn.onclick = function() {
   contactForm.classList.remove("displayHidden");
   html.classList.add("overflowHidden");
   body.classList.add("overflowHidden");
+  body.classList.add("formOpen");
   wrapper.classList.add("overflowHidden");
   bodyScrollPosition = scrollingElement.scrollTop;
 };

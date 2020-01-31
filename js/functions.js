@@ -57,6 +57,7 @@ function closeContactForm() {
   html.classList.remove("overflowHidden");
   contactForm.classList.add("displayHidden");
   body.classList.remove("overflowHidden");
+  body.classList.remove("formOpen");
   wrapper.classList.remove("overflowHidden");
 }
 

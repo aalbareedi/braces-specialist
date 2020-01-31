@@ -133,6 +133,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -251,6 +252,10 @@ img {
 
 #desktopNavMenu a.navMenuOpt.active {
   background-color: #e8e8e8;
+}
+
+.formOpen #desktopNavMenu a.navMenuOpt.active {
+  background-color: whitesmoke;
 }
 
 /* ********************************* NAV MENU SOCIAL MEDIA ************************************ */
