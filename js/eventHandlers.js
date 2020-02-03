@@ -87,7 +87,7 @@ contactFormCancelBtn.onclick = function() {
 backToTopBtn.onclick = function(event) {
   event.preventDefault();
   event.stopPropagation();
-  scrollBodyToTop();
+  // scrollBodyToTop();
 };
 
 let sections = [
@@ -106,14 +106,14 @@ let sections = [
 
 for (let i = 0; i < sections.length; i++) {
   navMenuOpt[i].onclick = function() {
-    $(scrollingElement).animate(
-      { scrollTop: sections[i].offsetTop - 40 },
-      {
-        complete: function() {
-          console.log(scrollingElement.scrollTop);
-        }
-      }
-    );
+    // $(scrollingElement).animate(
+    //   { scrollTop: sections[i].offsetTop - 40 },
+    //   {
+    //     complete: function() {
+    //       console.log(scrollingElement.scrollTop);
+    //     }
+    //   }
+    // );
     closeNavMenu();
     closeContactForm();
   };
