@@ -1303,7 +1303,7 @@ input.contactFormInput:valid + .formIcon {
 #doctor {
   /* background-color: #7fbfeb; */
   background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
-  padding-top: 210px;
+  padding-top: 230px;
   padding-bottom: 40px;
   margin-top: -190px;
   z-index: -1;
@@ -1311,43 +1311,18 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .doctorTitle {
-  background: gainsboro;
+  display: none;
+  text-align: center;
   font-size: 14px;
-  margin: 0px auto 10px auto;
   letter-spacing: 0.8px;
-  border-radius: 30px;
-  height: 30px;
-  width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(220, 220, 220, 0.5);
 }
 
 .doctorName {
-  background-color: silver;
   font-family: "Volkhov", serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 28px;
   letter-spacing: 0.8px;
   margin: 0 auto 42px auto;
-  width: 270px;
-  height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .doctorImgParent {
@@ -1625,8 +1600,15 @@ footer {
 .siteMapGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+}
+
+.footerGridOpt {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  padding: 8px 0;
+  letter-spacing: 0.5px;
 }
 
 #emptyDockSpace {
