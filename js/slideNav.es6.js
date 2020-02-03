@@ -14,7 +14,7 @@ class SlideNav {
     this.activeClass = options.activeClass || "active";
     this.toggleButtonSelector = options.toggleButtonSelector || false;
     this.toggleBoxSelector = options.toggleBoxSelector || false;
-    this.speed = options.speed > 0 ? options.speed : 70;
+    this.speed = options.speed > 0 ? options.speed : 400;
     this.hideAfterSelect = options.hideBoxAfterSelect || true;
     this.changeHash = options.changeHash || false;
     this.navBoxToggleClass = options.navBoxToggleClass || false;
@@ -123,7 +123,7 @@ class SlideNav {
 
   scrollTo(destOffset, duration) {
     const diffOffset = destOffset - this.scrollDoc.scrollTop,
-      partDist = (diffOffset / duration) * 1;
+      partDist = (diffOffset / duration) * 40;
 
     if (duration <= 0) {
       // this.setActiveAnchor();
@@ -137,8 +137,8 @@ class SlideNav {
         this.isAnimating = false;
         return;
       }
-      this.scrollTo(destOffset, duration - 1);
-    }, 1);
+      this.scrollTo(destOffset, duration - 40);
+    }, 40);
   }
 
   goToUrl(url) {
