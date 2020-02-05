@@ -93,7 +93,7 @@
 
   <body>
     <div id="wrapper">
-      <nav id="navbar" href="#wrapper">
+      <nav id="navbar" href="#landingBox">
         <div id="navLogo">
           <img id="mainLogo" class="unselectable" src="./images/logo2.svg" />
         </div>
@@ -114,7 +114,9 @@
         </div>
         <div id="desktopNavMenu">
           <a href="#aboutUs" class="navMenuOpt unselectable">About</a>
-          <a href="#doctor" class="navMenuOpt unselectable">Meet The Doctor</a>
+          <a href="#doctorWrapper" class="navMenuOpt unselectable"
+            >Meet The Doctor</a
+          >
           <a href="#aboutBraces" class="navMenuOpt unselectable"
             >Braces Treatment</a
           >
@@ -229,37 +231,39 @@
         </div>
 
         <div id="doctor">
-          <div class="doctorTitle">Meet</div>
-          <div class="doctorName">
-            Dr. Said Albareedi
-          </div>
+          <div id="doctorWrapper">
+            <div class="doctorTitle">Meet</div>
+            <div class="doctorName">
+              Dr. Said Albareedi
+            </div>
 
-          <div class="docCenter">
-            <div class="docProfile">
-              <div class="docStat nwStat">
-                <img src="./images/nwVert.svg" class="northWesternIcon" />
-                <div class="docStatText">Class of '83</div>
-              </div>
+            <div class="docCenter">
+              <div class="docProfile">
+                <div class="docStat nwStat">
+                  <img src="./images/nwVert.svg" class="northWesternIcon" />
+                  <div class="docStatText">Class of '83</div>
+                </div>
 
-              <div class="docStat orthoStat">
-                <img src="./images/newOrtho.svg" class="orthoIcon" />
-                <div class="docStatText">Member</div>
-              </div>
+                <div class="docStat orthoStat">
+                  <img src="./images/newOrtho.svg" class="orthoIcon" />
+                  <div class="docStatText">Member</div>
+                </div>
 
-              <div class="doctorImgParent">
-                <img
-                  src="./images/docClear.png"
-                  alt="Dr. Said Albareedi"
-                  class="doctorImg"
-                />
+                <div class="doctorImgParent">
+                  <img
+                    src="./images/docClear.png"
+                    alt="Dr. Said Albareedi"
+                    class="doctorImg"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="doctorInfo">
-            Dr. Albareedi is a graduate of one of the best Orthodontic Specialty
-            training programs in the country, Northwestern University, and has
-            about 35 years of experience.
+            <div class="doctorInfo">
+              Dr. Albareedi is a graduate of one of the best Orthodontic
+              Specialty training programs in the country, Northwestern
+              University, and has about 35 years of experience.
+            </div>
           </div>
         </div>
 
@@ -536,13 +540,20 @@
         </div>
 
         <footer>
-          <!-- <div id="navLogo">
-            <img id="mainLogo" class="unselectable" src="./images/logo2.svg" />
-          </div> -->
-          <!-- <div class="navLogoName">
-            <div class="logoTextTop">Orthodontic</div>
-            <div class="logoTextBottom">SPECIALTY CENTER</div>
-          </div> -->
+          <div class="footerLogoWrapper">
+            <div id="footerNavLogo">
+              <img
+                id="footerMainLogo"
+                class="unselectable"
+                src="./images/logo2.svg"
+              />
+            </div>
+            <div class="footerNavLogoName">
+              <div class="footerlogoTextTop">Orthodontic</div>
+              <div class="footerlogoTextBottom">SPECIALTY CENTER</div>
+            </div>
+          </div>
+
           <div class="siteMapGrid">
             <div class="footerGridOpt"><a href="#aboutUs">About</a></div>
             <div class="footerGridOpt">
@@ -551,10 +562,16 @@
             <div class="footerGridOpt">
               <a href="#aboutBraces">Braces Treatment</a>
             </div>
-            <div class="footerGridOpt"><a href="#faq">FAQ</a></div>
+            <div class="footerGridOpt">
+              <a href="#faq">Frequently Asked Questions</a>
+            </div>
             <div class="footerGridOpt">
               <a href="#officeInfo">Hours & Location</a>
             </div>
+          </div>
+
+          <div class="footerCredit">
+            Website designed & managed by aalbareedi
           </div>
         </footer>
 
@@ -592,7 +609,12 @@
           </button>
         </div>
 
-        <button id="backToTopBtn" class="opacityZero" type="button">
+        <button
+          id="backToTopBtn"
+          class="opacityZero"
+          href="#landingBox"
+          type="button"
+        >
           <i class="fas fa-chevron-up upIcon"></i>
         </button>
       </main>
@@ -600,11 +622,19 @@
       <div id="navOverlay" class="displayHidden"></div>
 
       <div id="navMenu">
-        <div class="navMenuOpt unselectable">About</div>
-        <div class="navMenuOpt unselectable">Meet The Doctor</div>
-        <div class="navMenuOpt unselectable">Braces Treatment</div>
-        <div class="navMenuOpt unselectable">Frequently Asked Questions</div>
-        <div class="navMenuOpt unselectable">Hours & Location</div>
+        <a href="#aboutUs" class="navMenuOpt unselectable">About</a>
+        <a href="#doctorWrapper" class="navMenuOpt unselectable"
+          >Meet The Doctor</a
+        >
+        <a href="#aboutBraces" class="navMenuOpt unselectable"
+          >Braces Treatment</a
+        >
+        <a href="#faq" class="navMenuOpt unselectable"
+          >Frequently Asked Questions</a
+        >
+        <a href="#officeInfo" class="navMenuOpt unselectable"
+          >Hours & Location</a
+        >
 
         <div id="navSocial" class="navMenuOpt">
           <a

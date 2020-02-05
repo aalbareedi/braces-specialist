@@ -51,6 +51,8 @@ img {
   pointer-events: none;
 }
 
+// transform: translate(-50%, 0)
+
 .triangle {
   width: 0;
   height: 0;
@@ -157,6 +159,7 @@ img {
   left: 0;
   right: 0;
   transition: top 0.1s;
+  text-decoration: none;
 }
 .openMenu#navMenu .navMenuOpt:nth-child(1) {
   top: 0px;
@@ -190,6 +193,9 @@ img {
 }
 #navMenu .navMenuOpt:active {
   background-color: gainsboro;
+}
+#desktopNavMenu {
+  display: none;
 }
 // #desktopNavMenu .navMenuOpt:active {
 //   background-color: gainsboro;
@@ -806,7 +812,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .officeInfoAddress {
   position: relative;
-  margin-bottom: 30px;
   line-height: 20px;
   padding-left: 18px;
 }
@@ -844,6 +849,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .officeMap {
   padding: 0 22px 0 22px;
+  margin-top: 30px;
 }
 .mapWrapper {
   border-radius: 8px;
@@ -983,9 +989,9 @@ input.contactFormInput:valid + .formIcon {
   // background-color: silver;
   font-family: "Volkhov", serif;
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 0.8px;
-  margin: 0 auto 42px auto;
+  margin: 0 auto 38px auto;
   // width: 270px;
   // height: 90px;
   // display: flex;
@@ -1060,7 +1066,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
   font-size: 15px;
   margin-left: 20px;
-  padding-right: 16px;
+  padding-right: 18px;
   color: white;
 }
 .docCenter {
@@ -1197,7 +1203,7 @@ input.contactFormInput:valid + .formIcon {
 .faqQuestionText {
   padding-left: 46px;
   padding-right: 15px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.7px;
 }
 .faqNumber {
   position: absolute;
@@ -1213,21 +1219,70 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
   font-size: 16px;
 }
+/* ************************************** FOOTER *************************************** */
 
 footer {
   background-color: darkgray;
-  height: 300px;
+  position: relative;
+  height: 330px;
+  padding-top: 12px;
+}
+.footerLogoWrapper {
+  // background-color: pink;
+  position: relative;
+}
+#footerNavLogo {
+  // @include flexCenterXY();
+  cursor: pointer;
+  position: absolute;
+  left: 11px;
+  top: 1px;
+}
+#footerMainLogo {
+  height: 34px;
+}
+.footerNavLogoName {
+  opacity: 0.8;
+  position: absolute;
+  left: 50px;
+}
+.footerlogoTextTop {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  font-family: "Russo One", sans-serif;
+}
+.footerlogoTextBottom {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-family: "Titillium Web", sans-serif;
 }
 .siteMapGrid {
   display: grid;
-  // grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  margin-top: 60px;
+  padding-left: 50px;
 }
 .footerGridOpt {
   font-family: "Nanum Gothic", sans-serif;
-  text-align: center;
+  text-align: left;
   padding: 8px 0;
   letter-spacing: 0.5px;
+}
+.footerGridOpt a {
+  text-decoration: none;
+  color: #202020;
+}
+.footerGridOpt a:active {
+  color: white;
+}
+.footerCredit {
+  @include flexCenterXY();
+  background-color: #999;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+  height: 28px;
 }
 
 #emptyDockSpace {
@@ -1251,7 +1306,6 @@ footer {
 }
 .upIcon {
   font-size: 20px;
-  // margin-bottom: 2px;
 }
 .fas::before {
   padding: 1px;

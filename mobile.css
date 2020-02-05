@@ -407,7 +407,7 @@
     font-size: 18px;
   }
   .faqQuestionText {
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
   }
   /*** HOURS & LOCATION ***/
   .officeInfoHeading {
@@ -455,6 +455,7 @@
     padding: 0 40px 0 0;
     padding-right: 40px;
     width: 50%;
+    margin-top: 0;
   }
   #googleMap {
     height: 364px;
@@ -480,6 +481,9 @@
   }
   .socialButtons {
     grid-column-gap: 16px;
+  }
+  #emptyDockSpace {
+    height: 71px;
   }
 }
 

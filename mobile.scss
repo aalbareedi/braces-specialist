@@ -418,7 +418,7 @@ $tabletDock: 71px;
     font-size: 18px;
   }
   .faqQuestionText {
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
   }
 
   /*** HOURS & LOCATION ***/
@@ -465,6 +465,7 @@ $tabletDock: 71px;
     padding: 0 40px 0 0;
     padding-right: 40px;
     width: 50%;
+    margin-top: 0;
   }
   #googleMap {
     height: 364px;
@@ -488,6 +489,10 @@ $tabletDock: 71px;
   }
   .socialButtons {
     grid-column-gap: 16px;
+  }
+
+  #emptyDockSpace {
+    height: $tabletDock;
   }
 
   // #desktopNavMenu .navMenuOpt:active {

@@ -202,6 +202,7 @@ img {
   right: 0;
   -webkit-transition: top 0.1s;
   transition: top 0.1s;
+  text-decoration: none;
 }
 
 .openMenu#navMenu .navMenuOpt:nth-child(1) {
@@ -248,6 +249,10 @@ img {
 
 #navMenu .navMenuOpt:active {
   background-color: gainsboro;
+}
+
+#desktopNavMenu {
+  display: none;
 }
 
 #desktopNavMenu a.navMenuOpt.active {
@@ -1109,7 +1114,6 @@ input.contactFormInput:valid + .formIcon {
 
 .officeInfoAddress {
   position: relative;
-  margin-bottom: 30px;
   line-height: 20px;
   padding-left: 18px;
 }
@@ -1155,6 +1159,7 @@ input.contactFormInput:valid + .formIcon {
 
 .officeMap {
   padding: 0 22px 0 22px;
+  margin-top: 30px;
 }
 
 .mapWrapper {
@@ -1320,9 +1325,9 @@ input.contactFormInput:valid + .formIcon {
 .doctorName {
   font-family: "Volkhov", serif;
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 0.8px;
-  margin: 0 auto 42px auto;
+  margin: 0 auto 38px auto;
 }
 
 .doctorImgParent {
@@ -1403,7 +1408,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
   font-size: 15px;
   margin-left: 20px;
-  padding-right: 16px;
+  padding-right: 18px;
   color: white;
 }
 
@@ -1573,7 +1578,7 @@ input.contactFormInput:valid + .formIcon {
 .faqQuestionText {
   padding-left: 46px;
   padding-right: 15px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.7px;
 }
 
 .faqNumber {
@@ -1592,9 +1597,45 @@ input.contactFormInput:valid + .formIcon {
   font-size: 16px;
 }
 
+/* ************************************** FOOTER *************************************** */
 footer {
   background-color: darkgray;
-  height: 300px;
+  position: relative;
+  height: 330px;
+  padding-top: 12px;
+}
+
+.footerLogoWrapper {
+  position: relative;
+}
+
+#footerNavLogo {
+  cursor: pointer;
+  position: absolute;
+  left: 11px;
+  top: 1px;
+}
+
+#footerMainLogo {
+  height: 34px;
+}
+
+.footerNavLogoName {
+  opacity: 0.8;
+  position: absolute;
+  left: 50px;
+}
+
+.footerlogoTextTop {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  font-family: "Russo One", sans-serif;
+}
+
+.footerlogoTextBottom {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .siteMapGrid {
@@ -1602,13 +1643,42 @@ footer {
   display: grid;
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
+  margin-top: 60px;
+  padding-left: 50px;
 }
 
 .footerGridOpt {
   font-family: "Nanum Gothic", sans-serif;
-  text-align: center;
+  text-align: left;
   padding: 8px 0;
   letter-spacing: 0.5px;
+}
+
+.footerGridOpt a {
+  text-decoration: none;
+  color: #202020;
+}
+
+.footerGridOpt a:active {
+  color: white;
+}
+
+.footerCredit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #999;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+  height: 28px;
 }
 
 #emptyDockSpace {

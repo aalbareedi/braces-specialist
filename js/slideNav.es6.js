@@ -108,7 +108,14 @@ class SlideNav {
   goToSection(linkHash) {
     const section = this.getSection(linkHash);
     if (section) {
-      const offsetTop = section.offsetTop;
+      // subtract height of navbar
+      let offsetTop = -58;
+      let element = section;
+      do {
+        offsetTop += element.offsetTop || 0;
+        element = element.offsetParent;
+      } while (element);
+
       this.isAnimating = true;
       this.scrollTo(offsetTop, this.speed);
       if (this.hideAfterSelect) this.hideNavBox();
