@@ -51,6 +51,15 @@ function closeNavMenu() {
   navMenu.classList.remove("openMenu");
   navOverlay.classList.add("displayHidden");
   wrapper.classList.remove("overflowHidden");
+  navbar.setAttribute("href", "#landingBox");
+}
+
+function openNavMenu() {
+  navToggleIcon.classList.add("is-active");
+  navMenu.classList.add("openMenu");
+  navOverlay.classList.remove("displayHidden");
+  wrapper.classList.add("overflowHidden");
+  navbar.setAttribute("href", "");
 }
 
 function closeContactForm() {

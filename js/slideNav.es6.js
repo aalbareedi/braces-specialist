@@ -90,10 +90,17 @@ class SlideNav {
         offset = this.scrollDoc.scrollTop + 58,
         scrollHeight = this.scrollDoc.scrollHeight;
 
+      let sectionOffset = 0;
+      let element = section;
+      do {
+        sectionOffset += element.offsetTop || 0;
+        element = element.offsetParent;
+      } while (element);
+
       if (
         section &&
-        ((section.offsetTop <= offset &&
-          section.offsetTop + section.offsetHeight > offset) ||
+        ((sectionOffset <= offset &&
+          sectionOffset + section.offsetHeight > offset) ||
           offset + window.innerHeight == scrollHeight)
       ) {
         for (let link of this.navAnchors) {

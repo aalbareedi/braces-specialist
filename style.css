@@ -1601,41 +1601,46 @@ input.contactFormInput:valid + .formIcon {
 footer {
   background-color: darkgray;
   position: relative;
-  height: 330px;
-  padding-top: 12px;
+  padding-top: 14px;
+  padding-bottom: 60px;
 }
 
 .footerLogoWrapper {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #footerNavLogo {
   cursor: pointer;
-  position: absolute;
-  left: 11px;
-  top: 1px;
+  margin-top: 1px;
+  margin-right: 5px;
 }
 
 #footerMainLogo {
-  height: 34px;
+  height: 46px;
 }
 
 .footerNavLogoName {
   opacity: 0.8;
-  position: absolute;
-  left: 50px;
+  margin-right: 12px;
 }
 
 .footerlogoTextTop {
-  font-size: 19px;
+  font-size: 27px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
+  line-height: 1;
 }
 
 .footerlogoTextBottom {
-  font-size: 14px;
-  letter-spacing: 0.4px;
+  font-size: 19px;
+  letter-spacing: 0.8px;
   font-family: "Titillium Web", sans-serif;
+  line-height: 1;
 }
 
 .siteMapGrid {
@@ -1643,13 +1648,12 @@ footer {
   display: grid;
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
-  margin-top: 60px;
-  padding-left: 50px;
+  margin-top: 20px;
 }
 
 .footerGridOpt {
   font-family: "Nanum Gothic", sans-serif;
-  text-align: left;
+  text-align: center;
   padding: 8px 0;
   letter-spacing: 0.5px;
 }

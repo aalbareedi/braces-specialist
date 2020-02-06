@@ -1,42 +1,17 @@
 // Remove Gray Highlight When Tapping Links in Mobile Safari
 document.addEventListener("touchstart", function() {}, true);
 
-navbar.onclick = function() {
-  if (
-    navMenu.classList.contains("openMenu") == false &&
-    contactForm.classList.contains("displayHidden") == true
-    // &&
-    // 768 is the width when the nav menu expands to navbar
-    // window.innerWidth < 768
-  ) {
-    // scrollBodyToTop();
-  }
-};
-
 navToggleBtn.onclick = function(event) {
   if (successOverlay.classList.contains("displayHidden") == true) {
-    // changing nav toggle icon
-    if (navToggleIcon.classList.contains("is-active")) {
-      navToggleIcon.classList.remove("is-active");
-    } else {
-      navToggleIcon.classList.add("is-active");
-    }
-
     if (navMenu.classList.contains("openMenu") == false) {
-      navMenu.classList.add("openMenu");
-      navOverlay.classList.remove("displayHidden");
-      wrapper.classList.add("overflowHidden");
+      openNavMenu();
     } else {
-      navMenu.classList.remove("openMenu");
-      navOverlay.classList.add("displayHidden");
-      wrapper.classList.remove("overflowHidden");
+      closeNavMenu();
     }
   }
 
   event.stopPropagation();
 };
-
-navSocialMediaBtns.onclick = function() {};
 
 for (let i = 0; i < navSocialMediaBtns.length; i++) {
   navSocialMediaBtns[i].onclick = function() {
@@ -45,12 +20,7 @@ for (let i = 0; i < navSocialMediaBtns.length; i++) {
 }
 
 navOverlay.onclick = function() {
-  navOverlay.classList.add("displayHidden");
-  navMenu.classList.remove("openMenu");
-  navToggleIcon.classList.remove("is-active");
-  html.classList.remove("overflowHidden");
-  body.classList.remove("overflowHidden");
-  wrapper.classList.remove("overflowHidden");
+  closeNavMenu();
 };
 
 messageBtn.onclick = function() {

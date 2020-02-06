@@ -1224,47 +1224,54 @@ input.contactFormInput:valid + .formIcon {
 footer {
   background-color: darkgray;
   position: relative;
-  height: 330px;
-  padding-top: 12px;
+  padding-top: 14px;
+  padding-bottom: 60px;
 }
 .footerLogoWrapper {
   // background-color: pink;
-  position: relative;
+  // position: relative;
+  display: flex;
+  justify-content: center;
 }
 #footerNavLogo {
   // @include flexCenterXY();
   cursor: pointer;
-  position: absolute;
-  left: 11px;
-  top: 1px;
+  margin-top: 1px;
+  margin-right: 5px;
+  // position: absolute;
+  // left: 11px;
+  // top: 1px;
 }
 #footerMainLogo {
-  height: 34px;
+  height: 46px;
 }
 .footerNavLogoName {
   opacity: 0.8;
-  position: absolute;
-  left: 50px;
+  margin-right: 12px;
+  // position: absolute;
+  // left: 50px;
 }
 .footerlogoTextTop {
-  font-size: 19px;
+  font-size: 27px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
+  line-height: 1;
 }
 .footerlogoTextBottom {
-  font-size: 14px;
-  letter-spacing: 0.4px;
+  font-size: 19px;
+  letter-spacing: 0.8px;
   font-family: "Titillium Web", sans-serif;
+  line-height: 1;
 }
 .siteMapGrid {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
-  margin-top: 60px;
-  padding-left: 50px;
+  margin-top: 20px;
+  // padding-left: 50px;
 }
 .footerGridOpt {
   font-family: "Nanum Gothic", sans-serif;
-  text-align: left;
+  text-align: center;
   padding: 8px 0;
   letter-spacing: 0.5px;
 }
