@@ -110,9 +110,10 @@ img {
   font-size: 19px;
   letter-spacing: 0.5px;
   font-family: "Russo One", sans-serif;
+  line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: orange;
+  // background-color: orange;
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
@@ -1167,7 +1168,7 @@ input.contactFormInput:valid + .formIcon {
 /* ******************************* ABOUT BRACES TREATMENT ******************************** */
 #aboutBraces {
   height: 600px;
-  background: purple;
+  background: #6b62d1;
   padding-top: 10px;
 }
 .bracesTitle {
@@ -1230,8 +1231,7 @@ footer {
 .footerLogoWrapper {
   // background-color: pink;
   // position: relative;
-  display: flex;
-  justify-content: center;
+  @include flexCenterXY();
 }
 #footerNavLogo {
   // @include flexCenterXY();
@@ -1244,6 +1244,7 @@ footer {
 }
 #footerMainLogo {
   height: 46px;
+  opacity: 0.9;
 }
 .footerNavLogoName {
   opacity: 0.8;
@@ -1252,10 +1253,10 @@ footer {
   // left: 50px;
 }
 .footerlogoTextTop {
-  font-size: 27px;
-  letter-spacing: 0.5px;
+  font-size: 26px;
+  letter-spacing: 0.8px;
   font-family: "Russo One", sans-serif;
-  line-height: 1;
+  line-height: 0.8;
 }
 .footerlogoTextBottom {
   font-size: 19px;

@@ -10,9 +10,6 @@
 
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
-  .logoTextBottom {
-    color: blue;
-  }
   .navMenuOpt:not(#navSocial) {
     height: 58px;
     font-size: 15px;
