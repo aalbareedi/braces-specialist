@@ -137,7 +137,6 @@ img {
   font-size: 14px;
   letter-spacing: 0.4px;
   font-family: "Titillium Web", sans-serif;
-  color: purple;
 }
 
 #navToggleBtn {
@@ -1642,7 +1641,7 @@ footer {
 
 .footerlogoTextBottom {
   font-size: 19px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
   font-family: "Titillium Web", sans-serif;
   line-height: 1;
 }
