@@ -115,6 +115,16 @@ body.onscroll = function() {
       scrollPercentCounter();
     }
   }
+
+  for (let i = 0; i < scrollAwaiters.length; i++) {
+    if (
+      scrollingElement.scrollTop + screen.height - 80 >
+      scrollAwaiters[i].offsetTop
+    ) {
+      scrollAwaiters[i].classList.add("fadeInUp");
+      scrollAwaiters[i].classList.add("animated");
+    }
+  }
 };
 
 for (let i = 0; i < formInputFields.length; i++) {

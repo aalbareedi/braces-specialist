@@ -18,6 +18,7 @@ let stats = document.getElementById("stats");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
+let scrollAwaiters = document.getElementsByClassName("awaitsScrolling");
 // nav
 let navbar = document.getElementById("navbar");
 let navToggleBtn = document.getElementById("navToggleBtn");

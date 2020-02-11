@@ -779,13 +779,9 @@ input.contactFormInput:valid + .formIcon {
   background-color: #383f43;
   padding-top: 10px;
 }
-.officeInfoHeading {
-  text-align: center;
-  font-size: 20px;
+.officeInfoTitle {
   color: white;
   margin: 50px 0 50px 0;
-  letter-spacing: 0.8px;
-  font-family: "Nanum Gothic", sans-serif;
 }
 .officeInfoSchedule {
   display: flex;
@@ -924,11 +920,8 @@ input.contactFormInput:valid + .formIcon {
   box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
 }
 .aboutTitle {
-  text-align: center;
-  font-size: 20px;
   /* color: white; */
   margin: 50px 0 50px 0;
-  letter-spacing: 0.7px;
 }
 .aboutText {
   line-height: 28px;
@@ -938,27 +931,35 @@ input.contactFormInput:valid + .formIcon {
   padding-right: 15px;
 }
 .whyTitle {
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 0.7px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0 50px 0;
 }
 .whyReason {
-  position: relative;
+  // position: relative;
+  display: flex;
+  margin-bottom: 36px;
+  // background: pink;
+  align-items: flex-start;
 }
 .whyBulletPoint {
-  position: absolute;
-  left: 10px;
-  top: -3px;
+  // position: absolute;
+  // left: 10px;
+  // top: -3px;
   font-size: 23px;
+  line-height: 20px;
+  margin-left: 6px;
 }
 .whyText {
-  padding-left: 36px;
+  padding-left: 6px;
   padding-right: 13px;
-  margin-bottom: 36px;
   line-height: 22px;
   letter-spacing: 0.3px;
+}
+.whyReason.awaitsScrolling {
+  // margin-bottom: -30px;
+}
+.whyReason.scrolledTo {
+  // margin-bottom: 0;
+  // transition: margin-bottom 1s;
 }
 /* ****************************************** DOCTOR ******************************************* */
 #doctor {
@@ -1076,6 +1077,12 @@ input.contactFormInput:valid + .formIcon {
   justify-content: center;
   margin-bottom: 40px;
 }
+.sectionTitle {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-family: "Nanum Gothic", sans-serif;
+}
 /* ****************************************** REVIEWS ******************************************* */
 .reviews {
   position: relative;
@@ -1092,11 +1099,8 @@ input.contactFormInput:valid + .formIcon {
   // background-color: pink;
   position: absolute;
   top: 56px;
-  font-size: 20px;
-  letter-spacing: 0.7px;
   color: white;
   width: 100%;
-  text-align: center;
 }
 #reviewSlider {
   height: 480px;
@@ -1173,11 +1177,8 @@ input.contactFormInput:valid + .formIcon {
   padding-top: 10px;
 }
 .bracesTitle {
-  text-align: center;
-  font-size: 20px;
   /* color: white; */
   margin: 40px 0 50px 0;
-  letter-spacing: 0.8px;
 }
 /* **************************************** FAQ ***************************************** */
 #faq {
@@ -1185,13 +1186,9 @@ input.contactFormInput:valid + .formIcon {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.faqHeading {
-  text-align: center;
-  font-size: 20px;
+.faqTitle {
   color: white;
   margin: 40px 0 50px 0;
-  letter-spacing: 0.7px;
-  font-family: "Nanum Gothic", sans-serif;
 }
 .faqQuestion {
   position: relative;

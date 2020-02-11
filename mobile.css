@@ -10,6 +10,9 @@
 
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
+  .sectionTitle {
+    font-size: 22px;
+  }
   .navMenuOpt:not(#navSocial) {
     height: 58px;
     font-size: 15px;
@@ -66,23 +69,13 @@
     height: 140px;
     background-size: 86px;
   }
-  .aboutTitle {
-    font-size: 22px;
-  }
-  .whyTitle {
-    font-size: 22px;
-  }
   #reviewSlider {
     height: 540px;
   }
   .reviewSlideText {
     font-size: 18px;
   }
-  .reviewTitle {
-    font-size: 22px;
-  }
-  .faqHeading {
-    font-size: 22px;
+  .faqTitle {
     margin: 50px 0 50px 0;
   }
 }
@@ -142,6 +135,9 @@
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 24px;
+  }
   #backToTopBtn {
     bottom: 12%;
     right: 30px;
@@ -332,7 +328,6 @@
   }
   .aboutTitle {
     margin: 70px 0 60px 0;
-    font-size: 22px;
   }
   .aboutText {
     padding-right: 50px;
@@ -344,26 +339,23 @@
   .whyTitle {
     margin-top: 80px;
     margin-bottom: 70px;
-    font-size: 22px;
+  }
+  .whyReason {
+    margin-bottom: 48px;
   }
   .whyText {
     font-size: 18px;
-    margin-bottom: 48px;
-    padding-left: 46px;
-    padding-right: 18px;
     line-height: 26px;
     letter-spacing: 0.5px;
   }
   .whyBulletPoint {
     font-size: 30px;
-    top: -5px;
   }
   /*** REVIEWS ***/
   .reviews {
     background-position: bottom 0px right;
   }
   .reviewTitle {
-    font-size: 28px;
     top: 60px;
   }
   .reviewSlideText {
@@ -396,8 +388,7 @@
   #faq {
     padding-bottom: 20px;
   }
-  .faqHeading {
-    font-size: 24px;
+  .faqTitle {
     margin: 60px 0 80px 0;
   }
   .faqQuestion {
@@ -407,8 +398,7 @@
     letter-spacing: 1px;
   }
   /*** HOURS & LOCATION ***/
-  .officeInfoHeading {
-    font-size: 24px;
+  .officeInfoTitle {
     margin: 60px 0 60px 0;
   }
   .officeWrapper {
@@ -481,6 +471,9 @@
   }
   #emptyDockSpace {
     height: 71px;
+  }
+  #desktopNavMenu .navMenuOpt:active {
+    background-color: #e8e8e8;
   }
 }
 
