@@ -15,7 +15,7 @@
   }
   .navMenuOpt:not(#navSocial) {
     height: 58px;
-    font-size: 15px;
+    font-size: 16px;
     top: -58px;
   }
   #navSocial {
