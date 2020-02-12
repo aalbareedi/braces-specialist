@@ -116,13 +116,18 @@ body.onscroll = function() {
     }
   }
 
-  for (let i = 0; i < scrollAwaiters.length; i++) {
+  for (let i = 0; i < scrollToElements.length; i++) {
     if (
       scrollingElement.scrollTop + screen.height - 80 >
-      scrollAwaiters[i].offsetTop
+      scrollToElements[i].offsetTop
     ) {
-      scrollAwaiters[i].classList.add("fadeInUp");
-      scrollAwaiters[i].classList.add("animated");
+      // scrollToElements[i].classList.add(
+      //   scrollToElements[i].dataset.scrollToAnimation
+      // );
+      scrollToElements[i].classList.add(
+        scrollToElements[i].getAttribute("data-scrollToAnimation")
+      );
+      scrollToElements[i].classList.add("animated");
     }
   }
 };

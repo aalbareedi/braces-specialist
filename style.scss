@@ -939,7 +939,7 @@ input.contactFormInput:valid + .formIcon {
   margin-bottom: 36px;
   // background: pink;
   align-items: flex-start;
-  opacity: 0;
+  // opacity: 0;
 }
 .whyBulletPoint {
   // position: absolute;
@@ -954,13 +954,6 @@ input.contactFormInput:valid + .formIcon {
   padding-right: 13px;
   line-height: 22px;
   letter-spacing: 0.3px;
-}
-.whyReason.awaitsScrolling {
-  // margin-bottom: -30px;
-}
-.whyReason.scrolledTo {
-  // margin-bottom: 0;
-  // transition: margin-bottom 1s;
 }
 /* ****************************************** DOCTOR ******************************************* */
 #doctor {

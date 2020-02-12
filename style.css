@@ -1282,7 +1282,6 @@ input.contactFormInput:valid + .formIcon {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  opacity: 0;
 }
 
 .whyBulletPoint {
