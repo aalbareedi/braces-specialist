@@ -118,7 +118,7 @@ body.onscroll = function() {
 
   for (let i = 0; i < scrollToElements.length; i++) {
     if (
-      scrollingElement.scrollTop + screen.height - 100 >
+      scrollingElement.scrollTop + screen.height - 120 >
       scrollToElements[i].offsetTop
     ) {
       scrollToElements[i].classList.add(
