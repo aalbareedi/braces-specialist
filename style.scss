@@ -113,7 +113,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  // background-color: orange;
+  background-color: orange;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -934,12 +934,9 @@ input.contactFormInput:valid + .formIcon {
   margin: 50px 0 50px 0;
 }
 .whyReason {
-  // position: relative;
   display: flex;
-  margin-bottom: 36px;
-  // background: pink;
+  margin-bottom: 42px;
   align-items: flex-start;
-  // opacity: 0;
 }
 .whyBulletPoint {
   // position: absolute;
