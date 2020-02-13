@@ -147,7 +147,23 @@ img {
   top: $mobileNav;
   z-index: 200;
 }
-.navMenuOpt:not(#navSocial) {
+.navMenuOpt {
+  @include flexCenterXY();
+  background-color: whitesmoke;
+  color: #616161;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  height: 58px;
+  border-bottom: 2px solid #e8e8e8;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  right: 0;
+  transition: top 0.1s;
+  text-decoration: none;
+}
+.desktopNavMenuOpt {
   @include flexCenterXY();
   background-color: whitesmoke;
   color: #616161;
@@ -203,10 +219,10 @@ img {
 //   background-color: gainsboro;
 // }
 // current nav tab
-#desktopNavMenu a.navMenuOpt.active {
+#desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: #e8e8e8;
 }
-.formOpen #desktopNavMenu a.navMenuOpt.active {
+.formOpen #desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: whitesmoke;
 }
 
@@ -221,6 +237,7 @@ img {
   height: 58px;
   z-index: 200;
   transition: top 0.1s;
+  align-items: initial;
 }
 .navSocialMediaBtn {
   @include flexCenterXY();

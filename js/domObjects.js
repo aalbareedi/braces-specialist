@@ -27,6 +27,7 @@ let navToggleIcon = document.getElementById("navToggleIcon");
 let navMenu = document.getElementById("navMenu");
 let navOverlay = document.getElementById("navOverlay");
 let navMenuOpt = document.getElementsByClassName("navMenuOpt");
+let desktopNavMenuOpt = document.getElementsByClassName("desktopNavMenuOpt");
 let navSocialMediaBtns = document.getElementsByClassName("navSocialMediaBtn");
 // contact form
 let contactForm = document.getElementById("contactForm");

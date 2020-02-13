@@ -194,7 +194,7 @@
   #navToggleBtn {
     display: none;
   }
-  .navMenuOpt:not(#navSocial) {
+  .desktopNavMenuOpt {
     top: initial;
     position: initial;
     padding: 4px 11px 0 11px;
@@ -213,7 +213,7 @@
   #navbar {
     border-top: none;
   }
-  a.navMenuOpt#lastNavOpt {
+  a.desktopNavMenuOpt#lastNavOpt {
     padding-right: 14px;
   }
   /*** FORM ***/
@@ -472,7 +472,7 @@
   #emptyDockSpace {
     height: 71px;
   }
-  #desktopNavMenu .navMenuOpt:active {
+  #desktopNavMenu .desktopNavMenuOpt:active {
     background-color: #e8e8e8;
   }
 }
@@ -482,7 +482,7 @@
   .logoTextTop {
     color: red;
   }
-  .navMenuOpt:not(#navSocial) {
+  .desktopNavMenuOpt {
     padding: 2px 16px 0 16px;
   }
 }

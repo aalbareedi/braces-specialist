@@ -60,31 +60,15 @@ backToTopBtn.onclick = function(event) {
   // scrollBodyToTop();
 };
 
-let sections = [
-  aboutUsSection,
-  doctorSection,
-  aboutBracesSection,
-  faqSection,
-  officeInfoSection,
-  // mobile sections
-  aboutUsSection,
-  doctorSection,
-  aboutBracesSection,
-  faqSection,
-  officeInfoSection
-];
-
-for (let i = 0; i < sections.length; i++) {
+for (let i = 0; i < navMenuOpt.length; i++) {
   navMenuOpt[i].onclick = function() {
-    // $(scrollingElement).animate(
-    //   { scrollTop: sections[i].offsetTop - 40 },
-    //   {
-    //     complete: function() {
-    //       console.log(scrollingElement.scrollTop);
-    //     }
-    //   }
-    // );
     closeNavMenu();
+    closeContactForm();
+  };
+}
+
+for (let i = 0; i < desktopNavMenuOpt.length; i++) {
+  desktopNavMenuOpt[i].onclick = function() {
     closeContactForm();
   };
 }

@@ -179,7 +179,33 @@ img {
   z-index: 200;
 }
 
-.navMenuOpt:not(#navSocial) {
+.navMenuOpt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  color: #616161;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  height: 58px;
+  border-bottom: 2px solid #e8e8e8;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  right: 0;
+  -webkit-transition: top 0.1s;
+  transition: top 0.1s;
+  text-decoration: none;
+}
+
+.desktopNavMenuOpt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,11 +281,11 @@ img {
   display: none;
 }
 
-#desktopNavMenu a.navMenuOpt.active {
+#desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: #e8e8e8;
 }
 
-.formOpen #desktopNavMenu a.navMenuOpt.active {
+.formOpen #desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: whitesmoke;
 }
 
@@ -278,6 +304,9 @@ img {
   z-index: 200;
   -webkit-transition: top 0.1s;
   transition: top 0.1s;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
 }
 
 .navSocialMediaBtn {

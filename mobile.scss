@@ -207,7 +207,7 @@ $tabletDock: 71px;
   #navToggleBtn {
     display: none;
   }
-  .navMenuOpt:not(#navSocial) {
+  .desktopNavMenuOpt {
     top: initial;
     position: initial;
     padding: 4px 11px 0 11px;
@@ -225,7 +225,7 @@ $tabletDock: 71px;
     border-top: none;
     // border-bottom: none;
   }
-  a.navMenuOpt#lastNavOpt {
+  a.desktopNavMenuOpt#lastNavOpt {
     padding-right: 14px;
   }
 
@@ -483,7 +483,7 @@ $tabletDock: 71px;
     height: $tabletDock;
   }
 
-  #desktopNavMenu .navMenuOpt:active {
+  #desktopNavMenu .desktopNavMenuOpt:active {
     background-color: #e8e8e8;
   }
 }
@@ -493,7 +493,7 @@ $tabletDock: 71px;
   .logoTextTop {
     color: red;
   }
-  .navMenuOpt:not(#navSocial) {
+  .desktopNavMenuOpt {
     padding: 2px 16px 0 16px;
   }
 }
