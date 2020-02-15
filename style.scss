@@ -215,13 +215,11 @@ img {
 #desktopNavMenu {
   display: none;
 }
-// #desktopNavMenu .navMenuOpt:active {
-//   background-color: gainsboro;
-// }
 // current nav tab
 #desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: #e8e8e8;
 }
+// removes active tab color when form opened
 .formOpen #desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: whitesmoke;
 }
@@ -1023,9 +1021,9 @@ input.contactFormInput:valid + .formIcon {
 .doctorImg {
   position: absolute;
   height: auto;
-  width: 150px;
-  top: 12px;
-  left: 3px;
+  width: 160px;
+  top: 8px;
+  left: -12px;
 }
 .docProfile {
   /* background-color: pink; */

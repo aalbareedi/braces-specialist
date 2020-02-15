@@ -1367,9 +1367,9 @@ input.contactFormInput:valid + .formIcon {
 .doctorImg {
   position: absolute;
   height: auto;
-  width: 150px;
-  top: 12px;
-  left: 3px;
+  width: 160px;
+  top: 8px;
+  left: -12px;
 }
 
 .docProfile {
