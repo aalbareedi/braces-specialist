@@ -1575,21 +1575,8 @@ input.contactFormInput:valid + .formIcon {
   border-radius: 14px;
   height: 140px;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Nanum Gothic", sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 18px;
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
-  color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -1602,6 +1589,26 @@ input.contactFormInput:valid + .formIcon {
 
 #invisalignTreatment {
   background-image: url("images/invisalign.png");
+}
+
+.treatmentOverlay {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  color: white;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .bracesText {
