@@ -363,7 +363,7 @@ img {
   outline: none;
 }
 input.contactFormInput:valid {
-  background-image: url("images/icons/validCheckIcon.svg");
+  background-image: url("images/SVGs/validCheckIcon.svg");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: right 12px center;
@@ -734,13 +734,13 @@ input.contactFormInput:valid + .formIcon {
   background-position: center left 6%;
 }
 #statSmileImg {
-  background-image: url("images/icons/smilesIcon.svg");
+  background-image: url("images/SVGs/smilesIcon.svg");
 }
 #statClockImg {
-  background-image: url("images/icons/clockIcon.svg");
+  background-image: url("images/SVGs/clockIcon.svg");
 }
 #statToothImg {
-  background-image: url("images/icons/toothIcon.svg");
+  background-image: url("images/SVGs/toothIcon.svg");
 }
 .statNumber {
   font-family: "Poppins", sans-serif;
