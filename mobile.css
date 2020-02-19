@@ -499,11 +499,14 @@
   #aboutBraces {
     padding-bottom: 70px;
   }
+  .treatmentWrapper {
+    padding: 0 77px;
+  }
   .treatmentBox {
-    width: 80%;
+    width: 100%;
   }
   .treatmentOverlay {
-    font-size: 20px;
+    font-size: 22px;
   }
   .bracesText {
     font-size: 18px;

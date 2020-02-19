@@ -504,21 +504,17 @@ $tabletDock: 71px;
     grid-column-gap: 16px;
   }
 
-  // .bracesWrapper {
-  //   display: flex;
-  //   padding-left: 30px;
-  // }
-  // .treatmentOptions {
-  //   width: 50%;
-  // }
   #aboutBraces {
     padding-bottom: 70px;
   }
+  .treatmentWrapper {
+    padding: 0 77px;
+  }
   .treatmentBox {
-    width: 80%;
+    width: 100%;
   }
   .treatmentOverlay {
-    font-size: 20px;
+    font-size: 22px;
   }
   .bracesText {
     font-size: 18px;

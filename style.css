@@ -1285,7 +1285,6 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .aboutTitle {
-  /* color: white; */
   margin: 50px 0 50px 0;
 }
 
@@ -1371,7 +1370,6 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .docProfile {
-  /* background-color: pink; */
   position: relative;
 }
 
@@ -1583,7 +1581,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #bracesTreatment {
-  background-image: url("images/smile2.png");
+  background-image: url("images/colorBraces.png");
   margin-bottom: 30px;
 }
 
@@ -1609,6 +1607,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.5);
+  border: 4px solid white;
 }
 
 .bracesText {
