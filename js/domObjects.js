@@ -20,6 +20,7 @@ let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
 let scrollAwaiters = document.getElementsByClassName("awaitsScrolling");
 let scrollToElements = document.querySelectorAll("[data-scrollToAnimation]");
+let bracesVideo = document.getElementsByClassName("bracesVideo")[0];
 // nav
 let navbar = document.getElementById("navbar");
 let navToggleBtn = document.getElementById("navToggleBtn");

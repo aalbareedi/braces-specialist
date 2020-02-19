@@ -1622,6 +1622,13 @@ input.contactFormInput:valid + .formIcon {
   padding-top: 20px;
 }
 
+.bracesVideo {
+  width: 100%;
+  margin: 20px auto 0 auto;
+  padding: 0px 20px;
+  display: block;
+}
+
 /* **************************************** FAQ ***************************************** */
 #faq {
   background: #0d79a1;

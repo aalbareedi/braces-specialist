@@ -111,6 +111,16 @@ body.onscroll = function() {
       scrollToElements[i].classList.add("animated");
     }
   }
+
+  if (
+    scrollingElement.scrollTop + screen.height - 120 > bracesVideo.offsetTop &&
+    scrollingElement.scrollTop + screen.height - 120 <
+      bracesVideo.offsetTop + screen.height
+  ) {
+    bracesVideo.play();
+  } else {
+    bracesVideo.pause();
+  }
 };
 
 for (let i = 0; i < formInputFields.length; i++) {
