@@ -50,9 +50,6 @@ main {
 img {
   pointer-events: none;
 }
-
-// transform: translate(-50%, 0)
-
 .triangle {
   width: 0;
   height: 0;
@@ -113,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: orange;
+  // background-color: orange;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -942,7 +939,6 @@ input.contactFormInput:valid + .formIcon {
 .whyReason {
   display: flex;
   margin-bottom: 42px;
-  align-items: flex-start;
   background-color: pink;
 }
 .whyBulletPoint {
@@ -1329,10 +1325,6 @@ footer {
   font-size: 13px;
   height: 28px;
 }
-
-#emptyDockSpace {
-  height: $mobileDock;
-}
 #backToTopBtn {
   @include flexCenterXY();
   color: gainsboro;
@@ -1351,6 +1343,9 @@ footer {
 }
 .upIcon {
   font-size: 20px;
+}
+#emptyDockSpace {
+  height: $mobileDock;
 }
 .fas::before {
   padding: 1px;
@@ -1381,3 +1376,4 @@ footer {
 
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
+// transform: translate(-50%, 0)

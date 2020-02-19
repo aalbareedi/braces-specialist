@@ -134,7 +134,6 @@ img {
 }
 
 .logoTextBottom {
-  background-color: orange;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -1302,9 +1301,6 @@ input.contactFormInput:valid + .formIcon {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 42px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   background-color: pink;
 }
 
@@ -1762,10 +1758,6 @@ footer {
   height: 28px;
 }
 
-#emptyDockSpace {
-  height: 58px;
-}
-
 #backToTopBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1794,6 +1786,10 @@ footer {
 
 .upIcon {
   font-size: 20px;
+}
+
+#emptyDockSpace {
+  height: 58px;
 }
 
 .fas::before {
