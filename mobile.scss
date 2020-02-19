@@ -228,6 +228,9 @@ $tabletDock: 71px;
   a.desktopNavMenuOpt#lastNavOpt {
     padding-right: 14px;
   }
+  #desktopNavMenu .desktopNavMenuOpt:active {
+    background-color: #e8e8e8;
+  }
 
   /*** FORM ***/
   .backArrow {
@@ -339,11 +342,11 @@ $tabletDock: 71px;
     margin: 70px 0 60px 0;
   }
   .aboutText {
-    padding-right: 50px;
+    padding-right: 70px;
     letter-spacing: 0.5px;
     line-height: 32px;
     font-size: 18px;
-    margin-left: 46px;
+    margin-left: 56px;
   }
   .whyTitle {
     margin-top: 80px;
@@ -351,6 +354,7 @@ $tabletDock: 71px;
   }
   .whyReason {
     margin-bottom: 48px;
+    margin-left: 16px;
   }
   .whyText {
     font-size: 18px;
@@ -358,7 +362,18 @@ $tabletDock: 71px;
     letter-spacing: 0.5px;
   }
   .whyBulletPoint {
-    font-size: 30px;
+    font-size: 28px;
+  }
+
+  /*** DOCTOR ***/
+
+  .docContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .docInfo {
+    width: 40%;
+    padding-top: 10px;
   }
 
   /*** REVIEWS ***/
@@ -408,6 +423,16 @@ $tabletDock: 71px;
   }
   .faqQuestionText {
     letter-spacing: 1px;
+    padding-left: 76px;
+  }
+  .faqNumber {
+    left: 46px;
+  }
+  .faqAnswer {
+    margin-left: 76px;
+    letter-spacing: 0.7px;
+    padding-right: 70px;
+    padding-bottom: 54px;
   }
 
   /*** HOURS & LOCATION ***/
@@ -479,12 +504,35 @@ $tabletDock: 71px;
     grid-column-gap: 16px;
   }
 
-  #emptyDockSpace {
-    height: $tabletDock;
+  // .bracesWrapper {
+  //   display: flex;
+  //   padding-left: 30px;
+  // }
+  // .treatmentOptions {
+  //   width: 50%;
+  // }
+  #aboutBraces {
+    padding-bottom: 70px;
+  }
+  .treatmentBox {
+    width: 80%;
+  }
+  .treatmentOverlay {
+    font-size: 20px;
+  }
+  .bracesText {
+    font-size: 18px;
+    margin-left: 76px;
+    margin-right: 78px;
+    letter-spacing: 0.6px;
+  }
+  .bracesVideo {
+    padding: 0px 77px;
+    margin: 40px auto 0 auto;
   }
 
-  #desktopNavMenu .desktopNavMenuOpt:active {
-    background-color: #e8e8e8;
+  #emptyDockSpace {
+    height: $tabletDock;
   }
 }
 
