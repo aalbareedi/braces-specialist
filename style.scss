@@ -827,7 +827,7 @@ input.contactFormInput:valid + .formIcon {
   position: relative;
   margin: 50px 0;
   line-height: 21px;
-  padding-left: 21px;
+  padding-left: 23px;
 }
 .officeInfoIcon {
   position: absolute;
@@ -849,11 +849,8 @@ input.contactFormInput:valid + .formIcon {
 }
 .officeInfoText {
   text-align: center;
-  letter-spacing: 0.8px;
-  color: white;
-}
-#addressText {
   letter-spacing: 1px;
+  color: white;
 }
 .officeMap {
   padding: 0 22px 0 22px;
@@ -946,17 +943,20 @@ input.contactFormInput:valid + .formIcon {
   display: flex;
   margin-bottom: 42px;
   align-items: flex-start;
+  background-color: pink;
 }
 .whyBulletPoint {
   font-size: 23px;
   line-height: 20px;
   margin-left: 7px;
+  background: yellow;
 }
 .whyText {
   padding-left: 6px;
   padding-right: 13px;
   line-height: 22px;
   letter-spacing: 0.3px;
+  background: orange;
 }
 /* ****************************************** DOCTOR ******************************************* */
 #doctor {

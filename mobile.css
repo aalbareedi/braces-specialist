@@ -351,6 +351,7 @@
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.5px;
+    padding-right: 0px;
   }
   .whyBulletPoint {
     font-size: 28px;
@@ -388,11 +389,11 @@
     font-size: 100px;
   }
   .leftQuoteIcon {
-    left: 40px;
+    left: 71px;
     top: 60px;
   }
   .rightQuoteIcon {
-    right: 40px;
+    right: 70px;
     top: 370px;
   }
   .slick-dots li button:before {
@@ -480,7 +481,7 @@
     display: flex;
   }
   .socialMediaBtn {
-    width: 70px;
+    width: 60px;
     height: 60px;
   }
   .socialBtnIcon {
