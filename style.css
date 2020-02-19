@@ -1608,7 +1608,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.5);
-  border: 4px solid white;
+  border: 4px solid #bcbec0;
 }
 
 .bracesText {
