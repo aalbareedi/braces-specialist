@@ -82,19 +82,28 @@ body.onscroll = function() {
 
   // console.log(statCases.offsetTop);
   // position property affects statYear.offsetTop
-  if (scrollingElement.scrollTop + screen.height - 70 > statYear.offsetTop) {
+  if (
+    scrollingElement.scrollTop + screen.height - 80 >
+    getAbsoluteOffsetTop(statYear)
+  ) {
     if (statYear.innerHTML == 1) {
       scrollYearCounter();
     }
   }
 
-  if (scrollingElement.scrollTop + screen.height - 70 > statCases.offsetTop) {
+  if (
+    scrollingElement.scrollTop + screen.height - 80 >
+    getAbsoluteOffsetTop(statCases)
+  ) {
     if (statCases.innerHTML == 1) {
       scrollCasesCounter();
     }
   }
 
-  if (scrollingElement.scrollTop + screen.height - 70 > statPercent.offsetTop) {
+  if (
+    scrollingElement.scrollTop + screen.height - 80 >
+    getAbsoluteOffsetTop(statPercent)
+  ) {
     if (statPercent.innerHTML == 1) {
       scrollPercentCounter();
     }

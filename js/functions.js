@@ -237,3 +237,13 @@ function fetchWithTimeout(url, options, duration) {
     })
   ]);
 }
+
+function getAbsoluteOffsetTop(element) {
+  let offsetTop = 0;
+  let temp = element;
+  do {
+    offsetTop += temp.offsetTop || 0;
+    temp = temp.offsetParent;
+  } while (temp);
+  return offsetTop;
+}
