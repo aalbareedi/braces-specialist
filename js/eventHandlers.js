@@ -83,7 +83,7 @@ body.onscroll = function() {
   // console.log(statCases.offsetTop);
   // position property affects statYear.offsetTop
   if (
-    scrollingElement.scrollTop + screen.height - 40 >
+    scrollingElement.scrollTop + screen.height - 180 >
     getAbsoluteOffsetTop(statYear)
   ) {
     if (statYear.innerHTML == 1) {
@@ -92,7 +92,7 @@ body.onscroll = function() {
   }
 
   if (
-    scrollingElement.scrollTop + screen.height - 40 >
+    scrollingElement.scrollTop + screen.height - 180 >
     getAbsoluteOffsetTop(statCases)
   ) {
     if (statCases.innerHTML == 1) {
@@ -101,7 +101,7 @@ body.onscroll = function() {
   }
 
   if (
-    scrollingElement.scrollTop + screen.height - 40 >
+    scrollingElement.scrollTop + screen.height - 180 >
     getAbsoluteOffsetTop(statPercent)
   ) {
     if (statPercent.innerHTML == 1) {
