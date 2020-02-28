@@ -520,6 +520,7 @@
   .bracesVideo {
     padding: 0px 77px;
     margin: 40px auto 0 auto;
+    width: 100%;
     display: block;
   }
   .bracesGif {
