@@ -328,6 +328,7 @@
   /*** ABOUT ***/
   #aboutUs {
     background-color: whitesmoke;
+    border-radius: 0;
   }
   .aboutTitle {
     margin: 70px 0 60px 0;
@@ -519,6 +520,10 @@
   .bracesVideo {
     padding: 0px 77px;
     margin: 40px auto 0 auto;
+    display: block;
+  }
+  .bracesGif {
+    display: none;
   }
   #emptyDockSpace {
     height: 71px;

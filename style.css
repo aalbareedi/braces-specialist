@@ -134,6 +134,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: orange;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -1568,7 +1569,7 @@ input.contactFormInput:valid + .formIcon {
 .treatmentBox {
   margin: 0 auto 20px auto;
   border-radius: 14px;
-  height: 140px;
+  height: 120px;
   width: 90%;
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
@@ -1619,7 +1620,7 @@ input.contactFormInput:valid + .formIcon {
   width: 100%;
   margin: 30px auto 0 auto;
   padding: 0px 20px;
-  display: block;
+  display: none;
 }
 
 .gifWrapper {

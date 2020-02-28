@@ -393,15 +393,21 @@
             to.
           </div>
           <div class="gifWrapper">
-            <img
-              src="fixTeeth.gif"
-              alt="Braces correcting teeth"
-              class="bracesGif"
-            />
+            <picture>
+              <source
+                media="only screen and (max-width: 767px)"
+                srcset="fixTeeth.gif"
+              />
+              <img
+                class="bracesGif"
+                src="images/SVGs/toothIcon.svg"
+                alt="braces"
+              />
+            </picture>
           </div>
 
-          <!-- <video class="bracesVideo" loop muted playsinline controls autoplay>
-            <source
+          <video class="bracesVideo" loop muted playsinline controls autoplay>
+            <!-- <source
               src="braces480.mp4"
               type="video/mp4"
               media="only screen and (max-width: 767px)"
@@ -415,7 +421,7 @@
               src="braces480.ogv"
               type="video/ogg"
               media="only screen and (max-width: 767px)"
-            />
+            /> -->
             <source
               src="braces720.mp4"
               type="video/mp4"
@@ -431,7 +437,7 @@
               type="video/ogg"
               media="only screen and (min-width: 768px)"
             />
-          </video> -->
+          </video>
         </div>
 
         <div id="faq">
