@@ -358,6 +358,14 @@
     padding-right: 0px;
     width: 100%;
   }
+  .whyContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .awardImg {
+    height: 240px;
+  }
   /*** DOCTOR ***/
   .docContainer {
     display: -webkit-box;
