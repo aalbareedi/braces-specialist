@@ -110,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: orange;
+  // background-color: orange;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -725,9 +725,9 @@ input.contactFormInput:valid + .formIcon {
 .statBox {
   @include flexCenterXY();
   flex-direction: column;
-  height: 130px;
+  height: 150px;
   background-repeat: no-repeat;
-  background-size: 80px;
+  background-size: 100px;
   background-position: center left 6%;
 }
 #statSmileImg {
@@ -788,7 +788,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .officeInfoTitle {
   color: white;
-  margin: 50px 0 50px 0;
 }
 .officeInfoSchedule {
   display: flex;
@@ -923,18 +922,12 @@ input.contactFormInput:valid + .formIcon {
   border-radius: 0px 0px 190px 190px;
   box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
 }
-.aboutTitle {
-  margin: 50px 0 50px 0;
-}
 .aboutText {
   line-height: 28px;
   letter-spacing: 0.4px;
   font-size: 15px;
   margin-left: 20px;
   padding-right: 15px;
-}
-.whyTitle {
-  margin: 50px 0 50px 0;
 }
 .whyReason {
   display: flex;
@@ -1074,6 +1067,7 @@ input.contactFormInput:valid + .formIcon {
   font-size: 20px;
   letter-spacing: 0.7px;
   font-family: "Nanum Gothic", sans-serif;
+  margin: 50px 0 60px 0;
 }
 /* ****************************************** REVIEWS ******************************************* */
 .reviews {
@@ -1093,6 +1087,7 @@ input.contactFormInput:valid + .formIcon {
   top: 56px;
   color: white;
   width: 100%;
+  margin: 0;
 }
 #reviewSlider {
   height: 480px;
@@ -1166,11 +1161,10 @@ input.contactFormInput:valid + .formIcon {
 #treatmentOptions {
   background: #6b62d1;
   padding-top: 10px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
 }
 .bracesTitle {
   color: white;
-  margin: 40px 0 50px 0;
 }
 .treatmentBox {
   margin: 0 auto 20px auto;
@@ -1228,7 +1222,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .faqTitle {
   color: white;
-  margin: 40px 0 50px 0;
 }
 .faqQuestion {
   position: relative;
