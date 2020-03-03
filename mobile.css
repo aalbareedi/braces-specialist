@@ -1,8 +1,5 @@
 /* ipod touch (smaller than iphone5) - firefox/edge/chrome */
 @media only screen and (max-width: 320px) and (max-height: 453px), (height: 460px) {
-  .bgImg {
-    background-position: bottom 0px left 0px;
-  }
   .logoTextBottom {
     color: red;
   }
@@ -43,9 +40,6 @@
   #navInstagramIcon {
     font-size: 26px;
   }
-  .bgImg {
-    background-position: bottom 0px left -38px;
-  }
   .landingHeading {
     font-size: 44px;
   }
@@ -82,9 +76,6 @@
 
 /* iphone 7 (firefox/edge/chrome)  */
 @media only screen and (min-width: 375px) and (max-height: 552px), only screen and (min-width: 375px) and (height: 559px) {
-  .bgImg {
-    background-position: bottom 0px left 0px;
-  }
   .logoTextBottom {
     color: green;
   }
@@ -551,9 +542,6 @@
 
 /* iPhone X */
 @media only screen and (max-width: 375px) and (min-height: 800px) {
-  .bgImg {
-    background-position: bottom 0px left -130px;
-  }
   .logoTextBottom {
     background-color: yellow;
   }
