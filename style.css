@@ -930,13 +930,13 @@ input.contactFormInput:valid + .formIcon {
 
 .bgImg {
   height: 100%;
+  min-width: 100vw;
   background-image: url("images/smilebg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  min-width: 100vw;
 }
 
 .gradient {
@@ -979,7 +979,7 @@ input.contactFormInput:valid + .formIcon {
   color: black;
   line-height: 21px;
   letter-spacing: 0.4px;
-  font-size: 16px;
+  font-size: 15px;
   width: 83%;
   margin-top: 9px;
   margin-bottom: 87px;
@@ -1554,7 +1554,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 /* ******************************* ABOUT BRACES TREATMENT ******************************** */
-#aboutBraces {
+#treatmentOptions {
   background: #6b62d1;
   padding-top: 10px;
   padding-bottom: 34px;
@@ -1573,6 +1573,9 @@ input.contactFormInput:valid + .formIcon {
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -1824,5 +1827,10 @@ footer {
 /* font-family: "Titillium Web", sans-serif; */
 /* font-family: "Volkhov", serif; */
 /* background: linear-gradient(to bottom right, #ff9966 0%, #9900ff 100%); */
+/* background-image: linear-gradient(
+      180deg,
+      rgba(245, 186, 144, 0) 22%,
+      rgba(245, 186, 144, 1) 55%
+    ); */
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
 /*# sourceMappingURL=style.css.map */

@@ -403,6 +403,34 @@
   .slick-dots li {
     margin: 0 8px;
   }
+  /*** TREATMENT OPTIONS ***/
+  #treatmentOptions {
+    padding-bottom: 70px;
+  }
+  .treatmentWrapper {
+    padding: 0 77px;
+  }
+  .treatmentBox {
+    width: 100%;
+  }
+  .treatmentOverlay {
+    font-size: 22px;
+  }
+  .bracesText {
+    font-size: 18px;
+    margin-left: 76px;
+    margin-right: 78px;
+    letter-spacing: 0.6px;
+  }
+  .bracesVideo {
+    padding: 0px 77px;
+    margin: 40px auto 0 auto;
+    width: 100%;
+    display: block;
+  }
+  .bracesGif {
+    display: none;
+  }
   /*** FAQ ***/
   #faq {
     padding-bottom: 20px;
@@ -497,33 +525,6 @@
   }
   .socialButtons {
     grid-column-gap: 16px;
-  }
-  #aboutBraces {
-    padding-bottom: 70px;
-  }
-  .treatmentWrapper {
-    padding: 0 77px;
-  }
-  .treatmentBox {
-    width: 100%;
-  }
-  .treatmentOverlay {
-    font-size: 22px;
-  }
-  .bracesText {
-    font-size: 18px;
-    margin-left: 76px;
-    margin-right: 78px;
-    letter-spacing: 0.6px;
-  }
-  .bracesVideo {
-    padding: 0px 77px;
-    margin: 40px auto 0 auto;
-    width: 100%;
-    display: block;
-  }
-  .bracesGif {
-    display: none;
   }
   #emptyDockSpace {
     height: 71px;

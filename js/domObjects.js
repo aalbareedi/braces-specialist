@@ -9,11 +9,13 @@ let mainDock = document.getElementById("mainDock");
 let dockContactBtns = document.getElementsByClassName("dockContactBtn");
 let messageBtn = document.getElementById("messageBtn");
 let backToTopBtn = document.getElementById("backToTopBtn");
+
 let aboutUsSection = document.getElementById("aboutUs");
 let doctorSection = document.getElementById("doctor");
-let aboutBracesSection = document.getElementById("aboutBraces");
+let aboutBracesSection = document.getElementById("treatmentOptions");
 let officeInfoSection = document.getElementById("officeInfo");
 let faqSection = document.getElementById("faq");
+
 let stats = document.getElementById("stats");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
