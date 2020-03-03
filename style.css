@@ -965,7 +965,7 @@ input.contactFormInput:valid + .formIcon {
   font-style: italic;
   font-size: 38px;
   letter-spacing: 2px;
-  color: white;
+  color: #0083e7;
   width: 68%;
   margin-left: 10px;
 }
@@ -976,7 +976,7 @@ input.contactFormInput:valid + .formIcon {
 
 .landingSubHeading {
   font-family: "Titillium Web", sans-serif;
-  color: white;
+  color: black;
   line-height: 21px;
   letter-spacing: 0.4px;
   font-size: 16px;
