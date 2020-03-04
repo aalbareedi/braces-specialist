@@ -126,6 +126,18 @@
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
+  #landingBox {
+    height: calc(100vh - 129px);
+  }
+  .landingHeading {
+    font-size: 66px;
+    width: 54%;
+  }
+  .landingSubHeading {
+    font-size: 24px;
+    line-height: 30px;
+    width: 50%;
+  }
   .sectionTitle {
     font-size: 24px;
   }
@@ -177,9 +189,6 @@
   }
   .formBtnIcon {
     font-size: 24px;
-  }
-  #landingBox {
-    height: calc(100vh - 129px);
   }
   /*** NAV ****/
   #navToggleBtn {
