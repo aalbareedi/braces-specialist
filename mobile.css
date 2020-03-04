@@ -447,6 +447,9 @@
   .bracesGif {
     display: none;
   }
+  .gifWrapper {
+    display: none;
+  }
   /*** FAQ ***/
   #faq {
     padding-bottom: 20px;
@@ -555,6 +558,10 @@
   .desktopNavMenuOpt {
     padding: 2px 16px 0 16px;
   }
+}
+
+.mainDock {
+  display: none;
 }
 
 /* iPhone X */

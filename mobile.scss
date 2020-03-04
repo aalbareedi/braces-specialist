@@ -452,6 +452,9 @@ $tabletDock: 71px;
   .bracesGif {
     display: none;
   }
+  .gifWrapper {
+    display: none;
+  }
 
   /*** FAQ ***/
   #faq {
@@ -560,6 +563,15 @@ $tabletDock: 71px;
     padding: 2px 16px 0 16px;
   }
 }
+
+// @media only screen and (min-width: 1024px) {
+// }
+
+// @media only screen and (min-width: 1024px) {
+.mainDock {
+  display: none;
+}
+// }
 
 /* iPhone X */
 @media only screen and (max-width: 375px) and (min-height: 800px) {
