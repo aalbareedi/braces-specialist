@@ -134,7 +134,6 @@ img {
 }
 
 .logoTextBottom {
-  background-color: gray;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -964,7 +963,7 @@ input.contactFormInput:valid + .formIcon {
 .landingHeading {
   font-family: "Russo One", sans-serif;
   font-style: italic;
-  font-size: 38px;
+  font-size: 36px;
   letter-spacing: 2px;
   color: #0094f0;
   width: 68%;
