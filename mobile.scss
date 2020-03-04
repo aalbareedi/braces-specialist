@@ -423,8 +423,12 @@ $tabletDock: 71px;
   #treatmentOptions {
     padding-bottom: 70px;
   }
-  .treatmentWrapper {
+  .treatmentOptionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
     padding: 0 77px;
+    grid-row-gap: initial;
   }
   .treatmentBox {
     width: 100%;

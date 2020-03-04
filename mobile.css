@@ -416,8 +416,14 @@
   #treatmentOptions {
     padding-bottom: 70px;
   }
-  .treatmentWrapper {
+  .treatmentOptionsGrid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
     padding: 0 77px;
+    grid-row-gap: initial;
   }
   .treatmentBox {
     width: 100%;

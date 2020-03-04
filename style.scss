@@ -1166,11 +1166,18 @@ input.contactFormInput:valid + .formIcon {
 .bracesTitle {
   color: white;
 }
+.treatmentOptionsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  padding: 0 20px;
+}
 .treatmentBox {
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   border-radius: 14px;
   height: 120px;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
   background-size: cover;
   -webkit-background-size: cover;
@@ -1181,7 +1188,6 @@ input.contactFormInput:valid + .formIcon {
 }
 #bracesTreatment {
   background-image: url("images/colorBraces.png");
-  margin-bottom: 30px;
 }
 #invisalignTreatment {
   background-image: url("images/invisalign.png");
@@ -1203,7 +1209,7 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
   margin-left: 20px;
   margin-right: 19px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .bracesVideo {
   display: none;
