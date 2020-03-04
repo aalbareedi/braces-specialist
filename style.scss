@@ -929,17 +929,6 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 20px;
   padding-right: 15px;
 }
-.beforeAfterWrapper {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 170px;
-  // background-position: center left 6%;
-  background-image: url("images/beforeAfter.svg");
-}
-.beforeAfterImg {
-  width: 100%;
-}
 .whyReason {
   display: flex;
   margin-bottom: 42px;
@@ -1172,7 +1161,7 @@ input.contactFormInput:valid + .formIcon {
 #treatmentOptions {
   background: #6b62d1;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .bracesTitle {
   color: white;
@@ -1187,7 +1176,7 @@ input.contactFormInput:valid + .formIcon {
 .treatmentBox {
   margin: 0 auto;
   border-radius: 14px;
-  height: 120px;
+  height: 100px;
   width: 100%;
   box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
   background-size: cover;
@@ -1218,16 +1207,24 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   line-height: 28px;
   letter-spacing: 0.4px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  // margin-bottom: 20px;
 }
 .bracesVideo {
   display: none;
 }
 .gifWrapper {
-  padding: 30px 20px 0 20px;
+  padding: 0 20px;
+  margin-top: 30px;
 }
 .bracesGif {
   width: 100%;
+}
+.beforeAfterImg {
+  width: 100%;
+  margin-top: 30px;
 }
 /* **************************************** FAQ ***************************************** */
 #faq {
