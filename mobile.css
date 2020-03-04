@@ -421,7 +421,7 @@
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[1];
         grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
     padding: 0 77px;
     grid-row-gap: initial;
   }
@@ -435,6 +435,7 @@
     font-size: 18px;
     margin-left: 76px;
     margin-right: 78px;
+    margin-top: 30px;
     letter-spacing: 0.6px;
   }
   .bracesVideo {
