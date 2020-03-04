@@ -652,11 +652,11 @@ input.contactFormInput:valid + .formIcon {
 #landingBox {
   height: calc(100vh - 116px);
   position: relative;
+  min-width: 100vw;
   // background-image: url("images/smile.png");
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position: bottom 0px left -15px;
-  min-width: 100vw;
   /* background-attachment: fixed; */
 }
 .bgImg {
@@ -928,6 +928,17 @@ input.contactFormInput:valid + .formIcon {
   font-size: 15px;
   margin-left: 20px;
   padding-right: 15px;
+}
+.beforeAfterWrapper {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 170px;
+  // background-position: center left 6%;
+  background-image: url("images/beforeAfter.svg");
+}
+.beforeAfterImg {
+  width: 100%;
 }
 .whyReason {
   display: flex;
@@ -1207,9 +1218,7 @@ input.contactFormInput:valid + .formIcon {
   color: white;
   line-height: 28px;
   letter-spacing: 0.4px;
-  margin-left: 20px;
-  margin-right: 19px;
-  margin-top: 20px;
+  margin: 20px;
 }
 .bracesVideo {
   display: none;
