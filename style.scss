@@ -273,7 +273,7 @@ img {
 }
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: lightgray;
+  background-color: darkgray;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -301,8 +301,8 @@ img {
   position: absolute;
   left: 0px;
   top: 0;
-  font-size: 22px;
-  color: gray;
+  font-size: 24px;
+  color: whitesmoke;
   height: 70px;
   width: 60px;
   padding-top: 6px;
@@ -311,8 +311,8 @@ img {
   color: black;
 }
 .messageMenuTitle {
-  font-size: 20px;
-  color: gray;
+  font-size: 22px;
+  color: whitesmoke;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -321,7 +321,7 @@ img {
   height: 90px;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: whitesmoke;
   letter-spacing: 0.3px;
 }
 .formOption {
@@ -333,7 +333,7 @@ img {
   right: 15px;
   top: 17px;
   font-size: 22px;
-  color: #909090;
+  color: whitesmoke;
 }
 #fullNameIcon {
   right: 16px;
@@ -343,7 +343,7 @@ img {
   font-size: 14px;
   display: block;
   letter-spacing: 0.3px;
-  color: #444444;
+  color: whitesmoke;
 }
 .formAsterik {
   color: red;
@@ -367,9 +367,10 @@ img {
   letter-spacing: 0.6px;
   padding-right: 40px;
   padding-top: 2px;
+  color: #484848;
 }
 .contactFormInput:focus {
-  border: 2px solid #48b5f3;
+  border: 2px solid #626262;
   outline: none;
 }
 input.contactFormInput:valid {
@@ -383,15 +384,15 @@ input.contactFormInput:valid + .formIcon {
 }
 .contactFormInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: gray;
+  color: whitesmoke;
   opacity: 1;
 }
 .contactFormInput::-webkit-input-placeholder {
-  color: gray;
+  color: whitesmoke;
 }
 .contactFormInput::-ms-input-placeholder {
   /* Internet Explorer 10-11, Edge */
-  color: gray;
+  color: whitesmoke;
 }
 .formMessage {
   padding: 0px 20px 150px 20px;
@@ -401,21 +402,21 @@ input.contactFormInput:valid + .formIcon {
   height: 140px;
 }
 #messageInput:focus {
-  border: 2px solid #48b5f3;
+  border: 2px solid #626262;
   outline: none;
 }
 #messageInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #999;
+  color: whitesmoke;
   opacity: 1;
 }
 #messageInput:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #999;
+  color: whitesmoke;
 }
 #messageInput::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #999;
+  color: whitesmoke;
 }
 #formButtons {
   background-color: whitesmoke;
@@ -457,12 +458,12 @@ input.contactFormInput:valid + .formIcon {
   color: white;
 }
 .formBtnIcon {
-  font-size: 20px;
+  font-size: 22px;
 }
-.contactFormBtnText {
-  font-size: 15px;
+.formBtnText {
   letter-spacing: 0.5px;
   margin-left: 10px;
+  font-size: 16px;
 }
 /* ********************************** FORM OVERLAYS ************************************ */
 .formOverlay {
@@ -653,7 +654,7 @@ input.contactFormInput:valid + .formIcon {
 .bgImg {
   height: 100%;
   min-width: 100vw;
-  background-image: url("images/smilebg1CUT.png");
+  background-image: url("images/smilebg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;

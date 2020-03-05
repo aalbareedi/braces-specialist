@@ -59,11 +59,11 @@ $tabletDock: 71px;
   .contactFormInput {
     font-size: 17px;
   }
-  .contactFormBtnText {
-    font-size: 16px;
+  .formBtnText {
+    font-size: 18px;
   }
   .formBtnIcon {
-    font-size: 18px;
+    font-size: 24px;
   }
   .statBox {
     height: 170px;
@@ -74,9 +74,6 @@ $tabletDock: 71px;
   }
   .reviewSlideText {
     font-size: 18px;
-  }
-  .faqTitle {
-    margin: 50px 0 50px 0;
   }
   .treatmentBox {
     height: 120px;
@@ -198,12 +195,6 @@ $tabletDock: 71px;
   #formButtons {
     padding: 10px;
     border-top: 3px solid gainsboro;
-  }
-  .contactFormBtnText {
-    font-size: 20px;
-  }
-  .formBtnIcon {
-    font-size: 24px;
   }
 
   /*** NAV ****/
@@ -342,19 +333,12 @@ $tabletDock: 71px;
     background-color: whitesmoke;
     border-radius: 0;
   }
-  .aboutTitle {
-    margin: 70px 0 60px 0;
-  }
   .aboutText {
     padding-right: 70px;
     letter-spacing: 0.5px;
     line-height: 32px;
     font-size: 18px;
     margin-left: 56px;
-  }
-  .whyTitle {
-    margin-top: 80px;
-    margin-bottom: 70px;
   }
   .whyReason {
     margin-bottom: 48px;
@@ -463,9 +447,6 @@ $tabletDock: 71px;
   #faq {
     padding-bottom: 20px;
   }
-  .faqTitle {
-    margin: 60px 0 80px 0;
-  }
   .faqQuestion {
     font-size: 18px;
   }
@@ -484,9 +465,6 @@ $tabletDock: 71px;
   }
 
   /*** HOURS & LOCATION ***/
-  .officeInfoTitle {
-    margin: 60px 0 60px 0;
-  }
   .officeWrapper {
     width: 50%;
   }
