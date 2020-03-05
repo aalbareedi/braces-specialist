@@ -163,13 +163,11 @@ $tabletDock: 71px;
     font-size: 22px;
   }
   #mainDock {
-    grid-column-gap: 10px;
-    padding: 10px;
-    border-top: 3px solid gainsboro;
+    border-top: 3px solid #e8e8e8;
   }
   .dockContactBtn {
-    height: 48px;
-    border: 4px solid silver;
+    height: 68px;
+    border-right: 3px solid #e8e8e8;
   }
   .contactBtnText {
     font-size: 18px;
@@ -181,20 +179,6 @@ $tabletDock: 71px;
   }
   #messageIcon {
     margin-right: 8px;
-  }
-  .contactFormBtn {
-    height: 48px;
-    border: 4px solid silver;
-  }
-  .formSubmitBtnReady {
-    border: none;
-  }
-  #contactForm.displayHidden #formButtons {
-    bottom: -$tabletDock;
-  }
-  #formButtons {
-    padding: 10px;
-    border-top: 3px solid gainsboro;
   }
 
   /*** NAV ****/
@@ -286,6 +270,25 @@ $tabletDock: 71px;
   }
   input.contactFormInput:valid {
     background-size: 32px;
+  }
+  .contactFormBtn {
+    height: 68px;
+    border-right: 3px solid #e8e8e8;
+  }
+  .formSubmitBtnReady {
+    border: none;
+  }
+  #contactForm.displayHidden #formButtons {
+    bottom: -$tabletDock;
+  }
+  #formButtons {
+    border-top: 3px solid #e8e8e8;
+  }
+  .formBtnText {
+    font-size: 24px;
+  }
+  .formBtnIcon {
+    font-size: 30px;
   }
 
   /*** STATS ***/

@@ -374,6 +374,7 @@ img {
   -webkit-transition: top 0.3s ease-in-out;
   transition: top 0.3s ease-in-out;
   width: 100%;
+  padding-top: 10px;
 }
 
 #contactForm.displayHidden {
@@ -386,18 +387,12 @@ img {
 }
 
 .formTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  color: #e8e8e8;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .backArrow {
@@ -412,28 +407,21 @@ img {
           align-items: center;
   position: absolute;
   left: 0px;
-  top: 0;
+  top: 30px;
   font-size: 26px;
   color: #e8e8e8;
-  height: 70px;
+  height: 60px;
   width: 60px;
-  padding-top: 10px;
 }
 
 .backArrow:active {
   color: gray;
 }
 
-.messageMenuTitle {
-  font-size: 22px;
-  color: #e8e8e8;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
 .formDescription {
   padding: 0px 20px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   line-height: 20px;
   color: #e8e8e8;
   letter-spacing: 0.3px;
@@ -935,7 +923,7 @@ input.contactFormInput:valid + .formIcon {
 .landingHeading {
   font-family: "Russo One", sans-serif;
   font-style: italic;
-  font-size: 36px;
+  font-size: 34px;
   letter-spacing: 2px;
   color: #0094f0;
   width: 68%;
@@ -1579,7 +1567,7 @@ input.contactFormInput:valid + .formIcon {
   font-size: 18px;
   color: white;
   background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #bcbec0;
+  border: 3px solid #bcbec0;
 }
 
 .bracesText {
