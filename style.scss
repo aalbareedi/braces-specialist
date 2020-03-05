@@ -130,7 +130,7 @@ img {
   opacity: 0.8;
 }
 #navToggleBtn:active {
-  background-color: gainsboro;
+  background-color: #e8e8e8;
 }
 #navToggleIcon {
   outline: none;
@@ -273,7 +273,7 @@ img {
 }
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: silver;
+  background-color: lightgray;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -333,7 +333,7 @@ img {
   right: 15px;
   top: 17px;
   font-size: 22px;
-  color: darkgray;
+  color: #909090;
 }
 #fullNameIcon {
   right: 16px;
@@ -357,9 +357,8 @@ img {
   position: relative;
 }
 .contactFormInput {
-  background-color: gainsboro;
+  background-color: silver;
   height: 54px;
-  // border: 2px solid #e8e8e8;
   border: none;
   padding-left: 11px;
   width: 100%;
@@ -378,7 +377,6 @@ input.contactFormInput:valid {
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: right 12px center;
-  // background-color: white;
 }
 input.contactFormInput:valid + .formIcon {
   opacity: 0;
@@ -420,12 +418,12 @@ input.contactFormInput:valid + .formIcon {
   color: #999;
 }
 #formButtons {
-  background-color: #e8e8e8;
+  background-color: whitesmoke;
   width: 100%;
   position: fixed;
   bottom: 0px;
   display: flex;
-  border-top: 2px solid gainsboro;
+  border-top: 2px solid #e8e8e8;
   transition: bottom 0.3s;
 }
 .contactFormBtn {
@@ -439,18 +437,11 @@ input.contactFormInput:valid + .formIcon {
   border-right: 2px solid #e8e8e8;
 }
 .formSubmitBtnDisabled {
-  // border: 3px solid gainsboro;
-  color: silver;
-  opacity: 0.6;
-  // margin-right: 4px;
-  background-color: whitesmoke;
+  color: #dfdfdf;
 }
 .formSubmitBtnReady {
-  border: none;
-  color: white;
-  // margin-right: 4px;
-  background-color: #10b020;
-  background: linear-gradient(to bottom, #30c930 0%, #079515 100%);
+  color: #10b020;
+  background-color: #bdd9b8;
 }
 .formSubmitBtnReady:active {
   background: #0b7a16;
@@ -462,11 +453,11 @@ input.contactFormInput:valid + .formIcon {
   border-right: none;
 }
 #formCancelBtn:active {
-  background-color: silver;
+  background-color: #e8e8e8;
   color: white;
 }
 .formBtnIcon {
-  font-size: 16px;
+  font-size: 20px;
 }
 .contactFormBtnText {
   font-size: 15px;
@@ -615,6 +606,9 @@ input.contactFormInput:valid + .formIcon {
 .dockContactBtn:active .contactBtnText {
   color: white;
 }
+.dockContactBtn:active .contactIcon {
+  color: white;
+}
 .dockContactBtn:active #directionsIcon {
   font-size: 14px;
 }
@@ -642,6 +636,7 @@ input.contactFormInput:valid + .formIcon {
 .contactBtnText {
   color: #616161;
   font-size: 13px;
+  letter-spacing: 0.5px;
   font-family: "Roboto", sans-serif;
 }
 /* ************************************** LANDING BOX ****************************************** */

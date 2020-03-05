@@ -162,7 +162,7 @@ img {
 }
 
 #navToggleBtn:active {
-  background-color: gainsboro;
+  background-color: #e8e8e8;
 }
 
 #navToggleIcon {
@@ -364,7 +364,7 @@ img {
 
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: silver;
+  background-color: lightgray;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -450,7 +450,7 @@ img {
   right: 15px;
   top: 17px;
   font-size: 22px;
-  color: darkgray;
+  color: #909090;
 }
 
 #fullNameIcon {
@@ -479,7 +479,7 @@ img {
 }
 
 .contactFormInput {
-  background-color: gainsboro;
+  background-color: silver;
   height: 54px;
   border: none;
   padding-left: 11px;
@@ -589,14 +589,14 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #formButtons {
-  background-color: #e8e8e8;
+  background-color: whitesmoke;
   width: 100%;
   position: fixed;
   bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 2px solid gainsboro;
+  border-top: 2px solid #e8e8e8;
   -webkit-transition: bottom 0.3s;
   transition: bottom 0.3s;
 }
@@ -621,17 +621,12 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .formSubmitBtnDisabled {
-  color: silver;
-  opacity: 0.6;
-  background-color: whitesmoke;
+  color: #dfdfdf;
 }
 
 .formSubmitBtnReady {
-  border: none;
-  color: white;
-  background-color: #10b020;
-  background: -webkit-gradient(linear, left top, left bottom, from(#30c930), to(#079515));
-  background: linear-gradient(to bottom, #30c930 0%, #079515 100%);
+  color: #10b020;
+  background-color: #bdd9b8;
 }
 
 .formSubmitBtnReady:active {
@@ -647,12 +642,12 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #formCancelBtn:active {
-  background-color: silver;
+  background-color: #e8e8e8;
   color: white;
 }
 
 .formBtnIcon {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .contactFormBtnText {
@@ -857,6 +852,10 @@ input.contactFormInput:valid + .formIcon {
   color: white;
 }
 
+.dockContactBtn:active .contactIcon {
+  color: white;
+}
+
 .dockContactBtn:active #directionsIcon {
   font-size: 14px;
 }
@@ -891,6 +890,7 @@ input.contactFormInput:valid + .formIcon {
 .contactBtnText {
   color: #616161;
   font-size: 13px;
+  letter-spacing: 0.5px;
   font-family: "Roboto", sans-serif;
 }
 
