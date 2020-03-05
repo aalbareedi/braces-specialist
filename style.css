@@ -169,6 +169,18 @@ img {
   outline: none;
 }
 
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #616161;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #616161;
+}
+
 /* ********************************** NAV MENU WINDOW ************************************** */
 #navMenu {
   font-family: "Nanum Gothic", sans-serif;
@@ -584,13 +596,13 @@ input.contactFormInput:valid + .formIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px;
   border-top: 2px solid gainsboro;
   -webkit-transition: bottom 0.3s;
   transition: bottom 0.3s;
 }
 
 .contactFormBtn {
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,25 +614,21 @@ input.contactFormInput:valid + .formIcon {
           align-items: center;
   outline: none;
   width: 50%;
-  height: 40px;
-  border-radius: 8px;
+  height: 56px;
   color: #616161;
-  border: 3px solid silver;
-  background-color: white;
+  border: none;
+  border-right: 2px solid #e8e8e8;
 }
 
 .formSubmitBtnDisabled {
-  border: 3px solid gainsboro;
   color: silver;
   opacity: 0.6;
-  margin-right: 4px;
   background-color: whitesmoke;
 }
 
 .formSubmitBtnReady {
   border: none;
   color: white;
-  margin-right: 4px;
   background-color: #10b020;
   background: -webkit-gradient(linear, left top, left bottom, from(#30c930), to(#079515));
   background: linear-gradient(to bottom, #30c930 0%, #079515 100%);
@@ -635,7 +643,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #formCancelBtn {
-  margin-left: 4px;
+  border-right: none;
 }
 
 #formCancelBtn:active {
