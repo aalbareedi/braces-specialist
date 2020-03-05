@@ -367,10 +367,10 @@ img {
   letter-spacing: 0.7px;
   padding-right: 40px;
   padding-top: 2px;
-  color: whitesmoke;
+  color: darkgray;
 }
 .contactFormInput:focus {
-  border: 2px solid #01aced;
+  border: 2px solid #067ffc;
   outline: none;
   // #e4ce25
 }
@@ -378,7 +378,7 @@ input.contactFormInput:valid {
   background-image: url("images/SVGs/validCheckIcon.svg");
   background-size: 26px;
   background-repeat: no-repeat;
-  background-position: right 12px center;
+  background-position: right 14px center;
 }
 input.contactFormInput:valid + .formIcon {
   opacity: 0;
@@ -1264,29 +1264,20 @@ footer {
   padding-top: 14px;
   padding-bottom: 60px;
 }
-.footerLogoWrapper {
-  // background-color: pink;
-  // position: relative;
-  @include flexCenterXY();
-}
-#footerNavLogo {
-  // @include flexCenterXY();
-  cursor: pointer;
-  margin-top: 1px;
-  margin-right: 5px;
-  // position: absolute;
-  // left: 11px;
-  // top: 1px;
-}
+// #footerLogo {
+//   cursor: pointer;
+//   position: absolute;
+//   right: 0px;
+// }
 #footerMainLogo {
-  height: 46px;
-  opacity: 0.9;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  right: 0;
 }
 .footerNavLogoName {
   opacity: 0.8;
-  margin-right: 4px;
-  // position: absolute;
-  // left: 50px;
+  padding-left: 20px;
 }
 .footerlogoTextTop {
   font-size: 28px;
@@ -1307,8 +1298,10 @@ footer {
 }
 .footerGridOpt {
   font-family: "Nanum Gothic", sans-serif;
-  text-align: center;
+  text-align: left;
+  font-size: 14px;
   padding: 8px 0;
+  padding-left: 20px;
   letter-spacing: 0.5px;
 }
 .footerGridOpt a {
