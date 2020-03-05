@@ -602,20 +602,17 @@ input.contactFormInput:valid + .formIcon {
 .dockContactBtn:active {
   background-color: #e8e8e8;
 }
-.dockContactBtn:active .contactBtnText {
-  color: white;
-}
-.dockContactBtn:active .contactIcon {
-  color: white;
+// .dockContactBtn:active .contactBtnText {
+//   color: white;
+// }
+.dockContactBtn:active #callIcon {
+  color: green;
 }
 .dockContactBtn:active #directionsIcon {
-  font-size: 14px;
-}
-.dockContactBtn:active #callIcon {
-  font-size: 22px;
+  color: red;
 }
 .dockContactBtn:active #messageIcon {
-  font-size: 14px;
+  color: #0094f0;
 }
 #callBtn {
   text-decoration: none;
