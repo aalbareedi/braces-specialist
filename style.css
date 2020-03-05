@@ -827,7 +827,7 @@ input.contactFormInput:valid + .formIcon {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-  border-top: 2px solid gainsboro;
+  border-top: 2px solid #e8e8e8;
   z-index: 10;
 }
 
@@ -838,10 +838,11 @@ input.contactFormInput:valid + .formIcon {
   cursor: pointer;
   outline: none;
   border: none;
+  border-right: 2px solid #e8e8e8;
 }
 
 .dockContactBtn:active {
-  background-color: gainsboro;
+  background-color: #e8e8e8;
 }
 
 .dockContactBtn:active .contactBtnText {
@@ -866,6 +867,10 @@ input.contactFormInput:valid + .formIcon {
 
 #directionsBtn {
   text-decoration: none;
+}
+
+#messageBtn {
+  border-right: none;
 }
 
 .contactIcon {
