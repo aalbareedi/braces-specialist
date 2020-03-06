@@ -110,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  // background-color: gray;
+  background-color: gray;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -130,7 +130,7 @@ img {
   opacity: 0.8;
 }
 #navToggleBtn:active {
-  background-color: #e8e8e8;
+  background-color: gainsboro;
 }
 #navToggleIcon {
   outline: none;
@@ -400,7 +400,7 @@ input.contactFormInput:valid + .formIcon {
   height: 140px;
 }
 #messageInput:focus {
-  border: 2px solid #e4ce25;
+  border: 2px solid #067ffc;
   outline: none;
 }
 #messageInput::placeholder {
@@ -452,7 +452,7 @@ input.contactFormInput:valid + .formIcon {
   border-right: none;
 }
 #formCancelBtn:active {
-  background-color: #e8e8e8;
+  background-color: gainsboro;
   color: white;
 }
 .formBtnIcon {
@@ -600,13 +600,13 @@ input.contactFormInput:valid + .formIcon {
   border-right: 2px solid #e8e8e8;
 }
 .dockContactBtn:active {
-  background-color: #e8e8e8;
+  background-color: gainsboro;
 }
 // .dockContactBtn:active .contactBtnText {
-//   color: white;
+//   color: whitesmoke;
 // }
 .dockContactBtn:active #callIcon {
-  color: green;
+  color: #2aae2a;
 }
 .dockContactBtn:active #directionsIcon {
   color: red;
@@ -685,7 +685,9 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 2px;
   color: #0094f0;
   width: 68%;
-  margin-left: 10px;
+  position: absolute;
+  bottom: 138px;
+  left: 10px;
 }
 #smileWord {
   margin-left: 3px;
@@ -697,10 +699,10 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.4px;
   font-size: 15px;
   width: 83%;
-  margin-top: 9px;
-  margin-bottom: 87px;
-  margin-left: 12px;
   opacity: 0.8;
+  position: absolute;
+  bottom: 87px;
+  left: 12px;
 }
 /* ************************************** STATS ****************************************** */
 #stats {
