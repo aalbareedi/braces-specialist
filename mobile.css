@@ -370,8 +370,14 @@
             justify-content: center;
   }
   .docInfo {
-    width: 40%;
+    font-size: 18px;
+    width: 41%;
     padding-top: 10px;
+    padding-right: 0px;
+    margin-left: 30px;
+  }
+  .docCenter {
+    margin-left: 20px;
   }
   /*** REVIEWS ***/
   .reviews {
