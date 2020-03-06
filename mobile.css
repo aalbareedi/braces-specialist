@@ -550,6 +550,10 @@
   .desktopNavMenuOpt {
     padding: 2px 16px 0 16px;
   }
+  .landingHeading {
+    font-size: 74px;
+    width: 46%;
+  }
 }
 
 .mainDock {
