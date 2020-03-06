@@ -9,6 +9,7 @@ let mainDock = document.getElementById("mainDock");
 let dockContactBtns = document.getElementsByClassName("dockContactBtn");
 let messageBtn = document.getElementById("messageBtn");
 let backToTopBtn = document.getElementById("backToTopBtn");
+let bgImg = document.getElementsByClassName("bgImg")[0];
 
 let aboutUsSection = document.getElementById("aboutUs");
 let doctorSection = document.getElementById("doctor");

@@ -134,7 +134,6 @@ img {
 }
 
 .logoTextBottom {
-  background-color: #cbc826;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -641,6 +640,10 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
   margin-left: 10px;
   font-size: 16px;
+}
+
+#contactForm.lightTheme label {
+  color: black;
 }
 
 /* ********************************** FORM OVERLAYS ************************************ */
@@ -1214,6 +1217,8 @@ input.contactFormInput:valid + .formIcon {
   border-radius: 0px 0px 190px 190px;
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .aboutText {
@@ -1251,7 +1256,6 @@ input.contactFormInput:valid + .formIcon {
   padding-top: 230px;
   padding-bottom: 40px;
   margin-top: -190px;
-  z-index: -1;
   position: relative;
 }
 

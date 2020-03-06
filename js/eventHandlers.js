@@ -130,6 +130,12 @@ body.onscroll = function() {
   } else {
     bracesVideo.pause();
   }
+
+  if (scrollingElement.scrollTop > screen.height) {
+    bgImg.classList.add("displayHidden");
+  } else {
+    bgImg.classList.remove("displayHidden");
+  }
 };
 
 for (let i = 0; i < formInputFields.length; i++) {
