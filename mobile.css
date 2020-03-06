@@ -132,11 +132,15 @@
   .landingHeading {
     font-size: 66px;
     width: 54%;
+    bottom: 268px;
+    left: 30px;
   }
   .landingSubHeading {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 30px;
-    width: 50%;
+    width: 53%;
+    bottom: 157px;
+    left: 32px;
   }
   .sectionTitle {
     font-size: 24px;
@@ -439,6 +443,10 @@
   }
   .gifWrapper {
     display: none;
+  }
+  .beforeAfterImg {
+    width: 80%;
+    margin: 40px auto 0 auto;
   }
   /*** FAQ ***/
   #faq {

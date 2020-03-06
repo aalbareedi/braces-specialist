@@ -110,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: gray;
+  // background-color: gray;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -640,10 +640,6 @@ input.contactFormInput:valid + .formIcon {
   height: calc(100vh - 116px);
   position: relative;
   min-width: 100vw;
-  // background-image: url("images/smile.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: bottom 0px left -15px;
   /* background-attachment: fixed; */
 }
 .bgImg {
@@ -658,25 +654,6 @@ input.contactFormInput:valid + .formIcon {
   // background-position: bottom 0px left -15px;
   // position: fixed;
   // z-index: -1;
-}
-.gradient {
-  height: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  /* background-image: linear-gradient(
-      180deg,
-      rgba(245, 186, 144, 0) 22%,
-      rgba(245, 186, 144, 1) 55%
-    ); */
-}
-.landingText {
-  /* background: pink; */
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
 }
 .landingHeading {
   font-family: "Russo One", sans-serif;
@@ -704,6 +681,18 @@ input.contactFormInput:valid + .formIcon {
   bottom: 87px;
   left: 12px;
 }
+// .gradient {
+//   height: 100%;
+//   position: absolute;
+//   bottom: 0px;
+//   left: 0;
+//   right: 0;
+//   /* background-image: linear-gradient(
+//       180deg,
+//       rgba(245, 186, 144, 0) 22%,
+//       rgba(245, 186, 144, 1) 55%
+//     ); */
+// }
 /* ************************************** STATS ****************************************** */
 #stats {
   background-color: whitesmoke;
@@ -1212,6 +1201,7 @@ input.contactFormInput:valid + .formIcon {
   width: 100%;
 }
 .beforeAfterImg {
+  display: block;
   width: 100%;
   margin-top: 30px;
 }
