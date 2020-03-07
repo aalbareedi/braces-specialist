@@ -364,7 +364,7 @@ img {
 
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: #585858;
+  background-color: #373737;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -425,7 +425,7 @@ img {
   margin-bottom: 40px;
   line-height: 20px;
   color: #e8e8e8;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
 }
 
 .formOption {
@@ -465,7 +465,7 @@ img {
 }
 
 .contactFormInput {
-  background-color: #383838;
+  background-color: #222222;
   height: 54px;
   border: none;
   padding-left: 11px;
