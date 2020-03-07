@@ -407,11 +407,12 @@ img {
           align-items: center;
   position: absolute;
   left: 0px;
-  top: 30px;
+  top: 26px;
   font-size: 26px;
   color: #e8e8e8;
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
+  padding-right: 10px;
 }
 
 .backArrow:active {
@@ -445,9 +446,9 @@ img {
 }
 
 .contactFormText {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   display: block;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
   color: #e8e8e8;
 }
 
@@ -532,7 +533,7 @@ input.contactFormInput:valid + .formIcon {
 
 #messageInput {
   padding: 8px 8px 0 8px;
-  height: 140px;
+  height: 150px;
 }
 
 #messageInput:focus {
