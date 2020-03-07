@@ -70,6 +70,10 @@
   .statNumber {
     font-size: 34px;
   }
+  /*** FORM ***/
+  #messageInput {
+    height: 170px;
+  }
 }
 
 /* iphone 7 (firefox/edge/chrome)  */
