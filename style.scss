@@ -628,7 +628,6 @@ input.contactFormInput:valid + .formIcon {
 .contactIcon {
   color: silver;
   font-size: 18px;
-  opacity: 0.9;
   margin-bottom: 4px;
 }
 .contactBtnText {
@@ -688,7 +687,7 @@ input.contactFormInput:valid + .formIcon {
 #stats {
   background-color: whitesmoke;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   font-family: "Roboto", sans-serif;
 }
 .statBox {
@@ -730,12 +729,14 @@ input.contactFormInput:valid + .formIcon {
 #statPercent::after {
   content: "%";
 }
-.statBtnBar {
-  @include flexCenterXY();
-  height: 60px;
-  margin-top: 10px;
-}
+// .statBtnBar {
+//   @include flexCenterXY();
+//   height: 60px;
+//   margin-top: 10px;
+// }
 .learnMoreStatBtn {
+  margin: 10px auto 0 auto;
+  display: block;
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   color: white;
   border: none;
@@ -744,7 +745,7 @@ input.contactFormInput:valid + .formIcon {
   width: 220px;
   height: 40px;
   font-size: 16px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .learnMoreStatBtn:active {
@@ -981,7 +982,7 @@ input.contactFormInput:valid + .formIcon {
 .docStat {
   position: absolute;
   border-radius: 80px;
-  height: 44px;
+  height: 48px;
   width: 200px;
 }
 .nwStat {
@@ -992,13 +993,13 @@ input.contactFormInput:valid + .formIcon {
   position: absolute;
   height: 35px;
   left: 15px;
-  top: 5px;
+  top: 6px;
 }
 .docStatText {
   font-family: "Nanum Gothic", sans-serif;
   color: whitesmoke;
   position: absolute;
-  top: 50px;
+  top: 52px;
   left: 19px;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -1014,9 +1015,9 @@ input.contactFormInput:valid + .formIcon {
 }
 .orthoIcon {
   position: absolute;
-  height: 34px;
+  height: 35px;
   left: 17px;
-  top: 5px;
+  top: 7px;
 }
 .docInfo {
   font-family: "Nanum Gothic", sans-serif;
@@ -1127,7 +1128,7 @@ input.contactFormInput:valid + .formIcon {
 .slick-dots.touch-device li.slick-active button::before {
   opacity: 1;
 }
-/* ******************************* ABOUT BRACES TREATMENT ******************************** */
+/* ***************************** TREATMENT  OPTIONS ****************************** */
 #treatmentOptions {
   background: #6b62d1;
   padding-top: 10px;
@@ -1145,7 +1146,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .treatmentBox {
   margin: 0 auto;
-  // border-radius: 14px;
   height: 100px;
   width: 100%;
   box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
@@ -1195,9 +1195,40 @@ input.contactFormInput:valid + .formIcon {
 .beforeAfterImg {
   display: block;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
-/* **************************************** FAQ ***************************************** */
+.treatmentBtn {
+  @include flexCenterXY();
+  margin: 40px auto 0 auto;
+  padding-right: 4px;
+  background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 210px;
+  height: 42px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.treatmentBtn:active {
+  background: #1e748a;
+}
+.treatmentCallIcon {
+  color: white;
+  font-size: 22px;
+  margin-right: 5px;
+}
+.treatmentBtnText {
+  padding-top: 2px;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+.treatmentBtnMessage {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* *********************************** FAQ ************************************ */
 #faq {
   background: #0d79a1;
   padding-top: 10px;
