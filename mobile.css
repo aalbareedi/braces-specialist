@@ -44,15 +44,6 @@
   .contactBtnText {
     font-size: 14px;
   }
-  .contactFormInput {
-    font-size: 17px;
-  }
-  .formBtnText {
-    font-size: 18px;
-  }
-  .formBtnIcon {
-    font-size: 24px;
-  }
   #reviewSlider {
     height: 540px;
   }
@@ -73,6 +64,15 @@
   /*** FORM ***/
   #messageInput {
     height: 190px;
+  }
+  .contactFormInput {
+    font-size: 17px;
+  }
+  .formBtnText {
+    font-size: 18px;
+  }
+  .formBtnIcon {
+    font-size: 24px;
   }
 }
 
