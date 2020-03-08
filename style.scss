@@ -110,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: pink;
+  // background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -130,7 +130,7 @@ img {
   opacity: 0.8;
 }
 #navToggleBtn:active {
-  background-color: gainsboro;
+  background-color: lightgray;
 }
 #navToggleIcon {
   outline: none;
@@ -217,7 +217,7 @@ img {
   z-index: 5;
 }
 #navMenu .navMenuOpt:active {
-  background-color: gainsboro;
+  background-color: lightgray;
 }
 #desktopNavMenu {
   display: none;
@@ -451,7 +451,7 @@ input.contactFormInput:valid + .formIcon {
   border-right: none;
 }
 #formCancelBtn:active {
-  background-color: gainsboro;
+  background-color: lightgray;
   color: white;
 }
 .formBtnIcon {
@@ -602,7 +602,7 @@ input.contactFormInput:valid + .formIcon {
   border-right: 2px solid #e8e8e8;
 }
 .dockContactBtn:active {
-  background-color: gainsboro;
+  background-color: lightgray;
 }
 // .dockContactBtn:active .contactBtnText {
 //   color: whitesmoke;
