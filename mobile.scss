@@ -144,8 +144,47 @@ $tabletDock: 71px;
 
 // @media only screen and (min-width: 532px) {
 // }
-// @media only screen and (min-width: 650px) {
-// }
+@media only screen and (min-width: 667px) {
+  /*** STATS ***/
+  #stats {
+    display: flex;
+    background-color: gainsboro;
+    padding: 10px 0;
+  }
+  .statBox {
+    width: 33%;
+    height: 310px;
+    background-size: 128px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    /* border: 2px solid #0094f0; */
+    margin: 20px;
+    background-position: top 32px center;
+    display: initial;
+    position: relative;
+  }
+  .learnMoreStatBtn {
+    display: none;
+  }
+  .statNumber {
+    position: absolute;
+    top: 194px;
+    width: 100%;
+    text-align: center;
+  }
+  .statDescription {
+    position: absolute;
+    top: 236px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  #yearDescription {
+    position: initial;
+    width: 200px;
+    margin: 236px auto 0 auto;
+  }
+}
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
@@ -306,45 +345,45 @@ $tabletDock: 71px;
     font-size: 30px;
   }
 
-  /*** STATS ***/
-  #stats {
-    display: flex;
-    background-color: gainsboro;
-    padding: 10px 0;
-  }
-  .statBox {
-    width: 33%;
-    height: 310px;
-    background-size: 128px;
-    background-color: whitesmoke;
-    border-radius: 30px;
-    /* border: 2px solid #0094f0; */
-    margin: 20px;
-    background-position: top 32px center;
-    display: initial;
-    position: relative;
-  }
-  .statBtnBar {
-    display: none;
-  }
-  .statNumber {
-    position: absolute;
-    top: 194px;
-    width: 100%;
-    text-align: center;
-  }
-  .statDescription {
-    position: absolute;
-    top: 236px;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-  }
-  #yearDescription {
-    position: initial;
-    width: 200px;
-    margin: 236px auto 0 auto;
-  }
+  // /*** STATS ***/
+  // #stats {
+  //   display: flex;
+  //   background-color: gainsboro;
+  //   padding: 10px 0;
+  // }
+  // .statBox {
+  //   width: 33%;
+  //   height: 310px;
+  //   background-size: 128px;
+  //   background-color: whitesmoke;
+  //   border-radius: 30px;
+  //   /* border: 2px solid #0094f0; */
+  //   margin: 20px;
+  //   background-position: top 32px center;
+  //   display: initial;
+  //   position: relative;
+  // }
+  // .learnMoreStatBtn {
+  //   display: none;
+  // }
+  // .statNumber {
+  //   position: absolute;
+  //   top: 194px;
+  //   width: 100%;
+  //   text-align: center;
+  // }
+  // .statDescription {
+  //   position: absolute;
+  //   top: 236px;
+  //   width: 100%;
+  //   text-align: center;
+  //   font-size: 18px;
+  // }
+  // #yearDescription {
+  //   position: initial;
+  //   width: 200px;
+  //   margin: 236px auto 0 auto;
+  // }
 
   /*** ABOUT ***/
   #aboutUs {
