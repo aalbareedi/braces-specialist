@@ -134,6 +134,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -642,6 +643,18 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.5px;
   margin-left: 10px;
   font-size: 16px;
+}
+
+#contactForm.lightTheme {
+  background-color: whitesmoke;
+}
+
+#contactForm.lightTheme .contactFormText {
+  color: #444444;
+}
+
+#contactForm.lightTheme #backArrow {
+  color: darkgray;
 }
 
 /* ********************************** FORM OVERLAYS ************************************ */

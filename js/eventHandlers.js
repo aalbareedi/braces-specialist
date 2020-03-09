@@ -263,3 +263,11 @@ contactFormPhoneInput.addEventListener("input", function() {
 $("#reviewSlider").on("swipe", function(event, slick, direction) {
   slick.slickPause();
 });
+
+darkModeBtn.onchange = function() {
+  if (darkModeBtn.checked == true) {
+    contactForm.classList.remove("lightTheme");
+  } else {
+    contactForm.classList.add("lightTheme");
+  }
+};

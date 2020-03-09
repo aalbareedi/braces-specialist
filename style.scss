@@ -110,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  // background-color: pink;
+  background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -464,8 +464,16 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 10px;
   font-size: 16px;
 }
-// #contactForm.lightTheme label {
-//   color: black;
+#contactForm.lightTheme {
+  background-color: whitesmoke;
+}
+#contactForm.lightTheme .contactFormText {
+  color: #444444;
+}
+#contactForm.lightTheme #backArrow {
+  color: darkgray;
+}
+// #contactForm.lightTheme{
 // }
 /* ********************************** FORM OVERLAYS ************************************ */
 .formOverlay {

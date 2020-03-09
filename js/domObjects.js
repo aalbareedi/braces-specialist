@@ -50,3 +50,4 @@ let errorOverlay = document.getElementById("errorOverlay");
 let connectionErrorOverlay = document.getElementById("connectionErrorOverlay");
 let confirmWindow = document.getElementById("confirmWindow");
 let errorText = document.getElementById("errorText");
+let darkModeBtn = document.querySelector("label.switch input[type='checkbox']");
