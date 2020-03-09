@@ -287,6 +287,7 @@ img {
 
 #navMenu .navMenuOpt:active {
   background-color: lightgray;
+  color: whitesmoke;
 }
 
 #desktopNavMenu {
@@ -337,6 +338,15 @@ img {
   cursor: pointer;
 }
 
+.navSocialMediaBtn:active {
+  background-color: lightgray;
+}
+
+.navSocialMediaBtn:active .navSocialBtnIcon {
+  background-color: lightgray;
+  color: white;
+}
+
 .navTwitterBtn {
   border-right: none;
 }
@@ -351,15 +361,6 @@ img {
 
 #navInstagramIcon {
   font-size: 26px;
-}
-
-.navSocialMediaBtn:active {
-  background-color: gainsboro;
-}
-
-.navSocialMediaBtn:active .navSocialBtnIcon {
-  background-color: gainsboro;
-  color: white;
 }
 
 /* *********************************** CONTACT FORM ***************************************** */
@@ -1300,7 +1301,7 @@ input.contactFormInput:valid + .formIcon {
 
 .northWesternIcon {
   position: absolute;
-  height: 35px;
+  height: 37px;
   left: 15px;
   top: 6px;
 }
@@ -1479,7 +1480,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .bracesTitle {
-  color: white;
+  color: whitesmoke;
 }
 
 .treatmentOptionsGrid {
@@ -1536,12 +1537,18 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .bracesText {
-  color: white;
+  color: whitesmoke;
   line-height: 28px;
   letter-spacing: 0.4px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 40px;
+}
+
+.beforeAfterImg {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .bracesVideo {
@@ -1557,10 +1564,24 @@ input.contactFormInput:valid + .formIcon {
   width: 100%;
 }
 
-.beforeAfterImg {
-  display: block;
-  width: 100%;
-  margin-top: 20px;
+.timelapseDescription {
+  padding: 0 20px;
+  margin-top: 4px;
+  color: whitesmoke;
+  letter-spacing: 0.7px;
+}
+
+.treatmentBtnWrapper {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .treatmentBtn {
@@ -1573,16 +1594,14 @@ input.contactFormInput:valid + .formIcon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px auto 0 auto;
   padding-right: 4px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00c2d7), to(#368cbc));
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
-  color: white;
   border: none;
   outline: none;
-  border-radius: 20px;
-  width: 210px;
-  height: 42px;
+  border-radius: 30px;
+  width: 102px;
+  height: 46px;
   -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1594,18 +1613,26 @@ input.contactFormInput:valid + .formIcon {
 .treatmentCallIcon {
   color: white;
   font-size: 22px;
-  margin-right: 5px;
+  margin-right: 6px;
+  margin-left: 2px;
 }
 
 .treatmentBtnText {
   padding-top: 2px;
   font-size: 15px;
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .treatmentBtnMessage {
-  text-align: center;
-  margin-top: 8px;
+  text-align: left;
+  width: 162px;
+  margin-left: 10px;
+  letter-spacing: 0.3px;
+}
+
+.freeWord {
+  color: #00cd00;
 }
 
 /* *********************************** FAQ ************************************ */
