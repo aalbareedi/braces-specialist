@@ -612,7 +612,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #contactForm.lightTheme {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
 }
 
 #contactForm.lightTheme .contactFormText {
@@ -852,6 +852,19 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .dockContactBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: whitesmoke;
   height: 56px;
   width: 100%;
@@ -859,6 +872,7 @@ input.contactFormInput:valid + .formIcon {
   outline: none;
   border: none;
   border-right: 2px solid #e8e8e8;
+  text-decoration: none;
 }
 
 .dockContactBtn:active {
@@ -877,18 +891,6 @@ input.contactFormInput:valid + .formIcon {
   color: #0094f0;
 }
 
-#callBtn {
-  text-decoration: none;
-}
-
-#directionsBtn {
-  text-decoration: none;
-}
-
-#messageBtn {
-  border-right: none;
-}
-
 .contactIcon {
   color: silver;
   font-size: 18px;
@@ -900,6 +902,10 @@ input.contactFormInput:valid + .formIcon {
   font-size: 13px;
   letter-spacing: 0.5px;
   font-family: "Roboto", sans-serif;
+}
+
+#messageBtn {
+  border-right: none;
 }
 
 /* ************************************** LANDING BOX ****************************************** */
@@ -1586,7 +1592,7 @@ input.contactFormInput:valid + .formIcon {
 
 .gifWrapper {
   padding: 0 20px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .bracesGif {
@@ -1595,14 +1601,14 @@ input.contactFormInput:valid + .formIcon {
 
 .timelapseDescription {
   padding: 0 20px;
-  margin-top: 4px;
+  margin-top: 6px;
   color: whitesmoke;
   letter-spacing: 0.7px;
   text-align: center;
 }
 
 .treatmentBtnWrapper {
-  margin-top: 40px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1624,6 +1630,7 @@ input.contactFormInput:valid + .formIcon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   padding-right: 4px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00c2d7), to(#368cbc));
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
@@ -1889,7 +1896,7 @@ footer {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: whitesmoke;
+  background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

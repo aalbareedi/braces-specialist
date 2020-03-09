@@ -452,7 +452,7 @@ input.contactFormInput:valid + .formIcon {
   font-size: 16px;
 }
 #contactForm.lightTheme {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
 }
 #contactForm.lightTheme .contactFormText {
   color: #444444;
@@ -487,8 +487,7 @@ input.contactFormInput:valid + .formIcon {
   /* Internet Explorer 10-11, Edge */
   color: darkgray;
 }
-// #contactForm.lightTheme{
-// }
+
 /* ********************************** FORM OVERLAYS ************************************ */
 .formOverlay {
   @include flexCenterXY();
@@ -617,6 +616,8 @@ input.contactFormInput:valid + .formIcon {
   z-index: 10;
 }
 .dockContactBtn {
+  @include flexCenterXY();
+  flex-direction: column;
   background-color: whitesmoke;
   height: 56px;
   width: 100%;
@@ -624,6 +625,7 @@ input.contactFormInput:valid + .formIcon {
   outline: none;
   border: none;
   border-right: 2px solid #e8e8e8;
+  text-decoration: none;
 }
 .dockContactBtn:active {
   background-color: lightgray;
@@ -640,15 +642,6 @@ input.contactFormInput:valid + .formIcon {
 .dockContactBtn:active #messageIcon {
   color: #0094f0;
 }
-#callBtn {
-  text-decoration: none;
-}
-#directionsBtn {
-  text-decoration: none;
-}
-#messageBtn {
-  border-right: none;
-}
 .contactIcon {
   color: silver;
   font-size: 18px;
@@ -659,6 +652,9 @@ input.contactFormInput:valid + .formIcon {
   font-size: 13px;
   letter-spacing: 0.5px;
   font-family: "Roboto", sans-serif;
+}
+#messageBtn {
+  border-right: none;
 }
 /* ************************************** LANDING BOX ****************************************** */
 #landingBox {
@@ -1215,26 +1211,27 @@ input.contactFormInput:valid + .formIcon {
 }
 .gifWrapper {
   padding: 0 20px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .bracesGif {
   width: 100%;
 }
 .timelapseDescription {
   padding: 0 20px;
-  margin-top: 4px;
+  margin-top: 6px;
   color: whitesmoke;
   letter-spacing: 0.7px;
   text-align: center;
 }
 .treatmentBtnWrapper {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .treatmentBtn {
   @include flexCenterXY();
+  text-decoration: none;
   padding-right: 4px;
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   border: none;
@@ -1461,7 +1458,7 @@ footer {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: whitesmoke;
+  background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

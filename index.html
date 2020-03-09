@@ -438,10 +438,10 @@
           </div>
 
           <div class="treatmentBtnWrapper">
-            <button class="treatmentBtn">
+            <a href="tel:773-282-0013" class="treatmentBtn">
               <i class="fas fa-phone treatmentCallIcon"></i>
               <div class="treatmentBtnText">Call</div>
-            </button>
+            </a>
 
             <div class="treatmentBtnMessage">
               TO SCHEDULE A
@@ -685,25 +685,21 @@
         <div id="emptyDockSpace"></div>
 
         <div id="mainDock" class="unselectable">
-          <a href="tel:773-282-0013" id="callBtn">
-            <button class="dockContactBtn unselectable" type="button">
-              <i class="fas fa-phone contactIcon" id="callIcon"></i>
-              <div class="contactBtnText">Call</div>
-            </button>
+          <a href="tel:773-282-0013" class="dockContactBtn unselectable">
+            <i class="fas fa-phone contactIcon" id="callIcon"></i>
+            <div class="contactBtnText">Call</div>
           </a>
 
           <a
-            id="directionsBtn"
             target="_blank"
             href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+            class="dockContactBtn unselectable"
           >
-            <button class="dockContactBtn unselectable" type="button">
-              <i
-                class="fas fa-map-marker-alt contactIcon"
-                id="directionsIcon"
-              ></i>
-              <div class="contactBtnText">Directions</div>
-            </button>
+            <i
+              class="fas fa-map-marker-alt contactIcon"
+              id="directionsIcon"
+            ></i>
+            <div class="contactBtnText">Directions</div>
           </a>
 
           <button
