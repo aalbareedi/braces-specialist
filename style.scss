@@ -365,6 +365,7 @@ img {
   letter-spacing: 0.7px;
   padding-right: 40px;
   padding-top: 2px;
+  color: whitesmoke;
 }
 .contactFormInput:focus {
   border: 2px solid #067ffc;
@@ -467,6 +468,7 @@ input.contactFormInput:valid + .formIcon {
 }
 #contactForm.lightTheme .contactFormInput {
   background-color: white;
+  color: black;
 }
 #contactForm.lightTheme .switchText {
   color: #444444;
@@ -474,7 +476,6 @@ input.contactFormInput:valid + .formIcon {
 #contactForm.lightTheme .formIcon {
   color: lightgray;
 }
-
 #contactForm.lightTheme .contactFormInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: darkgray;
@@ -1224,6 +1225,7 @@ input.contactFormInput:valid + .formIcon {
   margin-top: 4px;
   color: whitesmoke;
   letter-spacing: 0.7px;
+  text-align: center;
 }
 .treatmentBtnWrapper {
   margin-top: 40px;
@@ -1253,7 +1255,6 @@ input.contactFormInput:valid + .formIcon {
 }
 .treatmentBtnText {
   padding-top: 2px;
-  font-size: 15px;
   letter-spacing: 1px;
   color: white;
 }

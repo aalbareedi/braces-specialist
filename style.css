@@ -477,6 +477,7 @@ img {
   letter-spacing: 0.7px;
   padding-right: 40px;
   padding-top: 2px;
+  color: whitesmoke;
 }
 
 .contactFormInput:focus {
@@ -632,6 +633,7 @@ input.contactFormInput:valid + .formIcon {
 
 #contactForm.lightTheme .contactFormInput {
   background-color: white;
+  color: black;
 }
 
 #contactForm.lightTheme .switchText {
@@ -1596,6 +1598,7 @@ input.contactFormInput:valid + .formIcon {
   margin-top: 4px;
   color: whitesmoke;
   letter-spacing: 0.7px;
+  text-align: center;
 }
 
 .treatmentBtnWrapper {
@@ -1646,7 +1649,6 @@ input.contactFormInput:valid + .formIcon {
 
 .treatmentBtnText {
   padding-top: 2px;
-  font-size: 15px;
   letter-spacing: 1px;
   color: white;
 }
