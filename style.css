@@ -1726,6 +1726,7 @@ footer {
 }
 
 .siteMapGrid {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[5];
