@@ -645,31 +645,31 @@ input.contactFormInput:valid + .formIcon {
 
 #contactForm.lightTheme .contactFormInput::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: darkgray;
+  color: #a0a0a0;
 }
 
 #contactForm.lightTheme .contactFormInput:-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: darkgray;
+  color: #a0a0a0;
 }
 
 #contactForm.lightTheme .contactFormInput::-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: darkgray;
+  color: #a0a0a0;
 }
 
 #contactForm.lightTheme .contactFormInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: darkgray;
+  color: #a0a0a0;
 }
 
 #contactForm.lightTheme .contactFormInput::-webkit-input-placeholder {
-  color: darkgray;
+  color: #a0a0a0;
 }
 
 #contactForm.lightTheme .contactFormInput::-ms-input-placeholder {
   /* Internet Explorer 10-11, Edge */
-  color: darkgray;
+  color: #a0a0a0;
 }
 
 /* ********************************** FORM OVERLAYS ************************************ */

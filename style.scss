@@ -479,14 +479,14 @@ input.contactFormInput:valid + .formIcon {
   }
   .contactFormInput::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: darkgray;
+    color: #a0a0a0;
   }
   .contactFormInput::-webkit-input-placeholder {
-    color: darkgray;
+    color: #a0a0a0;
   }
   .contactFormInput::-ms-input-placeholder {
     /* Internet Explorer 10-11, Edge */
-    color: darkgray;
+    color: #a0a0a0;
   }
 }
 
