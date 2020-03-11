@@ -4,24 +4,15 @@ let scrollingElement =
   document.scrollingElement || document.documentElement || body;
 
 let wrapper = document.getElementById("wrapper");
-let main = document.querySelector("main");
 let mainDock = document.getElementById("mainDock");
 let dockContactBtns = document.getElementsByClassName("dockContactBtn");
 let messageBtn = document.getElementById("messageBtn");
 let backToTopBtn = document.getElementById("backToTopBtn");
 let bgImg = document.getElementsByClassName("bgImg")[0];
 
-let aboutUsSection = document.getElementById("aboutUs");
-let doctorSection = document.getElementById("doctor");
-let aboutBracesSection = document.getElementById("treatmentOptions");
-let officeInfoSection = document.getElementById("officeInfo");
-let faqSection = document.getElementById("faq");
-
-let stats = document.getElementById("stats");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
-let scrollAwaiters = document.getElementsByClassName("awaitsScrolling");
 let scrollToElements = document.querySelectorAll("[data-scrollToAnimation]");
 let bracesVideo = document.getElementsByClassName("bracesVideo")[0];
 // nav

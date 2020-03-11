@@ -110,7 +110,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: pink;
+  // background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -451,41 +451,43 @@ input.contactFormInput:valid + .formIcon {
   margin-left: 10px;
   font-size: 16px;
 }
+
 #contactForm.lightTheme {
   background-color: #e8e8e8;
-}
-#contactForm.lightTheme .contactFormText {
-  color: #444444;
-}
-#contactForm.lightTheme .formDescription {
-  color: #444444;
-}
-#contactForm.lightTheme #backArrow {
-  color: darkgray;
-}
-#contactForm.lightTheme .formTitle {
-  color: gray;
-}
-#contactForm.lightTheme .contactFormInput {
-  background-color: white;
-  color: black;
-}
-#contactForm.lightTheme .switchText {
-  color: #444444;
-}
-#contactForm.lightTheme .formIcon {
-  color: lightgray;
-}
-#contactForm.lightTheme .contactFormInput::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: darkgray;
-}
-#contactForm.lightTheme .contactFormInput::-webkit-input-placeholder {
-  color: darkgray;
-}
-#contactForm.lightTheme .contactFormInput::-ms-input-placeholder {
-  /* Internet Explorer 10-11, Edge */
-  color: darkgray;
+
+  .contactFormText {
+    color: #444444;
+  }
+  .formDescription {
+    color: #444444;
+  }
+  #backArrow {
+    color: darkgray;
+  }
+  .formTitle {
+    color: gray;
+  }
+  .contactFormInput {
+    background-color: white;
+    color: black;
+  }
+  .switchText {
+    color: #444444;
+  }
+  .formIcon {
+    color: lightgray;
+  }
+  .contactFormInput::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: darkgray;
+  }
+  .contactFormInput::-webkit-input-placeholder {
+    color: darkgray;
+  }
+  .contactFormInput::-ms-input-placeholder {
+    /* Internet Explorer 10-11, Edge */
+    color: darkgray;
+  }
 }
 
 /* ********************************** FORM OVERLAYS ************************************ */
@@ -840,7 +842,7 @@ input.contactFormInput:valid + .formIcon {
 }
 .officeMap {
   padding: 0 22px 0 22px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .mapWrapper {
   border-radius: 8px;
@@ -858,7 +860,7 @@ input.contactFormInput:valid + .formIcon {
 .socialMediaContent {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .socialButtons {
   display: grid;
@@ -900,7 +902,7 @@ input.contactFormInput:valid + .formIcon {
 .socialMediaText {
   text-align: center;
   color: white;
-  margin: 40px 0 10px 0;
+  margin: 50px 0 10px 0;
   letter-spacing: 0.4px;
 }
 /* ****************************************** ABOUT ******************************************* */
@@ -964,7 +966,6 @@ input.contactFormInput:valid + .formIcon {
   // align-items: center;
   // background: rgba(220, 220, 220, 0.5);
 }
-// @include flexCenterXY();
 .doctorName {
   // background-color: silver;
   font-family: "Volkhov", serif;
@@ -1058,7 +1059,7 @@ input.contactFormInput:valid + .formIcon {
   font-size: 20px;
   letter-spacing: 0.7px;
   font-family: "Nanum Gothic", sans-serif;
-  margin: 50px 0 60px 0;
+  margin: 60px 0 60px 0;
 }
 /* ****************************************** REVIEWS ******************************************* */
 .reviews {
@@ -1237,7 +1238,7 @@ input.contactFormInput:valid + .formIcon {
   border: none;
   outline: none;
   border-radius: 30px;
-  width: 102px;
+  width: 98px;
   height: 46px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1308,18 +1309,14 @@ footer {
   background-color: darkgray;
   position: relative;
   padding-top: 14px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
-// #footerLogo {
-//   cursor: pointer;
-//   position: absolute;
-//   right: 0px;
-// }
 #footerMainLogo {
   height: 100%;
   opacity: 0.4;
   position: absolute;
   right: 0;
+  top: 0;
 }
 .footerNavLogoName {
   opacity: 0.8;
@@ -1361,9 +1358,9 @@ footer {
 .footerCredit {
   @include flexCenterXY();
   background-color: #999;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  // position: absolute;
+  // bottom: 0;
+  // width: 100%;
   font-size: 13px;
   height: 28px;
 }
