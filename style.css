@@ -78,13 +78,13 @@ img {
 
 #navbar {
   z-index: 250;
-  background-color: #e8e8e8;
+  background-color: whitesmoke;
   height: 58px;
   width: 100%;
   position: fixed;
   top: 0;
-  border-top: 2px solid gainsboro;
-  border-bottom: 2px solid gainsboro;
+  border-top: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
 }
 
 #navLogo {
@@ -157,7 +157,7 @@ img {
   cursor: pointer;
   position: absolute;
   right: 0px;
-  border-left: 2px solid gainsboro;
+  border-left: 2px solid #e8e8e8;
   opacity: 0.8;
 }
 
@@ -195,9 +195,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -215,6 +212,7 @@ img {
   -webkit-transition: top 0.1s;
   transition: top 0.1s;
   text-decoration: none;
+  padding-left: 49px;
 }
 
 .desktopNavMenuOpt {
@@ -320,6 +318,7 @@ img {
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
+  padding-left: 0;
 }
 
 .navSocialMediaBtn {
@@ -550,13 +549,13 @@ input.contactFormInput:valid + .formIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 2px solid gainsboro;
+  border-top: 2px solid #e8e8e8;
   -webkit-transition: bottom 0.3s;
   transition: bottom 0.3s;
 }
 
 .contactFormBtn {
-  background-color: #e8e8e8;
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +570,7 @@ input.contactFormInput:valid + .formIcon {
   height: 56px;
   color: #616161;
   border: none;
-  border-right: 2px solid gainsboro;
+  border-right: 2px solid #e8e8e8;
 }
 
 .formSubmitBtnDisabled {
@@ -847,7 +846,7 @@ input.contactFormInput:valid + .formIcon {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-  border-top: 2px solid #dcdcdc;
+  border-top: 2px solid #e8e8e8;
   z-index: 10;
 }
 
@@ -865,13 +864,13 @@ input.contactFormInput:valid + .formIcon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #e8e8e8;
+  background-color: whitesmoke;
   height: 56px;
   width: 100%;
   cursor: pointer;
   outline: none;
   border: none;
-  border-right: 2px solid gainsboro;
+  border-right: 2px solid #e8e8e8;
   text-decoration: none;
 }
 
@@ -892,7 +891,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .contactIcon {
-  color: DarkGray;
+  color: #b8b8b8;
   font-size: 18px;
   margin-bottom: 4px;
 }
