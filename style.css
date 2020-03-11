@@ -78,13 +78,13 @@ img {
 
 #navbar {
   z-index: 250;
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   height: 58px;
   width: 100%;
   position: fixed;
   top: 0;
-  border-top: 2px solid #e8e8e8;
-  border-bottom: 2px solid #e8e8e8;
+  border-top: 2px solid gainsboro;
+  border-bottom: 2px solid gainsboro;
 }
 
 #navLogo {
@@ -157,7 +157,7 @@ img {
   cursor: pointer;
   position: absolute;
   right: 0px;
-  border-left: 2px solid #e8e8e8;
+  border-left: 2px solid gainsboro;
   opacity: 0.8;
 }
 
@@ -365,7 +365,7 @@ img {
 
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: #373737;
+  background-color: #303030;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -556,7 +556,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .contactFormBtn {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,7 +846,7 @@ input.contactFormInput:valid + .formIcon {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-  border-top: 2px solid #e8e8e8;
+  border-top: 2px solid #dcdcdc;
   z-index: 10;
 }
 
@@ -864,13 +864,13 @@ input.contactFormInput:valid + .formIcon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   height: 56px;
   width: 100%;
   cursor: pointer;
   outline: none;
   border: none;
-  border-right: 2px solid #e8e8e8;
+  border-right: 2px solid gainsboro;
   text-decoration: none;
 }
 
@@ -891,7 +891,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .contactIcon {
-  color: silver;
+  color: #b8b8b8;
   font-size: 18px;
   margin-bottom: 4px;
 }

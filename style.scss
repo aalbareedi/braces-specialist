@@ -74,13 +74,13 @@ img {
 }
 #navbar {
   z-index: 250;
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   height: 58px;
   width: 100%;
   position: fixed;
   top: 0;
-  border-top: 2px solid #e8e8e8;
-  border-bottom: 2px solid #e8e8e8;
+  border-top: 2px solid gainsboro;
+  border-bottom: 2px solid gainsboro;
 }
 #navLogo {
   @include flexCenterXY();
@@ -126,7 +126,7 @@ img {
   cursor: pointer;
   position: absolute;
   right: 0px;
-  border-left: 2px solid #e8e8e8;
+  border-left: 2px solid gainsboro;
   opacity: 0.8;
 }
 #navToggleBtn:active {
@@ -275,7 +275,7 @@ img {
 
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: #373737;
+  background-color: #303030;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -414,7 +414,7 @@ input.contactFormInput:valid + .formIcon {
   transition: bottom 0.3s;
 }
 .contactFormBtn {
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   @include flexCenterXY();
   outline: none;
   width: 50%;
@@ -614,19 +614,19 @@ input.contactFormInput:valid + .formIcon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  border-top: 2px solid #e8e8e8;
+  border-top: 2px solid #dcdcdc;
   z-index: 10;
 }
 .dockContactBtn {
   @include flexCenterXY();
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #e8e8e8;
   height: 56px;
   width: 100%;
   cursor: pointer;
   outline: none;
   border: none;
-  border-right: 2px solid #e8e8e8;
+  border-right: 2px solid gainsboro;
   text-decoration: none;
 }
 .dockContactBtn:active {
@@ -645,7 +645,7 @@ input.contactFormInput:valid + .formIcon {
   color: #0094f0;
 }
 .contactIcon {
-  color: silver;
+  color: #b8b8b8;
   font-size: 18px;
   margin-bottom: 4px;
 }
