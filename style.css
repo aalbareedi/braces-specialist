@@ -426,7 +426,7 @@ img {
   margin-bottom: 40px;
   line-height: 20px;
   color: #e8e8e8;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
 }
 
 .formOption {
@@ -449,7 +449,7 @@ img {
 .contactFormText {
   margin-bottom: 6px;
   display: block;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
   color: #e8e8e8;
 }
 
@@ -631,8 +631,9 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #contactForm.lightTheme .contactFormInput {
-  background-color: #dcdcdc;
+  background-color: white;
   color: black;
+  border: 2px solid #e8e8e8;
 }
 
 #contactForm.lightTheme .switchText {
@@ -640,7 +641,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #contactForm.lightTheme .formIcon {
-  color: darkgray;
+  color: lightgray;
 }
 
 #contactForm.lightTheme .contactFormInput::-webkit-input-placeholder {
@@ -891,13 +892,13 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .contactIcon {
-  color: #b8b8b8;
+  color: DarkGray;
   font-size: 18px;
   margin-bottom: 4px;
 }
 
 .contactBtnText {
-  color: #616161;
+  color: #585858;
   font-size: 13px;
   letter-spacing: 0.5px;
   font-family: "Roboto", sans-serif;
@@ -1881,7 +1882,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: darkgray;
+  background-color: silver;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
