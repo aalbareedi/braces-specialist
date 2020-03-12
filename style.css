@@ -132,6 +132,7 @@ img {
 }
 
 .logoTextBottom {
+  background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -633,6 +634,10 @@ input.contactFormInput:valid + .formIcon {
   background-color: white;
   color: black;
   border: 2px solid #e8e8e8;
+}
+
+#contactForm.lightTheme .contactFormInput:focus {
+  border: 2px solid #067ffc;
 }
 
 #contactForm.lightTheme .switchText {
