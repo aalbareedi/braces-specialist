@@ -151,9 +151,9 @@ img {
   z-index: 200;
 }
 .navMenuOpt {
-  // @include flexCenterXY();
-  display: flex;
-  align-items: center;
+  @include flexCenterXY();
+  // display: flex;
+  // align-items: center;
   background-color: whitesmoke;
   color: #616161;
   cursor: pointer;
@@ -167,7 +167,7 @@ img {
   right: 0;
   transition: top 0.1s;
   text-decoration: none;
-  padding-left: 49px;
+  // padding-left: 49px;
 }
 .desktopNavMenuOpt {
   @include flexCenterXY();
@@ -273,7 +273,8 @@ img {
 }
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
-  background-color: #303030;
+  // background-color: #303030;
+  background-color: #222222;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -353,7 +354,7 @@ img {
   position: relative;
 }
 .contactFormInput {
-  background-color: #222222;
+  background-color: #343434;
   height: 54px;
   border: none;
   padding-left: 11px;
@@ -764,6 +765,45 @@ input.contactFormInput:valid + .formIcon {
 .learnMoreStatBtn:active {
   background: #1e748a;
 }
+/* ****************************************** ABOUT ******************************************* */
+#aboutUs {
+  font-family: "Nanum Gothic", sans-serif;
+  background: gainsboro;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 190px 190px;
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+.aboutText {
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  font-size: 15px;
+  margin-left: 20px;
+  padding-right: 15px;
+}
+.teethImg {
+  margin: 40px 40px 0 40px;
+}
+#whyTitle {
+  margin-top: 30px;
+}
+.whyReason {
+  display: flex;
+  margin-bottom: 42px;
+}
+.whyBulletPoint {
+  font-size: 23px;
+  line-height: 20px;
+  margin-left: 7px;
+}
+.whyText {
+  padding-left: 6px;
+  padding-right: 13px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
@@ -896,50 +936,11 @@ input.contactFormInput:valid + .formIcon {
   margin: 50px 0 10px 0;
   letter-spacing: 0.4px;
 }
-/* ****************************************** ABOUT ******************************************* */
-#aboutUs {
-  font-family: "Nanum Gothic", sans-serif;
-  background: gainsboro;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  border-radius: 0px 0px 190px 190px;
-  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-}
-.aboutText {
-  line-height: 28px;
-  letter-spacing: 0.4px;
-  font-size: 15px;
-  margin-left: 20px;
-  padding-right: 15px;
-}
-.teethImg {
-  margin: 40px 40px 0 40px;
-}
-#whyTitle {
-  margin-top: 30px;
-}
-.whyReason {
-  display: flex;
-  margin-bottom: 42px;
-}
-.whyBulletPoint {
-  font-size: 23px;
-  line-height: 20px;
-  margin-left: 7px;
-}
-.whyText {
-  padding-left: 6px;
-  padding-right: 13px;
-  line-height: 22px;
-  letter-spacing: 0.3px;
-}
-/* ****************************************** DOCTOR ******************************************* */
+/* ************************************** DOCTOR *************************************** */
 #doctor {
   /* background-color: #7fbfeb; */
   background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
-  padding-top: 230px;
+  padding-top: 210px;
   padding-bottom: 40px;
   margin-top: -190px;
   position: relative;
@@ -1184,8 +1185,9 @@ input.contactFormInput:valid + .formIcon {
   width: 100%;
   height: 100%;
   @include flexCenterXY();
-  font-family: "Nanum Gothic", sans-serif;
-  letter-spacing: 0.5px;
+  // font-family: "Nanum Gothic", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.6px;
   font-size: 18px;
   color: white;
   background: rgba(0, 0, 0, 0.5);
