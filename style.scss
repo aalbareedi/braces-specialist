@@ -56,11 +56,9 @@ img {
   border-style: solid;
   // border-width: 0 100vw 27px 0;
   // border-color: transparent whitesmoke transparent transparent;
-
   border-width: 27px 0 0 100vw;
   border-color: transparent transparent transparent gainsboro;
 }
-
 /* ************************************ NAVBAR ****************************************** */
 #navOverlay {
   background: black;
@@ -87,7 +85,6 @@ img {
   position: absolute;
   height: 100%;
   width: 56px;
-  /* background-color: red; */
   cursor: pointer;
 }
 #mainLogo {
@@ -97,7 +94,6 @@ img {
   position: absolute;
   left: 50px;
   opacity: 0.8;
-  /* background: pink; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -110,7 +106,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  background-color: pink;
+  // background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -234,7 +230,6 @@ img {
 .formOpen #desktopNavMenu a.desktopNavMenuOpt.active {
   background-color: whitesmoke;
 }
-
 /* ********************************* NAV MENU SOCIAL MEDIA ************************************ */
 #navSocial {
   display: grid;
@@ -276,7 +271,6 @@ img {
 #navInstagramIcon {
   font-size: 26px;
 }
-
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
   background-color: #303030;
@@ -494,7 +488,6 @@ input.contactFormInput:valid + .formIcon {
     color: #a0a0a0;
   }
 }
-
 /* ********************************** FORM OVERLAYS ************************************ */
 .formOverlay {
   @include flexCenterXY();
@@ -668,10 +661,8 @@ input.contactFormInput:valid + .formIcon {
   height: calc(100vh - #{$mobileNav} - #{$mobileDock});
   position: relative;
   min-width: 100vw;
-  /* background-attachment: fixed; */
 }
 .bgImg {
-  /* height: 100%;*/
   height: calc(100vh - #{$mobileNav} - #{$mobileDock});
   min-width: 100vw;
   background-image: url("images/smilebg1.png");
@@ -680,9 +671,9 @@ input.contactFormInput:valid + .formIcon {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  // background-position: bottom 0px left -15px;
   position: fixed;
   z-index: -1;
+  // background-position: bottom 0px left -15px;
 }
 .landingHeading {
   font-family: "Russo One", sans-serif;
@@ -756,11 +747,6 @@ input.contactFormInput:valid + .formIcon {
 #statPercent::after {
   content: "%";
 }
-// .statBtnBar {
-//   @include flexCenterXY();
-//   height: 60px;
-//   margin-top: 10px;
-// }
 .learnMoreStatBtn {
   margin: 10px auto 0 auto;
   display: block;
@@ -932,7 +918,7 @@ input.contactFormInput:valid + .formIcon {
   margin: 40px 40px 0 40px;
 }
 #whyTitle {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .whyReason {
   display: flex;
@@ -1276,7 +1262,6 @@ input.contactFormInput:valid + .formIcon {
 .freeWord {
   color: #00cd00;
 }
-
 /* *********************************** FAQ ************************************ */
 #faq {
   background: #0d79a1;
@@ -1327,7 +1312,7 @@ footer {
   opacity: 0.4;
   position: absolute;
   right: 7px;
-  bottom: 0;
+  bottom: 3px;
 }
 .footerNavLogoName {
   opacity: 0.8;
@@ -1369,9 +1354,6 @@ footer {
 .footerCredit {
   @include flexCenterXY();
   background-color: #999;
-  // position: absolute;
-  // bottom: 0;
-  // width: 100%;
   font-size: 13px;
   height: 28px;
 }

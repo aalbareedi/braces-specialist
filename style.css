@@ -100,7 +100,6 @@ img {
   position: absolute;
   height: 100%;
   width: 56px;
-  /* background-color: red; */
   cursor: pointer;
 }
 
@@ -112,7 +111,6 @@ img {
   position: absolute;
   left: 50px;
   opacity: 0.8;
-  /* background: pink; */
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +132,6 @@ img {
 }
 
 .logoTextBottom {
-  background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -913,11 +910,9 @@ input.contactFormInput:valid + .formIcon {
   height: calc(100vh - 58px - 58px);
   position: relative;
   min-width: 100vw;
-  /* background-attachment: fixed; */
 }
 
 .bgImg {
-  /* height: 100%;*/
   height: calc(100vh - 58px - 58px);
   min-width: 100vw;
   background-image: url("images/smilebg1.png");
@@ -1254,7 +1249,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #whyTitle {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .whyReason {
@@ -1735,7 +1730,7 @@ footer {
   opacity: 0.4;
   position: absolute;
   right: 7px;
-  bottom: 0;
+  bottom: 3px;
 }
 
 .footerNavLogoName {
