@@ -1062,6 +1062,10 @@ input.contactFormInput:valid + .formIcon {
   z-index: 1;
 }
 
+#aboutTitle {
+  margin-bottom: 40px;
+}
+
 .aboutText {
   line-height: 28px;
   letter-spacing: 0.4px;
@@ -1071,11 +1075,9 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .teethImg {
-  margin: 40px 40px 0 40px;
-}
-
-#whyTitle {
-  margin-top: 30px;
+  margin: 0 40px;
+  margin-bottom: 20px;
+  opacity: 0.6;
 }
 
 .whyReason {
@@ -1554,7 +1556,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 #bracesTreatment {
-  background-image: url("images/colorBraces2.png");
+  background-image: url("images/colorBraces.png");
 }
 
 #invisalignTreatment {
