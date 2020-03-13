@@ -68,6 +68,7 @@ function closeContactForm() {
   body.classList.remove("overflowHidden");
   body.classList.remove("formOpen");
   wrapper.classList.remove("overflowHidden");
+  navbar.setAttribute("href", "#landingBox");
 }
 
 function isFormValid() {

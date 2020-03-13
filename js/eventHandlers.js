@@ -19,6 +19,12 @@ for (let i = 0; i < navSocialMediaBtns.length; i++) {
   };
 }
 
+navbar.onclick = function() {
+  if (contactForm.classList.contains("displayHidden") == false) {
+    closeContactForm();
+  }
+};
+
 navOverlay.onclick = function() {
   closeNavMenu();
 };
@@ -30,6 +36,7 @@ messageBtn.onclick = function() {
   body.classList.add("formOpen");
   wrapper.classList.add("overflowHidden");
   bodyScrollPosition = scrollingElement.scrollTop;
+  navbar.setAttribute("href", "");
 };
 
 contactForm.onsubmit = function(event) {

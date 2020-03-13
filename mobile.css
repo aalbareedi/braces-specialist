@@ -123,7 +123,6 @@
 @media only screen and (min-width: 532px) {
   /*** FORM ***/
   .formTitle {
-    margin-top: 50px;
     font-size: 24px;
   }
   .formDescription {
@@ -133,18 +132,11 @@
   }
   .contactFormText {
     font-size: 18px;
-    width: 210px;
-    margin-bottom: 0;
-    padding-right: 12px;
-    text-align: right;
   }
   .contactFormInput {
     font-size: 21px;
     padding-left: 14px;
     height: 60px;
-  }
-  #messageInputLabel {
-    padding-top: 11px;
   }
   .formIcon {
     font-size: 26px;
@@ -153,30 +145,19 @@
     font-size: 16px;
   }
   .formOption {
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px 90px 0px 60px;
+    padding: 0px 28px;
   }
   .formMessage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0px 90px 150px 60px;
+    padding: 0px 28px 153px 28px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
-    height: 400px;
+    height: 300px;
   }
   input.contactFormInput:valid {
     background-size: 32px;
   }
   .contactFormBtn {
-    height: 68px;
     border-right: 3px solid #e8e8e8;
   }
   .formSubmitBtnReady {
@@ -189,10 +170,10 @@
     border-top: 3px solid #e8e8e8;
   }
   .formBtnText {
-    font-size: 24px;
+    font-size: 22px;
   }
   .formBtnIcon {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
