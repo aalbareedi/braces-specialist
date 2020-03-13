@@ -290,11 +290,11 @@ img {
   top: 100vh;
 }
 #contactForm.displayHidden #formButtons {
-  bottom: -$tabletDock;
+  bottom: -$mobileDock;
 }
 .formTitle {
   font-size: 22px;
-  color: #e8e8e8;
+  color: gainsboro;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -308,8 +308,8 @@ img {
   top: 41px;
   left: 18px;
   font-size: 20px;
-  color: #e8e8e8;
-  border: 2px solid gainsboro;
+  color: gainsboro;
+  border: 2px solid #343434;
   border-radius: 40px;
 }
 #backArrow:active {
@@ -320,7 +320,7 @@ img {
   margin-top: 50px;
   margin-bottom: 40px;
   line-height: 20px;
-  color: #e8e8e8;
+  color: gainsboro;
   letter-spacing: 0.6px;
 }
 .formOption {
@@ -341,7 +341,7 @@ img {
   margin-bottom: 6px;
   display: block;
   letter-spacing: 0.6px;
-  color: #e8e8e8;
+  color: gainsboro;
 }
 .formAsterik {
   color: #d12323;
@@ -462,12 +462,13 @@ input.contactFormInput:valid + .formIcon {
   }
   #backArrow {
     color: darkgray;
+    border: 2px solid gainsboro;
   }
   #backArrow:active {
     background-color: gainsboro;
   }
   .formTitle {
-    color: gray;
+    color: #686868;
   }
   .contactFormInput {
     background-color: white;
@@ -1490,7 +1491,7 @@ input:checked + .slider:before {
   position: absolute;
   right: 20px;
   top: 16px;
-  color: #e8e8e8;
+  color: gainsboro;
   letter-spacing: 0.3px;
   font-family: "Titillium Web", sans-serif;
 }
