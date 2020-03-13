@@ -120,6 +120,82 @@
   }
 }
 
+@media only screen and (min-width: 532px) {
+  /*** FORM ***/
+  .formTitle {
+    margin-top: 50px;
+    font-size: 24px;
+  }
+  .formDescription {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0px 30px;
+  }
+  .contactFormText {
+    font-size: 18px;
+    width: 210px;
+    margin-bottom: 0;
+    padding-right: 12px;
+    text-align: right;
+  }
+  .contactFormInput {
+    font-size: 21px;
+    padding-left: 14px;
+    height: 60px;
+  }
+  #messageInputLabel {
+    padding-top: 11px;
+  }
+  .formIcon {
+    font-size: 26px;
+  }
+  .formAsterik {
+    font-size: 16px;
+  }
+  .formOption {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 90px 0px 60px;
+  }
+  .formMessage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 90px 150px 60px;
+  }
+  #messageInput {
+    padding: 8px 8px 0 15px;
+    height: 400px;
+  }
+  input.contactFormInput:valid {
+    background-size: 32px;
+  }
+  .contactFormBtn {
+    height: 68px;
+    border-right: 3px solid #e8e8e8;
+  }
+  .formSubmitBtnReady {
+    border: none;
+  }
+  #contactForm.displayHidden #formButtons {
+    bottom: -71px;
+  }
+  #formButtons {
+    border-top: 3px solid #e8e8e8;
+  }
+  .formBtnText {
+    font-size: 24px;
+  }
+  .formBtnIcon {
+    font-size: 30px;
+  }
+}
+
 @media only screen and (min-width: 667px) {
   /*** STATS ***/
   #stats {
@@ -240,90 +316,6 @@
   }
   #desktopNavMenu .desktopNavMenuOpt:active {
     background-color: #e8e8e8;
-  }
-  /*** FORM ***/
-  .backArrow {
-    font-size: 34px;
-    height: 90px;
-    width: 90px;
-    padding-top: 10px;
-  }
-  .messageMenuTitle {
-    font-size: 24px;
-  }
-  .formTitle {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-  .contactFormText {
-    font-size: 18px;
-    width: 210px;
-    margin-bottom: 0;
-    padding-right: 12px;
-    text-align: right;
-  }
-  .contactFormInput {
-    font-size: 21px;
-    padding-left: 14px;
-    height: 60px;
-  }
-  #messageInputLabel {
-    padding-top: 11px;
-  }
-  .formDescription {
-    width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 22px;
-    height: 80px;
-  }
-  .formIcon {
-    font-size: 26px;
-  }
-  .formAsterik {
-    font-size: 16px;
-  }
-  .formOption {
-    margin-bottom: 26px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px 70px 0px 60px;
-  }
-  .formMessage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0px 70px 150px 60px;
-  }
-  #messageInput {
-    padding: 8px 8px 0 15px;
-    height: 400px;
-  }
-  input.contactFormInput:valid {
-    background-size: 32px;
-  }
-  .contactFormBtn {
-    height: 68px;
-    border-right: 3px solid #e8e8e8;
-  }
-  .formSubmitBtnReady {
-    border: none;
-  }
-  #contactForm.displayHidden #formButtons {
-    bottom: -71px;
-  }
-  #formButtons {
-    border-top: 3px solid #e8e8e8;
-  }
-  .formBtnText {
-    font-size: 24px;
-  }
-  .formBtnIcon {
-    font-size: 30px;
   }
   /*** ABOUT ***/
   #aboutUs {

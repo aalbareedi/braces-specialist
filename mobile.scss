@@ -142,8 +142,77 @@ $tabletDock: 71px;
   }
 }
 
-// @media only screen and (min-width: 532px) {
-// }
+@media only screen and (min-width: 532px) {
+  /*** FORM ***/
+  .formTitle {
+    margin-top: 50px;
+    font-size: 24px;
+  }
+  .formDescription {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0px 30px;
+  }
+  .contactFormText {
+    // background: pink;
+    font-size: 18px;
+    width: 210px;
+    margin-bottom: 0;
+    padding-right: 12px;
+    text-align: right;
+  }
+  .contactFormInput {
+    font-size: 21px;
+    padding-left: 14px;
+    height: 60px;
+  }
+  #messageInputLabel {
+    padding-top: 11px;
+  }
+  .formIcon {
+    font-size: 26px;
+  }
+  .formAsterik {
+    font-size: 16px;
+  }
+  .formOption {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0px 90px 0px 60px;
+  }
+  .formMessage {
+    display: flex;
+    padding: 0px 90px 150px 60px;
+  }
+  #messageInput {
+    padding: 8px 8px 0 15px;
+    height: 400px;
+  }
+  input.contactFormInput:valid {
+    background-size: 32px;
+  }
+  .contactFormBtn {
+    height: 68px;
+    border-right: 3px solid #e8e8e8;
+  }
+  .formSubmitBtnReady {
+    border: none;
+  }
+  #contactForm.displayHidden #formButtons {
+    bottom: -$tabletDock;
+  }
+  #formButtons {
+    border-top: 3px solid #e8e8e8;
+  }
+  .formBtnText {
+    font-size: 24px;
+  }
+  .formBtnIcon {
+    font-size: 30px;
+  }
+}
+
 @media only screen and (min-width: 667px) {
   /*** STATS ***/
   #stats {
@@ -264,125 +333,73 @@ $tabletDock: 71px;
     background-color: #e8e8e8;
   }
 
-  /*** FORM ***/
-  .backArrow {
-    font-size: 34px;
-    height: 90px;
-    width: 90px;
-    padding-top: 10px;
-  }
-  .messageMenuTitle {
-    font-size: 24px;
-  }
-  .formTitle {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-  .contactFormText {
-    // background: pink;
-    font-size: 18px;
-    width: 210px;
-    margin-bottom: 0;
-    padding-right: 12px;
-    text-align: right;
-  }
-  .contactFormInput {
-    font-size: 21px;
-    padding-left: 14px;
-    height: 60px;
-  }
-  #messageInputLabel {
-    padding-top: 11px;
-  }
-  .formDescription {
-    // background-color: pink;
-    width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 22px;
-    height: 80px;
-  }
-  .formIcon {
-    font-size: 26px;
-  }
-  .formAsterik {
-    font-size: 16px;
-  }
-  .formOption {
-    margin-bottom: 26px;
-    display: flex;
-    align-items: center;
-    padding: 0px 70px 0px 60px;
-  }
-  .formMessage {
-    display: flex;
-    padding: 0px 70px 150px 60px;
-  }
-  #messageInput {
-    padding: 8px 8px 0 15px;
-    height: 400px;
-  }
-  input.contactFormInput:valid {
-    background-size: 32px;
-  }
-  .contactFormBtn {
-    height: 68px;
-    border-right: 3px solid #e8e8e8;
-  }
-  .formSubmitBtnReady {
-    border: none;
-  }
-  #contactForm.displayHidden #formButtons {
-    bottom: -$tabletDock;
-  }
-  #formButtons {
-    border-top: 3px solid #e8e8e8;
-  }
-  .formBtnText {
-    font-size: 24px;
-  }
-  .formBtnIcon {
-    font-size: 30px;
-  }
-
-  // /*** STATS ***/
-  // #stats {
-  //   display: flex;
-  //   background-color: gainsboro;
-  //   padding: 10px 0;
+  // /*** FORM ***/
+  // .formTitle {
+  //   margin-top: 50px;
+  //   font-size: 26px;
   // }
-  // .statBox {
-  //   width: 33%;
-  //   height: 310px;
-  //   background-size: 128px;
-  //   background-color: whitesmoke;
-  //   border-radius: 30px;
-  //   /* border: 2px solid #0094f0; */
-  //   margin: 20px;
-  //   background-position: top 32px center;
-  //   display: initial;
-  //   position: relative;
+  // .formDescription {
+  //   font-size: 20px;
+  //   line-height: 26px;
+  //   padding: 0px 100px;
   // }
-  // .learnMoreStatBtn {
-  //   display: none;
-  // }
-  // .statNumber {
-  //   position: absolute;
-  //   top: 194px;
-  //   width: 100%;
-  //   text-align: center;
-  // }
-  // .statDescription {
-  //   position: absolute;
-  //   top: 236px;
-  //   width: 100%;
-  //   text-align: center;
+  // .contactFormText {
+  //   // background: pink;
   //   font-size: 18px;
+  //   width: 210px;
+  //   margin-bottom: 0;
+  //   padding-right: 12px;
+  //   text-align: right;
   // }
-  // #yearDescription {
-  //   position: initial;
-  //   width: 200px;
-  //   margin: 236px auto 0 auto;
+  // .contactFormInput {
+  //   font-size: 21px;
+  //   padding-left: 14px;
+  //   height: 60px;
+  // }
+  // #messageInputLabel {
+  //   padding-top: 11px;
+  // }
+  // .formIcon {
+  //   font-size: 26px;
+  // }
+  // .formAsterik {
+  //   font-size: 16px;
+  // }
+  // .formOption {
+  //   margin-bottom: 30px;
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 0px 90px 0px 60px;
+  // }
+  // .formMessage {
+  //   display: flex;
+  //   padding: 0px 90px 150px 60px;
+  // }
+  // #messageInput {
+  //   padding: 8px 8px 0 15px;
+  //   height: 400px;
+  // }
+  // input.contactFormInput:valid {
+  //   background-size: 32px;
+  // }
+  // .contactFormBtn {
+  //   height: 68px;
+  //   border-right: 3px solid #e8e8e8;
+  // }
+  // .formSubmitBtnReady {
+  //   border: none;
+  // }
+  // #contactForm.displayHidden #formButtons {
+  //   bottom: -$tabletDock;
+  // }
+  // #formButtons {
+  //   border-top: 3px solid #e8e8e8;
+  // }
+  // .formBtnText {
+  //   font-size: 24px;
+  // }
+  // .formBtnIcon {
+  //   font-size: 30px;
   // }
 
   /*** ABOUT ***/
