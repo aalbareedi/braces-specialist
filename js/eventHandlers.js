@@ -112,7 +112,7 @@ body.onscroll = function() {
   for (let i = 0; i < scrollToElements.length; i++) {
     if (
       scrollingElement.scrollTop + screen.height - 120 >
-      scrollToElements[i].offsetTop
+      getAbsoluteOffsetTop(scrollToElements[i])
     ) {
       scrollToElements[i].classList.add(
         scrollToElements[i].getAttribute("data-scrollToAnimation")
