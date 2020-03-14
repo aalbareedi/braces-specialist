@@ -96,7 +96,12 @@
     height: 580px;
   }
   #aboutUs {
-    border-radius: 0px 0px 200px 200px;
+    border-radius: 0;
+  }
+  .teethImg {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 300px;
   }
   /*** STATS ***/
   #stats {
@@ -131,6 +136,9 @@
 }
 
 @media only screen and (min-width: 532px) {
+  .teethImg {
+    width: 320px;
+  }
   /*** FORM ***/
   .formTitle {
     margin-top: 50px;
@@ -434,7 +442,6 @@
   /*** ABOUT ***/
   #aboutUs {
     background-color: whitesmoke;
-    border-radius: 0;
   }
   .aboutText {
     padding-right: 70px;
@@ -461,9 +468,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .awardImg {
-    height: 240px;
   }
   /*** DOCTOR ***/
   .docContainer {
@@ -556,8 +560,11 @@
     display: none;
   }
   .beforeAfterImg {
-    width: 80%;
+    width: 60%;
     margin: 40px auto 0 auto;
+  }
+  .timelapseDescription {
+    font-size: 18px;
   }
   /*** FAQ ***/
   #faq {

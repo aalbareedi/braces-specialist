@@ -117,7 +117,12 @@ $tabletDock: 71px;
     height: 580px;
   }
   #aboutUs {
-    border-radius: 0px 0px 200px 200px;
+    border-radius: 0;
+  }
+  .teethImg {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 300px;
   }
 
   /*** STATS ***/
@@ -154,6 +159,9 @@ $tabletDock: 71px;
 }
 
 @media only screen and (min-width: 532px) {
+  .teethImg {
+    width: 320px;
+  }
   /*** FORM ***/
   .formTitle {
     margin-top: 50px;
@@ -448,7 +456,6 @@ $tabletDock: 71px;
   /*** ABOUT ***/
   #aboutUs {
     background-color: whitesmoke;
-    border-radius: 0;
   }
   .aboutText {
     padding-right: 70px;
@@ -473,9 +480,6 @@ $tabletDock: 71px;
   }
   .whyContainer {
     display: flex;
-  }
-  .awardImg {
-    height: 240px;
   }
   /*** DOCTOR ***/
   .docContainer {
@@ -563,8 +567,11 @@ $tabletDock: 71px;
     display: none;
   }
   .beforeAfterImg {
-    width: 80%;
+    width: 60%;
     margin: 40px auto 0 auto;
+  }
+  .timelapseDescription {
+    font-size: 18px;
   }
   /*** FAQ ***/
   #faq {

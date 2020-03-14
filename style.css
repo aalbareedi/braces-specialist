@@ -1061,7 +1061,7 @@ input.contactFormInput:valid + .formIcon {
   background: gainsboro;
   padding-top: 10px;
   padding-bottom: 30px;
-  border-radius: 0px 0px 190px 190px;
+  border-radius: 0px 0px 200px 200px;
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
   position: relative;
@@ -1081,8 +1081,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .teethImg {
-  margin: 0 40px;
-  margin-bottom: 30px;
+  margin: 0 50px 30px 50px;
   opacity: 0.6;
 }
 
@@ -1291,25 +1290,28 @@ input.contactFormInput:valid + .formIcon {
 #doctor {
   /* background-color: #7fbfeb; */
   background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
-  padding-top: 210px;
+  padding-top: 190px;
   padding-bottom: 40px;
   margin-top: -190px;
   position: relative;
 }
 
 #doctorWrapper {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .doctorTitle {
-  display: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.8px;
+  margin-right: 240px;
+  margin-bottom: 4px;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .doctorName {
   font-family: "Volkhov", serif;
+  font-family: "Lora", serif;
   text-align: center;
   font-size: 26px;
   letter-spacing: 0.8px;
