@@ -1,4 +1,5 @@
 /* ipod touch (smaller than iphone5) - firefox/edge/chrome */
+/* iphone 7 (firefox/edge/chrome)  */
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
   .sectionTitle {
@@ -76,7 +77,6 @@
   }
 }
 
-/* iphone 7 (firefox/edge/chrome)  */
 /* iPhone 6/7/8 PLUS */
 @media only screen and (min-width: 414px) {
   .logoTextBottom {
@@ -227,6 +227,36 @@
     margin: 236px auto 0 auto;
   }
   /*** FORM ***/
+  .formTitle {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  .formDescription {
+    padding: 0px 60px;
+    margin-bottom: 50px;
+  }
+  .formOption {
+    padding: 0px 60px;
+    margin-bottom: 30px;
+  }
+  .formMessage {
+    padding: 0px 60px 153px 60px;
+  }
+  #backArrow {
+    width: 50px;
+    height: 50px;
+    left: 36px;
+    font-size: 24px;
+  }
+  .switchText {
+    font-size: 14px;
+    right: 32px;
+    top: 21px;
+  }
+  .switch {
+    top: 56px;
+    right: 24px;
+  }
 }
 
 /* iPad mini/air */
@@ -306,18 +336,15 @@
   #desktopNavMenu .desktopNavMenuOpt:active {
     background-color: #e8e8e8;
   }
-  .formTitle {
-    margin-top: 50px;
-    font-size: 26px;
-  }
+  /*** FORM ***/
   .formDescription {
     font-size: 20px;
-    line-height: 26px;
-    padding: 0px 100px;
+    padding: 0px 90px 0px 110px;
+    line-height: 28px;
   }
   .contactFormText {
-    font-size: 18px;
-    width: 210px;
+    font-size: 20px;
+    width: 220px;
     margin-bottom: 0;
     padding-right: 12px;
     text-align: right;
@@ -344,13 +371,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0px 90px 0px 60px;
+    padding: 0px 100px 0px 60px;
   }
   .formMessage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0px 90px 150px 60px;
+    padding: 0px 100px 150px 60px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
@@ -377,6 +404,19 @@
   }
   .formBtnIcon {
     font-size: 30px;
+  }
+  .switchText {
+    top: 21px;
+    right: 38px;
+  }
+  .switch {
+    top: 56px;
+    right: 30px;
+  }
+  #backArrow {
+    width: 58px;
+    height: 58px;
+    font-size: 26px;
   }
   /*** ABOUT ***/
   #aboutUs {

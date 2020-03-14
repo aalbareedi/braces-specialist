@@ -8,6 +8,14 @@ $tabletDock: 71px;
 //   }
 // }
 
+/* iphone 7 (firefox/edge/chrome)  */
+// @media only screen and (min-width: 375px) and (max-height: 552px),
+//   only screen and (min-width: 375px) and (height: 559px) {
+//   .logoTextBottom {
+//     color: green;
+//   }
+// }
+
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
   .logoTextBottom {
@@ -89,14 +97,6 @@ $tabletDock: 71px;
     font-size: 24px;
   }
 }
-
-/* iphone 7 (firefox/edge/chrome)  */
-// @media only screen and (min-width: 375px) and (max-height: 552px),
-//   only screen and (min-width: 375px) and (height: 559px) {
-//   .logoTextBottom {
-//     color: green;
-//   }
-// }
 
 /* iPhone 6/7/8 PLUS */
 @media only screen and (min-width: 414px) {
@@ -248,7 +248,38 @@ $tabletDock: 71px;
     width: 200px;
     margin: 236px auto 0 auto;
   }
+
   /*** FORM ***/
+  .formTitle {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  .formDescription {
+    padding: 0px 60px;
+    margin-bottom: 50px;
+  }
+  .formOption {
+    padding: 0px 60px;
+    margin-bottom: 30px;
+  }
+  .formMessage {
+    padding: 0px 60px 153px 60px;
+  }
+  #backArrow {
+    width: 50px;
+    height: 50px;
+    left: 36px;
+    font-size: 24px;
+  }
+  .switchText {
+    font-size: 14px;
+    right: 32px;
+    top: 21px;
+  }
+  .switch {
+    top: 56px;
+    right: 24px;
+  }
 }
 
 /* iPad mini/air */
@@ -329,20 +360,15 @@ $tabletDock: 71px;
     background-color: #e8e8e8;
   }
 
-  // /*** FORM ***/
-  .formTitle {
-    margin-top: 50px;
-    font-size: 26px;
-  }
+  /*** FORM ***/
   .formDescription {
     font-size: 20px;
-    line-height: 26px;
-    padding: 0px 100px;
+    padding: 0px 90px 0px 110px;
+    line-height: 28px;
   }
   .contactFormText {
-    // background: pink;
-    font-size: 18px;
-    width: 210px;
+    font-size: 20px;
+    width: 220px;
     margin-bottom: 0;
     padding-right: 12px;
     text-align: right;
@@ -365,11 +391,11 @@ $tabletDock: 71px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    padding: 0px 90px 0px 60px;
+    padding: 0px 100px 0px 60px;
   }
   .formMessage {
     display: flex;
-    padding: 0px 90px 150px 60px;
+    padding: 0px 100px 150px 60px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
@@ -396,6 +422,19 @@ $tabletDock: 71px;
   }
   .formBtnIcon {
     font-size: 30px;
+  }
+  .switchText {
+    top: 21px;
+    right: 38px;
+  }
+  .switch {
+    top: 56px;
+    right: 30px;
+  }
+  #backArrow {
+    width: 58px;
+    height: 58px;
+    font-size: 26px;
   }
 
   /*** ABOUT ***/
@@ -627,9 +666,6 @@ $tabletDock: 71px;
     font-size: 74px;
   }
 }
-
-// @media only screen and (min-width: 1024px) {
-// }
 
 // @media only screen and (min-width: 1024px) {
 // }
