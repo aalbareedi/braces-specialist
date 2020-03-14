@@ -951,30 +951,33 @@ input.contactFormInput:valid + .formIcon {
 #doctor {
   /* background-color: #7fbfeb; */
   background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
-  padding-top: 190px;
+  padding-top: 196px;
   padding-bottom: 40px;
   margin-top: -190px;
   position: relative;
 }
 #doctorWrapper {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .doctorTitle {
   text-align: center;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  margin-right: 240px;
-  margin-bottom: 4px;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  margin-right: 194px;
+  margin-bottom: 6px;
   font-family: "Oleo Script Swash Caps", cursive;
+  font-family: "Pacifico", cursive;
 }
 .doctorName {
   // background-color: silver;
   font-family: "Volkhov", serif;
   font-family: "Lora", serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
-  font-size: 26px;
-  letter-spacing: 0.8px;
-  margin: 0 auto 38px auto;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  margin: 0 auto 34px auto;
 }
 .doctorImgParent {
   position: relative;

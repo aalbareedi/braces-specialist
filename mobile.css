@@ -103,6 +103,9 @@
     margin: 0 auto 30px auto;
     width: 300px;
   }
+  #doctorWrapper {
+    padding-top: 30px;
+  }
   /*** STATS ***/
   #stats {
     padding-bottom: 50px;
