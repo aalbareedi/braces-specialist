@@ -88,7 +88,7 @@ $tabletDock: 71px;
     height: 200px;
   }
   .contactFormInput {
-    font-size: 17px;
+    font-size: 18px;
   }
   .formBtnText {
     font-size: 18px;
@@ -156,19 +156,19 @@ $tabletDock: 71px;
 @media only screen and (min-width: 532px) {
   /*** FORM ***/
   .formTitle {
-    // margin-top: 50px;
-    font-size: 24px;
+    margin-top: 50px;
+    font-size: 26px;
   }
   .formDescription {
     font-size: 18px;
     line-height: 26px;
-    padding: 0px 30px;
+    padding: 0px 60px;
   }
   .contactFormText {
     font-size: 18px;
   }
   .contactFormInput {
-    font-size: 21px;
+    font-size: 22px;
     padding-left: 14px;
     height: 60px;
   }
@@ -179,10 +179,10 @@ $tabletDock: 71px;
     font-size: 16px;
   }
   .formOption {
-    padding: 0px 28px;
+    padding: 0px 60px;
   }
   .formMessage {
-    padding: 0px 28px 153px 28px;
+    padding: 0px 60px 153px 60px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
@@ -205,6 +205,20 @@ $tabletDock: 71px;
   }
   .formBtnIcon {
     font-size: 28px;
+  }
+  .switch {
+    right: 26px;
+    top: 54px;
+  }
+  .switchText {
+    right: 34px;
+    top: 26px;
+  }
+  #backArrow {
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
   }
 }
 
@@ -248,37 +262,39 @@ $tabletDock: 71px;
     width: 200px;
     margin: 236px auto 0 auto;
   }
-
   /*** FORM ***/
   .formTitle {
-    font-size: 26px;
-    margin-top: 50px;
+    font-size: 28px;
   }
   .formDescription {
-    padding: 0px 60px;
+    padding: 0px 110px 0 110px;
+    margin-top: 60px;
     margin-bottom: 50px;
+    font-size: 20px;
   }
   .formOption {
-    padding: 0px 60px;
+    padding: 0px 110px;
     margin-bottom: 30px;
   }
   .formMessage {
-    padding: 0px 60px 153px 60px;
+    padding: 0px 110px 153px 110px;
+  }
+  .contactFormText {
+    font-size: 20px;
   }
   #backArrow {
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     left: 36px;
     font-size: 24px;
   }
   .switchText {
     font-size: 14px;
-    right: 32px;
+    right: 36px;
     top: 21px;
   }
   .switch {
-    top: 56px;
-    right: 24px;
+    right: 28px;
   }
 }
 
@@ -330,7 +346,6 @@ $tabletDock: 71px;
   #messageIcon {
     margin-right: 8px;
   }
-
   /*** NAV ***/
   #navToggleBtn {
     display: none;
@@ -359,22 +374,22 @@ $tabletDock: 71px;
   #desktopNavMenu .desktopNavMenuOpt:active {
     background-color: #e8e8e8;
   }
-
   /*** FORM ***/
   .formDescription {
-    font-size: 20px;
-    padding: 0px 90px 0px 110px;
+    font-size: 22px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    padding: 0px 90px 0 130px;
     line-height: 28px;
   }
   .contactFormText {
-    font-size: 20px;
-    width: 220px;
+    font-size: 22px;
+    width: 260px;
     margin-bottom: 0;
     padding-right: 12px;
     text-align: right;
   }
   .contactFormInput {
-    font-size: 21px;
     padding-left: 14px;
     height: 60px;
   }
@@ -388,21 +403,17 @@ $tabletDock: 71px;
     font-size: 16px;
   }
   .formOption {
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
-    padding: 0px 100px 0px 60px;
+    padding: 0px 100px;
   }
   .formMessage {
     display: flex;
-    padding: 0px 100px 150px 60px;
+    padding: 0px 100px 153px 100px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
     height: 400px;
-  }
-  input.contactFormInput:valid {
-    background-size: 32px;
   }
   .contactFormBtn {
     height: 68px;
@@ -424,19 +435,16 @@ $tabletDock: 71px;
     font-size: 30px;
   }
   .switchText {
-    top: 21px;
-    right: 38px;
+    font-size: 15px;
   }
   .switch {
     top: 56px;
-    right: 30px;
   }
   #backArrow {
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
     font-size: 26px;
   }
-
   /*** ABOUT ***/
   #aboutUs {
     background-color: whitesmoke;
@@ -469,7 +477,6 @@ $tabletDock: 71px;
   .awardImg {
     height: 240px;
   }
-
   /*** DOCTOR ***/
   .docContainer {
     display: flex;
@@ -485,7 +492,6 @@ $tabletDock: 71px;
   .docCenter {
     margin-left: 20px;
   }
-
   /*** REVIEWS ***/
   .reviews {
     background-position: bottom 0px right;
@@ -520,7 +526,6 @@ $tabletDock: 71px;
   .slick-dots li {
     margin: 0 8px;
   }
-
   /*** TREATMENT OPTIONS ***/
   #treatmentOptions {
     padding-bottom: 70px;
@@ -561,7 +566,6 @@ $tabletDock: 71px;
     width: 80%;
     margin: 40px auto 0 auto;
   }
-
   /*** FAQ ***/
   #faq {
     padding-bottom: 20px;
@@ -582,7 +586,6 @@ $tabletDock: 71px;
     padding-right: 70px;
     padding-bottom: 54px;
   }
-
   /*** HOURS & LOCATION ***/
   .officeWrapper {
     width: 50%;

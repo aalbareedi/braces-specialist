@@ -67,7 +67,7 @@
     height: 200px;
   }
   .contactFormInput {
-    font-size: 17px;
+    font-size: 18px;
   }
   .formBtnText {
     font-size: 18px;
@@ -133,18 +133,19 @@
 @media only screen and (min-width: 532px) {
   /*** FORM ***/
   .formTitle {
-    font-size: 24px;
+    margin-top: 50px;
+    font-size: 26px;
   }
   .formDescription {
     font-size: 18px;
     line-height: 26px;
-    padding: 0px 30px;
+    padding: 0px 60px;
   }
   .contactFormText {
     font-size: 18px;
   }
   .contactFormInput {
-    font-size: 21px;
+    font-size: 22px;
     padding-left: 14px;
     height: 60px;
   }
@@ -155,10 +156,10 @@
     font-size: 16px;
   }
   .formOption {
-    padding: 0px 28px;
+    padding: 0px 60px;
   }
   .formMessage {
-    padding: 0px 28px 153px 28px;
+    padding: 0px 60px 153px 60px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
@@ -181,6 +182,20 @@
   }
   .formBtnIcon {
     font-size: 28px;
+  }
+  .switch {
+    right: 26px;
+    top: 54px;
+  }
+  .switchText {
+    right: 34px;
+    top: 26px;
+  }
+  #backArrow {
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
   }
 }
 
@@ -228,34 +243,37 @@
   }
   /*** FORM ***/
   .formTitle {
-    font-size: 26px;
-    margin-top: 50px;
+    font-size: 28px;
   }
   .formDescription {
-    padding: 0px 60px;
+    padding: 0px 110px 0 110px;
+    margin-top: 60px;
     margin-bottom: 50px;
+    font-size: 20px;
   }
   .formOption {
-    padding: 0px 60px;
+    padding: 0px 110px;
     margin-bottom: 30px;
   }
   .formMessage {
-    padding: 0px 60px 153px 60px;
+    padding: 0px 110px 153px 110px;
+  }
+  .contactFormText {
+    font-size: 20px;
   }
   #backArrow {
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     left: 36px;
     font-size: 24px;
   }
   .switchText {
     font-size: 14px;
-    right: 32px;
+    right: 36px;
     top: 21px;
   }
   .switch {
-    top: 56px;
-    right: 24px;
+    right: 28px;
   }
 }
 
@@ -338,19 +356,20 @@
   }
   /*** FORM ***/
   .formDescription {
-    font-size: 20px;
-    padding: 0px 90px 0px 110px;
+    font-size: 22px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    padding: 0px 90px 0 130px;
     line-height: 28px;
   }
   .contactFormText {
-    font-size: 20px;
-    width: 220px;
+    font-size: 22px;
+    width: 260px;
     margin-bottom: 0;
     padding-right: 12px;
     text-align: right;
   }
   .contactFormInput {
-    font-size: 21px;
     padding-left: 14px;
     height: 60px;
   }
@@ -364,27 +383,23 @@
     font-size: 16px;
   }
   .formOption {
-    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0px 100px 0px 60px;
+    padding: 0px 100px;
   }
   .formMessage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0px 100px 150px 60px;
+    padding: 0px 100px 153px 100px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
     height: 400px;
-  }
-  input.contactFormInput:valid {
-    background-size: 32px;
   }
   .contactFormBtn {
     height: 68px;
@@ -406,16 +421,14 @@
     font-size: 30px;
   }
   .switchText {
-    top: 21px;
-    right: 38px;
+    font-size: 15px;
   }
   .switch {
     top: 56px;
-    right: 30px;
   }
   #backArrow {
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
     font-size: 26px;
   }
   /*** ABOUT ***/
