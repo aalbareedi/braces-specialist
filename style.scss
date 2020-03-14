@@ -106,7 +106,7 @@ img {
   line-height: 0.9;
 }
 .logoTextBottom {
-  // background-color: pink;
+  background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -274,7 +274,7 @@ img {
 /* *********************************** CONTACT FORM ***************************************** */
 #contactForm {
   // background-color: #303030;
-  background-color: #222222;
+  background-color: #191919;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 58px);
@@ -294,7 +294,7 @@ img {
 }
 .formTitle {
   font-size: 22px;
-  color: gainsboro;
+  color: lightgray;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -308,7 +308,7 @@ img {
   top: 40px;
   left: 18px;
   font-size: 20px;
-  color: gainsboro;
+  color: lightgray;
   border: 2px solid #343434;
   border-radius: 40px;
 }
@@ -320,7 +320,7 @@ img {
   margin-top: 50px;
   margin-bottom: 40px;
   line-height: 20px;
-  color: gainsboro;
+  color: lightgray;
   letter-spacing: 0.6px;
 }
 .formOption {
@@ -341,7 +341,7 @@ img {
   margin-bottom: 6px;
   display: block;
   letter-spacing: 0.6px;
-  color: gainsboro;
+  color: lightgray;
 }
 .formAsterik {
   color: #d12323;
@@ -354,7 +354,7 @@ img {
   position: relative;
 }
 .contactFormInput {
-  background-color: #343434;
+  background-color: #262626;
   height: 54px;
   border: none;
   padding-left: 11px;
@@ -364,7 +364,7 @@ img {
   letter-spacing: 0.7px;
   padding-right: 40px;
   padding-top: 2px;
-  color: whitesmoke;
+  color: lightgray;
 }
 .contactFormInput:focus {
   border: 2px solid #067ffc;
@@ -1164,7 +1164,7 @@ input.contactFormInput:valid + .formIcon {
 #treatmentOptions {
   background: #6b62d1;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 .bracesTitle {
   color: whitesmoke;
@@ -1237,7 +1237,7 @@ input.contactFormInput:valid + .formIcon {
   text-align: center;
 }
 .treatmentBtnWrapper {
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1270,9 +1270,10 @@ input.contactFormInput:valid + .formIcon {
 }
 .treatmentBtnMessage {
   text-align: left;
-  width: 162px;
+  width: 182px;
   margin-left: 10px;
   letter-spacing: 0.3px;
+  font-size: 18px;
 }
 .freeWord {
   color: #00cd00;
@@ -1492,7 +1493,7 @@ input:checked + .slider:before {
   position: absolute;
   right: 20px;
   top: 16px;
-  color: gainsboro;
+  color: lightgray;
   letter-spacing: 0.3px;
   font-family: "Titillium Web", sans-serif;
 }
