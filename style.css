@@ -132,7 +132,6 @@ img {
 }
 
 .logoTextBottom {
-  background-color: pink;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -585,7 +584,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .formSubmitBtnReady:active {
-  background: #1a391d;
+  background: #3e6542;
 }
 
 .formSubmitBtnReady:active #formCheckIcon {

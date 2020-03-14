@@ -12,6 +12,7 @@ disableScrollBehind(successOverlay);
 disableScrollBehind(errorOverlay);
 disableScrollBehind(loadingOverlay);
 disableScrollBehind(connectionErrorOverlay);
+disableScrollBehind(contactFormButtonsBar);
 
 for (let i = 0; i < dockContactBtns.length; i++) {
   disableScrollBehind(dockContactBtns[i]);
