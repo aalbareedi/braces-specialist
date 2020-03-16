@@ -1,13 +1,13 @@
-/* ipod touch (smaller than iphone5) - firefox/edge/chrome */
-/* iphone 7 (firefox/edge/chrome)  */
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
   .landingHeading {
     font-size: 40px;
+    width: 210px;
   }
   .landingSubHeading {
     font-size: 17px;
     line-height: 22px;
+    width: 260px;
   }
   .sectionTitle {
     font-size: 22px;
@@ -54,6 +54,9 @@
   .treatmentBox {
     height: 120px;
   }
+  .aboutText {
+    font-size: 16px;
+  }
   /*** STATS ***/
   .statBox {
     height: 170px;
@@ -83,11 +86,13 @@
     color: #39ff14;
   }
   .landingHeading {
-    font-size: 52px;
+    font-size: 50px;
+    width: 260px;
   }
   .landingSubHeading {
     font-size: 20px;
     line-height: 23px;
+    width: 300px;
   }
   .contactBtnText {
     font-size: 15px;
@@ -105,6 +110,12 @@
   }
   #doctorWrapper {
     padding-top: 30px;
+  }
+  .whyText {
+    padding-right: 25px;
+  }
+  .rightQuoteIcon {
+    top: 350px;
   }
   /*** STATS ***/
   #stats {
@@ -145,6 +156,37 @@
   .aboutText {
     margin-left: 40px;
     padding-right: 44px;
+  }
+  .docInfo {
+    width: 360px;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-right: 0px;
+  }
+  .whyBulletPoint {
+    margin-left: 31px;
+    font-size: 25px;
+  }
+  .whyText {
+    padding-right: 33px;
+  }
+  .reviewSlideText {
+    margin: 30px 48px 26px 64px;
+  }
+  .leftQuoteIcon {
+    left: 30px;
+  }
+  .rightQuoteIcon {
+    right: 30px;
+  }
+  .treatmentOptionsGrid {
+    padding: 0 70px;
+  }
+  .bracesText {
+    margin: 40px 40px 0px 70px;
+  }
+  .beforeAfterImg {
+    margin: 30px 40px 0px 40px;
   }
   /*** FORM ***/
   .formTitle {
@@ -313,15 +355,15 @@
     height: calc(100vh - 129px);
   }
   .landingHeading {
-    font-size: 66px;
-    width: 46%;
+    font-size: 64px;
+    width: 340px;
     bottom: 298px;
     left: 30px;
   }
   .landingSubHeading {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 32px;
-    width: 51%;
+    width: 370px;
     bottom: 217px;
     left: 32px;
   }
@@ -683,7 +725,7 @@
     padding: 2px 16px 0 16px;
   }
   .landingHeading {
-    font-size: 74px;
+    font-size: 68px;
   }
 }
 
@@ -696,7 +738,7 @@
 /* iPhone X */
 @media only screen and (max-width: 375px) and (min-height: 800px) {
   .bgImg {
-    background-position: center left -80px;
+    background-position: center left -90px;
   }
   .logoTextBottom {
     background-color: yellow;
@@ -745,4 +787,7 @@
     font-size: 22px;
   }
 }
+
+/* ipod touch (smaller than iphone5) - firefox/edge/chrome */
+/* iphone 7 (firefox/edge/chrome)  */
 /*# sourceMappingURL=mobile.css.map */
