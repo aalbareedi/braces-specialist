@@ -1081,7 +1081,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .teethImg {
-  margin: 0 50px 30px 50px;
+  margin: 0 60px 30px 60px;
   opacity: 0.6;
 }
 
@@ -1302,9 +1302,9 @@ input.contactFormInput:valid + .formIcon {
 
 .doctorTitle {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.4px;
-  margin-right: 194px;
+  margin-right: 198px;
   margin-bottom: 6px;
   font-family: "Oleo Script Swash Caps", cursive;
   font-family: "Pacifico", cursive;
@@ -1395,7 +1395,7 @@ input.contactFormInput:valid + .formIcon {
 .docInfo {
   font-family: "Nanum Gothic", sans-serif;
   line-height: 28px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   font-size: 15px;
   margin-left: 20px;
   padding-right: 18px;

@@ -142,6 +142,10 @@
   .teethImg {
     width: 320px;
   }
+  .aboutText {
+    margin-left: 40px;
+    padding-right: 44px;
+  }
   /*** FORM ***/
   .formTitle {
     margin-top: 50px;
@@ -211,6 +215,21 @@
 }
 
 @media only screen and (min-width: 667px) {
+  .docContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .docCenter {
+    margin-left: 30px;
+  }
+  .docInfo {
+    font-size: 16px;
+    width: 45%;
+  }
   /*** STATS ***/
   #stats {
     display: -webkit-box;
@@ -473,14 +492,6 @@
     display: flex;
   }
   /*** DOCTOR ***/
-  .docContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .docInfo {
     font-size: 18px;
     width: 41%;
@@ -676,8 +687,17 @@
   }
 }
 
+@media only screen and (min-width: 1025px) {
+  #mainDock {
+    display: none;
+  }
+}
+
 /* iPhone X */
 @media only screen and (max-width: 375px) and (min-height: 800px) {
+  .bgImg {
+    background-position: center left -80px;
+  }
   .logoTextBottom {
     background-color: yellow;
   }

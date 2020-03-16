@@ -20,7 +20,10 @@ for (let i = 0; i < navSocialMediaBtns.length; i++) {
 }
 
 navbar.onclick = function() {
-  if (contactForm.classList.contains("displayHidden") == false) {
+  if (
+    contactForm.classList.contains("displayHidden") == false &&
+    navMenu.classList.contains("openMenu") == false
+  ) {
     closeContactForm();
   }
 };
