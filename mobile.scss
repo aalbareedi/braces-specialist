@@ -93,8 +93,8 @@ $tabletDock: 71px;
     color: #39ff14;
   }
   .landingHeading {
-    font-size: 50px;
-    width: 260px;
+    font-size: 48px;
+    width: 250px;
   }
   .landingSubHeading {
     font-size: 20px;
@@ -107,22 +107,28 @@ $tabletDock: 71px;
   #reviewSlider {
     height: 580px;
   }
+  .reviewSlideText {
+    margin: 30px 31px 26px 55px;
+  }
   #aboutUs {
     border-radius: 0;
   }
   .teethImg {
     display: block;
     margin: 0 auto 30px auto;
-    width: 300px;
+    width: 270px;
   }
   #doctorWrapper {
     padding-top: 30px;
   }
   .whyText {
-    padding-right: 25px;
+    padding-right: 24px;
   }
   .rightQuoteIcon {
     top: 350px;
+  }
+  .aboutText {
+    padding-right: 18px;
   }
 
   /*** STATS ***/
@@ -167,10 +173,13 @@ $tabletDock: 71px;
     padding-right: 44px;
   }
   .docInfo {
-    width: 360px;
+    width: 460px;
     font-size: 16px;
     margin: 0 auto;
     padding-right: 0px;
+  }
+  .doctorName {
+    font-size: 28px;
   }
   .whyBulletPoint {
     margin-left: 31px;
@@ -180,7 +189,8 @@ $tabletDock: 71px;
     padding-right: 33px;
   }
   .reviewSlideText {
-    margin: 30px 48px 26px 64px;
+    margin: 30px 68px 26px 74px;
+    font-size: 20px;
   }
   .leftQuoteIcon {
     left: 30px;
@@ -277,6 +287,13 @@ $tabletDock: 71px;
   .docInfo {
     font-size: 16px;
     width: 45%;
+  }
+  #aboutUs {
+    background-color: whitesmoke;
+  }
+  .aboutText {
+    font-size: 18px;
+    line-height: 30px;
   }
   /*** STATS ***/
   #stats {
@@ -501,9 +518,6 @@ $tabletDock: 71px;
     font-size: 26px;
   }
   /*** ABOUT ***/
-  #aboutUs {
-    background-color: whitesmoke;
-  }
   .aboutText {
     padding-right: 70px;
     letter-spacing: 0.5px;
