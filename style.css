@@ -1051,8 +1051,8 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Nanum Gothic", sans-serif;
   background: gainsboro;
   padding-top: 10px;
-  padding-bottom: 30px;
-  border-radius: 0px 0px 200px 200px;
+  padding-bottom: 40px;
+  border-radius: 0px 0px 170px 170px;
   -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
   position: relative;
@@ -1350,7 +1350,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .awardImg {
-  height: 240px;
+  height: 200px;
   display: block;
   margin: 0 auto;
 }
