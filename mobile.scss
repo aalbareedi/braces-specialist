@@ -2,20 +2,9 @@ $tabletDock: 71px;
 
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) and (min-height: 545px) {
+  /*** NAV ***/
   .logoTextBottom {
     // color: blue;
-  }
-  .landingHeading {
-    font-size: 40px;
-    width: 210px;
-  }
-  .landingSubHeading {
-    font-size: 17px;
-    line-height: 22px;
-    width: 260px;
-  }
-  .sectionTitle {
-    font-size: 22px;
   }
   .navMenuOpt:not(#navSocial) {
     height: 58px;
@@ -47,12 +36,6 @@ $tabletDock: 71px;
   .contactBtnText {
     font-size: 14px;
   }
-  #reviewSlider {
-    height: 540px;
-  }
-  .reviewSlideText {
-    font-size: 18px;
-  }
   .treatmentBox {
     height: 120px;
   }
@@ -60,6 +43,20 @@ $tabletDock: 71px;
     font-size: 16px;
     margin-left: 14px;
     padding-right: 9px;
+  }
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  /*** LANDING ***/
+  .landingHeading {
+    font-size: 40px;
+    width: 210px;
+  }
+  .landingSubHeading {
+    font-size: 17px;
+    line-height: 22px;
+    width: 260px;
   }
 
   /*** STATS ***/
@@ -69,6 +66,14 @@ $tabletDock: 71px;
   }
   .statNumber {
     font-size: 34px;
+  }
+
+  /*** REVIEWS ***/
+  #reviewSlider {
+    height: 540px;
+  }
+  .reviewSlideText {
+    font-size: 18px;
   }
 
   /*** FORM ***/
@@ -91,6 +96,17 @@ $tabletDock: 71px;
   .logoTextBottom {
     color: #39ff14;
   }
+  .contactBtnText {
+    font-size: 15px;
+  }
+  #doctorWrapper {
+    padding-top: 30px;
+  }
+  .officeMap {
+    padding: 0 30px;
+  }
+
+  /*** LANDING ***/
   .landingHeading {
     font-size: 48px;
     width: 250px;
@@ -99,35 +115,6 @@ $tabletDock: 71px;
     font-size: 20px;
     line-height: 23px;
     width: 300px;
-  }
-  .contactBtnText {
-    font-size: 15px;
-  }
-  #reviewSlider {
-    height: 580px;
-  }
-  .reviewSlideText {
-    margin: 30px 31px 26px 55px;
-  }
-  #aboutUs {
-    border-radius: 0;
-  }
-  .teethImg {
-    display: block;
-    margin: 0 auto 30px auto;
-    width: 270px;
-  }
-  #doctorWrapper {
-    padding-top: 30px;
-  }
-  .whyText {
-    padding-right: 24px;
-  }
-  .rightQuoteIcon {
-    top: 350px;
-  }
-  .aboutText {
-    padding-right: 18px;
   }
 
   /*** STATS ***/
@@ -143,6 +130,33 @@ $tabletDock: 71px;
   }
   .statNumber {
     font-size: 36px;
+  }
+
+  /*** ABOUT ***/
+  #aboutUs {
+    border-radius: 0;
+  }
+  .teethImg {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 270px;
+  }
+  .aboutText {
+    padding-right: 18px;
+  }
+  .whyText {
+    padding-right: 24px;
+  }
+
+  /*** REVIEWS ***/
+  #reviewSlider {
+    height: 580px;
+  }
+  .reviewSlideText {
+    margin: 30px 31px 26px 55px;
+  }
+  .rightQuoteIcon {
+    top: 350px;
   }
 
   /*** FORM ***/
@@ -165,11 +179,11 @@ $tabletDock: 71px;
 
 @media only screen and (min-width: 532px) {
   .teethImg {
-    width: 320px;
+    width: 300px;
   }
   .aboutText {
     margin-left: 40px;
-    padding-right: 44px;
+    padding-right: 32px;
   }
   .docInfo {
     width: 460px;
@@ -198,10 +212,10 @@ $tabletDock: 71px;
     right: 30px;
   }
   .treatmentOptionsGrid {
-    padding: 0 70px;
+    padding: 0 60px;
   }
   .bracesText {
-    margin: 40px 60px 0px 70px;
+    margin: 40px 50px 0px 60px;
   }
   .beforeAfterImg {
     margin: 30px 40px 0px 40px;
@@ -290,11 +304,15 @@ $tabletDock: 71px;
     justify-content: center;
   }
   .docCenter {
-    margin-left: 30px;
+    margin-left: 40px;
   }
   .docInfo {
-    font-size: 16px;
+    font-size: 18px;
     width: 45%;
+    margin-top: 10px;
+  }
+  .doctorName {
+    margin: 0 auto 38px auto;
   }
   #aboutUs {
     background-color: whitesmoke;
@@ -304,9 +322,6 @@ $tabletDock: 71px;
     line-height: 30px;
   }
   .whyText {
-    font-size: 18px;
-  }
-  .docInfo {
     font-size: 18px;
   }
   .bracesText {
@@ -326,21 +341,25 @@ $tabletDock: 71px;
   }
   .officeInfoGrid {
     font-size: 18px;
-    grid-template-columns: 110px 167px;
+    grid-template-columns: 110px 169px;
   }
   .officeContainer {
     display: flex;
   }
   .officeWrapper {
     width: 50%;
+    padding-left: 20px;
   }
   .officeMap {
-    padding: 0 30px 0 0;
+    padding: 0 26px 0 20px;
     width: 50%;
     margin-top: 0px;
   }
   #googleMap {
     height: 350px;
+  }
+  .officeInfoIcon {
+    left: 2%;
   }
   /*** STATS ***/
   #stats {
@@ -410,7 +429,7 @@ $tabletDock: 71px;
   .switchText {
     font-size: 14px;
     right: 36px;
-    top: 21px;
+    top: 20px;
   }
   .switch {
     right: 28px;
@@ -589,17 +608,7 @@ $tabletDock: 71px;
   .whyContainer {
     display: flex;
   }
-  /*** DOCTOR ***/
-  .docInfo {
-    font-size: 18px;
-    width: 41%;
-    padding-top: 10px;
-    padding-right: 0px;
-    margin-left: 30px;
-  }
-  .docCenter {
-    margin-left: 20px;
-  }
+
   /*** REVIEWS ***/
   .reviews {
     background-position: bottom 0px right;
@@ -736,7 +745,6 @@ $tabletDock: 71px;
   .officeMap {
     margin-top: 0;
   }
-
   .socialMediaBtn {
     width: 60px;
     height: 60px;
