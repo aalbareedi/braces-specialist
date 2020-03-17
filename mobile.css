@@ -60,6 +60,9 @@
   .statNumber {
     font-size: 34px;
   }
+  #aboutUs {
+    border-radius: 0px 0px 190px 190px;
+  }
   /*** REVIEWS ***/
   #reviewSlider {
     height: 540px;
@@ -284,25 +287,7 @@
   .sectionTitle {
     font-size: 24px;
   }
-  .docContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .docCenter {
-    margin-left: 40px;
-  }
-  .docInfo {
-    font-size: 18px;
-    width: 45%;
-    margin-top: 10px;
-  }
-  .doctorName {
-    margin: 0 auto 38px auto;
-  }
+  /*** LANDING ***/
   #aboutUs {
     background-color: whitesmoke;
   }
@@ -312,46 +297,6 @@
   }
   .whyText {
     font-size: 18px;
-  }
-  .bracesText {
-    font-size: 18px;
-  }
-  .timelapseDescription {
-    font-size: 18px;
-  }
-  .faqQuestionText {
-    font-size: 18px;
-  }
-  .faqAnswer {
-    font-size: 18px;
-  }
-  .officeInfoText {
-    font-size: 18px;
-  }
-  .officeInfoGrid {
-    font-size: 18px;
-    -ms-grid-columns: 110px 169px;
-        grid-template-columns: 110px 169px;
-  }
-  .officeContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .officeWrapper {
-    width: 50%;
-    padding-left: 20px;
-  }
-  .officeMap {
-    padding: 0 26px 0 20px;
-    width: 50%;
-    margin-top: 0px;
-  }
-  #googleMap {
-    height: 350px;
-  }
-  .officeInfoIcon {
-    left: 2%;
   }
   /*** STATS ***/
   #stats {
@@ -393,6 +338,69 @@
     position: initial;
     width: 200px;
     margin: 236px auto 0 auto;
+  }
+  /*** DOCTOR ***/
+  #doctor {
+    padding-bottom: 80px;
+  }
+  .docContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .docInfo {
+    font-size: 18px;
+    width: 45%;
+    margin: 10px 0 0 0;
+  }
+  .doctorName {
+    margin: 0 auto 38px auto;
+  }
+  .docCenter {
+    margin: 0px 20px 0px 0px;
+  }
+  .bracesText {
+    font-size: 18px;
+  }
+  .timelapseDescription {
+    font-size: 18px;
+  }
+  .faqQuestionText {
+    font-size: 18px;
+  }
+  .faqAnswer {
+    font-size: 18px;
+  }
+  .officeInfoText {
+    font-size: 18px;
+  }
+  .officeInfoGrid {
+    font-size: 18px;
+    -ms-grid-columns: 110px 169px;
+        grid-template-columns: 110px 169px;
+  }
+  .officeContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .officeWrapper {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .officeMap {
+    padding: 0 26px 0 20px;
+    width: 50%;
+    margin-top: 0px;
+  }
+  #googleMap {
+    height: 350px;
+  }
+  .officeInfoIcon {
+    left: 2%;
   }
   /*** FORM ***/
   .formTitle {
@@ -507,83 +515,6 @@
   #desktopNavMenu .desktopNavMenuOpt:active {
     background-color: #e8e8e8;
   }
-  /*** FORM ***/
-  .formDescription {
-    font-size: 22px;
-    margin-top: 70px;
-    margin-bottom: 60px;
-    padding: 0px 90px 0 130px;
-    line-height: 28px;
-  }
-  .contactFormText {
-    font-size: 22px;
-    width: 260px;
-    margin-bottom: 0;
-    padding-right: 12px;
-    text-align: right;
-  }
-  .contactFormInput {
-    padding-left: 14px;
-    height: 60px;
-  }
-  #messageInputLabel {
-    padding-top: 11px;
-  }
-  .formIcon {
-    font-size: 26px;
-  }
-  .formAsterik {
-    font-size: 16px;
-  }
-  .formOption {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px 100px;
-  }
-  .formMessage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0px 100px 153px 100px;
-  }
-  #messageInput {
-    padding: 8px 8px 0 15px;
-    height: 400px;
-  }
-  .contactFormBtn {
-    height: 68px;
-    border-right: 3px solid #e8e8e8;
-  }
-  .formSubmitBtnReady {
-    border: none;
-  }
-  #contactForm.displayHidden #formButtons {
-    bottom: -71px;
-  }
-  #formButtons {
-    border-top: 3px solid #e8e8e8;
-  }
-  .formBtnText {
-    font-size: 24px;
-  }
-  .formBtnIcon {
-    font-size: 30px;
-  }
-  .switchText {
-    font-size: 15px;
-  }
-  .switch {
-    top: 56px;
-  }
-  #backArrow {
-    width: 56px;
-    height: 56px;
-    font-size: 26px;
-  }
   /*** ABOUT ***/
   .aboutText {
     padding-right: 70px;
@@ -610,6 +541,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .awardImg {
+    height: 320px;
+    margin: 0px 30px 0px 0px;
   }
   /*** REVIEWS ***/
   .reviews {
@@ -765,6 +700,83 @@
   .socialButtons {
     grid-column-gap: 16px;
   }
+  /*** FORM ***/
+  .formDescription {
+    font-size: 22px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    padding: 0px 90px 0 130px;
+    line-height: 28px;
+  }
+  .contactFormText {
+    font-size: 22px;
+    width: 260px;
+    margin-bottom: 0;
+    padding-right: 12px;
+    text-align: right;
+  }
+  .contactFormInput {
+    padding-left: 14px;
+    height: 60px;
+  }
+  #messageInputLabel {
+    padding-top: 11px;
+  }
+  .formIcon {
+    font-size: 26px;
+  }
+  .formAsterik {
+    font-size: 16px;
+  }
+  .formOption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 100px;
+  }
+  .formMessage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 100px 300px 100px;
+  }
+  #messageInput {
+    padding: 8px 8px 0 15px;
+    height: 400px;
+  }
+  .contactFormBtn {
+    height: 68px;
+    border-right: 3px solid #e8e8e8;
+  }
+  .formSubmitBtnReady {
+    border: none;
+  }
+  #contactForm.displayHidden #formButtons {
+    bottom: -71px;
+  }
+  #formButtons {
+    border-top: 3px solid #e8e8e8;
+  }
+  .formBtnText {
+    font-size: 24px;
+  }
+  .formBtnIcon {
+    font-size: 30px;
+  }
+  .switchText {
+    font-size: 15px;
+  }
+  .switch {
+    top: 56px;
+  }
+  #backArrow {
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+  }
   #emptyDockSpace {
     height: 71px;
   }
@@ -786,6 +798,13 @@
 @media only screen and (min-width: 1025px) {
   #mainDock {
     display: none;
+  }
+  #landingBox {
+    height: calc(100vh - 58px);
+  }
+  .bgImg {
+    height: calc(100vh - 58px);
+    background-position: bottom 0px left 0px;
   }
 }
 
