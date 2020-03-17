@@ -1290,10 +1290,10 @@ footer {
   background-color: darkgray;
   background-image: url(./images/toothClear.svg);
   background-repeat: no-repeat;
-  background-position: bottom 0px right -156px;
-  // position: relative;
-  padding-top: 14px;
-  padding-bottom: 30px;
+  background-position: top 68px left -60px;
+  background-size: 480px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 #footerMainLogo {
   height: 190px;
@@ -1321,7 +1321,7 @@ footer {
 .siteMapGrid {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
-  margin-top: 20px;
+  margin-top: 28px;
 }
 .footerGridOpt {
   font-family: "Nanum Gothic", sans-serif;
@@ -1343,6 +1343,10 @@ footer {
   background-color: #999;
   font-size: 13px;
   height: 28px;
+}
+.footerEmail {
+  color: black;
+  text-decoration: none;
 }
 #backToTopBtn {
   @include flexCenterXY();
