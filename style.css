@@ -335,27 +335,19 @@ img {
   border-right: 2px solid #e8e8e8;
   outline: none;
   cursor: pointer;
+  color: #b8b8b8;
+  outline: none;
+  font-size: 22px;
+  text-decoration: none;
 }
 
 .navSocialMediaBtn:active {
-  background-color: lightgray;
-}
-
-.navSocialMediaBtn:active .navSocialBtnIcon {
   background-color: lightgray;
   color: white;
 }
 
 .navTwitterBtn {
   border-right: none;
-}
-
-.navSocialBtnIcon {
-  background-color: whitesmoke;
-  color: #b8b8b8;
-  border: none;
-  outline: none;
-  font-size: 22px;
 }
 
 #navInstagramIcon {
@@ -1073,9 +1065,8 @@ input.contactFormInput:valid + .formIcon {
 
 .aboutText {
   line-height: 28px;
-  letter-spacing: 0.4px;
-  font-size: 15px;
-  margin-left: 20px;
+  letter-spacing: 0.3px;
+  margin-left: 12px;
   padding-right: 15px;
 }
 
@@ -1251,27 +1242,12 @@ input.contactFormInput:valid + .formIcon {
   font-size: 22px;
   outline: none;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .socialMediaBtn:active {
   background-color: #b3b3b3;
-}
-
-.socialMediaBtn:active .socialBtnIcon {
-  background-color: #b3b3b3;
-  color: white;
-}
-
-.socialBtnIcon {
-  background-color: gray;
-  color: white;
-  border: none;
-  outline: none;
-  font-size: 22px;
-}
-
-.socialIcon {
-  outline: none;
 }
 
 #instagramIcon {
@@ -1736,7 +1712,9 @@ input.contactFormInput:valid + .formIcon {
 /* ************************************** FOOTER *************************************** */
 footer {
   background-color: darkgray;
-  position: relative;
+  background-image: url(./images/toothClear.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0px right -156px;
   padding-top: 14px;
   padding-bottom: 30px;
 }
@@ -1769,7 +1747,6 @@ footer {
 }
 
 .siteMapGrid {
-  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[5];

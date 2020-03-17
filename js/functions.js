@@ -138,7 +138,7 @@ function sendEmail() {
   // fetch is JS function that lets you send http requests to servers,
   // we are REQUESTING sendEmail.php FILE from server to send the email through
   fetchWithTimeout(
-    "sendEmail.php?name=" +
+    "sendEmail?name=" +
       fullName +
       "&email=" +
       emailAddress +

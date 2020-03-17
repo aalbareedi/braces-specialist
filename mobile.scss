@@ -41,11 +41,8 @@ $tabletDock: 71px;
   .openMenu#navMenu .navMenuOpt:nth-child(6) {
     top: 290px;
   }
-  .navSocialBtnIcon {
-    font-size: 23px;
-  }
-  #navInstagramIcon {
-    font-size: 26px;
+  .navSocialMediaBtn {
+    font-size: 24px;
   }
   .contactBtnText {
     font-size: 14px;
@@ -61,6 +58,8 @@ $tabletDock: 71px;
   }
   .aboutText {
     font-size: 16px;
+    margin-left: 14px;
+    padding-right: 9px;
   }
 
   /*** STATS ***/
@@ -294,6 +293,30 @@ $tabletDock: 71px;
   .aboutText {
     font-size: 18px;
     line-height: 30px;
+  }
+  .whyText {
+    font-size: 18px;
+  }
+  .docInfo {
+    font-size: 18px;
+  }
+  .bracesText {
+    font-size: 18px;
+  }
+  .timelapseDescription {
+    font-size: 18px;
+  }
+  .faqQuestionText {
+    font-size: 18px;
+  }
+  .faqAnswer {
+    font-size: 18px;
+  }
+  .officeInfoText {
+    font-size: 18px;
+  }
+  .officeInfoGrid {
+    font-size: 18px;
   }
   /*** STATS ***/
   #stats {
@@ -701,8 +724,6 @@ $tabletDock: 71px;
   .socialMediaBtn {
     width: 60px;
     height: 60px;
-  }
-  .socialBtnIcon {
     font-size: 26px;
   }
   #instagramIcon {
@@ -785,7 +806,7 @@ $tabletDock: 71px;
   #navSocial {
     height: 43px;
   }
-  .navSocialBtnIcon {
+  .navSocialMediaBtn {
     font-size: 18px;
   }
   #navInstagramIcon {
