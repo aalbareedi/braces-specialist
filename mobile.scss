@@ -400,10 +400,9 @@ $tabletDock: 71px;
   }
   .officeWrapper {
     width: 50%;
-    padding-left: 20px;
+    padding-left: 30px;
   }
   .officeMap {
-    padding: 0 26px 0 20px;
     width: 50%;
     margin-top: 0px;
   }
@@ -411,7 +410,8 @@ $tabletDock: 71px;
     height: 350px;
   }
   .officeInfoIcon {
-    left: 2%;
+    left: 0%;
+    font-size: 20px;
   }
 
   /*** FORM ***/
@@ -551,9 +551,12 @@ $tabletDock: 71px;
   .whyContainer {
     display: flex;
   }
+  .whyReasonWrapper {
+    width: 61%;
+  }
   .awardImg {
-    height: 320px;
-    margin: 0px 30px 0px 0px;
+    // height: 320px;
+    margin: 0px 0px 0px 20px;
   }
   /*** REVIEWS ***/
   .reviews {
@@ -663,7 +666,7 @@ $tabletDock: 71px;
   }
   .officeInfoIcon {
     font-size: 22px;
-    left: 8%;
+    left: 4%;
   }
   #officeAddressIcon {
     margin: 0;
@@ -689,7 +692,7 @@ $tabletDock: 71px;
     height: 364px;
   }
   .officeMap {
-    margin-top: 0;
+    padding: 0 34px 0 20px;
   }
   .socialMediaBtn {
     width: 60px;
