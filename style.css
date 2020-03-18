@@ -1095,6 +1095,14 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.3px;
 }
 
+.whyReasonWrapper {
+  margin-bottom: 30px;
+}
+
+.whyReasonWrapper .whyReason:last-child {
+  margin-bottom: 0;
+}
+
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;

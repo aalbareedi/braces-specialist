@@ -42,6 +42,9 @@
   .sectionTitle {
     font-size: 22px;
   }
+  .whyReasonWrapper {
+    margin-bottom: 40px;
+  }
   /*** LANDING ***/
   .landingHeading {
     font-size: 40px;
@@ -126,11 +129,12 @@
   /*** ABOUT ***/
   #aboutUs {
     border-radius: 0;
+    padding-bottom: 40px;
   }
   .teethImg {
     display: block;
     margin: 0 auto 30px auto;
-    width: 270px;
+    width: 250px;
   }
   .aboutText {
     padding-right: 18px;
@@ -298,6 +302,9 @@
   .whyText {
     font-size: 18px;
   }
+  .whyReasonWrapper {
+    margin-bottom: 30px;
+  }
   /*** STATS ***/
   #stats {
     display: -webkit-box;
@@ -401,6 +408,9 @@
   .officeInfoIcon {
     left: 0%;
     font-size: 20px;
+  }
+  .socialMediaText {
+    font-size: 18px;
   }
   footer {
     background-position: top 60px left -110px;
@@ -548,6 +558,7 @@
   }
   .whyReasonWrapper {
     width: 61%;
+    margin-bottom: 20px;
   }
   .awardImg {
     margin: 0px 0px 0px 20px;
@@ -586,9 +597,6 @@
     margin: 0 8px;
   }
   /*** TREATMENT OPTIONS ***/
-  #treatmentOptions {
-    padding-bottom: 70px;
-  }
   .treatmentOptionsGrid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);

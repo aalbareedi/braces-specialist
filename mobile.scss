@@ -48,6 +48,9 @@ $tabletDock: 71px;
   .sectionTitle {
     font-size: 22px;
   }
+  .whyReasonWrapper {
+    margin-bottom: 40px;
+  }
 
   /*** LANDING ***/
   .landingHeading {
@@ -140,11 +143,12 @@ $tabletDock: 71px;
   /*** ABOUT ***/
   #aboutUs {
     border-radius: 0;
+    padding-bottom: 40px;
   }
   .teethImg {
     display: block;
     margin: 0 auto 30px auto;
-    width: 270px;
+    width: 250px;
   }
   .aboutText {
     padding-right: 18px;
@@ -315,6 +319,9 @@ $tabletDock: 71px;
   .whyText {
     font-size: 18px;
   }
+  .whyReasonWrapper {
+    margin-bottom: 30px;
+  }
 
   /*** STATS ***/
   #stats {
@@ -413,7 +420,9 @@ $tabletDock: 71px;
     left: 0%;
     font-size: 20px;
   }
-
+  .socialMediaText {
+    font-size: 18px;
+  }
   footer {
     background-position: top 60px left -110px;
     background-size: 800px;
@@ -558,6 +567,7 @@ $tabletDock: 71px;
   }
   .whyReasonWrapper {
     width: 61%;
+    margin-bottom: 20px;
   }
   .awardImg {
     margin: 0px 0px 0px 20px;
@@ -597,9 +607,6 @@ $tabletDock: 71px;
     margin: 0 8px;
   }
   /*** TREATMENT OPTIONS ***/
-  #treatmentOptions {
-    padding-bottom: 70px;
-  }
   .treatmentOptionsGrid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);

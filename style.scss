@@ -808,9 +808,12 @@ input.contactFormInput:valid + .formIcon {
   line-height: 22px;
   letter-spacing: 0.3px;
 }
-// .whyReasonWrapper .whyReason:last-child {
-//   margin-bottom: 0;
-// }
+.whyReasonWrapper {
+  margin-bottom: 30px;
+}
+.whyReasonWrapper .whyReason:last-child {
+  margin-bottom: 0;
+}
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
