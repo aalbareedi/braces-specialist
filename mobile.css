@@ -152,6 +152,16 @@
   .rightQuoteIcon {
     top: 350px;
   }
+  /*** FOOTER ***/
+  footer {
+    background-size: 520px;
+  }
+  .footerNavLogoName {
+    padding-left: 30px;
+  }
+  .footerGridOpt {
+    padding-left: 30px;
+  }
   /*** FORM ***/
   .formDescription {
     font-size: 16px;
@@ -802,6 +812,9 @@
 
 /* iPad pro*/
 @media only screen and (min-width: 834px) {
+  .sectionTitle {
+    margin: 70px 0 60px 0;
+  }
   .logoTextTop {
     color: red;
   }
