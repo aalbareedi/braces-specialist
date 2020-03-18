@@ -414,6 +414,11 @@ $tabletDock: 71px;
     font-size: 20px;
   }
 
+  footer {
+    background-position: top 60px left -110px;
+    background-size: 800px;
+  }
+
   /*** FORM ***/
   .formTitle {
     font-size: 28px;
@@ -555,7 +560,6 @@ $tabletDock: 71px;
     width: 61%;
   }
   .awardImg {
-    // height: 320px;
     margin: 0px 0px 0px 20px;
   }
   /*** REVIEWS ***/
@@ -781,6 +785,10 @@ $tabletDock: 71px;
     font-size: 26px;
   }
 
+  footer {
+    background-size: 930px;
+    background-position: top 60px left -140px;
+  }
   #emptyDockSpace {
     height: $tabletDock;
   }

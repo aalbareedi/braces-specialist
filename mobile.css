@@ -402,6 +402,10 @@
     left: 0%;
     font-size: 20px;
   }
+  footer {
+    background-position: top 60px left -110px;
+    background-size: 800px;
+  }
   /*** FORM ***/
   .formTitle {
     font-size: 28px;
@@ -778,6 +782,10 @@
     width: 56px;
     height: 56px;
     font-size: 26px;
+  }
+  footer {
+    background-size: 930px;
+    background-position: top 60px left -140px;
   }
   #emptyDockSpace {
     height: 71px;

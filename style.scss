@@ -808,6 +808,9 @@ input.contactFormInput:valid + .formIcon {
   line-height: 22px;
   letter-spacing: 0.3px;
 }
+// .whyReasonWrapper .whyReason:last-child {
+//   margin-bottom: 0;
+// }
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
@@ -1340,7 +1343,7 @@ footer {
 }
 .footerCredit {
   @include flexCenterXY();
-  background-color: #999;
+  background-color: gainsboro;
   font-size: 13px;
   height: 28px;
 }
