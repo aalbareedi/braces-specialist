@@ -136,6 +136,9 @@
   .whyText {
     padding-right: 24px;
   }
+  .lowerReasons {
+    margin-bottom: 40px;
+  }
   /*** REVIEWS ***/
   #reviewSlider {
     height: 580px;
@@ -305,6 +308,48 @@
   }
   .whyText {
     font-size: 18px;
+    line-height: 24px;
+    padding-right: 0;
+  }
+  .whyBulletPoint {
+    margin-left: 9px;
+  }
+  .whyReason {
+    margin-bottom: 46px;
+  }
+  .whyGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .upperReasons {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / span 6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+  }
+  .lowerReasons {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1 / span 10;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    padding-right: 10px;
+  }
+  .awardImg {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 4;
+    grid-column: 7 / span 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    margin-top: 40px;
   }
   /*** STATS ***/
   #stats {
@@ -562,7 +607,7 @@
     width: 100%;
   }
   .awardImg {
-    margin: 0px 0px 0px 20px;
+    height: 220px;
   }
   /*** REVIEWS ***/
   .reviews {

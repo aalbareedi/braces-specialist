@@ -1066,7 +1066,7 @@ input.contactFormInput:valid + .formIcon {
 .aboutText {
   line-height: 28px;
   letter-spacing: 0.3px;
-  margin-left: 12px;
+  margin-left: 13px;
   padding-right: 15px;
 }
 
@@ -1093,6 +1093,16 @@ input.contactFormInput:valid + .formIcon {
   padding-right: 13px;
   line-height: 22px;
   letter-spacing: 0.3px;
+}
+
+.upperReasons,
+.lowerReasons {
+  margin-bottom: 30px;
+}
+
+.upperReasons .whyReason:last-child,
+.lowerReasons .whyReason:last-child {
+  margin-bottom: 0;
 }
 
 /* ************************************* OFFICE INFO **************************************** */

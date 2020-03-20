@@ -156,6 +156,9 @@ $tabletDock: 71px;
   .whyText {
     padding-right: 24px;
   }
+  .lowerReasons {
+    margin-bottom: 40px;
+  }
 
   /*** REVIEWS ***/
   #reviewSlider {
@@ -330,10 +333,34 @@ $tabletDock: 71px;
   }
   .whyText {
     font-size: 18px;
+    line-height: 24px;
+    padding-right: 0;
   }
-  // .whyReasonWrapper {
-  //   margin-bottom: 30px;
-  // }
+  .whyBulletPoint {
+    margin-left: 9px;
+  }
+  .whyReason {
+    margin-bottom: 46px;
+  }
+  .whyGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .upperReasons {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+  }
+  .lowerReasons {
+    grid-column: 1 / span 10;
+    grid-row: 2 / span 1;
+    padding-right: 10px;
+  }
+  .awardImg {
+    grid-column: 7 / span 4;
+    grid-row: 1 / span 1;
+    margin-top: 40px;
+  }
 
   /*** STATS ***/
   #stats {
@@ -582,15 +609,8 @@ $tabletDock: 71px;
     padding-right: 0px;
     width: 100%;
   }
-  // .whyImgContainer {
-  //   display: flex;
-  // }
-  // .whyReasonWrapper {
-  //   width: 61%;
-  //   margin-bottom: 20px;
-  // }
   .awardImg {
-    margin: 0px 0px 0px 20px;
+    height: 220px;
   }
   /*** REVIEWS ***/
   .reviews {

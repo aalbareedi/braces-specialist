@@ -783,16 +783,13 @@ input.contactFormInput:valid + .formIcon {
 .aboutText {
   line-height: 28px;
   letter-spacing: 0.3px;
-  margin-left: 12px;
+  margin-left: 13px;
   padding-right: 15px;
 }
 .teethImg {
   margin: 0 60px 30px 60px;
   opacity: 0.6;
 }
-// #whyTitle {
-//   margin-top: 30px;
-// }
 .whyReason {
   display: flex;
   margin-bottom: 42px;
@@ -808,12 +805,14 @@ input.contactFormInput:valid + .formIcon {
   line-height: 22px;
   letter-spacing: 0.3px;
 }
-// .whyReasonWrapper {
-//   margin-bottom: 30px;
-// }
-// .whyReasonWrapper .whyReason:last-child {
-//   margin-bottom: 0;
-// }
+.upperReasons,
+.lowerReasons {
+  margin-bottom: 30px;
+}
+.upperReasons .whyReason:last-child,
+.lowerReasons .whyReason:last-child {
+  margin-bottom: 0;
+}
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
