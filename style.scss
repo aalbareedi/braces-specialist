@@ -808,12 +808,12 @@ input.contactFormInput:valid + .formIcon {
   line-height: 22px;
   letter-spacing: 0.3px;
 }
-.whyReasonWrapper {
-  margin-bottom: 30px;
-}
-.whyReasonWrapper .whyReason:last-child {
-  margin-bottom: 0;
-}
+// .whyReasonWrapper {
+//   margin-bottom: 30px;
+// }
+// .whyReasonWrapper .whyReason:last-child {
+//   margin-bottom: 0;
+// }
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
@@ -1365,25 +1365,33 @@ footer {
   color: black;
   text-decoration: none;
 }
-#backToTopBtn {
+
+.mainBtn {
   @include flexCenterXY();
   color: gainsboro;
   position: fixed;
-  bottom: 14%;
-  right: 24px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   border: none;
   outline: none;
-  /* background-color: rgba(224, 224, 224, 0.5); */
   background-color: #333;
   opacity: 0.3;
   transition: opacity 0.3s;
   z-index: 9;
 }
-.upIcon {
+#backToTopBtn {
   font-size: 20px;
+  bottom: 14%;
+  right: 24px;
+  /* background-color: rgba(224, 224, 224, 0.5); */
+}
+#desktopFormBtn {
+  bottom: 4%;
+  right: 30px;
+  display: none;
+  font-size: 20px;
+  padding-top: 2px;
 }
 #emptyDockSpace {
   height: $mobileDock;

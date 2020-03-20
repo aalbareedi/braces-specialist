@@ -8,6 +8,7 @@ let mainDock = document.getElementById("mainDock");
 let dockContactBtns = document.getElementsByClassName("dockContactBtn");
 let messageBtn = document.getElementById("messageBtn");
 let backToTopBtn = document.getElementById("backToTopBtn");
+let desktopFormBtn = document.getElementById("desktopFormBtn");
 let bgImg = document.getElementsByClassName("bgImg")[0];
 
 let statYear = document.getElementById("statYear");

@@ -42,9 +42,6 @@
   .sectionTitle {
     font-size: 22px;
   }
-  .whyReasonWrapper {
-    margin-bottom: 40px;
-  }
   /*** LANDING ***/
   .landingHeading {
     font-size: 40px;
@@ -309,9 +306,6 @@
   .whyText {
     font-size: 18px;
   }
-  .whyReasonWrapper {
-    margin-bottom: 30px;
-  }
   /*** STATS ***/
   #stats {
     display: -webkit-box;
@@ -492,11 +486,11 @@
   #backToTopBtn {
     bottom: 12%;
     right: 30px;
+    font-size: 22px;
+  }
+  .mainBtn {
     height: 44px;
     width: 44px;
-  }
-  .upIcon {
-    font-size: 22px;
   }
   #mainDock {
     border-top: 3px solid #e8e8e8;
@@ -566,15 +560,6 @@
     letter-spacing: 0.5px;
     padding-right: 0px;
     width: 100%;
-  }
-  .whyImgContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .whyReasonWrapper {
-    width: 61%;
-    margin-bottom: 20px;
   }
   .awardImg {
     margin: 0px 0px 0px 20px;
@@ -811,7 +796,20 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .mainBtn {
+    width: 50px;
+    height: 50px;
+  }
+  #backToTopBtn {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (min-width: 1025px) {
+  #desktopFormBtn {
+    display: block;
+  }
   .container {
     max-width: 1024px;
     margin: 0 auto;

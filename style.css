@@ -1095,14 +1095,6 @@ input.contactFormInput:valid + .formIcon {
   letter-spacing: 0.3px;
 }
 
-.whyReasonWrapper {
-  margin-bottom: 30px;
-}
-
-.whyReasonWrapper .whyReason:last-child {
-  margin-bottom: 0;
-}
-
 /* ************************************* OFFICE INFO **************************************** */
 #officeInfo {
   background-color: #383f43;
@@ -1812,7 +1804,7 @@ footer {
   text-decoration: none;
 }
 
-#backToTopBtn {
+.mainBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1824,14 +1816,11 @@ footer {
           align-items: center;
   color: gainsboro;
   position: fixed;
-  bottom: 14%;
-  right: 24px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   border: none;
   outline: none;
-  /* background-color: rgba(224, 224, 224, 0.5); */
   background-color: #333;
   opacity: 0.3;
   -webkit-transition: opacity 0.3s;
@@ -1839,8 +1828,19 @@ footer {
   z-index: 9;
 }
 
-.upIcon {
+#backToTopBtn {
   font-size: 20px;
+  bottom: 14%;
+  right: 24px;
+  /* background-color: rgba(224, 224, 224, 0.5); */
+}
+
+#desktopFormBtn {
+  bottom: 4%;
+  right: 30px;
+  display: none;
+  font-size: 20px;
+  padding-top: 2px;
 }
 
 #emptyDockSpace {
