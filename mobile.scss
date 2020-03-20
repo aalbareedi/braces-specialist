@@ -101,9 +101,9 @@ $tabletDock: 71px;
 
 /* iPhone 6/7/8 PLUS */
 @media only screen and (min-width: 414px) {
-  .logoTextBottom {
-    color: #39ff14;
-  }
+  // .logoTextBottom {
+  //   color: #39ff14;
+  // }
   .contactBtnText {
     font-size: 15px;
   }
@@ -397,6 +397,7 @@ $tabletDock: 71px;
 
   .bracesText {
     font-size: 18px;
+    margin: 40px 60px 0px 60px;
   }
   .timelapseDescription {
     font-size: 18px;
@@ -413,6 +414,17 @@ $tabletDock: 71px;
   .officeInfoGrid {
     font-size: 18px;
     grid-template-columns: 110px 169px;
+    grid-template-rows: repeat(7, 29px);
+  }
+  .officeInfoIcon {
+    font-size: 22px;
+  }
+  #officePhoneIcon {
+    left: -51px;
+  }
+  #officeAddressIcon {
+    font-size: 24px;
+    left: -47px;
   }
   .officeContainer {
     display: flex;
@@ -427,10 +439,6 @@ $tabletDock: 71px;
   }
   #googleMap {
     height: 350px;
-  }
-  .officeInfoIcon {
-    left: 0%;
-    font-size: 20px;
   }
   .socialMediaText {
     font-size: 18px;
@@ -574,7 +582,7 @@ $tabletDock: 71px;
     padding-right: 0px;
     width: 100%;
   }
-  .whyContainer {
+  .whyImgContainer {
     display: flex;
   }
   .whyReasonWrapper {
@@ -634,9 +642,7 @@ $tabletDock: 71px;
   }
   .bracesText {
     font-size: 18px;
-    margin-left: 76px;
-    margin-right: 78px;
-    margin-top: 30px;
+    margin: 40px 78px 0px 76px;
     letter-spacing: 0.6px;
   }
   .bracesVideo {
@@ -680,28 +686,11 @@ $tabletDock: 71px;
   }
   /*** HOURS & LOCATION ***/
   .officeInfoSchedule {
-    position: relative;
     padding-top: 0;
     padding-left: 10px;
   }
   .officeInfoPhone {
     padding-left: 31px;
-  }
-  .officeInfoIcon {
-    font-size: 22px;
-    left: 4%;
-  }
-  #officeAddressIcon {
-    margin: 0;
-    font-size: 26px;
-  }
-  .officeInfoGrid {
-    font-size: 18px;
-    grid-template-columns: 112px 170px;
-    grid-template-rows: repeat(7, 29px);
-  }
-  .officeInfoText {
-    font-size: 18px;
   }
   .officeClosed {
     margin-left: 6px;
@@ -815,22 +804,34 @@ $tabletDock: 71px;
 
 /* iPad pro*/
 @media only screen and (min-width: 834px) {
-  .sectionTitle {
-    margin: 70px 0 60px 0;
-  }
-  .logoTextTop {
-    color: red;
-  }
+  // .logoTextTop {
+  //   color: red;
+  // }
   .desktopNavMenuOpt {
     padding: 2px 16px 0 16px;
   }
   .landingHeading {
     font-size: 68px;
   }
+  .officeMap {
+    padding: 0 64px 0 20px;
+  }
+  .whyBulletPoint {
+    margin-left: 47px;
+  }
 }
 
+// @media only screen and (min-width: 1024px) {}
+
 @media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
   #mainDock {
+    display: none;
+  }
+  #emptyDockSpace {
     display: none;
   }
   #landingBox {
@@ -838,8 +839,24 @@ $tabletDock: 71px;
   }
   .bgImg {
     height: calc(100vh - #{$mobileNav});
-    background-position: bottom 0px left 0px;
-    // background-position: bottom -230px left 0px;
+    // background-position: bottom 0px left 0px;
+    background-position: center left 0px;
+  }
+  .whyBulletPoint {
+    margin-left: 0px;
+  }
+  .leftQuoteIcon {
+    left: 20%;
+  }
+  .rightQuoteIcon {
+    right: 20%;
+  }
+  .aboutText {
+    padding-right: 20px;
+  }
+  .bracesText {
+    max-width: 870px;
+    margin: 40px auto 0 auto;
   }
 }
 
@@ -895,19 +912,3 @@ $tabletDock: 71px;
     font-size: 22px;
   }
 }
-
-/* ipod touch (smaller than iphone5) - firefox/edge/chrome */
-// @media only screen and (max-width: 320px) and (max-height: 453px),
-//   (height: 460px) {
-//   .logoTextBottom {
-//     color: red;
-//   }
-// }
-
-/* iphone 7 (firefox/edge/chrome)  */
-// @media only screen and (min-width: 375px) and (max-height: 552px),
-//   only screen and (min-width: 375px) and (height: 559px) {
-//   .logoTextBottom {
-//     color: green;
-//   }
-// }

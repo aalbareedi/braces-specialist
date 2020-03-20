@@ -1125,6 +1125,7 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .officeInfoGrid {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100px 150px;
@@ -1151,28 +1152,43 @@ input.contactFormInput:valid + .formIcon {
 }
 
 .officeInfoAddress {
-  position: relative;
   line-height: 20px;
   padding-left: 18px;
 }
 
 .officeInfoPhone {
-  position: relative;
   margin: 50px 0;
   line-height: 21px;
   padding-left: 23px;
 }
 
+.officeInfoText {
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  width: 230px;
+  margin: 0 auto;
+}
+
 .officeInfoIcon {
   position: absolute;
-  left: 6%;
-  top: 0px;
   font-size: 18px;
   color: #37d0e1;
+  top: 0px;
+}
+
+#officeScheduleIcon {
+  left: -14px;
+  top: -2px;
+}
+
+#officePhoneIcon {
+  left: -36px;
 }
 
 #officeAddressIcon {
-  margin-left: 1px;
+  left: -32px;
   font-size: 20px;
 }
 
@@ -1183,12 +1199,6 @@ input.contactFormInput:valid + .formIcon {
 .officePhoneText {
   color: #b3b3b3;
   text-decoration: none;
-}
-
-.officeInfoText {
-  text-align: center;
-  letter-spacing: 1px;
-  color: white;
 }
 
 .officeMap {
@@ -1382,7 +1392,8 @@ input.contactFormInput:valid + .formIcon {
   font-size: 15px;
   margin-left: 20px;
   padding-right: 18px;
-  color: white;
+  color: whitesmoke;
+  max-width: 420px;
 }
 
 .docCenter {
