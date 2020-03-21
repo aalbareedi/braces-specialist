@@ -773,7 +773,7 @@ input.contactFormInput:valid + .formIcon {
   padding-top: 10px;
   padding-bottom: 46px;
   border-radius: 0px 0px 180px 180px;
-  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 1;
 }
@@ -947,9 +947,9 @@ input.contactFormInput:valid + .formIcon {
 #doctor {
   /* background-color: #7fbfeb; */
   background-image: linear-gradient(-45deg, #004d9d 14%, #03cfcd 100%);
-  padding-top: 196px;
+  padding-top: 236px;
   padding-bottom: 40px;
-  margin-top: -190px;
+  margin-top: -230px;
   position: relative;
 }
 #doctorWrapper {
@@ -1040,7 +1040,6 @@ input.contactFormInput:valid + .formIcon {
   font-family: "Nanum Gothic", sans-serif;
   line-height: 28px;
   letter-spacing: 0.5px;
-  font-size: 15px;
   margin-left: 20px;
   padding-right: 18px;
   color: whitesmoke;
@@ -1146,7 +1145,7 @@ input.contactFormInput:valid + .formIcon {
 .slick-dots.touch-device li.slick-active button::before {
   opacity: 1;
 }
-/* ***************************** TREATMENT  OPTIONS ****************************** */
+/* ***************************** TREATMENT OPTIONS ****************************** */
 #treatmentOptions {
   background: #6b62d1;
   padding-top: 10px;
@@ -1267,7 +1266,6 @@ input.contactFormInput:valid + .formIcon {
 #faq {
   background: #0d79a1;
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 .faqTitle {
   color: white;

@@ -34,13 +34,20 @@
   .treatmentBox {
     height: 120px;
   }
-  .aboutText {
-    font-size: 16px;
-    margin-left: 14px;
-    padding-right: 9px;
-  }
   .sectionTitle {
     font-size: 22px;
+  }
+  .officeInfoIcon {
+    font-size: 22px;
+  }
+  #officeScheduleIcon {
+    top: -4px;
+  }
+  #officeAddressIcon {
+    font-size: 24px;
+  }
+  .officeMap {
+    padding: 0 50px;
   }
   /*** LANDING ***/
   .landingHeading {
@@ -60,8 +67,24 @@
   .statNumber {
     font-size: 34px;
   }
+  /*** ABOUT ***/
   #aboutUs {
-    border-radius: 0px 0px 190px 190px;
+    border-radius: 0px 0px 220px 220px;
+    padding-bottom: 246px;
+  }
+  .aboutText {
+    font-size: 16px;
+    margin-left: 14px;
+    padding-right: 9px;
+  }
+  .lowerReasons {
+    margin-bottom: 40px;
+  }
+  .awardImg {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -124px;
   }
   /*** REVIEWS ***/
   #reviewSlider {
@@ -94,7 +117,22 @@
     padding-top: 30px;
   }
   .officeMap {
-    padding: 0 30px;
+    padding: 0 60px;
+  }
+  #officeScheduleIcon {
+    left: -23px;
+  }
+  #officePhoneIcon {
+    left: -45px;
+  }
+  #officeAddressIcon {
+    left: -41px;
+  }
+  .leftQuoteIcon {
+    left: 20px;
+  }
+  .rightQuoteIcon {
+    right: 20px;
   }
   /*** LANDING ***/
   .landingHeading {
@@ -136,8 +174,9 @@
   .whyText {
     padding-right: 24px;
   }
-  .lowerReasons {
-    margin-bottom: 40px;
+  .awardImg {
+    position: initial;
+    margin: 0 auto;
   }
   /*** REVIEWS ***/
   #reviewSlider {
@@ -145,6 +184,7 @@
   }
   .reviewSlideText {
     margin: 30px 31px 26px 55px;
+    line-height: 30px;
   }
   .rightQuoteIcon {
     top: 350px;
@@ -178,16 +218,20 @@
 }
 
 @media only screen and (min-width: 532px) {
+  .sectionTitle {
+    font-size: 24px;
+  }
   .teethImg {
     width: 300px;
   }
   .aboutText {
-    margin-left: 40px;
-    padding-right: 32px;
+    margin-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
   }
   .docInfo {
     width: 460px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 auto;
     padding-right: 0px;
   }
@@ -195,11 +239,12 @@
     font-size: 28px;
   }
   .whyBulletPoint {
-    margin-left: 31px;
+    margin-left: 22px;
     font-size: 25px;
   }
   .whyText {
     padding-right: 33px;
+    font-size: 18px;
   }
   .reviewSlideText {
     margin: 30px 68px 26px 74px;
@@ -215,7 +260,11 @@
     padding: 0 60px;
   }
   .bracesText {
-    margin: 40px 50px 0px 60px;
+    margin: 40px 40px 0px 60px;
+    font-size: 18px;
+  }
+  .timelapseDescription {
+    font-size: 18px;
   }
   .beforeAfterImg {
     margin: 30px 40px 0px 40px;
@@ -225,6 +274,47 @@
   }
   .gifWrapper {
     padding: 0 60px;
+  }
+  .awardImg {
+    height: 220px;
+  }
+  .whyReason {
+    margin-bottom: 44px;
+  }
+  .faqQuestion {
+    font-size: 18px;
+  }
+  .faqAnswer {
+    font-size: 18px;
+  }
+  .officeInfoGrid {
+    font-size: 18px;
+    -ms-grid-columns: 110px 169px;
+        grid-template-columns: 110px 169px;
+    -ms-grid-rows: (29px)[7];
+        grid-template-rows: repeat(7, 29px);
+  }
+  .officeInfoText {
+    font-size: 18px;
+  }
+  .socialMediaText {
+    font-size: 18px;
+  }
+  .officeInfoIcon {
+    font-size: 26px;
+  }
+  #officeScheduleIcon {
+    left: -37px;
+  }
+  #officePhoneIcon {
+    left: -74px;
+  }
+  #officeAddressIcon {
+    font-size: 28px;
+    left: -70px;
+  }
+  .officeMap {
+    padding: 0 90px;
   }
   /*** FORM ***/
   .formTitle {
@@ -301,13 +391,13 @@
   /*** LANDING ***/
   #aboutUs {
     background-color: whitesmoke;
+    padding-bottom: 0px;
   }
   .aboutText {
     font-size: 18px;
     line-height: 30px;
   }
   .whyText {
-    font-size: 18px;
     line-height: 24px;
     padding-right: 0;
   }
@@ -341,6 +431,7 @@
     -ms-grid-row-span: 1;
     grid-row: 2 / span 1;
     padding-right: 10px;
+    margin-bottom: 0px;
   }
   .awardImg {
     -ms-grid-column: 7;
@@ -350,6 +441,7 @@
     -ms-grid-row-span: 1;
     grid-row: 1 / span 1;
     margin-top: 40px;
+    height: 190px;
   }
   /*** STATS ***/
   #stats {
@@ -430,13 +522,6 @@
   }
   .officeInfoText {
     font-size: 18px;
-  }
-  .officeInfoGrid {
-    font-size: 18px;
-    -ms-grid-columns: 110px 169px;
-        grid-template-columns: 110px 169px;
-    -ms-grid-rows: (29px)[7];
-        grid-template-rows: repeat(7, 29px);
   }
   .officeInfoIcon {
     font-size: 22px;
