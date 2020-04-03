@@ -13,7 +13,7 @@ $headers = "MIME-Version:1.0\r\n" .
 "Reply-To:" . $_GET["email"] . "\r\n" . 
 "From: Braces Specialist<vpnfg0lsvg6z@a2plcpnl0239.prod.iad2.secureserver.net>";
 
-mail("aalbareedi@yahoo.com", "Message from " . $_GET["name"], $body, $headers);
+mail("albareedi@comcast.net", "Message from " . $_GET["name"], $body, $headers);
 
 
 ?>

@@ -2,7 +2,6 @@
  * slide-nav 1.0.1
  * ES6 Vanilla.js navigation plugin to simple use on one-page websites.
  * https://github.com/qmixi/slide-nav
- *
  * Copyright (C) 2017 - A project by Piotr Kumorek
  * Released under the MIT license.
  */
@@ -42,7 +41,7 @@ class SlideNav {
     this.navAnchors = document.querySelectorAll(
       '[href]:not([target="_blank"]):not(link)'
     );
-    console.log(this.navAnchors);
+    // console.log(this.navAnchors);
   }
 
   observe() {
@@ -76,6 +75,7 @@ class SlideNav {
     }
     // scroll
     window.addEventListener("scroll", () => {
+      // console.log(this.isAnimating);
       if (this.isAnimating == false) {
         this.setActiveAnchor();
       }
@@ -87,7 +87,7 @@ class SlideNav {
       const linkHash = this.getHash(anchor.getAttribute("href")),
         section = this.getSection(linkHash),
         // 58 is the height of the navbar to offset the nav scroll-to effect
-        offset = this.scrollDoc.scrollTop + 58,
+        offset = this.scrollDoc.scrollTop + 58 + 20,
         scrollHeight = this.scrollDoc.scrollHeight;
 
       let sectionOffset = 0;
@@ -136,23 +136,28 @@ class SlideNav {
   }
 
   scrollTo(destOffset, duration) {
-    const diffOffset = destOffset - this.scrollDoc.scrollTop,
-      partDist = (diffOffset / duration) * 40;
+    let that = this;
+    $("html, body").animate({ scrollTop: destOffset }, duration, function() {
+      that.setActiveAnchor();
+      that.isAnimating = false;
+    });
 
-    if (duration <= 0) {
-      // this.setActiveAnchor();
-      // this.isAnimating = false;
-      return;
-    }
-    setTimeout(() => {
-      this.scrollDoc.scrollTop = this.scrollDoc.scrollTop + partDist;
-      if (this.scrollDoc.scrollTop == destOffset) {
-        this.setActiveAnchor();
-        this.isAnimating = false;
-        return;
-      }
-      this.scrollTo(destOffset, duration - 40);
-    }, 40);
+    // const diffOffset = destOffset - this.scrollDoc.scrollTop,
+    //   partDist = (diffOffset / duration) * 40;
+    // if (duration <= 0) {
+    //   this.setActiveAnchor();
+    //   this.isAnimating = false;
+    //   return;
+    // }
+    // setTimeout(() => {
+    //   this.scrollDoc.scrollTop = this.scrollDoc.scrollTop + partDist;
+    //   if (this.scrollDoc.scrollTop == destOffset) {
+    //     this.setActiveAnchor();
+    //     this.isAnimating = false;
+    //     return;
+    //   }
+    //   this.scrollTo(destOffset, duration - 40);
+    // }, 40);
   }
 
   goToUrl(url) {

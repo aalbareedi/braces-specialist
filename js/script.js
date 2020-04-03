@@ -1,9 +1,5 @@
 let bodyScrollPosition = 0;
 
-if (scrollingElement.scrollTop > 0) {
-  backToTopBtn.classList.remove("displayHidden");
-}
-
 disableScrollBehind(contactForm);
 disableScrollBehind(navOverlay);
 disableScrollBehind(navMenu);
@@ -36,9 +32,8 @@ let nav = new SlideNav();
  * http://stackoverflow.com/a/4734092/4747661
  * Marks the slick-dots container as a touch-device so CSS can work it's magic
  */
-// if ("ontouchstart" in document) {
+
 this.$(".slick-dots").addClass("touch-device");
-// }
 
 // setTimeout(function() {
 //   alert(window.innerWidth + "," + window.innerHeight);

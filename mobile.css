@@ -53,6 +53,7 @@
   .landingHeading {
     font-size: 40px;
     width: 210px;
+    line-height: 42px;
   }
   .landingSubHeading {
     font-size: 17px;
@@ -74,7 +75,7 @@
   }
   .aboutText {
     font-size: 16px;
-    margin-left: 14px;
+    padding-left: 14px;
     padding-right: 9px;
   }
   .lowerReasons {
@@ -87,6 +88,9 @@
     margin-left: -124px;
   }
   /*** REVIEWS ***/
+  .reviewTitle {
+    font-size: 22px;
+  }
   #reviewSlider {
     height: 540px;
   }
@@ -134,15 +138,37 @@
   .rightQuoteIcon {
     right: 20px;
   }
+  .beforeAfterBox {
+    margin: 30px auto 0 auto;
+    width: 280px;
+  }
+  .gifWrapper {
+    margin-top: 40px;
+  }
+  .treatmentBtnMessage {
+    width: 202px;
+    font-size: 20px;
+  }
+  .faqAnswer {
+    padding-right: 15px;
+    letter-spacing: 0.6px;
+  }
   /*** LANDING ***/
+  .landingText {
+    bottom: 11%;
+  }
   .landingHeading {
     font-size: 48px;
     width: 250px;
+    line-height: 50px;
   }
   .landingSubHeading {
     font-size: 20px;
     line-height: 23px;
     width: 300px;
+  }
+  .bgImg {
+    background-position: center left -100px;
   }
   /*** STATS ***/
   #stats {
@@ -162,6 +188,8 @@
   #aboutUs {
     border-radius: 0;
     padding-bottom: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   .teethImg {
     display: block;
@@ -218,16 +246,28 @@
 }
 
 @media only screen and (min-width: 532px) {
+  .mainBtn {
+    height: 46px;
+    width: 46px;
+    font-size: 24px;
+  }
+  .bgImg {
+    background-position: center center;
+  }
   .sectionTitle {
     font-size: 24px;
+  }
+  .upperReasons {
+    margin-bottom: 44px;
   }
   .teethImg {
     width: 300px;
   }
   .aboutText {
-    margin-left: 30px;
+    padding-left: 30px;
     padding-right: 30px;
     font-size: 18px;
+    line-height: 30px;
   }
   .docInfo {
     width: 460px;
@@ -246,28 +286,30 @@
     padding-right: 33px;
     font-size: 18px;
   }
+  .reviewTitle {
+    font-size: 24px;
+    top: 62px;
+  }
   .reviewSlideText {
-    margin: 30px 68px 26px 74px;
+    margin: 30px 68px 26px 96px;
     font-size: 20px;
   }
   .leftQuoteIcon {
-    left: 30px;
+    left: 36px;
   }
   .rightQuoteIcon {
-    right: 30px;
+    right: 36px;
+    top: 390px;
   }
-  .treatmentOptionsGrid {
+  .treatmentImgGrid {
     padding: 0 60px;
   }
   .bracesText {
-    margin: 40px 40px 0px 60px;
+    margin: 40px 60px 0px 60px;
     font-size: 18px;
   }
   .timelapseDescription {
     font-size: 18px;
-  }
-  .beforeAfterImg {
-    margin: 30px 40px 0px 40px;
   }
   .reviewName {
     font-size: 20px;
@@ -279,20 +321,28 @@
     height: 220px;
   }
   .whyReason {
-    margin-bottom: 44px;
+    margin-bottom: 46px;
   }
   .faqQuestion {
     font-size: 18px;
   }
+  .faqQuestionText {
+    padding-left: 57px;
+  }
   .faqAnswer {
     font-size: 18px;
+    padding-right: 48px;
+    margin-left: 57px;
+  }
+  .faqNumber {
+    left: 24px;
   }
   .officeInfoGrid {
     font-size: 18px;
     -ms-grid-columns: 110px 169px;
-        grid-template-columns: 110px 169px;
-    -ms-grid-rows: (29px)[7];
-        grid-template-rows: repeat(7, 29px);
+    grid-template-columns: 110px 169px;
+    -ms-grid-rows: (29px) [7];
+    grid-template-rows: repeat(7, 29px);
   }
   .officeInfoText {
     font-size: 18px;
@@ -316,15 +366,26 @@
   .officeMap {
     padding: 0 90px;
   }
+  .beforeAfterText {
+    font-size: 18px;
+  }
+  footer {
+    background-size: 590px;
+    background-position: top 64px left -80px;
+  }
   /*** FORM ***/
+  .formWrapper {
+    width: 412px;
+    margin: 0 auto;
+  }
   .formTitle {
-    margin-top: 50px;
+    padding-top: 60px;
     font-size: 26px;
   }
   .formDescription {
     font-size: 18px;
     line-height: 26px;
-    padding: 0px 60px;
+    padding: 0;
   }
   .contactFormText {
     font-size: 18px;
@@ -341,14 +402,14 @@
     font-size: 16px;
   }
   .formOption {
-    padding: 0px 60px;
+    padding: 0px;
   }
   .formMessage {
-    padding: 0px 60px 153px 60px;
+    padding: 0px 0px 153px 0px;
   }
   #messageInput {
     padding: 8px 8px 0 15px;
-    height: 300px;
+    height: 400px;
   }
   input.contactFormInput:valid {
     background-size: 32px;
@@ -385,17 +446,94 @@
 }
 
 @media only screen and (min-width: 667px) {
+  .reviewTitle {
+    top: 72px;
+  }
+  .siteMapGrid {
+    margin-top: 34px;
+  }
   .sectionTitle {
     font-size: 24px;
+  }
+  .treatmentOptionsGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto) [3];
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 40px;
+  }
+  .optionsGridBox {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  .treatmentImgGrid {
+    padding: 0;
+  }
+  .treatmentBox {
+    height: 100%;
+    width: 270px;
+  }
+  .beforeAfter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+  .beforeAfterBox {
+    height: 130px;
+    width: 210px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    margin: 0 60px 0 0;
+  }
+  .gifWrapper {
+    padding: 0 60px;
+    margin: 0 auto;
+    max-width: 530px;
+  }
+  .treatmentBtnWrapper {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    margin-top: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-left: -20px;
+  }
+  #beforeText {
+    left: 30px;
+  }
+  #afterText {
+    right: 40px;
   }
   /*** LANDING ***/
   #aboutUs {
     background-color: whitesmoke;
-    padding-bottom: 0px;
-  }
-  .aboutText {
-    font-size: 18px;
-    line-height: 30px;
+    padding-bottom: 60px;
   }
   .whyText {
     line-height: 24px;
@@ -410,18 +548,20 @@
   .whyGrid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[10];
-        grid-template-columns: repeat(10, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [10];
+    grid-template-columns: repeat(10, 1fr);
+    -ms-grid-rows: (auto) [2];
+    grid-template-rows: repeat(2, auto);
+    position: relative;
   }
   .upperReasons {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1 / span 6;
+    -ms-grid-column-span: 10;
+    grid-column: 1 / span 10;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / span 1;
+    margin-bottom: 46px;
   }
   .lowerReasons {
     -ms-grid-column: 1;
@@ -433,6 +573,9 @@
     padding-right: 10px;
     margin-bottom: 0px;
   }
+  .setWidth {
+    width: 60%;
+  }
   .awardImg {
     -ms-grid-column: 7;
     -ms-grid-column-span: 4;
@@ -440,19 +583,27 @@
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / span 1;
-    margin-top: 40px;
-    height: 190px;
+    height: 180px;
+    position: absolute;
+    top: 88px;
+    right: 28px;
+    bottom: initial;
+    left: initial;
   }
   /*** STATS ***/
   #stats {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: gainsboro;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(80, 86, 103, 0.6);
     padding: 10px 0;
   }
   .statBox {
     width: 33%;
+    max-width: 314px;
     height: 310px;
     background-size: 128px;
     background-color: whitesmoke;
@@ -493,8 +644,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .docInfo {
     font-size: 18px;
@@ -509,10 +660,26 @@
   }
   .bracesText {
     font-size: 18px;
-    margin: 40px 60px 0px 60px;
+    margin: 6px 35px 0px 0px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
   }
   .timelapseDescription {
     font-size: 18px;
+    text-align: center;
+  }
+  .treatmentAnimation {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    padding-top: 20px;
   }
   .faqQuestionText {
     font-size: 18px;
@@ -522,16 +689,40 @@
   }
   .officeInfoText {
     font-size: 18px;
+    margin: 0;
+  }
+  .officeInfoPhone {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 14px;
+  }
+  .officeInfoAddress {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 15px;
   }
   .officeInfoIcon {
-    font-size: 22px;
+    font-size: 24px;
+  }
+  #officeScheduleIcon {
+    left: -17px;
   }
   #officePhoneIcon {
-    left: -51px;
+    left: -53px;
   }
   #officeAddressIcon {
-    font-size: 24px;
-    left: -47px;
+    left: -49px;
+    font-size: 26px;
   }
   .officeContainer {
     display: -webkit-box;
@@ -540,38 +731,47 @@
   }
   .officeWrapper {
     width: 50%;
-    padding-left: 30px;
+    padding-left: 40px;
   }
   .officeMap {
     width: 50%;
     margin-top: 0px;
+    padding: 0 40px 0 40px;
   }
   #googleMap {
-    height: 350px;
+    height: 360px;
   }
   .socialMediaText {
     font-size: 18px;
   }
+  .officeInfoSchedule {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
   footer {
-    background-position: top 60px left -110px;
+    background-position: top 74px left -110px;
     background-size: 800px;
+    padding-top: 24px;
+  }
+  .footerlogoTextTop {
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+  .footerlogoTextBottom {
+    font-size: 22px;
   }
   /*** FORM ***/
-  .formTitle {
-    font-size: 28px;
+  .formWrapper {
+    width: 460px;
   }
   .formDescription {
-    padding: 0px 110px 0 110px;
     margin-top: 60px;
     margin-bottom: 50px;
     font-size: 20px;
   }
   .formOption {
-    padding: 0px 110px;
     margin-bottom: 30px;
-  }
-  .formMessage {
-    padding: 0px 110px 153px 110px;
   }
   .contactFormText {
     font-size: 20px;
@@ -594,33 +794,40 @@
 
 /* iPad mini/air */
 @media only screen and (min-width: 768px) {
+  .toolTip {
+    width: 124px;
+    height: 42px;
+    font-size: 16px;
+    left: -136px;
+    top: 8px;
+  }
   #landingBox {
-    height: calc(100vh - 129px);
+    height: calc(100vh - 58px - 71px);
+  }
+  .bgImg {
+    height: calc(100vh - 58px - 71px);
   }
   .landingHeading {
     font-size: 64px;
     width: 340px;
-    bottom: 298px;
-    left: 30px;
+    line-height: 66px;
   }
   .landingSubHeading {
     font-size: 24px;
     line-height: 32px;
     width: 370px;
-    bottom: 217px;
-    left: 32px;
   }
   .sectionTitle {
     font-size: 24px;
   }
+  .mainBtn {
+    width: 54px;
+    height: 54px;
+    font-size: 28px;
+  }
   #backToTopBtn {
     bottom: 12%;
     right: 30px;
-    font-size: 22px;
-  }
-  .mainBtn {
-    height: 44px;
-    width: 44px;
   }
   #mainDock {
     border-top: 3px solid #e8e8e8;
@@ -639,6 +846,16 @@
   }
   #messageIcon {
     margin-right: 8px;
+  }
+  .statBox {
+    background-size: 136px;
+  }
+  .beforeAfterBox {
+    width: 230px;
+  }
+  .treatmentBtnWrapper {
+    margin-left: -10px;
+    margin-top: 10px;
   }
   /*** NAV ***/
   #navToggleBtn {
@@ -666,23 +883,20 @@
   a.desktopNavMenuOpt#lastNavOpt {
     padding-right: 14px;
   }
-  #desktopNavMenu .desktopNavMenuOpt:active {
-    background-color: #e8e8e8;
-  }
   /*** ABOUT ***/
   .aboutText {
-    padding-right: 70px;
     letter-spacing: 0.5px;
     line-height: 32px;
     font-size: 18px;
-    margin-left: 56px;
+    padding-left: 56px;
+    padding-right: 70px;
   }
   .whyReason {
     margin-bottom: 48px;
   }
   .whyBulletPoint {
     font-size: 28px;
-    margin-left: 23px;
+    margin-left: 46px;
   }
   .whyText {
     font-size: 18px;
@@ -691,15 +905,20 @@
     padding-right: 0px;
     width: 100%;
   }
+  .lowerReasons {
+    padding-right: 0px;
+    width: 710px;
+  }
   .awardImg {
-    height: 220px;
+    height: 200px;
+    right: 36px;
+  }
+  .upperReasons {
+    margin-bottom: 48px;
   }
   /*** REVIEWS ***/
   .reviews {
     background-position: bottom 0px right;
-  }
-  .reviewTitle {
-    top: 60px;
   }
   .reviewSlideText {
     font-size: 22px;
@@ -714,11 +933,11 @@
     font-size: 100px;
   }
   .leftQuoteIcon {
-    left: 71px;
+    left: 80px;
     top: 60px;
   }
   .rightQuoteIcon {
-    right: 70px;
+    right: 80px;
     top: 370px;
   }
   .slick-dots li button:before {
@@ -727,42 +946,22 @@
   .slick-dots li {
     margin: 0 8px;
   }
-  /*** TREATMENT OPTIONS ***/
-  .treatmentOptionsGrid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[1];
-        grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 30px;
-    padding: 0 77px;
-    grid-row-gap: initial;
-  }
   .treatmentBox {
-    width: 100%;
+    width: 290px;
   }
   .treatmentOverlay {
     font-size: 22px;
   }
-  .bracesText {
-    font-size: 18px;
-    margin: 40px 78px 0px 76px;
-    letter-spacing: 0.6px;
-  }
   .bracesVideo {
     padding: 0px 77px;
-    margin: 40px auto 0 auto;
+    margin: 0px auto 0 auto;
     width: 100%;
     display: block;
+    max-width: 800px;
+    outline: none;
   }
-  .bracesGif {
-    display: none;
-  }
-  .gifWrapper {
-    display: none;
-  }
-  .beforeAfterImg {
-    width: 60%;
-    margin: 40px auto 0 auto;
+  .bracesText {
+    margin: 6px 60px 0px 0px;
   }
   .timelapseDescription {
     font-size: 18px;
@@ -788,26 +987,24 @@
     padding-bottom: 54px;
   }
   /*** HOURS & LOCATION ***/
-  .officeInfoSchedule {
-    padding-top: 0;
-    padding-left: 10px;
-  }
-  .officeInfoPhone {
-    padding-left: 31px;
-  }
   .officeClosed {
     margin-left: 6px;
   }
   .officeInfoAddress {
     line-height: 22px;
-    padding-left: 28px;
-    margin-bottom: 0;
+    padding-right: 35px;
+  }
+  .officeInfoSchedule {
+    padding-right: 20px;
+  }
+  .officeInfoPhone {
+    padding-right: 34px;
   }
   #googleMap {
     height: 364px;
   }
   .officeMap {
-    padding: 0 34px 0 20px;
+    padding: 0 60px 0 40px;
   }
   .socialMediaBtn {
     width: 60px;
@@ -824,52 +1021,32 @@
   .socialButtons {
     grid-column-gap: 16px;
   }
+  .officeInfoIcon {
+    font-size: 26px;
+  }
+  #officeScheduleIcon {
+    left: -27px;
+  }
+  #officePhoneIcon {
+    left: -63px;
+  }
+  #officeAddressIcon {
+    left: -59px;
+    font-size: 28px;
+  }
   /*** FORM ***/
+  .formWrapper {
+    width: 463px;
+  }
   .formDescription {
     font-size: 22px;
-    margin-top: 70px;
-    margin-bottom: 60px;
-    padding: 0px 90px 0 130px;
     line-height: 28px;
-  }
-  .contactFormText {
-    font-size: 22px;
-    width: 260px;
-    margin-bottom: 0;
-    padding-right: 12px;
-    text-align: right;
-  }
-  .contactFormInput {
-    padding-left: 14px;
-    height: 60px;
-  }
-  #messageInputLabel {
-    padding-top: 11px;
   }
   .formIcon {
     font-size: 26px;
   }
   .formAsterik {
     font-size: 16px;
-  }
-  .formOption {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px 100px;
-  }
-  .formMessage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0px 100px 300px 100px;
-  }
-  #messageInput {
-    padding: 8px 8px 0 15px;
-    height: 400px;
   }
   .contactFormBtn {
     height: 68px;
@@ -903,7 +1080,7 @@
   }
   footer {
     background-size: 930px;
-    background-position: top 60px left -140px;
+    background-position: top 70px left -140px;
   }
   #emptyDockSpace {
     height: 71px;
@@ -912,42 +1089,30 @@
 
 /* iPad pro*/
 @media only screen and (min-width: 834px) {
-  .desktopNavMenuOpt {
-    padding: 2px 16px 0 16px;
+  .treatmentImgGrid {
+    -ms-grid-rows: (110px) [2];
+    grid-template-rows: repeat(2, 110px);
   }
-  .landingHeading {
-    font-size: 68px;
+  #emptyDockSpace {
+    display: none;
   }
-  .officeMap {
-    padding: 0 64px 0 20px;
+  .desktopLandingBtns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (150px) [2];
+    grid-template-columns: repeat(2, 150px);
+    -ms-grid-rows: 56px;
+    grid-template-rows: 56px;
+    grid-column-gap: 20px;
+    margin: 18px 0 0 6px;
   }
-  .whyBulletPoint {
-    margin-left: 47px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .mainBtn {
-    width: 50px;
-    height: 50px;
-  }
-  #backToTopBtn {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
   #desktopFormBtn {
     display: block;
   }
-  .container {
-    max-width: 1024px;
-    margin: 0 auto;
+  #backToTopBtn {
+    bottom: 112px;
   }
   #mainDock {
-    display: none;
-  }
-  #emptyDockSpace {
     display: none;
   }
   #landingBox {
@@ -955,33 +1120,233 @@
   }
   .bgImg {
     height: calc(100vh - 58px);
-    background-position: center left 0px;
+  }
+  .desktopNavMenuOpt {
+    padding: 2px 16px 0 16px;
+  }
+  .landingHeading {
+    font-size: 68px;
+    line-height: 70px;
+  }
+  .officeMap {
+    padding: 0 80px 0 40px;
+  }
+  .upperReasons {
+    padding-right: 30px;
+  }
+  .lowerReasons {
+    width: 730px;
+  }
+  .awardImg {
+    height: 230px;
+    top: 68px;
+  }
+  .officeInfoSchedule {
+    padding-right: 40px;
+  }
+  .officeInfoPhone {
+    padding-right: 54px;
+  }
+  .officeInfoAddress {
+    padding-right: 55px;
+  }
+  .leftQuoteIcon {
+    left: 95px;
+  }
+  .rightQuoteIcon {
+    right: 95px;
+  }
+  .bracesText {
+    width: 327px;
+  }
+  .bracesVideo {
+    padding: 0px 90px;
+  }
+  .beforeAfterBox {
+    width: 260px;
+    margin: 0 40px 0 0;
+  }
+  #beforeText {
+    bottom: -12px;
+    left: 38px;
+  }
+  #afterText {
+    bottom: -12px;
+    right: 48px;
+  }
+  #treatmentOptions {
+    padding-bottom: 70px;
+  }
+  .treatmentBtnWrapper {
+    margin-left: 10px;
+  }
+  footer {
+    background-size: 990px;
+  }
+  .footerGridOpt {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bgImg {
+    background-image: url(images/smilebgHQ.png);
+  }
+  .footerGridOpt {
+    font-size: 16px;
+  }
+  #faqTitle {
+    margin-bottom: 80px;
+  }
+  .mainBtn {
+    width: 58px;
+    height: 58px;
+  }
+  .awardImg {
+    height: 260px;
+    top: 36px;
+  }
+  .lowerReasons {
+    width: 100%;
+  }
+  .leftQuoteIcon {
+    left: 120px;
+  }
+  .rightQuoteIcon {
+    right: 120px;
+  }
+  .treatmentBox {
+    width: 340px;
+  }
+  .bracesText {
+    width: 390px;
+  }
+  .bracesVideo {
+    padding: 0px 20px;
+  }
+  .beforeAfterBox {
+    width: 310px;
+  }
+  #beforeText {
+    bottom: -38px;
+    left: 54px;
+  }
+  #afterText {
+    bottom: -38px;
+    right: 64px;
+  }
+  .treatmentBtnWrapper {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  footer {
+    background-size: 1220px;
+    background-position: top 68px left -180px;
+  }
+  .footerlogoTextTop {
+    font-size: 34px;
+  }
+  .footerlogoTextBottom {
+    letter-spacing: 0.8px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  #landingBox {
+    height: calc(100vh - 58px);
+  }
+  .bgImg {
+    height: calc(100vh - 58px);
+  }
+  .mapWrapper {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1185px) {
+  .landingText {
+    left: 50%;
+    margin-left: -510px;
+  }
+  .sectionTitle {
+    margin: 70px 0 70px 0;
+  }
+  .aboutText {
+    padding: 0px;
+    width: 1000px;
   }
   .whyBulletPoint {
     margin-left: 0px;
   }
   .leftQuoteIcon {
-    left: 20%;
+    left: 50%;
+    margin-left: -365px;
   }
   .rightQuoteIcon {
-    right: 20%;
+    right: 50%;
+    margin-right: -365px;
   }
-  .aboutText {
-    padding-right: 20px;
+  .reviews {
+    background-position: top -140px right;
   }
-  .bracesText {
-    max-width: 870px;
-    margin: 40px auto 0 auto;
+  .upperReasons {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1 / span 10;
+    margin-bottom: 48px;
+  }
+  footer {
+    background-size: 1530px;
+    background-position: top 66px left -250px;
+  }
+  #backArrow {
+    left: 50%;
+    margin-left: -380px;
+  }
+  .switch {
+    right: 50%;
+    margin-right: -390px;
+  }
+  .switchText {
+    right: 50%;
+    margin-right: -382px;
+  }
+  #contactForm {
+    background-color: black;
+  }
+  #contactForm.lightTheme .formWrapper {
+    background-color: whitesmoke;
+  }
+  #contactForm.lightTheme {
+    background-color: gainsboro;
+  }
+  .formWrapper {
+    background-color: #191919;
+    width: 840px;
+  }
+  .formOption {
+    margin: 0 auto 30px auto;
+    width: 470px;
+  }
+  .formDescription {
+    width: 470px;
+    margin: 60px auto 50px auto;
+  }
+  .formMessage {
+    width: 470px;
+    margin: 0 auto;
   }
 }
 
 /* iPhone X */
-@media only screen and (max-width: 375px) and (min-height: 800px) {
+@media only screen and (max-width: 375px) and (height: 619px) {
   .bgImg {
-    background-position: center left -90px;
-  }
-  .logoTextBottom {
-    background-color: yellow;
+    background-position: center left -140px;
   }
   #stats {
     padding-bottom: 50px;
@@ -1025,6 +1390,92 @@
   }
   #navInstagramIcon {
     font-size: 22px;
+  }
+}
+
+/* CORRECT THE BG POSITION SHIFT FROM 414px WIDTH FOR IPHONE 11 */
+@media only screen and (min-width: 414px) and (max-height: 790px) {
+  .bgImg {
+    background-position: center center;
+  }
+  .landingText {
+    bottom: 19%;
+  }
+}
+
+@media only screen and (min-width: 913px) and (max-height: 708px) {
+  .bgImg {
+    background-position: bottom -350px left;
+  }
+}
+
+@media only screen and (hover: hover) {
+  .mainBtn:hover {
+    background-color: rgba(25, 25, 25, 0.6);
+  }
+  .landingBtn:hover {
+    background-color: rgba(25, 25, 25, 0.6);
+  }
+  .landingBtn:hover .fa-phone {
+    color: #2aae2a;
+  }
+  .landingBtn:hover .fa-map-marker-alt {
+    color: #ee0a0a;
+  }
+  #desktopFormBtn:hover .fa-comment {
+    color: #0094f0;
+  }
+  #backToTopBtn:hover .fa-chevron-up {
+    color: #0094f0;
+  }
+  .mainBtn:hover .toolTip {
+    opacity: 1;
+    visibility: initial;
+  }
+  .landingBtn:hover .landingBtnToolTip {
+    opacity: 1;
+    visibility: initial;
+  }
+  .desktopNavMenuOpt:hover {
+    color: #0094f0;
+  }
+  .socialMediaBtn:hover {
+    background-color: #b3b3b3;
+  }
+  #contactForm.lightTheme #backArrow:hover {
+    background-color: gainsboro;
+  }
+  #backArrow:hover {
+    background-color: #343434;
+  }
+  #formCancelBtn:hover {
+    background-color: gainsboro;
+  }
+  .footerGridOpt a:hover {
+    color: grey;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-height: 1210px) {
+  .bgImg {
+    background-position: top -320px left 0px;
+  }
+  .landingHeading {
+    font-size: 72px;
+  }
+  footer {
+    background-size: 1720px;
+    background-position: top 62px left -270px;
+  }
+  .footerGridOpt {
+    font-size: 18px;
+    padding: 9px 0px 9px 30px;
+  }
+}
+
+@media only screen and (min-width: 1900px) and (max-height: 1210px) {
+  .bgImg {
+    background-position: top -460px left 0px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */

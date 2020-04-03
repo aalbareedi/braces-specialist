@@ -30,22 +30,6 @@ function scrollPercentCounter() {
   }
 }
 
-function scrollBodyToTop() {
-  // if (scrollingElement.scrollTop > 0.1) {
-  //   if (
-  //     previousScrollTop == scrollingElement.scrollTop ||
-  //     previousScrollTop == -1
-  //   ) {
-  //     scrollingElement.scrollTop = scrollingElement.scrollTop * 0.7;
-  //     let scrollTop = scrollingElement.scrollTop;
-  //     setTimeout(function() {
-  //       scrollBodyToTop(scrollTop);
-  //     }, 80);
-  //   }
-  // }
-  $(scrollingElement).animate({ scrollTop: 0 });
-}
-
 function closeNavMenu() {
   navToggleIcon.classList.remove("is-active");
   navMenu.classList.remove("openMenu");
@@ -138,7 +122,7 @@ function sendEmail() {
   // fetch is JS function that lets you send http requests to servers,
   // we are REQUESTING sendEmail.php FILE from server to send the email through
   fetchWithTimeout(
-    "sendEmail?name=" +
+    "sendEmail.php?name=" +
       fullName +
       "&email=" +
       emailAddress +
@@ -151,7 +135,7 @@ function sendEmail() {
   )
     // handles servers succesful response
     .then(function(response) {
-      console.log(response);
+      // console.log(response);
       // alert(isLoading);
       // setTimeout(function() {
       isLoading = false;
@@ -190,7 +174,7 @@ function sendEmail() {
         }, 3000);
       }
 
-      console.log("sending complete");
+      // console.log("sending complete");
       // }, 600);
     })
     // handling errors (server connection)

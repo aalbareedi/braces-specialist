@@ -140,17 +140,17 @@ body.onscroll = function() {
     }
   }
 
-  if (
-    scrollingElement.scrollTop + screen.height - 120 > bracesVideo.offsetTop &&
-    scrollingElement.scrollTop + screen.height - 120 <
-      bracesVideo.offsetTop + screen.height
-  ) {
-    bracesVideo.play();
-  } else {
-    bracesVideo.pause();
-  }
+  // if (
+  //   scrollingElement.scrollTop + screen.height - 120 > bracesVideo.offsetTop &&
+  //   scrollingElement.scrollTop + screen.height - 120 <
+  //     bracesVideo.offsetTop + screen.height
+  // ) {
+  //   bracesVideo.play();
+  // } else {
+  //   bracesVideo.pause();
+  // }
 
-  if (scrollingElement.scrollTop > screen.height) {
+  if (scrollingElement.scrollTop > screen.height + stats.offsetHeight) {
     bgImg.classList.add("displayHidden");
   } else {
     bgImg.classList.remove("displayHidden");

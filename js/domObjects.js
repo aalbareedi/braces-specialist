@@ -11,6 +11,7 @@ let backToTopBtn = document.getElementById("backToTopBtn");
 let desktopFormBtn = document.getElementById("desktopFormBtn");
 let bgImg = document.getElementsByClassName("bgImg")[0];
 
+let stats = document.getElementById("stats");
 let statYear = document.getElementById("statYear");
 let statCases = document.getElementById("statCases");
 let statPercent = document.getElementById("statPercent");
@@ -31,7 +32,9 @@ let contactFormCancelBtn = document.getElementById("formCancelBtn");
 let contactFormBackArrow = document.getElementById("backArrow");
 let contactFormButtonsBar = document.getElementById("formButtons");
 let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn");
-let formInputFields = document.querySelectorAll("input, textarea");
+let formInputFields = document.querySelectorAll(
+  "input:not(#darkModeInput), textarea"
+);
 let contactFormNameInput = document.getElementById("nameInput");
 let contactFormEmailInput = document.getElementById("emailInput");
 let contactFormPhoneInput = document.getElementById("phoneInput");

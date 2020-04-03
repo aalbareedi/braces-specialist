@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Specifies the language you will be using for your page -->
     <meta charset="utf-8" />
-    <!--- Allows mobile devices to scale to size -->
+    <!-- Allows mobile devices to scale to size -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--- Corrects phone number as text on iOS -->
+    <!-- Corrects phone number as text on iOS -->
     <meta name="format-detection" content="telephone=no" />
+    <title>Braces Specialist</title>
+    <meta
+      name="description"
+      content="Orthodontic Treatment at the Orthodontic Specialty Center by Dr AlBareedi in Chicago.Telephone # 773-282-0013"
+    />
+    <meta
+      name="keywords"
+      content=" orthodontics, dental braces, clear braces, metal braces, braces,ceramic braces, chicago dentist, chicago orthodontist, chicago braces, orthodontist in chicago, invisible braces, orthodontist, orthodontic surgery, orthodontic treatment, straight teeth"
+    />
+    <meta name="robots" content="all" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -33,7 +43,6 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Braces Specialist</title>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -64,33 +73,9 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Volkhov:700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
       rel="stylesheet"
     />
     <link
@@ -102,15 +87,6 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- used fonts  -->
-    <link
       href="https://fonts.googleapis.com/css?family=Russo+One&display=swap"
       rel="stylesheet"
     />
@@ -119,19 +95,15 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -179,11 +151,31 @@
         <div id="landingBox">
           <div class="bgImg"></div>
 
-          <div class="landingHeading unselectable">
-            <span id="smileWord">SMILE</span> WITH A PASSION
-          </div>
-          <div class="landingSubHeading">
-            We provide the most affordable Orthodontic Treatment in Chicago
+          <div class="landingText">
+            <div class="landingHeading unselectable">
+              <span id="smileWord">SMILE</span> WITH PASSION
+            </div>
+            <div class="landingSubHeading">
+              We provide the most affordable Orthodontic Treatment in Chicago
+            </div>
+            <div class="desktopLandingBtns">
+              <a href="tel:773-282-0013" class="landingBtn"
+                ><i class="fas fa-phone landingBtnIcon"></i>
+                <div class="landingBtnText">Call</div>
+                <div class="landingBtnToolTip">(773) 282-0013</div>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+                class="landingBtn"
+              >
+                <i class="fas fa-map-marker-alt landingBtnIcon"></i>
+                <div class="landingBtnText">Directions</div>
+                <div class="landingBtnToolTip" id="addressToolTip">
+                  4251 N. Milwaukee Ave Chicago, Illinois 60641
+                </div></a
+              >
+            </div>
           </div>
         </div>
 
@@ -205,13 +197,12 @@
           <button class="learnMoreStatBtn" href="#doctorWrapper">
             MEET DR. ALBAREEDI
           </button>
-          <!-- <div class="triangle"></div> -->
         </div>
 
         <div id="aboutUs">
-          <div id="aboutTitle" class="sectionTitle">
+          <h1 id="aboutTitle" class="sectionTitle">
             Our Mission
-          </div>
+          </h1>
           <img
             src="./images/SVGs/straightTeeth.svg"
             alt="Straight teeth with braces treatment"
@@ -219,9 +210,9 @@
           />
           <div class="aboutText container">
             We are committed to rendering the highest standard of care to all of
-            our patients. Everyone will be treated as if they are our own
+            our patients. Everyone will be treated as if they were our own
             family. Most of our patients are referred to us by their friends and
-            family who were treated by our office and were very happy with the
+            families who were treated by our office and were very happy with the
             results, or were referred by their dentists who were confident of
             the quality orthodontic care we will provide to their patients. We
             offer a FREE first consultation visit - you will meet our staff, we
@@ -243,14 +234,14 @@
                   prices.
                 </div>
               </div>
-              <div class="whyReason" data-scrollToAnimation="fadeInUp">
+              <div class="whyReason setWidth" data-scrollToAnimation="fadeInUp">
                 <div class="whyBulletPoint">•</div>
                 <div class="whyText">
                   Dr. Albareedi treats all the patients himself, our staff
                   solely chair-side assists.
                 </div>
               </div>
-              <div class="whyReason" data-scrollToAnimation="fadeInUp">
+              <div class="whyReason setWidth" data-scrollToAnimation="fadeInUp">
                 <div class="whyBulletPoint">•</div>
                 <div class="whyText">
                   Our patients will be seen within just a few minutes of their
@@ -275,7 +266,7 @@
               <div class="whyReason" data-scrollToAnimation="fadeInUp">
                 <div class="whyBulletPoint">•</div>
                 <div class="whyText">
-                  We pledge to treat our patients as if they are our own family
+                  We pledge to treat our patients as if they were our own family
                   members.
                 </div>
               </div>
@@ -292,9 +283,9 @@
         <div id="doctor">
           <div id="doctorWrapper">
             <div class="doctorTitle">Meet</div>
-            <div class="doctorName">
+            <h1 class="doctorName">
               Dr. Said Albareedi
-            </div>
+            </h1>
 
             <div class="docContainer">
               <div class="docCenter">
@@ -332,7 +323,7 @@
         </div>
 
         <div class="reviews">
-          <div class="reviewTitle sectionTitle">What Our Patients Think</div>
+          <h1 class="reviewTitle">What Our Patients Think</h1>
           <i class="fas fa-quote-left quoteIcon leftQuoteIcon"></i>
           <i class="fas fa-quote-right quoteIcon rightQuoteIcon"></i>
           <div id="reviewSlider">
@@ -400,85 +391,103 @@
         </div>
 
         <div id="treatmentOptions">
-          <div class="bracesTitle sectionTitle">Treatment Options</div>
+          <h1 class="bracesTitle sectionTitle">Treatment Options</h1>
 
-          <div class="treatmentOptionsGrid container">
-            <div class="treatmentBox" id="bracesTreatment">
-              <div class="treatmentOverlay unselectable">Braces</div>
+          <div class="treatmentOptionsGrid">
+            <div class="optionsGridBox">
+              <div class="treatmentImgGrid">
+                <div class="treatmentBox" id="bracesTreatment">
+                  <div class="treatmentOverlay unselectable">Braces</div>
+                </div>
+
+                <div class="treatmentBox" id="invisalignTreatment">
+                  <div class="treatmentOverlay unselectable">Invisalign</div>
+                </div>
+              </div>
             </div>
 
-            <div class="treatmentBox" id="invisalignTreatment">
-              <div class="treatmentOverlay unselectable">Invisalign</div>
+            <div class="bracesText">
+              By the use of braces, or Invisalign (aligners), we apply different
+              forces to your teeth to make them move in the direction we wish.
+              As we apply the pressure, the bone around the teeth gets remodeled
+              and reformed to the different position we would like the teeth to
+              move to.
             </div>
-          </div>
 
-          <div class="bracesText">
-            By the use of braces, or Invisalign (aligners), we apply different
-            forces to your teeth to make them move in the direction we wish. As
-            we apply the pressure, the bone around the teeth gets remodeled and
-            reformed to the different position we would like the teeth to move
-            to.
-          </div>
+            <div class="beforeAfter">
+              <div class="beforeAfterBox">
+                <img
+                  class="beforeAfterImg"
+                  src="images/SVGs/beforeAfter.svg"
+                  alt="Teeth before/after orthodontic braces treatment"
+                />
+                <div class="beforeAfterText" id="beforeText">Before</div>
+                <div class="beforeAfterText" id="afterText">After</div>
+              </div>
+            </div>
 
-          <img
-            class="beforeAfterImg"
-            src="images/SVGs/beforeAfter.svg"
-            alt="Teeth before/after orthodontic braces treatment"
-          />
+            <div class="treatmentAnimation">
+              <!-- <video
+                class="bracesVideo"
+                loop
+                muted
+                playsinline
+                controls
+                autoplay
+              >
+                <source
+                  src="braces720.mp4"
+                  type="video/mp4"
+                  media="only screen and (min-width: 768px)"
+                />
+                <source
+                  src="braces720.webm"
+                  type="video/webm"
+                  media="only screen and (min-width: 768px)"
+                />
+                <source
+                  src="braces720.ogv"
+                  type="video/ogg"
+                  media="only screen and (min-width: 768px)"
+                />
+              </video> -->
 
-          <video class="bracesVideo" loop muted playsinline controls autoplay>
-            <source
-              src="braces720.mp4"
-              type="video/mp4"
-              media="only screen and (min-width: 768px)"
-            />
-            <source
-              src="braces720.webm"
-              type="video/webm"
-              media="only screen and (min-width: 768px)"
-            />
-            <source
-              src="braces720.ogv"
-              type="video/ogg"
-              media="only screen and (min-width: 768px)"
-            />
-          </video>
-
-          <div class="gifWrapper">
-            <picture>
-              <source
-                media="only screen and (max-width: 767px)"
-                srcset="images/fixTeeth.gif"
-              />
-              <!-- toothIcon.svg used to satisfy default image 
+              <div class="gifWrapper">
+                <picture>
+                  <source srcset="images/fixTeeth.gif" />
+                  <!-- toothIcon.svg used to satisfy default image 
                 for picture tag since it is small size -->
-              <img
-                class="bracesGif"
-                src="images/SVGs/toothIcon.svg"
-                alt="braces"
-              />
-            </picture>
-          </div>
+                  <img
+                    class="bracesGif"
+                    src="images/SVGs/toothIcon.svg"
+                    alt="braces"
+                  />
+                </picture>
+              </div>
 
-          <div class="timelapseDescription">
-            Timelapse of braces aligning teeth.
-          </div>
+              <div class="timelapseDescription">
+                Timelapse of braces aligning teeth.
+              </div>
+            </div>
 
-          <div class="treatmentBtnWrapper">
-            <a href="tel:773-282-0013" class="treatmentBtn">
-              <i class="fas fa-phone treatmentCallIcon"></i>
-              <div class="treatmentBtnText">Call</div>
-            </a>
+            <div class="treatmentBtnWrapper">
+              <a href="tel:773-282-0013" class="treatmentBtn">
+                <i class="fas fa-phone treatmentCallIcon"></i>
+                <div class="treatmentBtnText">Call</div>
+              </a>
 
-            <div class="treatmentBtnMessage">
-              TO SCHEDULE A
-              <span class="freeWord">FREE</span> CONSULTATION
+              <div class="treatmentBtnMessage">
+                TO SCHEDULE A
+                <span class="freeWord">FREE</span> CONSULTATION
+              </div>
             </div>
           </div>
         </div>
 
         <div id="faq">
-          <div class="faqTitle sectionTitle">Frequently Asked Questions</div>
+          <h1 class="sectionTitle" id="faqTitle">
+            Frequently Asked Questions
+          </h1>
 
           <div class="faqContainer container">
             <div class="faqQuestion">
@@ -579,7 +588,7 @@
         </div>
 
         <div id="officeInfo">
-          <div class="officeInfoTitle sectionTitle">Office Information</div>
+          <h1 class="officeInfoTitle sectionTitle">Office Information</h1>
 
           <div class="officeContainer">
             <div class="officeWrapper">
@@ -683,12 +692,6 @@
         </div>
 
         <footer>
-          <!-- <img
-            id="footerMainLogo"
-            class="unselectable"
-            src="./images/newFinal.svg"
-          /> -->
-
           <div class="footerNavLogoName">
             <div class="footerlogoTextTop">Orthodontic</div>
             <div class="footerlogoTextBottom">SPECIALTY CENTER</div>
@@ -714,8 +717,8 @@
         <div class="footerCredit">
           Website by&nbsp;<a
             class="footerEmail"
-            href="mailto:aalbareedi@yahoo.com"
-            >email@email.com</a
+            href="mailto:buildmysite@yahoo.com"
+            >buildmysite@yahoo.com</a
           >
         </div>
 
@@ -755,10 +758,12 @@
           href="#landingBox"
         >
           <i class="fas fa-chevron-up "></i>
+          <div class="toolTip">Back To Top</div>
         </button>
 
         <button id="desktopFormBtn" class="mainBtn">
           <i class="fas fa-comment"></i>
+          <div class="toolTip">Message Us</div>
         </button>
       </main>
 
@@ -821,88 +826,90 @@
         <i class="fas fa-arrow-left"></i>
       </div>
 
-      <div class="switchText">Dark Mode</div>
+      <div class="switchText unselectable">Dark Mode</div>
 
       <label class="switch">
-        <input type="checkbox" />
+        <input type="checkbox" id="darkModeInput" />
         <span class="slider round"></span>
       </label>
 
-      <div class="formTitle">Message Us</div>
+      <div class="formWrapper">
+        <div class="formTitle">Message Us</div>
 
-      <div class="formDescription">
-        We would love to hear from you! Please send us a message below and we
-        will get back to you as quickly as possible.
-      </div>
+        <div class="formDescription">
+          We would love to hear from you! Please send us a message below and we
+          will get back to you as quickly as possible.
+        </div>
 
-      <div class="formOption">
-        <label for="nameInput" class="contactFormText unselectable">
-          Full Name<span class="formAsterik">*</span>
-        </label>
-        <div class="fullNameField">
-          <input
-            required
-            id="nameInput"
-            type="text"
-            class="contactFormInput"
-            placeholder="Firstname Lastname"
-          />
-          <div class="formIcon" id="fullNameIcon">
-            <i class="fas fa-user"></i>
+        <div class="formOption">
+          <label for="nameInput" class="contactFormText unselectable">
+            Full Name<span class="formAsterik">*</span>
+          </label>
+          <div class="fullNameField">
+            <input
+              required
+              id="nameInput"
+              type="text"
+              class="contactFormInput"
+              placeholder="Firstname Lastname"
+            />
+            <div class="formIcon" id="fullNameIcon">
+              <i class="fas fa-user"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="formOption">
-        <label for="emailInput" class="contactFormText unselectable">
-          Email Address<span class="formAsterik">*</span>
-        </label>
-        <div class="emailField">
-          <input
-            required
-            id="emailInput"
-            type="email"
-            class="contactFormInput"
-            placeholder="email@address.com"
-            pattern=".+@.+\..{2,}$"
-          />
-          <div class="formIcon" id="emailIcon">
-            <i class="fas fa-envelope"></i>
+        <div class="formOption">
+          <label for="emailInput" class="contactFormText unselectable">
+            Email Address<span class="formAsterik">*</span>
+          </label>
+          <div class="emailField">
+            <input
+              required
+              id="emailInput"
+              type="email"
+              class="contactFormInput"
+              placeholder="email@address.com"
+              pattern=".+@.+\..{2,}$"
+            />
+            <div class="formIcon" id="emailIcon">
+              <i class="fas fa-envelope"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="formOption">
-        <label for="phoneInput" class="contactFormText unselectable">
-          Phone Number<span class="formAsterik">*</span>
-        </label>
-        <div class="phoneField">
-          <input
-            required
-            id="phoneInput"
-            type="tel"
-            class="contactFormInput"
-            placeholder="(555) 123-4567"
-            pattern="^([^A-Za-z]*\d){7,}$"
-          />
-          <div class="formIcon"><i class="fas fa-phone"></i></div>
+        <div class="formOption">
+          <label for="phoneInput" class="contactFormText unselectable">
+            Phone Number<span class="formAsterik">*</span>
+          </label>
+          <div class="phoneField">
+            <input
+              required
+              id="phoneInput"
+              type="tel"
+              class="contactFormInput"
+              placeholder="(555) 123-4567"
+              pattern="^([^A-Za-z]*\d){7,}$"
+            />
+            <div class="formIcon"><i class="fas fa-phone"></i></div>
+          </div>
         </div>
-      </div>
 
-      <div class="formMessage">
-        <label
-          for="messageInput"
-          class="contactFormText unselectable"
-          id="messageInputLabel"
-        >
-          Message<span class="formAsterik">*</span>
-        </label>
-        <textarea
-          required
-          class="contactFormInput"
-          id="messageInput"
-          placeholder="Questions, comments, concerns..."
-        ></textarea>
+        <div class="formMessage">
+          <label
+            for="messageInput"
+            class="contactFormText unselectable"
+            id="messageInputLabel"
+          >
+            Message<span class="formAsterik">*</span>
+          </label>
+          <textarea
+            required
+            class="contactFormInput"
+            id="messageInput"
+            placeholder="Questions, comments, concerns..."
+          ></textarea>
+        </div>
       </div>
 
       <div id="formButtons">
