@@ -130,6 +130,7 @@ img {
 }
 
 .logoTextBottom {
+  color: orange;
   font-size: 16px;
   letter-spacing: 0.5px;
   font-family: "Titillium Web", sans-serif;
@@ -150,7 +151,7 @@ img {
   outline: none;
   width: 58px;
   height: 100%;
-  padding-top: 2px;
+  /* padding-top: 2px; */
   position: absolute;
   right: 0px;
   border: none;
@@ -1073,7 +1074,13 @@ body .landingBtn:active {
 .learnMoreStatBtn {
   margin: 10px auto 0 auto;
   display: block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00c2d7), to(#368cbc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00c2d7),
+    to(#368cbc)
+  );
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   color: white;
   border: none;
@@ -1719,7 +1726,13 @@ body .socialMediaBtn:active {
   align-items: center;
   text-decoration: none;
   padding-right: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00c2d7), to(#368cbc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00c2d7),
+    to(#368cbc)
+  );
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   border: none;
   outline: none;
@@ -1962,14 +1975,16 @@ footer {
 }
 
 .slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .slide-out-right {
-  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
   animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
