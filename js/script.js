@@ -22,7 +22,8 @@ $("#reviewSlider").slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  pauseOnDotsHover: true
+  pauseOnDotsHover: true,
+  pauseOnHover: false,
 });
 
 let nav = new SlideNav();

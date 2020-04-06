@@ -341,7 +341,7 @@
     font-size: 18px;
     -ms-grid-columns: 110px 169px;
     grid-template-columns: 110px 169px;
-    -ms-grid-rows: (29px) [7];
+    -ms-grid-rows: 29px [7];
     grid-template-rows: repeat(7, 29px);
   }
   .officeInfoText {
@@ -458,9 +458,9 @@
   .treatmentOptionsGrid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [2];
+    -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (auto) [3];
+    -ms-grid-rows: auto [3];
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 40px;
   }
@@ -548,9 +548,9 @@
   .whyGrid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [10];
+    -ms-grid-columns: 1fr [10];
     grid-template-columns: repeat(10, 1fr);
-    -ms-grid-rows: (auto) [2];
+    -ms-grid-rows: auto [2];
     grid-template-rows: repeat(2, auto);
     position: relative;
   }
@@ -1090,7 +1090,7 @@
 /* iPad pro*/
 @media only screen and (min-width: 834px) {
   .treatmentImgGrid {
-    -ms-grid-rows: (110px) [2];
+    -ms-grid-rows: 110px [2];
     grid-template-rows: repeat(2, 110px);
   }
   #emptyDockSpace {
@@ -1099,7 +1099,7 @@
   .desktopLandingBtns {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (150px) [2];
+    -ms-grid-columns: 150px [2];
     grid-template-columns: repeat(2, 150px);
     -ms-grid-rows: 56px;
     grid-template-rows: 56px;
