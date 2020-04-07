@@ -36,6 +36,8 @@ let nav = new SlideNav();
 
 this.$(".slick-dots").addClass("touch-device");
 
+// flexibility(document.documentElement);
+
 // setTimeout(function() {
 //   alert(window.innerWidth + "," + window.innerHeight);
 // }, 3000);
