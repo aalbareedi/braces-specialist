@@ -91,11 +91,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   height: 100%;
   width: 56px;
@@ -142,11 +142,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   outline: none;
   width: 58px;
   height: 100%;
@@ -181,11 +181,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: whitesmoke;
   color: #616161;
   font-size: 14px;
@@ -206,11 +206,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: whitesmoke;
   color: #616161;
   font-size: 14px;
@@ -295,9 +295,9 @@ img {
 #navSocial {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [4];
+  -ms-grid-columns: (1fr) [4];
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr [1];
+  -ms-grid-rows: (1fr) [1];
   grid-template-rows: repeat(1, 1fr);
   width: 100%;
   position: absolute;
@@ -317,11 +317,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: whitesmoke;
   border-right: 2px solid #e8e8e8;
   outline: none;
@@ -380,11 +380,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 42px;
   width: 42px;
   position: absolute;
@@ -530,16 +530,20 @@ input.contactFormInput:valid + .formIcon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 50%;
   height: 58px;
   color: #616161;
   border: none;
   border-right: 2px solid #e8e8e8;
+}
+
+#formCancelBtn:active {
+  background-color: lightgray;
 }
 
 .formSubmitBtnDisabled {
@@ -640,11 +644,11 @@ input.contactFormInput:valid + .formIcon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
@@ -800,9 +804,9 @@ input.contactFormInput:valid + .formIcon {
   bottom: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [3];
+  -ms-grid-columns: (1fr) [3];
   grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr [1];
+  -ms-grid-rows: (1fr) [1];
   grid-template-rows: repeat(1, 1fr);
   border-top: 2px solid #e8e8e8;
   z-index: 10;
@@ -813,15 +817,15 @@ input.contactFormInput:valid + .formIcon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: whitesmoke;
   height: 58px;
   width: 100%;
@@ -920,11 +924,11 @@ input.contactFormInput:valid + .formIcon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #616161;
   color: whitesmoke;
   position: absolute;
@@ -957,11 +961,11 @@ input.contactFormInput:valid + .formIcon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: rgba(51, 51, 51, 0.4);
   border-radius: 120px;
   text-decoration: none;
@@ -998,15 +1002,15 @@ body .landingBtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 150px;
   background-repeat: no-repeat;
   background-size: 100px;
@@ -1055,7 +1059,13 @@ body .landingBtn:active {
 .learnMoreStatBtn {
   margin: 10px auto 0 auto;
   display: block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00c2d7), to(#368cbc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00c2d7),
+    to(#368cbc)
+  );
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   color: white;
   border: none;
@@ -1161,7 +1171,7 @@ body .landingBtn:active {
   display: grid;
   -ms-grid-columns: 100px 150px;
   grid-template-columns: 100px 150px;
-  -ms-grid-rows: 27px [7];
+  -ms-grid-rows: (27px) [7];
   grid-template-rows: repeat(7, 27px);
 }
 
@@ -1268,9 +1278,9 @@ body .landingBtn:active {
 .socialButtons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [4];
+  -ms-grid-columns: (1fr) [4];
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr [1];
+  -ms-grid-rows: (1fr) [1];
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 14px;
 }
@@ -1280,11 +1290,11 @@ body .landingBtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: gray;
   width: 48px;
   height: 48px;
@@ -1572,9 +1582,9 @@ body .socialMediaBtn:active {
 .treatmentImgGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [1];
+  -ms-grid-columns: (1fr) [1];
   grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: 1fr [2];
+  -ms-grid-rows: (1fr) [2];
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 24px;
   padding: 0 20px;
@@ -1608,11 +1618,11 @@ body .socialMediaBtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 0.6px;
   font-size: 18px;
@@ -1681,11 +1691,11 @@ body .socialMediaBtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .treatmentBtn {
@@ -1694,14 +1704,20 @@ body .socialMediaBtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-decoration: none;
   padding-right: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00c2d7), to(#368cbc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00c2d7),
+    to(#368cbc)
+  );
   background: linear-gradient(to bottom, #00c2d7 0%, #368cbc 100%);
   border: none;
   outline: none;
@@ -1826,7 +1842,7 @@ footer {
 .siteMapGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr [5];
+  -ms-grid-rows: (1fr) [5];
   grid-template-rows: repeat(5, 1fr);
   margin-top: 28px;
 }
@@ -1850,11 +1866,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: gainsboro;
   font-size: 13px;
   height: 28px;
@@ -1871,11 +1887,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #616161;
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
@@ -1900,11 +1916,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: rgba(255, 255, 255, 0.8);
   position: fixed;
   border-radius: 50%;
@@ -1944,14 +1960,16 @@ footer {
 }
 
 .slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .slide-out-right {
-  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
   animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
